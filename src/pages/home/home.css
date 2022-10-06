@@ -1,0 +1,302 @@
+/* Header start */
+
+.header {
+    border: 1px solid black;
+    height: 550px;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    background: #000000;
+}
+
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-shadow: 2px 2px #00000073;
+    z-index: 2;
+}
+
+.headerText h1 {
+    color: #E6AF4B;
+    font-size: 52px;
+    width: 70%;
+    padding: 12px 0;
+}
+
+.headerText p {
+    color: #ffffff;
+    font-size: 24px;
+    width: 50%;
+    padding: 12px;
+}
+
+
+
+/* Seation 2 Start */
+
+.section1 {
+    margin: 2rem;
+    display: flex !important;
+    flex-direction: row;
+    height: 550px;
+}
+.left {
+    width: 50%;
+    height: 100%;
+}
+
+.left img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.right h1 {
+    width: 80%;
+    padding: 20px 0;
+    color: #042B3B;
+}
+
+.right p {
+    width: 80%;
+    padding: 20px 0;
+}
+
+.right Button:hover {
+    background: #a17014;
+}
+
+
+.section2 {
+    margin: 2rem;
+    display: flex !important;
+    flex-direction: row-reverse;
+    height: 550px;
+
+}
+
+
+/* Section 3 start */
+.section3 {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.section3 h1 {
+    text-align: center;
+    font-weight: 400;
+    color: #042B3B;
+}
+
+.cardHome {
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cardIcon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    color: #E6AF4B;
+}
+
+.cardIconIcon {
+    width: 80% !important;
+    height: 80% !important;
+    margin-top: 12px;
+}
+
+.cardContent {
+    width: 100%;
+    height: 60%;
+}
+
+.cardContent h3 {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.cardContent p {
+    font-size: 12px;
+}
+
+
+
+
+/* Home form */
+
+.homeForm {
+    display: flex !important;
+    flex-direction: row !important;
+    height: 80vh;
+    width: 100%;
+}
+
+.homeFormLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+}
+
+.homeFormLeft h1 {
+    color: #042B3B;
+    width: 60%;
+    padding: 12px;
+    font-size: 32px;
+}
+
+.homeFormLeft p {
+    width: 60%;
+    line-height: 32px;
+}
+
+.homeFormContact {
+    color: #E6AF4B;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.homeFormRight {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .section1 {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .headerText h1 {
+        font-size: 36px;
+        width: 80%;
+    }
+
+    .headerText p {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .left {
+        width: 100%;
+        height: 250px;
+        align-items: flex-end;
+
+    }
+
+    .left img {
+        height: 100%;
+    }
+
+    .right {
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+        align-items: flex-end;
+    }
+
+    .right h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .right p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .right img {
+        height: 100%;
+    }
+
+    .section2 {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .boxCardHome {
+        flex-direction: column !important;
+        gap: 1rem;
+        padding: 0 16px !important;
+
+
+    }
+
+    .cardHome {
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+
+    }
+
+    .homeForm {
+        flex-direction: column-reverse !important;
+        height: 100%;
+    }
+
+    .homeFormLeft {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .homeFormLeft h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .homeFormLeft p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .homeFormRight {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+}
+
+

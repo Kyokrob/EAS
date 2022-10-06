@@ -1,0 +1,151 @@
+.service {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 2rem;
+    margin: 1rem 0; */
+    max-height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        gap: 2rem;
+        margin: 1rem 0;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        white-space: wrap;
+        scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #e2e2e2;
+  }
+
+
+.serviceContainer {
+    height: 50vh;
+}
+
+.serviceTitle {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #E6AF4B;
+}
+.serviceTitleText {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+.ourservice {
+    position: relative;
+    min-width: 250px;
+    width: 100%;
+    height: 250px;
+}
+
+.serviceList {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 10px;
+}
+
+
+.serviceOverlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  transition: .5s ease;
+  border-radius: 10px;
+  text-shadow: 2px 2px #00000073;
+  color: #E6AF4B;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.ourservice:hover .serviceOverlay {
+    height: 100%;
+    background-color: #00000081;
+    
+  }
+
+.serviceText:before {
+  position: absolute;
+}
+
+.serviceText {
+    width: 250px;
+}
+
+
+.serviceText p {
+    color: white;
+    font-size: 14px;
+    padding: 12px;
+}
+
+
+.overlayBtn {
+    font-size: 10px !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+.overlayBtn:hover {
+    background: #d9d9d9;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    .service {
+        max-height: 300px;
+    }
+
+    .serviceContainer {
+        height: 100%;
+    }
+
+    .ourservice {
+        min-width: 250px;
+    }
+
+    .serviceTitle {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .serviceTitleText {
+        font-size: 12px;
+        text-align: left;
+    }
+}
