@@ -28,6 +28,7 @@ const Home = () => {
         <div className="header">
         <video
       autoPlay
+      playsinline 
       loop
       muted
       style={{
@@ -45,7 +46,7 @@ const Home = () => {
       </video>
 
             <div className="headerText">
-            <h1>Leading digital freight network</h1>
+            <h1>Leading digital freight network !</h1>
             <p>Your business is evolving and so should your logistics. Go beyond freight forwarding service. Supercharged with visionary technology that takes your supply chain operations into the future.</p>
             <Button sx={{
               padding: "12px 24px",
