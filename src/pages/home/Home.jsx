@@ -17,6 +17,7 @@ import Box from '@mui/material/Box';
 import Form from '../../components/form/Form'
 
 import { useEffect } from "react";
+import eas03 from '../../images/eas-03.png'
 import eas04 from '../../images/eas-04.png'
 import eas05 from '../../images/eas-05.png'
 import eas01 from '../../images/express1.png'
