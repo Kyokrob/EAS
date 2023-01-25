@@ -13,16 +13,19 @@ const Footer = () => {
             <div className="footerTitle">
                 <span>Solutions</span>
                 <div className="footerSubtitle">
-                    <Link to='/'>
+                <Link to='/courier'>
+                        Express service
+                    </Link>
+                    <Link to='/import-export'>
                         Import/Export
                     </Link>
-                    <Link to='/'>
+                    <Link to='/seafreight'>
                         Sea freight
                     </Link>
-                    <Link to='/'>
+                    <Link to='/airfreight'>
                         Air freight
                     </Link>
-                    <Link to='/'>
+                    <Link to='/customclearance'>
                         Custom Clearance
                     </Link>
                 </div>
@@ -33,7 +36,7 @@ const Footer = () => {
                     <Link to="/about">
                         About us
                     </Link>
-                    <Link to='/'>
+                    <Link to='/contactform'>
                       Contact
                     </Link>
                     <Link to='/'>
@@ -41,7 +44,7 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <div className="footerTitle">
+            {/* <div className="footerTitle">
                 <span>Legal</span>
                 <div className="footerSubtitle">
                     <Link to='/'>
@@ -54,7 +57,7 @@ const Footer = () => {
                         Privacy policy
                     </Link>
                 </div>
-            </div>
+            </div> */}
             <div className="footerContact">
                 <span>Contact us</span>
                 <div className="footerContactSubtitle">
@@ -73,7 +76,7 @@ const Footer = () => {
             </div>
             </div>
         </div>
-        <p className='footerText'>Copyright &copy; 2022 EASTHAI</p>
+        <p className='footerText'>Copyright &copy; 2023 EASTHAI</p>
     </div>
   )
 }

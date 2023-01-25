@@ -1,18 +1,12 @@
 .aboutHeader {
     border: 1px solid black;
-    height: 550px;
+    height: 680px;
     max-width: 100%;
     display: flex;
     position: relative;
     background: #000000;
 }
 
-.aboutHeader img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-}
 
 .aboutHeaderText {
     width: 100%;
@@ -32,9 +26,10 @@
     color: #E6AF4B;
 }
 
+
 .aboutSection {
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
@@ -44,16 +39,18 @@
 }
 
 .aboutSection h1 {
-    width: 100%;
-    font-size: 42px;
+    max-width: 80%;
+    font-size: 52px;
     color: #042B3B;
 
 }
 
 .aboutSection p {
     margin-top: 2rem;
-    width: 100%;
+    max-width: 80%;
     font-size: 18px;
+    line-height: 2rem;
+
 }
 
 .aboutSection2 {
@@ -95,6 +92,9 @@
 .aboutRight p {
     width: 80%;
     padding: 20px 0;
+    font-size: 18px;
+    line-height: 2rem;
+
 }
 
 .aboutRight Button:hover {
@@ -116,15 +116,16 @@
 
 }
 
+
 .aboutSection3 h1 {
-    width: 80%;
+    width: 50%;
     font-size: 52px;
     font-weight: bold;
     padding: 16px 0;
 }
 
 .aboutSection3 p {
-    width: 60%;
+    width: 50%;
     font-size: 26px;
     font-weight: 400;
 }
@@ -138,6 +139,7 @@
 .aboutLeft4 {
     width: 50%;
     height: 100%;
+
 }
 
 .aboutLeft4 img {
@@ -147,6 +149,7 @@
     width: 100%;
     height: 550px;
     border-radius: 10px;
+
 }
 
 .aboutRight4 {
@@ -155,8 +158,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-left: 12px;
+
 }
 
 .aboutRight4 h1 {
@@ -167,6 +171,7 @@
 .aboutRight4 p {
     width: 80%;
     padding: 20px 0;
+    
 }
 
 .aboutRight4 Button:hover {
@@ -176,12 +181,29 @@
 
 
 @media only screen and (max-width: 480px) {
+
+    .aboutHeader {
+        height: 100vh;
+    }
+
+
     .aboutHeaderText {
         font-size: 24px;
     }
 
+    .aboutSection {
+        height: 100%;
+    }
+
+
     .aboutSection h1 {
-        font-size: 36px;
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .aboutSection p {
+        font-size: 16px;
+        width: 100%;
     }
 
     .aboutSection2 {
@@ -239,10 +261,12 @@
 
     .aboutSection3 h1{
         font-size: 24px;
+        width: 90%;
     }
 
     .aboutSection3 p {
         font-size: 18px;
+        width: 90%;
     }
 
 }

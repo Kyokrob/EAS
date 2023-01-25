@@ -3,6 +3,7 @@
     height: 350px;
     display: flex;
     position: relative;
+    background: #042B3B;
 }
 
 .contactContainer img {
@@ -22,7 +23,7 @@
 }
 
 .contactText h1 {
-    width: 60%;
+    width: 40%;
     margin-top: 12px;
     color: #E6AF4B;
     font-size: 36px !important;
@@ -30,18 +31,25 @@
 }
 
 
+.contactButton {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
 .contactBtn {
     margin-top: 2rem !important;
     color: #E6AF4B !important;
     border: 1px solid #E6AF4B !important;
     font-size: 18px !important;
-
 }
+
 
 
 @media only screen and (max-width: 480px) {
     .contactText h1 {
         font-size: 24px !important;
+        width: 80%;
     }
 
     .contactBtn {

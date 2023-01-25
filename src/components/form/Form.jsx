@@ -1,119 +1,119 @@
-import React, { useState } from 'react'
-import './form.css'
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button'
-import FormInput from '../formInput/FormInput';
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import "./form.css";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
+
 const Form = () => {
-/*     const [value, setValue] = React.useState('');
+  const form = useRef();
 
-    const handleChange = (event) => {
-      setValue(event.target.value);
-    }; */
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs
+      .sendForm(
+        "service_50n0r1n",
+        "template_wh2cn0t",
+        form.current,
+        "QbyAUOGwHjpj80LAc"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
+  const [open, setOpen] = React.useState(false);
 
-    // const [username, setUsername] = useState ('');
+  const handleClick = () => {
+    setOpen(true);
+  };
 
-    
-    console.log("rerendered !")
-
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      const data = new FormData(e.target)
-      console.log(data)
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
     }
 
+    setOpen(false);
+  };
+
   return (
-    <div className='form'>
-        <div className="formTitle">
-        <h1>Looking for shipping ?</h1>
-        <p>Fill in your contact information and your consult experties to contact you back !</p>
+    <div className="form">
+      <div className="formTitle">
+        <h1>ติดต่อเรา</h1>
+        <p>ต้องการนำเข้าส่งออกสินค้าเพียงกรอบข้อมูล</p>
+      </div>
+
+      <form ref={form} onSubmit={sendEmail}>
+        <div className="formFields">
+          <div className="formField">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="ชื่อนาม - สกุล (กรุณาระบุ)"
+              name="name"
+            />
+          </div>
+          <div className="formField">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="อีเมลล์ (กรุณาระบุ)"
+              name="email"
+            />
+          </div>
+          <div className="formField">
+            <input
+              type="number"
+              className="form-control"
+              placeholder="เบอร์โทร (กรุณาระบุ)"
+              name="number"
+            />
+          </div>
+          <div className="formField">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Line Id"
+              name="line"
+            />
+          </div>
+
+          <textarea
+            className="form-control"
+            id=""
+            cols="30"
+            rows="4"
+            placeholder="How Can We Help You. Please provide more detail from your package - Type, weight, country"
+            name="message"
+          ></textarea>
+
+          <div className="formInputBtn">
+            <button
+              type="submit"
+              value="send"
+              onClick={handleClick}
+            >
+              Submit
+            </button>
+            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+              <Alert
+                
+                severity="success"
+                sx={{ width: "100%" }}
+              >
+                The Email has been sent ! We will contact you back shortly.
+              </Alert>
+            </Snackbar>
+          </div>
         </div>
-
-        <form onSubmit={handleSubmit}>      
-        <FormInput placeholder="Username" name="name"/>
-        <FormInput placeholder="Line id" name="lineid" />
-        <FormInput placeholder="Email"name="email" />
-        
-        <div className="formInputBtn">
-        <button>Submit</button>
-        </div>
-        </form>
-
-    
-        
-    {/* <Box
-      component="form"
-      sx={{
-        '& .MuiTextField-root': { m: 1, width: '45%' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-        <TextField
-          id="outlined-multiline-flexible"
-          label="Name"
-          multiline
-          maxRows={2}
-          value={value}
-          onChange={handleChange}
-        />
-         <TextField
-          id="outlined-multiline-flexible"
-          label="Line id"
-          multiline
-          maxRows={2}
-          value={value}
-          onChange={handleChange}
-        />
-    </Box>
-    <Box
-      component="form"
-      sx={{
-        '& .MuiTextField-root': { m: 1, width: '95%' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-     <TextField
-          id="outlined-multiline-flexible"
-          label="Email"
-          multiline
-          maxRows={2}
-          value={value}
-          onChange={handleChange}
-        />
-         <TextField
-          id="outlined-multiline-flexible"
-          label="Contact number"
-          multiline
-          maxRows={2}
-          value={value}
-          onChange={handleChange}
-        />
-
-        <TextField
-          id="outlined-multiline-flexible"
-          label="Company name"
-          multiline
-          maxRows={2}
-          value={value}
-          onChange={handleChange}
-        />
-
-        <div className="submitform">
-        <div className="submitFormBtn">Submit</div>
-        <p className='text01'>OR</p>
-        <div className="submitFormBtn">Contact line@</div>
-        </div>
-
-    </Box> */}
-
-
-
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;

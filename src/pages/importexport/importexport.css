@@ -1,0 +1,132 @@
+.importexport {
+    border: 1px solid black;
+    height: 550px;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    background: #000000;
+}
+
+.importexport img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.importexportHeaderText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    color: #ffffff;
+    text-shadow: 2px 2px #00000073
+}
+
+
+.importTitle h1 {
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px solid black;
+}
+
+.importExportSection {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.importSea {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.importSeaHeader {
+    width: 100%;
+    height: 350px;
+}
+
+.importSeaHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.importExportBody {
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    padding: 12px 0;
+}
+
+.importExportBody h1 {
+    font-size: 32px;
+    color: #042B3B;
+    padding: 12px;
+    text-align: center;
+}
+
+.importExportBody p{
+    font-size: 18px;
+    padding: 12px 0;
+    text-align: left;
+
+}
+
+
+
+.importAir {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.importAirHeader {
+    width: 100%;
+    height: 350px;
+
+}
+
+.importAirHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.importAirBody {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 12px 0;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .importexportHeaderText {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .importExportSection {
+        flex-direction: column;
+    }
+
+    .importSea {
+        width: 100%;
+    }
+
+    .importAir {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+}

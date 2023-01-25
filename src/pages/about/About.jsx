@@ -9,6 +9,8 @@ import Contact from '../../components/contact/Contact'
 import Service from '../../components/service/Service'
 
 import video1 from '../../images/eas-video1.mp4'
+import about3 from '../../images/about_3.png'
+import about2 from '../../images/about_2.png'
 
 
 
@@ -22,10 +24,9 @@ const About = () => {
   return (
     <>
     <div className="aboutHeader">
-      {/* <img src="https://images.unsplash.com/photo-1617952740732-26b1904d6853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" /> */}
-
       <video
       autoPlay
+      playsInline
       loop
       muted
       style={{
@@ -48,21 +49,21 @@ const About = () => {
             THAI</a></h1>
             <p>EXPERIENCE IS OUR EXPERTIES</p>
       </div>
+
     </div>
 
     <Container className="aboutSection">
-      <h1>For Over 20 Years Of Shipping Experience</h1>
-      <p>East Asia Shipping ( Thailand) Ltd was established in 1996 as a supply-chain management company whose activity encompasses international Freight Forwarding, Since our inauguration, East Asia Shipping embarked on an endeavors, providing value-added service for our regional base clientele in high yielding and net worth industries, which marked a new milestone for our company.</p>
+      <h1>Trusted Name in Freight Forwarding for over 25 Years</h1>
+      <p>EASTHAI is a Thailand-based freight forwarding company that has been serving the industry for over 25 years. Throughout our history, we have established a strong reputation for reliability and excellence in the logistics industry. Our team of experienced professionals is dedicated to providing high-quality, cost-effective solutions for our clients, and is known for our excellent customer service and reliable delivery. In addition to transportation services, we also offer customs clearance assistance to ensure a smooth and seamless import and export process.</p>
     </Container>
 
     <Container className="aboutSection2">
           <div className="aboutLeft">
-            <img src="https://images.unsplash.com/photo-1592063648619-7e520034f357?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="" />
+            <img src={about3} alt="" />
           </div>
           <div className="aboutRight">
-            <h1>More about EASTHAI</h1>
-            <p>We provide... Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque beatae magnam error consectetur molestias voluptatibus veniam unde nemo eveniet ipsam!</p>
-            
+
+          <p>As a trusted partner to businesses around the world, EASTHAI is committed to continuously improving our services and finding new ways to meet the needs of our clients. With our extensive experience and expertise in the industry, you can trust EASTHAI to handle all of your freight forwarding needs. Whether you are shipping by air or sea, we have the resources and knowledge to ensure that your goods reach their destination safely and on time. Let EASTHAI handle the logistics, so you can focus on growing your business.</p>
           </div>
       </Container>
 
@@ -70,22 +71,22 @@ const About = () => {
 
     <Container className="aboutSection4">
     <div className="aboutLeft4">
-            <img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+            <img src={about2} alt="" />
           </div>
           <div className="aboutRight4">
-            <h1>Ever get charge for over TAX when import ?</h1>
-            <p>We provide.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque beatae magnam error consectetur molestias voluptatibus veniam unde nemo eveniet ipsam!</p>
-           
+          <h1>Makes the process of importing and exporting seamless and straightforward.</h1>
+            <p>EASTHAI is a leading provider of air and sea freight services in Thailand. With a global network of partners and access to major airports and ports around the world, we are able to offer fast and efficient shipping options for our clients. Our team of experienced professionals is skilled in handling the unique challenges of both air and sea cargo, including strict weight and size restrictions, customs regulations and time-sensitive delivery needs. We are dedicated to providing the highest level of customer service and are committed to finding the best solution for your freight needs, whether by air or by sea. Whether you are shipping small packages or large cargo, EASTHAI has the expertise and resources to get your goods to their destination safely and on time.</p>
           </div>
+
+
     </Container>
 
     
     
-
-    <div className="aboutSection3">
+    {/* <div className="aboutSection3">
       <h1>What is our experties, how can we help you.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tempore modi distinctio dicta repudiandae magnam quae vitae, laboriosam repella.</p>
-    </div>
+    </div> */}
 
     <Service/>
     <Contact/>

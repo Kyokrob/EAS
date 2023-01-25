@@ -1,18 +1,33 @@
 import React from 'react'
 import './home.css'
 import Service from '../../components/service/Service'
+import { Link } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
 
 import Button from '@mui/material/Button'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import RecommendIcon from '@mui/icons-material/Recommend';
+import GppGoodIcon from '@mui/icons-material/GppGood';
+
+
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box';
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-import FlightLandIcon from '@mui/icons-material/FlightLand';
-import GppGoodIcon from '@mui/icons-material/GppGood';
-import Contact from '../../components/contact/Contact'
 import Form from '../../components/form/Form'
 
 import { useEffect } from "react";
-import video from '../../images/eas-video.mp4'
+import easblog1 from '../../images/easblog1.png'
+import easblog2 from '../../images/easblog2.png'
+import easblog3 from '../../images/easblog3.png'
+import eas03 from '../../images/eas-03.png'
+import eas04 from '../../images/eas-04.png'
+import eas05 from '../../images/eas-05.png'
+import eas01 from '../../images/express1.png'
+
+import video11 from '../../images/eas-video11.mp4'
 
 
 
@@ -21,155 +36,359 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    AOS.init({duration:2000});
+  },[]);
+
+
   
   return (
+    
     <>        
-        {/* Header */}
         <div className="header">
-        <video
-      autoPlay
-      playsinline 
-      loop
-      muted
-      style={{
-        position: "absolute",
-        width: "100%",
-        left: "50%",
-        top: "50%",
-        height: "100%",
-        objectFit: "cover",
-        transform: "translate(-50%, -50%)",
-        zIndex: "1"
-      }}
-      >
-        <source src={video} type="video/mp4"/>
-      </video>
-
+          <img src="https://cdn.pixabay.com/photo/2021/03/28/16/22/port-6131793_1280.jpg" alt="" />
             <div className="headerText">
-            <h1>Leading digital freight network !</h1>
-            <p>Your business is evolving and so should your logistics. Go beyond freight forwarding service. Supercharged with visionary technology that takes your supply chain operations into the future.</p>
-            <Button sx={{
+            <h1>EASTHAI</h1>
+              <h3>EST. 1996</h3>
+            <p>One stop service for import and exporters</p>
+            <div className="headerBtn">
+            <Button
+            to='/about' component={Link}
+            sx={{
               padding: "12px 24px",
               background: "#e6af4b",
               borderRadius: "10px",
               color: "white",
               marginTop: "2rem",
-            }}>Read more</Button>
+            }}
+            >Discover EAS</Button>
+            <Button 
+            to='/contactform' 
+            component={Link}
+            sx={{
+              padding: "12px 24px",
+              background: "transparent",
+              border: "1px solid #e6af4b",
+              borderRadius: "10px",
+              color: "#e6af4b",
+              marginTop: "2rem",
+            }}
+            >Get Quotation</Button>
             </div>
+
+
+            <a id="scroll-btn" href='#section-2'></a>
+            </div>
+
+            
+
         </div>
 
-         {/* Section3 */}
-         <div className="section3">
-          {/* <h1>Our experties </h1> */}
+        <div className="contactSection" id="section-2">
+          <h1>บริการแก้ใขปัญหา สินค้า ภาษีนำเข้า ทุกประเภท ติดปัญหาใบอนุญาต อย. มอก. กสทช. สมอ.</h1>
+          <Button
+            href="tel:0867780808"
+           >
+              ติดต่อเรา
+            </Button>
+        </div>
+        
 
-          <Box className='boxCardHome' sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-evenly',
-            marginTop: 2
-          }}>
-          <div className='cardHome'>
-            <div className="cardIcon">
-            <AccessAlarmIcon className='cardIconIcon'/>
-            </div>
-            <div className='cardContent'>
-              <h3>
-              บริการให้คำปรึกษาทุกขั้นตอน
-              </h3>
-              <p>ไม่ว่าจะเป็นในส่วนของการนำเข้าสินค้า ติดต่อโรงงาน โอนเงิน ต่างๆ เรามีเจ้าหน้าที่ที่เชี่ยวชาญคอยให้บริการด้านข้อมูลการนำเข้าสินค้ากับท่าน</p>
-            </div>
+
+
+        <div className="about1">
+        <div className="about1Text">
+            <h1>ตัวแทนของผู้ส่งออกและผู้นำเข้าในการจัดส่งสินค้าระหว่างประเทศ</h1>
           </div>
 
-          <div className='cardHome'>
-            <div className="cardIcon">
-            <FlightLandIcon className='cardIconIcon'/>
-            </div>
-            <div className='cardContent'>
-              <h3>
-              มีเจ้าหน้าที่ดูแล SUPPORT ให้ท่านตลอดเวลา
-              </h3>
-              <p>
-              ท่านสามารถติดต่อเราได้ทุกช่องทาง เช่น line@ website หรือ social media
-              </p>
-            </div>
-          </div>
+          <div className="about1Cards">
 
-          <div className='cardHome'>
-            <div className="cardIcon"><GppGoodIcon className='cardIconIcon'/>
+            <div className="about1Card" data-aos='slide-up'>
+              <img src={eas04} alt="" />
+              <div className="about1CardText">
+                <h1>บริการงาน Freight Forwarder</h1>
+                <p>การนำเข้าส่งออกนั้นมีขั้นตอนและงานเอกสารมากมาย หากคุณมีทีมงานมืออาชีพช่วยประสารงาน คุณจะสามารถลดได้ทั้งต้นทุนและเวลาได้อย่างมากมาย
+                </p>
+                <Button 
+            sx={{
+              padding: "4px",
+              background: "transparent",
+              border: "1px solid #ffffff",
+              borderRadius: "10px",
+              color: "white"
+            }} className="contactSectionBtn"
+            to='/import-export'
+            component={Link}
+            >
+              <ArrowForwardIosIcon/>
+            </Button>
+                
+              </div>
             </div>
-            <div className='cardContent'>
-              <h3>
-              รวดเร็ว ปลอดภัย โปร่งใส ผ่านตำปรึกษาผ่านผู่เชียวชาญ
-              </h3>
-              <p>
-              ด้วยประสบการณ์นำเข้าสินค้ามายาวนาน เราคือผู้เชี่ยวชาญในการนำเข้าสินค้าจากทั่วโลก พร้อมบริการที่หลากหลายช่วยอำนวยความสะดวกในการนำเข้าสินค้าจากทุกที่ให้คุณในทุกขั้นตอน
-              </p>
-            </div>
-          </div>
-          </Box>
-          </div>
-
-           {/* Service component */}
-        <Service/>
 
 
-           {/* Section 2 */}
-        <Container className="section1">
+            <div className="about1Card" data-aos='slide-up'>
+            <img src={eas03} alt="" />
+              <div className="about1CardText">
+                <h1>บริการงาน Shipping</h1>
+                <p>Custom clearance 
+                คือการเตรียมงานเอกสาร เพื่อสำแดงภาษีให้กับกรมศุลกากร เราเป็นตัวแทนในการเดินพิธีการศุลกากรและเคลียร์สินค้าทั้งขาออกและขาเข้าประเทศไทย
+                </p>
+                <Button 
+            sx={{
+              padding: "4px",
+              background: "transparent",
+              border: "1px solid #ffffff",
+              borderRadius: "10px",
+              color: "white"
+            }} className="contactSectionBtn"
+            to='/customclearance'
+            component={Link}
+            >
+              <ArrowForwardIosIcon/>
+            </Button>
+                
+              </div>
+                           
+            </div>
+
+
+            <div className="about1Card" data-aos='slide-up'> 
+            <img src={eas05} alt="" />
+              <div className="about1CardText">
+                <h1>
+                บริการ Express service
+                 </h1>
+                <p>นำเข้าสินค้าจากต่างประเทศ ติดขัดปัญหาการนำเข้า เอกสารผิด ภาษี ปรษณีย์, ท่าเรือ, DHL, FEDEX, UPS, TNT เรายินดีให้บริการ
+                </p>
+                <Button 
+            sx={{
+              padding: "4px",
+              background: "transparent",
+              border: "1px solid #ffffff",
+              borderRadius: "10px",
+              color: "white"
+            }} className="contactSectionBtn"
+            to='/courier'
+            component={Link}
+            >
+              <ArrowForwardIosIcon/>
+            </Button>
+                
+              </div>             
+            </div>
+
+        </div>
+
+        <div className="section1">
           <div className="left">
-            <img src="https://images.unsplash.com/photo-1592063648619-7e520034f357?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="" />
+            <video
+      autoPlay
+      playsInline
+      loop
+      muted
+      style={{
+        position: "relative",
+        width: "768px",
+        height: "450px",
+        objectFit: "cover",
+        zIndex: "1"
+      }}
+      >
+        <source src={video11} type="video/mp4"/>
+      </video>
           </div>
-          <div className="right">
-            <h1>Import your shipment today !!</h1>
-            <p>บริการการขนส่งทั้งในประเทศ และระหว่างประเทศ ทั้งทางทะเล และทางอากาศ บริการพิธีการศุลกากร ขาเข้า และขาออก (Shipping Clearance) และบริการอื่นๆในด้านLogistics</p>
+          <div className="rightAboutHome">
+            <h3 data-aos='slide-up'>Setting the Reliable and Efficient Standard for Freight Forwarding Excellence</h3>
+
             <Button 
             sx={{
-              padding: "10px",
-              background: "#e6af4b",
-              borderRadius: "10px",
-              color: "white"
-            }}>
-              Read more
+              color: "white",
+              textAlign: "center",
+              boxShadow: 10,
+              background: "#e6af4b"
+            }} to='/about'
+            component={Link}
+            data-aos='slide-up'
+            >
+              About us
             </Button>
           </div>
-        </Container>
+        </div>
 
-        <Container className="section2">
-          <div className="left">
-            <img src="https://images.unsplash.com/photo-1600633532411-13ed06f7bcc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="" />
+        <div className="section11">
+          <div className="left11">
+            <img src={eas01} alt="" />
           </div>
-          <div className="right">
-            <h1>นำเข้า-ส่งออกอย่างไร *ให้ถูกกฎหมาย ไร้กังวล </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores laborum iure repellendus aperiam nostrum aliquam quibusdam a nemo est explicabo earum consectetur cumque alias, minus animi, recusandae, magni impedit exercitationem velit iste? Impedit aliquid, odio sint nesciunt nemo incidunt quos?</p>
+          <div className="rightAboutHome">
+            <h3 data-aos='slide-up'>
+            สั่งของต่างประเทศติดขัดปัญหาการนำเข้าสินค้า เราช่วยคุณได้ไม่มีขั้นต่ำ
+            </h3>
+            <Button 
+            sx={{
+              color: "white",
+              textAlign: "center",
+              boxShadow: 10,
+              background: "#e6af4b",
+            }} to='/courier'
+            component={Link}
+            data-aos='slide-up'
+            >
+              Express Service
+            </Button>
+          </div>
+        </div>
+
+
+           {/* Section3 */}
+                <div className="section3">
+        <Box className='boxCardHome' sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-evenly',
+          height: "100%"
+        }}>
+        <div className='cardHome' data-aos='slide-up'>
+          <div className="cardTop">
+          <h1>25+</h1>
+          </div>
+          <div className='cardContent'>
+            <h3>
+            Years experience
+            </h3>
+            <p>ขนส่งชัดเจนมีมาตราฐาน ให้คำแนะนำผ่านทีมงานมืออาชีพ</p>
+          </div>
+        </div>
+
+        <div className='cardHome' data-aos='slide-up'>
+          <div className="cardTop">
+          <div className="cardTopIcon">
+          <RecommendIcon fontSize="48px"/>
+          </div>
+          </div>
+          <div className='cardContent'>
+            <h3>
+            Efficiency
+            </h3>
+            <p>
+            จัดส่งสินค้าอย่างมีประสิทภาพรวดเร็วและปลอยภัย
+            </p>
+          </div>
+        </div>
+
+        <div className='cardHome' data-aos='slide-up'>
+          <div className="cardTop">
+            <GppGoodIcon fontSize="48px"/>
+          </div>
+          <div className='cardContent'>
+            <h3>
+            Reliable
+            </h3>
+            <p>
+            มีความชำนาญเป็นพิเศษในกลุ่มสินค้า Beauty, Food, Electronic, Medicine
+            </p>
+          </div>
+        </div>
+        </Box>
+        </div>
+
+     
+
+</div>
+
+
+
+      
+
+
+        {/* <Container className="section2" display='flex'>
+          <div className="section2Header">
+          <h1>Talk about import/export in Thailand, What is trendy in 2023 !</h1>
+          </div>
+          <div className="section2BoxContainer">
+
+
+          <div className="section2Box">
+          <div className="top2">
+            <img src={easblog3} alt="" />
+          </div>
+          <div className="btm2">
+          <h1>Articles</h1>
+            <h3>อากรขาเข้า ภาษีสรรพสามิต ภาษีเพื่อมหาดไทย ภาษีมูลค่าเพิ่ม สิ่งที่ควรรู้ก่อนนำเข้าสินค้าจากต่างประเทศ
+          </h3>
             <Button sx={{
-              padding: "10px",
-              background: "#e6af4b",
-              borderRadius: "10px",
-              color: "white"
-            }}>
-              Read more
+              color: "black"
+            }}
+            to='/customclearance'
+            component={Link}>
+              อ่านเพิ่มเติม
             </Button>
           </div>
-        </Container>
+          </div>
+
+          <div className="section2Box">
+          <div className="top2">
+            <img src={easblog1} />
+          </div>
+          <div className="btm2">
+            <h1>Tips</h1>
+            <h3> Fright Forwarder กับ Shipping ต่างกันอย่างไรทำความรู้จักก่อนเริ่มต้นนำเข้าส่งออกกับกับธุรกิจของคุณ</h3>
+            <Button 
+            sx={{
+              color: "black"
+            }}
+            to='/courier'
+            component={Link}
+            >
+              อ่านเพิ่มเติม
+            </Button>
+          </div>
+          </div>
+
+          
+
+          <div className="section2Box">
+          <div className="top2">
+            <img src={easblog2} alt="" />
+          </div>
+          <div className="btm2">
+            <h1>Tips</h1>
+            <h3> Fright Forwarder กับ Shipping ต่างกันอย่างไรทำความรู้จักก่อนเริ่มต้นนำเข้าส่งออกกับกับธุรกิจของคุณ</h3>
+            <Button 
+            sx={{
+              color: "black"
+            }}
+            to='/courier'
+            component={Link}
+            >
+              อ่านเพิ่มเติม
+            </Button>
+          </div>
+          </div>
 
 
-        <Container className="homeForm">
-            <div className="homeFormLeft">
-              <h1>You're One Step Closer to Becoming the Supplier That Always Delivers</h1>
-              <p>There's a lot at stake for you when it comes to picking a transportation provider you trust to move your freight. If you make the wrong choice, it can be truly detrimental to your business and your reputation.</p>
-              <p>
-              Not ready for a quote yet, but still have questions? <a href="" className='homeFormContact'>Contact us now.</a>
-              </p>
-            </div>
+
+          </div>   
+
+        </Container> */}
+                   {/* Service component */}
+         <Service/>
+
+        
+
+
+
+        <div className="homeForm">
             <div className="homeFormRight">
           <Form/>
             </div>
 
 
-        </Container>
+        </div>
 
 
 
-          <Contact/>
+        
 
     </>
   )

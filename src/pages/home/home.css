@@ -1,17 +1,23 @@
 /* Header start */
 
 .header {
-    border: 1px solid black;
-    height: 550px;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     position: relative;
     background: #000000;
 }
 
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .headerText {
     display: flex;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -22,10 +28,15 @@
     z-index: 2;
 }
 
+.headerText h3 {
+    color: #ffffff;
+    font-size: 18px;
+}
+
 .headerText h1 {
     color: #E6AF4B;
     font-size: 52px;
-    width: 70%;
+    width: 50%;
     padding: 12px 0;
 }
 
@@ -36,18 +47,326 @@
     padding: 12px;
 }
 
+a#scroll-btn {
+    position: absolute;
+    height: 7em;
+    width: 4.25em;
+    border: 0.5em solid #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 14.25em;
+    border-radius: 3em;
+    font-size: 0.2em;
+}
+
+a#scroll-btn:before {
+    position: absolute;
+    content: '';
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(5.3em);
+        opacity: 0;
+    }
+}
+
+a#scroll-btn:after {
+    position: absolute;
+    content: "scroll down";
+    width: 10em;
+    display: block;
+    text-align: center;
+    left: -4.4em;
+    bottom: -2.5em;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 10px;
+}
 
 
-/* Seation 2 Start */
+.headerBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+.contactSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    gap: 1rem;
+}
+
+.contactSection h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contactSection a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E6AF4B;
+}
+
+
+
+
+
+
+.about1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #042B3B;
+    padding: 24px;
+}
+
+
+.about1Text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 12px 0;
+}
+
+.about1Text h1 {
+    font-size: 36px;
+    color: #E6AF4B;
+    font-weight: 200;
+
+}
+
+.about1Text p {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+
+}
+
+
+
+.about1Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 12px 0;
+
+}
+
+.about1Card {  
+    position: relative;  
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    background: #3c3c3c;
+    z-index: 2;
+}
+
+.about1Card:hover {
+    background: #000000;
+    transition: .3s ease-in;   
+}
+
+.about1Card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+
+}
+  
+  .about1CardText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 12px;
+    z-index: 3;
+  }
+  
+  .about1CardText {
+      width: 100%;
+  }
+
+  .about1CardText h1 {
+    font-size: 24px;
+    color: #E6AF4B;
+    font-weight: 400;
+    width: 70%;
+    text-decoration: solid;
+    text-shadow: 2px 2px 2px #5e5e5e;
+  }
+  
+  
+  .about1CardText p {
+      color: #ffffff;
+      font-size: 16px;
+      padding: 12px;
+      font-weight: 400;
+      width: 60%;
+
+  }
+
+
+
+
+  .contactSectionBtn:hover {
+    background: #E6AF4B !important;
+    border: none;
+  }
+
+
+
+/* Section 3 start */
+.section3 {
+    height: 450px;
+    width: 100%;
+    z-index: 1;
+}
+
+.section3Title {
+    text-align: center;
+    font-size: 72px;
+    color: #E6AF4B;
+    font-weight: 200;
+}
+
+.section3 h1 {
+    text-align: center;
+    font-weight: 400;
+    color: #E6AF4B;
+}
+
+.cardHome {
+    max-width: 300px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #E6AF4B;
+    font-size: 72px;
+    
+}
+
+.cardTop h1 {
+    font-size: 72px;
+}
+
+.cardContent {  
+    width: 100%;
+    height: 80%;
+}
+
+.cardContent h3 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.cardContent p {
+    font-size: 18px;
+    padding: 12px;
+    color: #ffffff;
+}
+
+
+
 
 .section1 {
-    margin: 2rem;
-    display: flex !important;
+    margin: 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    height: 550px;
+    height: 450px;
+    width: 100%;
 }
+
+.section11 {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 450px;
+    width: 100%;
+}
+
+.left11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.left11 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 4px solid #E6AF4B;
+}
+
+.left11 video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px 0 0 250px;
+    border-bottom: 4px solid #E6AF4B;
+}
+
 .left {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100%;
 }
 
@@ -56,96 +375,132 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 550px;
+    height: 100%;
     border-radius: 10px;
 }
 
+.left video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 250px 250px 0;
+    border-bottom: 4px solid #E6AF4B;
+}
+
+
 .right {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 18px;
 }
 
 .right h1 {
     width: 80%;
-    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    color: #095573;
+    text-transform: uppercase;
+}
+
+.right h3 {
+    width: 80%;
+    font-size: 24px;
+    padding: 12px 0;
     color: #042B3B;
 }
 
 .right p {
     width: 80%;
-    padding: 20px 0;
+    padding: 12px 0;
 }
 
-.right Button:hover {
+/* .right Button:hover {
     background: #a17014;
+} */
+
+.rightAboutHome {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+}
+.rightAboutHome h3{
+    font-size: 42px;
+    padding: 12px 0;
+    line-height: 1.4;
+    color: #ffffff;
+    width: 100%;
+    letter-spacing: -.03125rem;
+
 }
 
 
 .section2 {
-    margin: 2rem;
-    display: flex !important;
-    flex-direction: row-reverse;
-    height: 550px;
-
-}
-
-
-/* Section 3 start */
-.section3 {
-    height: 100%;
+    flex-direction: row;
+    height: 100vh;
     width: 100%;
-    margin-bottom: 2rem;
+    margin: 4rem 0 0 0;
 }
 
-.section3 h1 {
-    text-align: center;
-    font-weight: 400;
+.section2Header h1{
+    font-size: 68px;
     color: #042B3B;
+    font-weight: bold;
+    padding: 24px 0;
 }
 
-.cardHome {
-    max-width: 300px;
-    height: 300px;
+.section2BoxContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem
+}
+
+.section2Box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+    max-width: 450px;
+    height: 550px;
 }
 
-.cardIcon {
+.top2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 50%;
+}
+
+.top2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 40%;
-    color: #E6AF4B;
+    height: 100%;
+    object-fit: cover;
 }
 
-.cardIconIcon {
-    width: 80% !important;
-    height: 80% !important;
-    margin-top: 12px;
-}
-
-.cardContent {
+.btm2 {
     width: 100%;
-    height: 60%;
+    height: 50%;
+    padding: 12px 4px;}
+
+.btm2 h1 {
+    font-size: 24px;
+    color: #095573;
 }
 
-.cardContent h3 {
-    padding: 8px;
-    font-size: 16px;
+.btm2 h3 {
+    font-size: 18px;
+    padding: 12px 0;
 }
 
-.cardContent p {
-    font-size: 12px;
-}
+
 
 
 
@@ -155,54 +510,109 @@
 .homeForm {
     display: flex !important;
     flex-direction: row !important;
-    height: 80vh;
-    width: 100%;
-}
-
-.homeFormLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 50%;
+    position: relative;
     height: 100%;
+    width: 100%;
+    background-image: url(../../images/eas-bg.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-color: #042B3B;
+    
 }
 
-.homeFormLeft h1 {
-    color: #042B3B;
-    width: 60%;
-    padding: 12px;
-    font-size: 32px;
-}
-
-.homeFormLeft p {
-    width: 60%;
-    line-height: 32px;
-}
-
-.homeFormContact {
-    color: #E6AF4B;
-    text-decoration: underline;
-    font-weight: bold;
-}
 
 .homeFormRight {
     display: flex;
-    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: 100%;
     margin-left: 2rem;
+    padding: 2rem;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .homeForm {
+      background-attachment: scroll;
+      background-image: none;
+    }
+  }
 
 
+@media only screen and (max-width: 1024px){ 
+    .section1 {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .section11 {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left video {
+        height: 100% !important;
+        border-radius: 10px;
+    }
+    .left11 video {
+        height: 100% !important;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){ 
+
+    .left video {
+        width: 100% !important;
+    }
+    .left11 video {
+        width: 100% !important;
+    }
+    
+    .section2Header h1 {
+        font-size: 36px;
+    }
+}
 
 
 
 @media only screen and (max-width: 480px) {
+
+    a#scroll-btn {
+        height: 3em;
+        width: 1em;
+        font-size: 0.1em;
+        bottom: 12.25em;
+        border: 0.2em solid #ffffff;
+
+    }
+
+    a#scroll-btn:before {   
+        height: 1em;
+        width: 1em;
+    }
+
+    @keyframes move-down {
+        100% {
+            transform:  translateY(2em);
+        }
+    }
+
+
     .section1 {
+        margin: 8rem 0 0 0;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .section11 {
+        margin: 8rem 0 0 0;
         flex-direction: column;
         height: 100%;
     }
@@ -224,34 +634,100 @@
 
     }
 
-    .left img {
-        height: 100%;
+
+    .left video {
+        height: 100% !important;
+        border-radius: 0;
     }
 
-    .right {
+
+    .rightAboutHome {
         width: 100%;
-        margin-left: 0;
-        text-align: left;
-        align-items: flex-end;
+        padding: 20px 0;
+        text-align: center;
     }
 
-    .right h1 {
-        font-size: 24px;
-        width: 100%;
-    }
-
-    .right p {
-        font-size: 18px;
-        width: 100%;
-    }
-
-    .right img {
-        height: 100%;
+    .rightAboutHome h3 {
+        font-size: 28px;
+        text-align: center;
+        line-height: 2;
     }
 
     .section2 {
-        flex-direction: column;
+        flex-direction: row;
         height: 100%;
+        margin: 4rem 0;
+    }
+
+    .section2Header h1 {
+        font-size: 32px;
+    }
+
+    .section2BoxContainer {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .section2Box {
+        flex-direction: row;
+
+        width: 100%;
+        height: 200px;
+    }
+
+    .top2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btm2 {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .btm2 h1 {
+        display: none;
+    }
+
+    .btm2 h3 {
+        font-size: 16px;
+    }
+
+
+
+    .about1Cards {
+        flex-direction: column;
+    }
+
+    .about1Card {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about1CardText {
+        margin: 0;
+    }
+
+    .about1CardText h1 {
+        width: 100%;
+    }
+
+    .about1CardText p {
+        width: 90%;
+    }
+
+    .about1Text h1 {
+        font-size: 30px;
+    }
+
+
+    .about1Text p {
+        font-size: 18px;
+    }
+
+
+    .about1 {
+        border-radius: 0px;
     }
 
     .boxCardHome {
@@ -262,33 +738,20 @@
 
     }
 
+
     .cardHome {
-        flex-direction: row;
         width: 100%;
         max-width: 100%;
         height: 250px;
-
+        border-bottom: 1px solid #000;
     }
+
 
     .homeForm {
         flex-direction: column-reverse !important;
         height: 100%;
     }
 
-    .homeFormLeft {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .homeFormLeft h1 {
-        font-size: 24px;
-        width: 100%;
-    }
-
-    .homeFormLeft p {
-        font-size: 18px;
-        width: 100%;
-    }
 
     .homeFormRight {
         width: 100%;
@@ -296,7 +759,33 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
         justify-content: center;
+        padding: 0;
+    }
+
+
+    .contactSection {
+        height: 100%;
+        padding: 10px 0px;
+    }
+
+    .contactSection h1 {
+        font-size: 8px;
+    }
+
+    .contactSection a {
+        font-size: 8px;
+    }
+
+    .contactSectionBtn {
+        font-size: 8px !important;
+    }
+
+    .homeBtn {
+        padding: 8px;
+    }
+
+    .section3 {
+        height: 100%;
     }
 }
-
 
