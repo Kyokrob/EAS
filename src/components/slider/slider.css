@@ -41,14 +41,13 @@
     perspective: 100px;
 }
 
-img {
+.slide img {
     width: 100%;
     transition: transform .5s;
 }
 
-img:hover {
+.slide img:hover {
     transform: translateZ(10px);
-
 }
 
 
