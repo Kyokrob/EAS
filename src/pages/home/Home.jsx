@@ -9,20 +9,14 @@ import 'aos/dist/aos.css'
 
 import Button from '@mui/material/Button'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import RecommendIcon from '@mui/icons-material/Recommend';
 import GppGoodIcon from '@mui/icons-material/GppGood';
 
 
-import Container from '@mui/material/Container'
 import Box from '@mui/material/Box';
 import Form from '../../components/form/Form'
 
 import { useEffect } from "react";
-import easblog1 from '../../images/easblog1.png'
-import easblog2 from '../../images/easblog2.png'
-import easblog3 from '../../images/easblog3.png'
-import eas03 from '../../images/eas-03.png'
 import eas04 from '../../images/eas-04.png'
 import eas05 from '../../images/eas-05.png'
 import eas01 from '../../images/express1.png'
