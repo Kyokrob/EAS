@@ -45,8 +45,8 @@ const About = () => {
 
 
       <div className="aboutHeaderText">
-            <h1>EAS<a className='aboutHeaderTextHighlight'>
-            THAI</a></h1>
+            <h1>EAS<span className='aboutHeaderTextHighlight'>
+            THAI</span></h1>
             <p>EXPERIENCE IS OUR EXPERTIES</p>
       </div>
 

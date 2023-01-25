@@ -40,7 +40,7 @@ const ContactForm = () => {
 
             <div className="contactForm2Btm">
                 <div className="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.817447021707!2d100.5288556151327!3d13.729499601508133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2bbc161f97%3A0xe5e951bf33dc1521!2sEast%20Asia%20Shipping%20(Thailand)%20LTD.!5e0!3m2!1sen!2sth!4v1666009792377!5m2!1sen!2sth" width="550" height="550" style={{ border : 0 }}allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title='Unique title' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.817447021707!2d100.5288556151327!3d13.729499601508133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2bbc161f97%3A0xe5e951bf33dc1521!2sEast%20Asia%20Shipping%20(Thailand)%20LTD.!5e0!3m2!1sen!2sth!4v1666009792377!5m2!1sen!2sth" width="550" height="550" style={{ border : 0 }}allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

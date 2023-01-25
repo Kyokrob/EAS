@@ -72,7 +72,7 @@ const Home = () => {
             </div>
 
 
-            <a id="scroll-btn" href='#section-2'></a>
+            <a aria-label="scrolldown" id="scroll-btn" href='#section-2'>.</a>
             </div>
 
             
