@@ -350,8 +350,6 @@ a#scroll-btn:after {
     align-items: center;
     object-fit: cover;
     width: 100%;
-    border-radius: 10px;
-    border-bottom: 4px solid #E6AF4B;
 }
 
 .left11 video {
@@ -430,7 +428,7 @@ a#scroll-btn:after {
 
 }
 .rightAboutHome h3{
-    font-size: 42px;
+    font-size: 54px;
     padding: 12px 0;
     line-height: 1.4;
     color: #ffffff;

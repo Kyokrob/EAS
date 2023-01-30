@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./form.css";
 import Snackbar from "@mui/material/Snackbar";
@@ -6,9 +6,21 @@ import Alert from "@mui/material/Alert";
 
 const Form = () => {
   const form = useRef();
+  const [alert, setAlert] = useState({severity:'',message:''});
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+
+    if(!form.current.name.value || !form.current.email.value)
+    {
+      setAlert({severity:'error', message:'Please enter the following information: Full Name, Email'});
+        setOpen(true);
+        return;
+    }
+
+    setAlert({severity:'success', message:'The Email has been sent ! We will contact you back shortly.'});
+    setOpen(true);
 
     emailjs
       .sendForm(
@@ -56,6 +68,7 @@ const Form = () => {
               className="form-control"
               placeholder="ชื่อนาม - สกุล (กรุณาระบุ)"
               name="name"
+              required
             />
           </div>
           <div className="formField">
@@ -64,6 +77,7 @@ const Form = () => {
               className="form-control"
               placeholder="อีเมลล์ (กรุณาระบุ)"
               name="email"
+              required
             />
           </div>
           <div className="formField">
@@ -100,14 +114,18 @@ const Form = () => {
             >
               Submit
             </button>
+
+
+
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-              <Alert
-                
-                severity="success"
+
+             <Alert      
+                severity={alert.severity}
                 sx={{ width: "100%" }}
               >
-                The Email has been sent ! We will contact you back shortly.
+                {alert.message}
               </Alert>
+
             </Snackbar>
           </div>
         </div>

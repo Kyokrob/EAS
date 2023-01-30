@@ -4,7 +4,6 @@ import Contact from '../../components/contact/Contact'
 import Form from '../../components/form/Form'
 import Container from '@mui/material/Container'
 
-
 const ContactForm = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -122,6 +122,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .courier2Left {
@@ -140,6 +141,14 @@
     color: #356785;
     padding: 12px 0;
     font-size: 52px;
+}
+
+.courier2Left h3 {
+    width: 80%;
+    font-weight: 300;
+    padding: 12px 0;
+    font-size: 24px;
+
 }
 
 .courier2Left p {
@@ -172,6 +181,7 @@
     text-align: center;
     font-size: 24px;
     color: #356785;
+    margin-top: 2rem;
 }
 
 

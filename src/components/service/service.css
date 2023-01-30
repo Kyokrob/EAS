@@ -1,11 +1,17 @@
+.serviceContainer {
+    height: 100%;
+    padding: 0 16px;
+}
+
+.serviceTitle {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #E6AF4B;
+}
+
 .service {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 2rem;
-    margin: 1rem 0; */
     max-height: 450px;
         width: 100%;
         display: flex;
@@ -21,6 +27,14 @@
         white-space: wrap;
         scrollbar-width: none;
 }
+
+.ourservice {
+    position: relative;
+    min-width: 250px;
+    width: 100%;
+    height: 250px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -35,35 +49,8 @@
   }
 
 
-.serviceContainer {
-    height: 100%;
-    padding: 0 16px;
-}
-
-.serviceTitle {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    color: #E6AF4B;
-}
-.serviceTitleText {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    color: #000000;
-}
-
-
-.ourservice {
-    position: relative;
-    min-width: 250px;
-    width: 100%;
-    height: 250px;
-}
-
-.serviceList {
+  
+  .serviceList {
     display: block;
     width: 100%;
     height: 100%;
@@ -96,7 +83,6 @@
 .ourservice:hover .serviceOverlay {
     height: 100%;
     background-color: #00000081;
-    
   }
 
 .serviceText:before {
@@ -107,6 +93,10 @@
     width: 100%;
 }
 
+
+.serviceText h5 {
+    padding: 14px;
+}
 
 .serviceText p {
     color: white;

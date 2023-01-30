@@ -41,7 +41,7 @@ const Service = () => {
             <div className="serviceText">
               <h3>Import/Export</h3>
               <h5>นำเข้าหรือส่งออกสินค้า</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deleniti.</p>
+              <p>ต้องการนำเข้าหรือส่งออกสินค้า เราช่วยคุณได้ ไม่ว่าจะเป็นทางน้ำหรือทางอากาศ</p>
               <Button className='overlayBtn'><Link to='/import-export'>Readmore</Link></Button>
               
             </div>
@@ -52,7 +52,7 @@ const Service = () => {
           <div className="serviceOverlay">
             <div className="serviceText">
               <h3>Custom Clearance</h3>
-              <h4>จัดทำเอกสารและเดินพิธีการศุลกากรขาเข้า/ขาออก</h4>
+              <h5>จัดทำเอกสารและเดินพิธีการศุลกากรขาเข้า/ขาออก</h5>
               <p>ดำเนินพิธีการศุลกากร ทั้งขาเข้า และขาออก ตรวจสอบและช่วยเหลือทางด้านภาษี</p>
               <Button className='overlayBtn'><Link to='/customclearance'>Readmore</Link></Button>
 
