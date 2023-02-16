@@ -27,6 +27,11 @@
 }
 
 
+.aboutHeaderText p {
+    text-align: center;
+}
+
+
 .aboutSection {
     height: 100%;
     width: 100%;
@@ -134,6 +139,7 @@
     margin: 2rem;
     display: flex !important;
     flex-direction: row-reverse;
+    height: 100%;
 }
 
 .aboutLeft4 {
@@ -154,7 +160,7 @@
 
 .aboutRight4 {
     width: 50%;
-    height: 550px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,6 +177,8 @@
 .aboutRight4 p {
     width: 80%;
     padding: 20px 0;
+    font-size: 18px;
+    line-height: 2rem;
     
 }
 
@@ -178,6 +186,54 @@
     background: #a17014;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    .aboutRight4 h1 {
+        font-size: 24px;
+    }
+    
+    .aboutSection h1 {
+        font-size: 36px;
+    }
+
+    .aboutSection2 {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .aboutLeft {
+        width: 100%;
+    }
+
+    .aboutLeft img {
+        height: 100%;
+    }
+    .aboutRight {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+
+    }
+
+    .aboutSection4 {
+        flex-direction: column;
+        height: 100%;
+    }
+    .aboutLeft4 {
+        width: 100%;
+    }
+    .aboutLeft4 img {
+        height: 100%;
+    }
+    .aboutRight4 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -255,9 +311,6 @@
 
     }
 
-    .aboutRight4 h1 {
-        font-size: 24px;
-    }
 
     .aboutSection3 h1{
         font-size: 24px;

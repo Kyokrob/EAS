@@ -51,7 +51,7 @@ const Service = () => {
           <img src={customcover} alt="Custom clearace" className='serviceList'/>
           <div className="serviceOverlay">
             <div className="serviceText">
-              <h3>Custom Clearance</h3>
+              <h3>Customs Clearance</h3>
               <h5>จัดทำเอกสารและเดินพิธีการศุลกากรขาเข้า/ขาออก</h5>
               <p>ดำเนินพิธีการศุลกากร ทั้งขาเข้า และขาออก ตรวจสอบและช่วยเหลือทางด้านภาษี</p>
               <Button className='overlayBtn'><Link to='/customclearance'>Readmore</Link></Button>
@@ -66,7 +66,7 @@ const Service = () => {
               <h3>Experties consultant</h3>
               <h5>สินใจติดต่อทีมงาน</h5>
               <p>หากคุณกำลังมองหาผู้ช่วยในการนำเข้าหรือส่งออกสินค้า ทักมาหาเราได้เลย ฟรี</p>
-              <Button className='overlayBtn'>Contact us</Button>
+              <Button className='overlayBtn'><Link to='/contactform'>Contact us</Link></Button>
 
             </div>
           </div>

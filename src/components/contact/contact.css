@@ -23,7 +23,7 @@
 }
 
 .contactText h1 {
-    width: 40%;
+    width: 80%;
     margin-top: 12px;
     color: #E6AF4B;
     font-size: 36px !important;
@@ -45,6 +45,13 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    .contactText h1 {
+        width: 80%;
+    }
+}
+
+
 
 @media only screen and (max-width: 480px) {
     .contactText h1 {
@@ -53,7 +60,7 @@
     }
 
     .contactBtn {
-        font-size: 14px !important
+        font-size: 16px !important
     }
 };
     

@@ -3,7 +3,7 @@ import './footer.css'
 import { Link } from "react-router-dom";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import TikTokIcon from '@material-ui/icons/TikTok';
 
 
 const Footer = () => {
@@ -69,9 +69,15 @@ const Footer = () => {
             <div className="footerContactSocial">
             <span>Social media</span>
             <div className="footerContactSocialSubtitle">
+            <a href='https://www.facebook.com/easthai.th'>
             <FacebookIcon/>
+            </a>
+            <a href='https://www.instagram.com'>
             <InstagramIcon/>
-            <TwitterIcon/>
+            </a>
+            {/* <Link to="https://www.tiktok.com/@easthai.express">
+            <TikTokIcon/>
+            </Link> */}
             </div>
             </div>
             </div>

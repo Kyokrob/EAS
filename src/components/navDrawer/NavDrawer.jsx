@@ -88,7 +88,7 @@ const NavDrawer = () => {
           <ListItemButton onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <Button variant="contained" style={{backgroundColor: "#E6AF4B"}}>
-                <Link to="/contactform">Get quotation</Link>
+                <Link to="/quotation">Get quotation</Link>
               </Button>
             </ListItemIcon>
           </ListItemButton>

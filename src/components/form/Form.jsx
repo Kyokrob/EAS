@@ -57,7 +57,7 @@ const Form = () => {
     <div className="form">
       <div className="formTitle">
         <h1>ติดต่อเรา</h1>
-        <p>ต้องการนำเข้าส่งออกสินค้าเพียงกรอบข้อมูล</p>
+        <p>ต้องการนำเข้าส่งออกสินค้าเพียงกรอกข้อมูล</p>
       </div>
 
       <form ref={form} onSubmit={sendEmail}>
@@ -102,7 +102,7 @@ const Form = () => {
             id=""
             cols="30"
             rows="4"
-            placeholder="How Can We Help You. Please provide more detail from your package - Type, weight, country"
+            placeholder="คำถามที่ต้องการปรึกษาเรา "
             name="message"
           ></textarea>
 

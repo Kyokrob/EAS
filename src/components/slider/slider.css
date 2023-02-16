@@ -42,7 +42,8 @@
 }
 
 .slide img {
-    width: 100%;
+    width: 350px;
+    height: 250px;
     transition: transform .5s;
 }
 
@@ -87,6 +88,11 @@
     .slide {
         height: 150px;
         width: 400px;
+    }
+
+    .slide img {
+        width: 200px;
+        height: 150px;
     }
 
 

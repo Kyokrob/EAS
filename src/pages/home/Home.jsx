@@ -23,7 +23,9 @@ import eas05 from '../../images/eas-05.png'
 import eas01 from '../../images/express1.png'
 
 import video11 from '../../images/eas-video11.mp4'
+import thumbnail from '../../images/easlogo-resize.jpg'
 
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
@@ -39,9 +41,12 @@ const Home = () => {
   
   return (
     
-    <>        
+    <>   
+      <Helmet>
+        <title>EASTHAI - Homepage</title>
+        </Helmet>     
         <div className="header">
-          <img src="https://cdn.pixabay.com/photo/2021/03/28/16/22/port-6131793_1280.jpg" alt="" />
+          <img src="https://cdn.pixabay.com/photo/2021/03/28/16/22/port-6131793_1280.jpg" alt="ชิปปิ้ง" />
             <div className="headerText">
             <h1>EASTHAI</h1>
               <h3>EST. 1996</h3>
@@ -58,7 +63,7 @@ const Home = () => {
             }}
             >Discover EAS</Button>
             <Button 
-            to='/contactform' 
+            to='/quotation' 
             component={Link}
             sx={{
               padding: "12px 24px",
@@ -84,7 +89,7 @@ const Home = () => {
           <Button
             href="tel:0867780808"
            >
-              ติดต่อเรา
+              ติดต่อเจ้าหน้าที่
             </Button>
         </div>
         
@@ -98,11 +103,36 @@ const Home = () => {
 
           <div className="about1Cards">
 
+          <div className="about1Card" data-aos='slide-up'> 
+            <img src={eas04} alt="ภาษีนำเข้า" />
+              <div className="about1CardText">
+                <h1>
+                EASTHAI Express service
+                 </h1>
+                <p>เมื่อนำเข้าสินค้าจากต่างประเทศ ติดขัดปัญหาการนำเข้าต่างๆ เช่น เอกสารผิด ภาษี ไปรษณีย์, ท่าเรือ, DHL, FEDEX, UPS, TNT เรายินดีให้บริการช่วยเหลือ
+                </p>
+                <Button 
+            sx={{
+              padding: "4px",
+              background: "transparent",
+              border: "1px solid #ffffff",
+              borderRadius: "10px",
+              color: "white"
+            }} className="contactSectionBtn"
+            to='/courier'
+            component={Link}
+            >
+              <ArrowForwardIosIcon/>
+            </Button>
+                
+              </div>             
+            </div>
+
             <div className="about1Card" data-aos='slide-up'>
-              <img src={eas04} alt="" />
+              <img src={eas03} alt="ชิปปิ้ง" />
               <div className="about1CardText">
                 <h1>บริการงาน Freight Forwarder</h1>
-                <p>การนำเข้าส่งออกนั้นมีขั้นตอนและงานเอกสารมากมาย หากคุณมีทีมงานมืออาชีพช่วยประสารงาน คุณจะสามารถลดได้ทั้งต้นทุนและเวลาได้อย่างมากมาย
+                <p>การนำเข้าส่งออกนั้นมีขั้นตอนและงานเอกสารมากมาย หากคุณมีทีมงานมืออาชีพช่วยประสานงาน คุณจะสามารถลดได้ทั้งต้นทุนและเวลาได้อย่างมากมาย
                 </p>
                 <Button 
             sx={{
@@ -123,7 +153,7 @@ const Home = () => {
 
 
             <div className="about1Card" data-aos='slide-up'>
-            <img src={eas03} alt="" />
+            <img src={eas05} alt="Shipping" />
               <div className="about1CardText">
                 <h1>บริการงาน Shipping</h1>
                 <p>Custom clearance 
@@ -148,30 +178,7 @@ const Home = () => {
             </div>
 
 
-            <div className="about1Card" data-aos='slide-up'> 
-            <img src={eas05} alt="" />
-              <div className="about1CardText">
-                <h1>
-                บริการ Express service
-                 </h1>
-                <p>นำเข้าสินค้าจากต่างประเทศ ติดขัดปัญหาการนำเข้า เอกสารผิด ภาษี ปรษณีย์, ท่าเรือ, DHL, FEDEX, UPS, TNT เรายินดีให้บริการ
-                </p>
-                <Button 
-            sx={{
-              padding: "4px",
-              background: "transparent",
-              border: "1px solid #ffffff",
-              borderRadius: "10px",
-              color: "white"
-            }} className="contactSectionBtn"
-            to='/courier'
-            component={Link}
-            >
-              <ArrowForwardIosIcon/>
-            </Button>
-                
-              </div>             
-            </div>
+           
 
         </div>
 
@@ -190,7 +197,8 @@ const Home = () => {
         zIndex: "1"
       }}
       >
-        <source src={video11} type="video/mp4"/>
+        <source src={video11} type="video/mp4" poster={thumbnail}/>
+        Your browser does not support the video tag.
       </video>
           </div>
           <div className="rightAboutHome">
@@ -213,7 +221,7 @@ const Home = () => {
 
         <div className="section11">
           <div className="left11">
-            <img src={eas01} alt="" />
+            <img src={eas01} alt="ภาษีนำเข้า" />
           </div>
           <div className="rightAboutHome">
             <h3 data-aos='slide-up'>

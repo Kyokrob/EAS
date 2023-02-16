@@ -11,7 +11,9 @@ import Service from '../../components/service/Service'
 import video1 from '../../images/eas-video1.mp4'
 import about3 from '../../images/about_3.png'
 import about2 from '../../images/about_2.png'
+import thumbnail from '../../images/easlogo-resize.jpg'
 
+import {Helmet} from 'react-helmet'
 
 
 
@@ -23,6 +25,9 @@ const About = () => {
 
   return (
     <>
+    <Helmet>
+        <title>EASTHAI - About</title>
+        </Helmet>  
     <div className="aboutHeader">
       <video
       autoPlay
@@ -39,6 +44,7 @@ const About = () => {
         transform: "translate(-50%, -50%)",
         zIndex: "1"
       }}
+      poster={thumbnail}
       >
         <source src={video1} type="video/mp4"/>
       </video>

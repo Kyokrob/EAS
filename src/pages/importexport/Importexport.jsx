@@ -11,6 +11,10 @@ import { Link } from "react-router-dom"
 
 import Divider from '@mui/material/Divider'
 
+import { Helmet } from 'react-helmet'
+
+
+
 
 const Importexport = () => {
     useEffect(() => {
@@ -18,6 +22,9 @@ const Importexport = () => {
       }, []);
   return (
     <>
+          <Helmet>
+        <title>EASTHAI - ชิปปิ้งนำเข้าส่งออก</title>
+        </Helmet>  
     <div className='importexport'>
       <img src={importexportcover} alt="" />
 
@@ -32,7 +39,7 @@ const Importexport = () => {
 
            <div className="importTitle">
            
-           <h3>EASTHAI ให้บริการนำเข้าสินค้าจากต่างประเทศทั่วโลก ทั้งการนำเข้าสินค้าทางเครื่องบิน ทางเรือ เรามีเอเย่นต์ที่เป็นตัวแทนเราในหลายประเทศ เพื่อช่วยประสานงานรับสินค้าจากที่อยู่ต้นทางในต่างประเทศ พร้อมช่วยเป็นตัวแทนในการเดินพิธีการศุลกากรขาเข้าประเทศไทย และจัดส่งสินค้าให้ที่อยู่ปลายทางในประเทศไทย </h3>
+           <p>EASTHAI ให้บริการนำเข้าสินค้าจากต่างประเทศทั่วโลก ทั้งการนำเข้าสินค้าทางเครื่องบิน ทางเรือ เรามีเอเย่นต์ที่เป็นตัวแทนเราในหลายประเทศ เพื่อช่วยประสานงานรับสินค้าจากที่อยู่ต้นทางในต่างประเทศ พร้อมช่วยเป็นตัวแทนในการเดินพิธีการศุลกากรขาเข้าประเทศไทย และจัดส่งสินค้าให้ที่อยู่ปลายทางในประเทศไทย </p>
 
            </div>
 
@@ -99,20 +106,20 @@ const Importexport = () => {
               <h1>ตารางเปรียบเทียบ Sea และ Air freight</h1>
             <div className="seaAirTitle">
             <div className="seaAirTitleLeft">
-              <p>ประเภทขนส่ง</p>
+              <h3>ประเภทขนส่ง</h3>
             </div>
             <div className="seaAirTitleRight">
               <div className="table">
-              <p>ระยะเวลาในการขนส่ง</p>
+              <h3>เวลาในการขนส่ง</h3>
               </div>
               <div className="table">
-              <p>การบริการ</p>
+              <h3>การบริการ</h3>
               </div>
               <div className="table">
-              <p>ปริมานสินค้า</p>
+              <h3>ปริมาณสินค้า</h3>
               </div>
               <div className="table">
-              <p>ค่าใช้จ่าย</p>
+              <h3>ค่าใช้จ่าย</h3>
               </div>
             </div>
            </div>
@@ -130,7 +137,7 @@ const Importexport = () => {
             <p>เกือบ ทุกประเทศ</p>
             </div>
               <div className="table">
-              <p>ปริมานมาก</p>
+              <p>ปริมาณมาก</p>
               </div>
               <div className="table">
               <p>ถูก</p>
@@ -152,7 +159,7 @@ const Importexport = () => {
               <p>ทั้วโลก</p>
               </div>
               <div className="table">               
-              <p>ปริมานน้อย</p>
+              <p>ปริมาณน้อย</p>
               </div>
               <div className="table">
               <p>แพงกว่า</p>
@@ -164,8 +171,8 @@ const Importexport = () => {
 
 
            <div className="easCc">
-           <p> ต้องการส่งหรือนำเข้าสินค้า ต่างประเทศ ปรึกษา EASTHAI service เราพร้อมช่วยคุณ ไม่ว่า ทางเรื่อ หรือ ทางเครื่องบิน เตรียมเอกสารสำหรับส่งออก เดินพิธีการขาเข้าและขาออก สนใจ ติดต่อ โทร 02 235 9100(5),  086 778 0808 Line @easthai ยินดีให้บริการ จากเราผู้มีประสบการณืโดยตรงมากว่า 25 ปี </p>
-           <p><a className='highlight' href="tel:0867780808">คลิกเลย </a>เพื่อติดต่อกำทางเจ้าหน้าที่</p>
+           <p> ต้องการส่งหรือนำเข้าสินค้า ต่างประเทศ ปรึกษา EASTHAI service เราพร้อมช่วยคุณ ไม่ว่า ทางเรื่อ หรือ ทางเครื่องบิน เตรียมเอกสารสำหรับส่งออก เดินพิธีการขาเข้าและขาออก สนใจ ติดต่อ โทร 02 235 9100(5),  086 778 0808 Line @easthai ยินดีให้บริการ จากเราผู้มีประสบการณ์โดยตรงมากว่า 25 ปี </p>
+           <p><a className='highlight' href="tel:0867780808">คลิกเลย </a>เพื่อติดต่อเจ้าหน้าที่</p>
            </div>
 
     </Container>

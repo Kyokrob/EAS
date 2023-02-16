@@ -1,15 +1,15 @@
 import React from 'react'
 import './slider.css'
 
-import slider1 from '../../images/slider1.png'
-import slider2 from '../../images/slider2.png'
-import slider3 from '../../images/slider3.png'
-import slider4 from '../../images/slider4.png'
-import slider5 from '../../images/slider5.png'
-import slider6 from '../../images/slider6.png'
-import slider7 from '../../images/slider7.png'
-import slider8 from '../../images/slider8.png'
-import slider9 from '../../images/slider9.png'
+import slider1 from '../../images/slider1_resize.webp'
+import slider2 from '../../images/slider2_resize.webp'
+import slider3 from '../../images/slider3_resize.webp'
+import slider4 from '../../images/slider4_resize.webp'
+import slider5 from '../../images/slider5_resize.webp'
+import slider6 from '../../images/slider6_resize.webp'
+import slider7 from '../../images/slider7_resize.webp'
+import slider8 from '../../images/slider8_resize.webp'
+import slider9 from '../../images/slider9_resize.webp'
 
 const Slider = () => {
   return (

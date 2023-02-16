@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
     height: 850px;
-    background-image: url(../../images/easexpresscover.png);
+    background-image: url(../../images/easexpresscover_resize.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .courier2Left {
@@ -136,18 +136,13 @@
     
 }
 
-.courier2Left h1 {
-    width: 100%;
-    color: #356785;
-    padding: 12px 0;
-    font-size: 52px;
-}
 
 .courier2Left h3 {
+    color: #356785;    
     width: 80%;
-    font-weight: 300;
+    font-weight: 400;
     padding: 12px 0;
-    font-size: 24px;
+    font-size: 32px;
 
 }
 
@@ -171,7 +166,7 @@
 }
 
 .courier2Right img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -179,9 +174,14 @@
 
 .courierSlider {
     text-align: center;
-    font-size: 24px;
+    margin-top: 4rem;
+}
+
+.courierSlider h1 {
+    font-size: 32px;
     color: #356785;
-    margin-top: 2rem;
+    font-weight: 400;
+
 }
 
 
@@ -198,14 +198,15 @@
     .courier {
         height: 100vh;
     }
+    .courierHeader h1 {
+        font-size: 42px;
+    }
     .courierHeader p {
-        font-size: 20px;
+        font-size: 18px;
         padding: 12px 0;
     }
-    .courierHeaderBtn {
-        margin-top: 2rem;
-        flex-direction: column;
-        gap: 1rem;
+    .courierHeaderbtn {
+        padding: 12px 16px !important;
     }
 
 
@@ -214,9 +215,20 @@
         grid-template-rows: repeat(1, 1fr); 
         height: 100%;
         transform: translate(-50%, -5%);
-
         
     }
+
+    .boxTitle {
+        font-size: 32px;
+    }
+
+    .boxDetail {
+        padding: 2px 0;
+        font-size: 18px;
+    }
+    
+
+
 
     
     .courier2 {
@@ -237,11 +249,9 @@
 
     }
 
-    .courier2Left h1 {
-        width: 100%;
-        padding: 12px 0;
-        margin-right: 0;
-        font-size: 36px;
+    .courier2Left h3 {
+        font-size: 24px;
+        margin-top: 2rem;
     }
 
     .courierFaq {

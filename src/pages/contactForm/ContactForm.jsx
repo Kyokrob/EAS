@@ -4,6 +4,8 @@ import Contact from '../../components/contact/Contact'
 import Form from '../../components/form/Form'
 import Container from '@mui/material/Container'
 
+import {Helmet} from 'react-helmet'
+
 const ContactForm = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -11,6 +13,9 @@ const ContactForm = () => {
 
   return (
     <>
+    <Helmet>
+        <title>EASTHAI - ติดต่อเรา</title>
+        </Helmet>  
       <div className="contactFormHeader">
         <h1>Contact Us</h1>
         <h3>ยินดีให้บริการทุกช่องทาง</h3>
@@ -21,8 +26,9 @@ const ContactForm = () => {
             <h1>Efficient, Effective, and Reliable service for your logistic Needs</h1>
               <p>To receive a quotation for your upcoming shipment, please fill out the form provided. Once completed, our team will contact you back with a competitive and accurate pricing for your logistic needs.</p>
               <p>
-              Not ready for a quote yet, but still have questions? <p className='contactFormContact'>Contact us now.</p>
+              Not ready for a quote yet, but still have questions? 
               </p>
+              <a href='tel:0867780808' className='contactFormContact'>Contact us now.</a>
             </div>
             <div className="contactForm1Right">
                 <Form/>
@@ -33,7 +39,7 @@ const ContactForm = () => {
             <h1>Where we locate</h1>
             <p >TEL : <a href="tel:022359100">02 235 9100</a> or <a href="tel:0867780808">086 778 0808</a></p>
             <p >ADDRESS : 141/32 อาคารสกุลไทย-สุรวงศ์ทาวเวอร์ ชั้น 23 ถนนสุรวงศ์ แขวงสุริยวงศ์ เขตบางรัก กรุงเทพมหานคร 10500</p>
-            <p >EMAIL : admin@easthai.com</p>
+            <p >EMAIL : hello@easthai.com</p>
             <p >LINE : @easthai or <a href="https://page.line.me/999piqzj">Click here !</a></p>
             </div>
 

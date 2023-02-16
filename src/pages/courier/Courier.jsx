@@ -5,7 +5,8 @@ import Contact from "../../components/contact/Contact";
 import Container from "@mui/material/Container";
 import Slider from "../../components/slider/Slider"
 import Button from "@mui/material/Button";
-import planeImg from "../../images/planetransparent.png";
+import planeImg from "../../images/express1.png";
+
 
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -13,6 +14,10 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { Helmet } from "react-helmet";
 
 
 
@@ -22,6 +27,10 @@ const Courier = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    AOS.init({duration:1000});
+  },[]);
+
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -30,14 +39,17 @@ const Courier = () => {
 
   return (
     <>
+      <Helmet>
+        <title>EASTHAI - บริการเคลียร์สินค้านำเข้า</title>
+        </Helmet>  
       <div className="courier">
         <Container className="courierHeader">
           <h1>Express service</h1>
           <p>สั่งของจากต่างประเทศ ติดขัดปัญหาการนำเข้าสินค้า</p>
           <p>ไปรษณีย์,ท่าเรือ,DHL,FEDEX,UPS,TNT</p>
-          <p>เรายินดีให้คำปรึกษาผ่านผู้เชี่ยวชาญฟรี</p>
           <Button
           href="tel:0867780808"
+          className="courierHeaderbtn"
           sx={{
             padding: "12px 24px",
               background: "transparent",
@@ -61,31 +73,36 @@ const Courier = () => {
         <div className="courierTable">
           <div className="table-box">
             <div className="boxTitle">01</div>
-            <div className="boxDetail">
-              EAS Express บริการให้คำปรึกษาปัญหาสำหรับผู้นำเข้าสินค้าพร้อมช่วยเหลือและแก้ใข ด้วยประสบการณ์โดยตรงมากกว่า 25 ปี 
+            <div className="boxDetail"
+            data-aos='slide-up'>
+              EAS Express service คือบริการช่วยเหลือผู้นำเข้าสินค้า พร้อมให้คำปรึกษาปัญหาสำหรับการนำเข้าสินค้าพร้อมช่วยเหลือและแก้ใข ด้วยประสบการณ์โดยตรงมากกว่า 25 ปี 
             </div>
           </div>
           <div className="table-box">
             <div className="boxTitle">02</div>
-            <div className="boxDetail">
-              สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็ว ไม่มีปัญหาเรื่องถูกยึดหรือเรียกเก็บเพิ่ม ดูแลผ่านทีมงานมืออาชีพดำเนินการให้ครบทุกขั้นตอน
+            <div className="boxDetail"
+            data-aos='slide-up'>
+              สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็ว ดูแลผ่านทีมงานมืออาชีพ ดำเนินการให้ครบทุกขั้นตอน
             </div>
           </div>
           <div className="table-box">
             <div className="boxTitle">03</div>
-            <div className="boxDetail">
+            <div className="boxDetail"
+            data-aos='slide-up'>
             ปัญหาสินค้า คลังสินค้าสุวรรณภูมิ, สนามบินสุวรรณภูมิ, ไปรษณีย์, ท่าเรือ, DHL, FEDEX, UPS, TNT ต่างๆ
             </div>
           </div>
           <div className="table-box">
             <div className="boxTitle">04</div>
-            <div className="boxDetail">
+            <div className="boxDetail"
+            data-aos='slide-up'>
             ปัญหา สินค้า ภาษีนำเข้า ทุกประเภท ติดปัญหาใบอนุญาต อย. มอก. กสทช. สมอ.
             </div>
           </div>
           <div className="table-box">
             <div className="boxTitle">05</div>
-            <div className="boxDetail">
+            <div className="boxDetail"
+            data-aos='slide-up'>
             ด้านใบอนุญาตินำเข้า พิกัดศุลกากร การใช้ฟอร์มนำเข้าต่างๆ หรือ เอกสารผิดพลาด 
             </div>
           </div>
@@ -115,7 +132,6 @@ const Courier = () => {
 
       <Container className="courier2">
         <div className="courier2Left">
-          <h1>Express Service</h1>
           <h3>ข้อควรรู้ก่อนเริ่มต้นนำเข้า</h3>
 
           <div className="courierFaq">
@@ -129,7 +145,7 @@ const Courier = () => {
                 id="panel1bh-header"
               >
                 <Typography sx={{ color: "text.secondary" }}>
-                ไม่เคยนำเข้า-ส่งออกเลย แต่อยากนำเข้าสินค้าในนามบริษัท (สินค้าเป็นสมุดโน็ต) ขอคำปรึกษาเบื้องต้น ว่าควรทำอย่างไร ติดต่อหน่วนงานไหน สามารถนำเข้าได้เลยไหม หรือต้องทำอะไรก่อน
+                ไม่เคยนำเข้า-ส่งออกเลย แต่อยากนำเข้าสินค้าในนามบริษัท (สินค้าเป็นสมุดโน้ต) ขอคำปรึกษาเบื้องต้น ว่าควรทำอย่างไร ติดต่อหน่วยงานไหน สามารถนำเข้าได้เลยไหม หรือต้องทำอะไรก่อน
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -193,7 +209,7 @@ const Courier = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                ไม่สามารถยื่นหลังวันนำเข้าได้ ถ้ายื่นหลังวันนำเข้าจะมีค่าปรับไม่เกิน 20,000 บาท และต้องยื่นเอกสารใบอนุญาตให้สำเร็จก่อนสินค้าจะออกจากศุลกากร
+                ไม่สามารถยื่นหลังวันนำเข้าได้ และต้องยื่นเอกสารใบอนุญาตให้สำเร็จก่อน และ จะมีค่าปรับเพิ่มไม่เกิน 20,000 บาท 
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -201,8 +217,9 @@ const Courier = () => {
 
           </div>
         </div>
-        <div className="courier2Right">
-          <img src={planeImg} alt="" />
+        <div className="courier2Right"
+        data-aos='slide-up'>
+          <img src={planeImg} alt="ชิปปิ้ง" />
         </div>
       </Container>
 
