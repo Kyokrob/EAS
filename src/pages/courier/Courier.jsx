@@ -5,7 +5,7 @@ import Contact from "../../components/contact/Contact";
 import Container from "@mui/material/Container";
 import Slider from "../../components/slider/Slider"
 import Button from "@mui/material/Button";
-import planeImg from "../../images/express1.png";
+import planeImg from "../../images/express1.webp";
 
 
 import Accordion from "@mui/material/Accordion";

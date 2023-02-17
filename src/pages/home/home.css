@@ -369,7 +369,7 @@ a#scroll-btn:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
     border-radius: 10px;
 }
@@ -425,7 +425,7 @@ a#scroll-btn:after {
 
 }
 .rightAboutHome h3{
-    font-size: 54px;
+    font-size: 36px;
     padding: 12px 0;
     line-height: 1.4;
     color: #ffffff;

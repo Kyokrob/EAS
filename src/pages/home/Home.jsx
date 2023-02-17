@@ -17,10 +17,10 @@ import Box from '@mui/material/Box';
 import Form from '../../components/form/Form'
 
 import { useEffect } from "react";
-import eas03 from '../../images/eas-03.png'
-import eas04 from '../../images/eas-04.png'
-import eas05 from '../../images/eas-05.png'
-import eas01 from '../../images/express1.png'
+import eas03 from '../../images/eas-03-resize.webp'
+import eas04 from '../../images/eas-04-resize.webp'
+import eas05 from '../../images/eas-05-resize.webp'
+import eas01 from '../../images/express1.webp'
 
 import video11 from '../../images/eas-video11.mp4'
 import thumbnail from '../../images/easlogo-resize.jpg'
@@ -194,7 +194,7 @@ const Home = () => {
         width: "768px",
         height: "450px",
         objectFit: "cover",
-        zIndex: "1"
+        zIndex: "2"
       }}
       >
         <source src={video11} type="video/mp4" poster={thumbnail}/>
@@ -300,81 +300,6 @@ const Home = () => {
 </div>
 
 
-
-      
-
-
-        {/* <Container className="section2" display='flex'>
-          <div className="section2Header">
-          <h1>Talk about import/export in Thailand, What is trendy in 2023 !</h1>
-          </div>
-          <div className="section2BoxContainer">
-
-
-          <div className="section2Box">
-          <div className="top2">
-            <img src={easblog3} alt="" />
-          </div>
-          <div className="btm2">
-          <h1>Articles</h1>
-            <h3>อากรขาเข้า ภาษีสรรพสามิต ภาษีเพื่อมหาดไทย ภาษีมูลค่าเพิ่ม สิ่งที่ควรรู้ก่อนนำเข้าสินค้าจากต่างประเทศ
-          </h3>
-            <Button sx={{
-              color: "black"
-            }}
-            to='/customclearance'
-            component={Link}>
-              อ่านเพิ่มเติม
-            </Button>
-          </div>
-          </div>
-
-          <div className="section2Box">
-          <div className="top2">
-            <img src={easblog1} />
-          </div>
-          <div className="btm2">
-            <h1>Tips</h1>
-            <h3> Fright Forwarder กับ Shipping ต่างกันอย่างไรทำความรู้จักก่อนเริ่มต้นนำเข้าส่งออกกับกับธุรกิจของคุณ</h3>
-            <Button 
-            sx={{
-              color: "black"
-            }}
-            to='/courier'
-            component={Link}
-            >
-              อ่านเพิ่มเติม
-            </Button>
-          </div>
-          </div>
-
-          
-
-          <div className="section2Box">
-          <div className="top2">
-            <img src={easblog2} alt="" />
-          </div>
-          <div className="btm2">
-            <h1>Tips</h1>
-            <h3> Fright Forwarder กับ Shipping ต่างกันอย่างไรทำความรู้จักก่อนเริ่มต้นนำเข้าส่งออกกับกับธุรกิจของคุณ</h3>
-            <Button 
-            sx={{
-              color: "black"
-            }}
-            to='/courier'
-            component={Link}
-            >
-              อ่านเพิ่มเติม
-            </Button>
-          </div>
-          </div>
-
-
-
-          </div>   
-
-        </Container> */}
-                   {/* Service component */}
          <Service/>
 
         

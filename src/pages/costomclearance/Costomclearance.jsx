@@ -3,7 +3,7 @@ import "./customclearance.css";
 import Service from "../../components/service/Service";
 import Contact from "../../components/contact/Contact";
 import Container from "@mui/material/Container";
-import customcover from "../../images/customcover.png";
+import customcover from "../../images/custom_cover_resize.webp";
 
 import { Helmet } from "react-helmet";
 
@@ -17,8 +17,7 @@ const Costomclearance = () => {
         <title>EASTHAI - พิธีการศุลกากร </title>
         </Helmet>  
       <div className="customclearance">
-        {/* <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /> */}
-        <img src={customcover} alt="" />
+        <img src={customcover} alt="ชิปปิ้ง" />
 
         <div className="importexportHeaderText">
           <h1>Customs Clearance</h1>

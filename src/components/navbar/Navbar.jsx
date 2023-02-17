@@ -8,7 +8,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 
-import logo from "../../images/E.png";
+import logo from "../../images/E_resize.webp";
 import { Tabs, Tab, useMediaQuery, useTheme } from "@mui/material";
 
 import NavDrawer from "../navDrawer/NavDrawer";
