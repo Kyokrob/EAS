@@ -2,9 +2,7 @@ import React from "react";
 import "./service.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-
-
-import customcover from "../../images/custom_cover_resize.webp";
+import customcover from "../../images/custom_card_resize.webp";
 import importexportcover from "../../images/importexport_card_resize.webp";
 import aircard from "../../images/air_card_resize.webp"
 import seacard from "../../images/sea_card_resize.webp"

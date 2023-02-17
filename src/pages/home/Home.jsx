@@ -21,9 +21,10 @@ import eas03 from '../../images/eas-03-resize.webp'
 import eas04 from '../../images/eas-04-resize.webp'
 import eas05 from '../../images/eas-05-resize.webp'
 import eas01 from '../../images/express1.webp'
+import homeimg from '../../images/home_img1.png'
 
-import video11 from '../../images/eas-video11.mp4'
-import thumbnail from '../../images/easlogo-resize.jpg'
+// import video11 from '../../images/eas-video11.mp4'
+// import thumbnail from '../../images/easlogo-resize.jpg'
 
 import { Helmet } from "react-helmet";
 
@@ -184,7 +185,7 @@ const Home = () => {
 
         <div className="section1">
           <div className="left">
-            <video
+            {/* <video
       autoPlay
       playsInline
       loop
@@ -199,7 +200,8 @@ const Home = () => {
       >
         <source src={video11} type="video/mp4" poster={thumbnail}/>
         Your browser does not support the video tag.
-      </video>
+      </video> */}
+      <img src={eas01} alt="mobile phone shipping" />
           </div>
           <div className="rightAboutHome">
             <h3 data-aos='slide-up'>Setting the Reliable and Efficient Standard for Freight Forwarding Excellence</h3>
@@ -221,7 +223,7 @@ const Home = () => {
 
         <div className="section11">
           <div className="left11">
-            <img src={eas01} alt="ภาษีนำเข้า" />
+            <img src={homeimg} alt="ภาษีนำเข้า" />
           </div>
           <div className="rightAboutHome">
             <h3 data-aos='slide-up'>
