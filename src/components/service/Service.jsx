@@ -2,9 +2,12 @@ import React from "react";
 import "./service.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-import customcover from "../../images/custom_card_resize.webp";
 
-import importexportcover from "../../images/importexportcover.png";
+
+import customcover from "../../images/custom_cover_resize.webp";
+import importexportcover from "../../images/importexport_card_resize.webp";
+import aircard from "../../images/air_card_resize.webp"
+import seacard from "../../images/sea_card_resize.webp"
 
 const Service = () => {
   return (
@@ -13,8 +16,8 @@ const Service = () => {
       <div className="service">
         <div className="ourservice">
           <img
-            src="https://images.unsplash.com/photo-1571086291540-b137111fa1c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-            alt=""
+            src={aircard}
+            alt="Air freight"
             className="serviceList"
           />
           <div className="serviceOverlay">
@@ -33,8 +36,8 @@ const Service = () => {
         </div>
         <div className="ourservice">
           <img
-            src="https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-            alt=""
+            src={seacard}
+            alt="Sea freight"
             className="serviceList"
           />
           <div className="serviceOverlay">

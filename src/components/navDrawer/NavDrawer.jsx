@@ -105,6 +105,7 @@ const NavDrawer = () => {
       <IconButton
         sx={{ marginLeft: "auto" }}
         onClick={() => setOpenDrawer(!openDrawer)}
+        aria-label="Navdrawer"
       >
         <MenuIcon />
       </IconButton>

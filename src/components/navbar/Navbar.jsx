@@ -97,7 +97,7 @@ const Navbar = () => {
     <nav className={navbar ? "navBar active" : "navBar"}>
       <Toolbar className="navTool">
         <Link to="/" className="companylogo">
-          <img src={logo} alt="" width="85px" height="85px" />
+          <img src={logo} alt="East asia shipping company logo" width="85px" height="85px" />
         </Link>
 
         {isMatch ? (
