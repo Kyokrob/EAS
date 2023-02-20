@@ -4,8 +4,9 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import customcover from "../../images/custom_card_resize.webp";
 import importexportcover from "../../images/importexport_card_resize.webp";
-import aircard from "../../images/air_card_resize.webp"
-import seacard from "../../images/sea_card_resize.webp"
+import aircard from "../../images/air_card_resize.webp";
+import seacard from "../../images/sea_card_resize.webp";
+import expresscard from '../../images/express_cover.png'
 
 const Service = () => {
   return (
@@ -13,11 +14,7 @@ const Service = () => {
       <h1 className="serviceTitle">บริการของเรา</h1>
       <div className="service">
         <div className="ourservice">
-          <img
-            src={aircard}
-            alt="Air freight"
-            className="serviceList"
-          />
+          <img src={aircard} alt="Air freight" className="serviceList" />
           <div className="serviceOverlay">
             <div className="serviceText">
               <h3>Air Freight</h3>
@@ -33,11 +30,7 @@ const Service = () => {
           </div>
         </div>
         <div className="ourservice">
-          <img
-            src={seacard}
-            alt="Sea freight"
-            className="serviceList"
-          />
+          <img src={seacard} alt="Sea freight" className="serviceList" />
           <div className="serviceOverlay">
             <div className="serviceText">
               <h3>Sea Freight</h3>
@@ -90,20 +83,20 @@ const Service = () => {
         </div>
         <div className="ourservice">
           <img
-            src="https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt=""
+            src={expresscard}
+            alt="import shipment"
             className="serviceList"
           />
           <div className="serviceOverlay">
             <div className="serviceText">
-              <h3>Experties consultant</h3>
-              <h5>สินใจติดต่อทีมงาน</h5>
+              <h3>Express service</h3>
+              <h5>เคลียร์สินค้า นำเข้า</h5>
               <p>
-                หากคุณกำลังมองหาผู้ช่วยในการนำเข้าหรือส่งออกสินค้า
-                ทักมาหาเราได้เลย ฟรี
+                หากคุณกำลังมองหาผู้ช่วยในการ เคลียร์สินค้า, ภาษีนำเข้า, จัดการเอกสาร, ติดใบอนุญาต
+                
               </p>
               <Button className="overlayBtn">
-                <Link to="/contactform">Contact us</Link>
+                <Link to="/contactform">Readmore</Link>
               </Button>
             </div>
           </div>

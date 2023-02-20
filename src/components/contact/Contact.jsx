@@ -10,11 +10,11 @@ const Contact = () => {
     <>
     <Box className='contactContainer'>
     <Typography className='contactText'>
-        <h1>บริการเคลียร์สินค้า, ภาษีนำเข้า, จัดการเอกสาร, ติดใบอุณญาต <br /> ให้เราช่วยเหลือ</h1>
+        <h1>บริการเคลียร์สินค้า, ภาษีนำเข้า, จัดการเอกสาร, ติดใบอนุญาต <br /> ให้เราช่วยเหลือ</h1>
     <div className="contactButton">
       <Button component={Link}
-      to='/courier'
-      className='contactBtn'>อ่านเพิ่มเติม</Button>
+      to='/quotation'
+      className='contactBtn'>ขอใบเสนอราคา</Button>
     <Button href="https://page.line.me/999piqzj"
     className='contactBtn'>ติดต่อทางไลน์</Button>
     </div>

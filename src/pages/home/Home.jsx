@@ -23,6 +23,7 @@ import eas05 from '../../images/eas-05-resize.webp'
 import eas01 from '../../images/express1.webp'
 import homeimg from '../../images/home_img1.png'
 
+
 // import video11 from '../../images/eas-video11.mp4'
 // import thumbnail from '../../images/easlogo-resize.jpg'
 
@@ -204,7 +205,9 @@ const Home = () => {
       <img src={eas01} alt="mobile phone shipping" />
           </div>
           <div className="rightAboutHome">
-            <h3 data-aos='slide-up'>Setting the Reliable and Efficient Standard for Freight Forwarding Excellence</h3>
+            <h3 data-aos='slide-up'>
+            สั่งของต่างประเทศติดขัดปัญหาการนำเข้าสินค้า เราช่วยคุณได้ไม่มีขั้นต่ำ
+            </h3>
 
             <Button 
             sx={{
@@ -212,11 +215,11 @@ const Home = () => {
               textAlign: "center",
               boxShadow: 10,
               background: "#e6af4b"
-            }} to='/about'
+            }} to='/courier'
             component={Link}
             data-aos='slide-up'
             >
-              About us
+              Express service
             </Button>
           </div>
         </div>
@@ -227,7 +230,7 @@ const Home = () => {
           </div>
           <div className="rightAboutHome">
             <h3 data-aos='slide-up'>
-            สั่งของต่างประเทศติดขัดปัญหาการนำเข้าสินค้า เราช่วยคุณได้ไม่มีขั้นต่ำ
+            Setting the Reliable and Efficient Standard for Freight Forwarding Excellence
             </h3>
             <Button 
             sx={{
@@ -235,11 +238,11 @@ const Home = () => {
               textAlign: "center",
               boxShadow: 10,
               background: "#e6af4b",
-            }} to='/courier'
+            }} to='/about'
             component={Link}
             data-aos='slide-up'
             >
-              Express Service
+              About us
             </Button>
           </div>
         </div>
@@ -261,7 +264,7 @@ const Home = () => {
             <h3>
             Years experience
             </h3>
-            <p>ขนส่งชัดเจนมีมาตราฐาน ให้คำแนะนำผ่านทีมงานมืออาชีพ</p>
+            <p>ขนส่งชัดเจนมีมาตรฐาน ให้คำแนะนำผ่านทีมงานมืออาชีพ</p>
           </div>
         </div>
 
@@ -276,7 +279,7 @@ const Home = () => {
             Efficiency
             </h3>
             <p>
-            จัดส่งสินค้าอย่างมีประสิทภาพรวดเร็วและปลอยภัย
+            จัดส่งสินค้าอย่างมีประสิทธิภาพรวดเร็วและปลอยภัย
             </p>
           </div>
         </div>
