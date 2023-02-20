@@ -5,14 +5,21 @@ import Contact from "../../components/contact/Contact";
 import Container from "@mui/material/Container";
 import Slider from "../../components/slider/Slider";
 import Button from "@mui/material/Button";
-import planeImg from "../../images/express1.webp";
+import faqcover from "../../images/faqcover.png"
 
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+
+
+import one from '../../images/1.png'
+import two from '../../images/2.png'
+import three from '../../images/3.png'
+import four from '../../images/4.png'
+import five from '../../images/5.png'
+import six from '../../images/6.png'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,7 +31,7 @@ const Courier = () => {
   }, []);
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1500 });
   }, []);
 
   const [expanded, setExpanded] = React.useState(false);
@@ -39,11 +46,11 @@ const Courier = () => {
         <title>EASTHAI - บริการเคลียร์สินค้านำเข้า</title>
       </Helmet>
       <div className="courier">
-        <Container className="courierHeader">
+        <Container  className="courierHeader">
           <h1>Express service</h1>
           <p>สั่งของจากต่างประเทศ ติดขัดปัญหาการนำเข้าสินค้า</p>
           <p>ไปรษณีย์,ท่าเรือ, DHL, FEDEX, UPS, TNT</p>
-          <Button
+          {/* <Button
             href="tel:0867780808"
             className="courierHeaderbtn"
             sx={{
@@ -56,70 +63,57 @@ const Courier = () => {
             }}
           >
             ติดต่อทีมงาน
-          </Button>
-
-          {/* <div className="courierHeaderBtn">
-            <p>
-              <a href="tel:0867780808">ติดต่อทีมงาน</a>
-            </p>
-          </div> */}
+          </Button> */}
         </Container>
       </div>
 
       <Container className="courier1">
         <div className="courierTable">
           <div className="table-box">
-            <div className="boxTitle">01</div>
-            <div className="boxDetail" data-aos="slide-up">
-              EAS Express service คือบริการช่วยเหลือผู้นำเข้าสินค้า
-              พร้อมให้คำปรึกษาปัญหาสำหรับการนำเข้าสินค้าพร้อมช่วยเหลือและแก้ใข
-              ด้วยประสบการณ์โดยตรงมากกว่า 25 ปี
+            <div className="boxBg"><img src={one} alt="" /></div>
+            <div className="boxDetail" data-aos="flip-up">
+              <p>Express service คือบริการช่วยเหลือผู้นำเข้าสินค้าพร้อมให้คำปรึกษาปัญหาสำหรับการนำเข้าสินค้าพร้อมช่วยเหลือและแก้ใขด้วยประสบการณ์โดยตรงมากกว่า 25 ปี</p>
             </div>
           </div>
           <div className="table-box">
-            <div className="boxTitle">02</div>
-            <div className="boxDetail" data-aos="slide-up">
-              สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็ว
-              ดูแลผ่านทีมงานมืออาชีพ ดำเนินการให้ครบทุกขั้นตอน
+          <div className="boxBg"><img src={two} alt="" /></div>
+            <div className="boxDetail" data-aos="flip-up">
+              <p>สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็วดูแลผ่านทีมงานมืออาชีพ ดำเนินการให้ครบทุกขั้นตอน</p>
             </div>
           </div>
           <div className="table-box">
-            <div className="boxTitle">03</div>
-            <div className="boxDetail" data-aos="slide-up">
-              ปัญหาสินค้า คลังสินค้าสุวรรณภูมิ, สนามบินสุวรรณภูมิ, ไปรษณีย์,
-              ท่าเรือ, DHL, FEDEX, UPS, TNT ต่างๆ
+          <div className="boxBg"><img src={three} alt="" /></div>
+            <div className="boxDetail" data-aos="flip-up">
+              <p>ปัญหาสินค้าคลังสินค้า, ไปรษณีย์,
+              ท่าเรือ, สนามบินสุวรรณภูมิ, DHL, FEDEX, UPS, TNT ต่างๆ</p>
             </div>
           </div>
           <div className="table-box">
-            <div className="boxTitle">04</div>
-            <div className="boxDetail" data-aos="slide-up">
-              ด้านใบอนุญาตินำเข้า พิกัดศุลกากร การใช้ฟอร์มนำเข้าต่างๆ หรือ
-              เอกสารผิดพลาด
+          <div className="boxBg"><img src={four} alt="" /></div>
+            <div className="boxDetail" data-aos="flip-up">
+              <p>ด้านใบอนุญาตินำเข้า พิกัดศุลกากรการใช้ฟอร์มนำเข้าต่างๆหรือ
+              เอกสารผิดพลาด</p>
             </div>
           </div>
           <div className="table-box">
-            <div className="boxTitle">05</div>
-            <div className="boxDetail" data-aos="slide-up">
-              ให้คำปรึกษา แนะนำ และวางแผน คำนวนค่าภาษี สำหรับผู้นำเข้า
+          <div className="boxBg"><img src={five} alt="" /></div>
+            <div className="boxDetail" data-aos="flip-up">
+              <p>ให้คำปรึกษาแนะนำและวางแผน พร้อมคำนวนค่าภาษีสำหรับผู้นำเข้า</p>
             </div>
           </div>
-          <div className="table-box-contact">
-            <div className="boxTitle-contact">
-              <CalendarMonthIcon fontSize="48px" />
-            </div>
+          <div className="table-box">
+          <div className="boxBg"><img src={six} alt="" /></div>
             <div className="boxDetail">
-              สนใจบริการของเรา
               <br />
               <Button
                 to="/contactform"
                 component={Link}
                 sx={{
-                  padding: "8px",
-                  background: "transparent",
+                  padding: "8px 12px",
+                  background: "#E6AF4B",
                   borderRadius: "10px",
-                  color: "#042B3B",
+                  color: "#ffffff",
                   marginTop: "12px",
-                  textDecoration: "underline"
                 }}
               >
                 โทรติดต่อ
@@ -128,12 +122,11 @@ const Courier = () => {
                 to="/contactform"
                 component={Link}
                 sx={{
-                  padding: "8px",
-                  background: "transparent",
+                  padding: "8px 12px",
+                  background: "#E6AF4B",
                   borderRadius: "10px",
-                  color: "#042B3B",
+                  color: "#ffffff",
                   marginTop: "12px",
-                  textDecoration: "underline"
 
                 }}
               >
@@ -147,9 +140,9 @@ const Courier = () => {
 
       <Container className="courier2">
         <div className="courier2Left">
-          <h3>ข้อควรรู้ก่อนเริ่มต้นนำเข้า</h3>
+          <h3>คำถามที่พบบ่อย</h3>
 
-          <div className="courierFaq">
+          <div className="courierFaq" data-aos="slide-up">
             <Accordion
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}
@@ -229,7 +222,7 @@ const Courier = () => {
                 id="panel4bh-header"
               >
                 <Typography sx={{ color: "text.secondary" }}>
-                  การยื่นเอกสารใบอนุญาตต่างๆเช่น สมอ ประมง อย
+                  การยื่นเอกสารใบอนุญาตต่างๆเช่นสมอ ประมง อย
                   ยื่นหลังวันนำเข้าได้หรือไม่
                 </Typography>
               </AccordionSummary>
@@ -243,9 +236,35 @@ const Courier = () => {
             </Accordion>
           </div>
         </div>
-        <div className="courier2Right" data-aos="slide-up">
-          <img src={planeImg} alt="ชิปปิ้ง" />
+        <div className="courier2Right">
+          <img src={faqcover} alt="ชิปปิ้ง นำเข้า เคลียร์สินค้า shipping freight company" />
+          <div className="courier2RightText">
+            <h1>Dear shipper,</h1>
+            <p>Let us know your if you have any questions, don't hesitate to let us know. Our support team is always ready to assist you and will get back to you as soon as possible.  </p>
+            <div className="form-row-faq">
+          <div className="form-col-faq">
+            <textarea
+              id="moreDetail"
+              name="moreDetail"
+              placeholder="Let us know your question, dont forget to provide us contact infomation you our team can reach you back !"
+            />
+            <Button
+                          sx={{
+                            marginRight: "auto",
+                            marginTop: "12px",
+                            padding: "6px 24px",
+                            background: "#E6AF4B",
+                            borderRadius: "5px",
+                            color: "#000000",
+                            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                            
+                          }}>
+              Submit
+            </Button>
+          </div>
         </div>
+          </div>
+          </div>
       </Container>
 
       <div className="courierSlider">

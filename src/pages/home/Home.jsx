@@ -45,7 +45,7 @@ const Home = () => {
     
     <>   
       <Helmet>
-        <title>EASTHAI - Homepage</title>
+        <title>EASTHAI - บริการ ขนส่ง สินค้า นำเข้า ส่งออก สินค้าต่างประเทศ </title>
         </Helmet>     
         <div className="header">
           <img src="https://cdn.pixabay.com/photo/2021/03/28/16/22/port-6131793_1280.jpg" alt="ชิปปิ้ง" />
@@ -55,7 +55,7 @@ const Home = () => {
             <p>One stop service for import and exporters</p>
             <div className="headerBtn">
             <Button
-            to='/about' component={Link}
+            to='/courier' component={Link}
             sx={{
               padding: "12px 24px",
               background: "#e6af4b",
@@ -63,7 +63,7 @@ const Home = () => {
               color: "white",
               marginTop: "2rem",
             }}
-            >Discover EAS</Button>
+            >EAS EXPRESS</Button>
             <Button 
             to='/quotation' 
             component={Link}
@@ -106,7 +106,7 @@ const Home = () => {
           <div className="about1Cards">
 
           <div className="about1Card" data-aos='slide-up'> 
-            <img src={eas04} alt="ภาษีนำเข้า" />
+            <img src={eas04} alt="Shipping freight ภาษีนำเข้า" />
               <div className="about1CardText">
                 <h1>
                 EASTHAI Express service
@@ -131,7 +131,7 @@ const Home = () => {
             </div>
 
             <div className="about1Card" data-aos='slide-up'>
-              <img src={eas03} alt="ชิปปิ้ง" />
+              <img src={eas03} alt="Freight forwarder" />
               <div className="about1CardText">
                 <h1>บริการงาน Freight Forwarder</h1>
                 <p>การนำเข้าส่งออกนั้นมีขั้นตอนและงานเอกสารมากมาย หากคุณมีทีมงานมืออาชีพช่วยประสานงาน คุณจะสามารถลดได้ทั้งต้นทุนและเวลาได้อย่างมากมาย
@@ -155,7 +155,7 @@ const Home = () => {
 
 
             <div className="about1Card" data-aos='slide-up'>
-            <img src={eas05} alt="Shipping" />
+            <img src={eas05} alt="Shipping custom clearance" />
               <div className="about1CardText">
                 <h1>บริการงาน Shipping</h1>
                 <p>Custom clearance 
@@ -202,7 +202,7 @@ const Home = () => {
         <source src={video11} type="video/mp4" poster={thumbnail}/>
         Your browser does not support the video tag.
       </video> */}
-      <img src={eas01} alt="mobile phone shipping" />
+      <img src={eas01} alt="ชิปปิ้ง นำเข้า เคลียร์สินค้า shipping freight company" />
           </div>
           <div className="rightAboutHome">
             <h3 data-aos='slide-up'>
@@ -226,7 +226,7 @@ const Home = () => {
 
         <div className="section11">
           <div className="left11">
-            <img src={homeimg} alt="ภาษีนำเข้า" />
+            <img src={homeimg} alt="shipping freight company" />
           </div>
           <div className="rightAboutHome">
             <h3 data-aos='slide-up'>

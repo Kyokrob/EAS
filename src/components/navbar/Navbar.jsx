@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import PhoneIcon from "@mui/icons-material/Phone";
+import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 
@@ -199,17 +199,19 @@ const Navbar = () => {
             </Tabs>
 
             <Button
-              href="tel:0867780808"
+              href="https://page.line.me/999piqzj"
               sx={{
                 marginLeft: "auto",
                 padding: "6px 12px",
-                background: "#e6af4b",
-                borderRadius: "10px",
-                color: "#ececec",
+                background: "#E6AF4B",
+                borderRadius: "5px",
+                color: "#000000",
+                boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                
               }}
               className="navBtn"
             >
-              <PhoneIcon />
+              <FlightTakeoffIcon /> เริ่มต้นส่งของกับเรา
             </Button>
           </>
         )}
