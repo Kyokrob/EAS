@@ -1,5 +1,5 @@
 .quotationTitle {
-    width: 50%;
+    width: 100%;
     margin-top: 7rem;
     text-align: center;
     color: #042B3B;
@@ -88,7 +88,7 @@
   }
 
 button[type='submit'] {
-  padding: 10px;
+  padding: 16px;
   border-radius: 5px;
   border: none;
   background: #042B3B;
@@ -102,9 +102,10 @@ button:hover {
     background: #064158;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .quotationTitle {
         width: 80%;
+        margin-top: 0;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -112,7 +113,7 @@ button:hover {
         width: 100%;
     }
     .quotationTitle h1{
-        font-size: 32px;
+        font-size: 24px;
     }
     .quotation-form {
         width: 100%;
@@ -129,7 +130,6 @@ button:hover {
 
 
     .quotationTitle {
-        margin-top: 5rem;
         margin-bottom: 2rem;
     }
 }

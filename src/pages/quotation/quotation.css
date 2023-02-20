@@ -2,14 +2,39 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
+}
+
+.quotationLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+.quotationLeft img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.quotationRight {
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+    .quotation {
+        flex-direction: column;
+        height: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
-    .quotation {
-        height: 100%;
-    }
 
 }

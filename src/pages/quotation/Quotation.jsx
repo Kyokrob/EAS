@@ -3,6 +3,7 @@ import "./quotation.css";
 import QuotationForm from "../../components/quotationForm/QuotationForm";
 import { useEffect } from "react";
 import Container from "@mui/material/Container";
+import quotaimg from '../../images/quotacover.png'
 
 import { Helmet } from "react-helmet";
 
@@ -17,10 +18,18 @@ const Quotation = () => {
         <title>EASTHAI - Get Quotation</title>
       </Helmet>
       <Container>
-        <div className="quotation">
+      <div className="quotation">
+      <div className="quotationLeft">
+        <img src={quotaimg} alt="" />
+      </div>
+      <div>
+        <div className="quotationRight">
           <QuotationForm />
         </div>
+      </div>
+      </div>
       </Container>
+
     </>
   );
 };

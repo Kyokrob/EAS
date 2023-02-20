@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./quotationform.css";
 
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
+
 function QuotationForm() {
+  const form = useRef();
+  const [alert, setAlert] = useState({severity:'',message:''});
+
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -44,6 +50,17 @@ function QuotationForm() {
       more_detail: moreDetail,
     };
 
+
+    if(!form.current.name.value || !form.current.email.value)
+    {
+      setAlert({severity:'error', message:'Please enter the following information: Full Name, Email'});
+        setOpen(true);
+        return;
+    }
+
+    setAlert({severity:'success', message:'The Email has been sent ! We will contact you back shortly.'});
+    setOpen(true);
+
     emailjs
       .send(
         "service_50n0r1n",
@@ -61,6 +78,20 @@ function QuotationForm() {
       );
   };
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
   return (
     <>
       <div className="quotationTitle">
@@ -73,7 +104,7 @@ function QuotationForm() {
           </a>{" "}
         </p>
       </div>
-      <form className="quotation-form" onSubmit={handleSubmit}>
+      <form className="quotation-form" ref={form} onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-col">
             <label htmlFor="name">Name:</label>
@@ -84,6 +115,7 @@ function QuotationForm() {
               placeholder="Enter your name"
               value={formValues.name}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-col">
@@ -95,6 +127,7 @@ function QuotationForm() {
               placeholder="Enter your email"
               value={formValues.email}
               onChange={handleChange}
+              required
             />
           </div>
         </div>
@@ -159,7 +192,18 @@ function QuotationForm() {
             />
           </div>
         </div>
-        <button type="submit">Get Quotation</button>
+        <button type="submit" value="send"
+              onClick={handleClick}>Get Quotation</button>
+        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+
+             <Alert      
+                severity={alert.severity}
+                sx={{ width: "100%" }}
+              >
+                {alert.message}
+              </Alert>
+
+            </Snackbar>
       </form>
     </>
   );

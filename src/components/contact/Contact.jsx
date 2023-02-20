@@ -10,7 +10,7 @@ const Contact = () => {
     <>
     <Box className='contactContainer'>
     <Typography className='contactText'>
-        <h1>บริการเคลียร์สินค้า, ภาษีนำเข้า, จัดการเอกสาร, ติดใบอนุญาต <br /> ให้เราช่วยเหลือ</h1>
+        <h1>บริการเคลียร์สินค้า, ภาษีนำเข้า, จัดการเอกสาร, ติดใบอนุญาต</h1>
     <div className="contactButton">
       <Button component={Link}
       to='/quotation'
