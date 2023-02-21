@@ -12,11 +12,10 @@ function QuotationForm() {
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
-    origin: "",
-    destination: "",
+    company: "",
+    telephone: "",
     productType: "",
-    dimensions: "",
-    weight: "",
+    service: "",
     moreDetail: "",
   });
 
@@ -33,20 +32,20 @@ function QuotationForm() {
     const {
       name,
       email,
-      origin,
-      destination,
+      company,
+      telephone,
       productType,
-      weight,
+      service,
       moreDetail,
     } = formValues;
 
     const templateParams = {
       from_name: name,
       from_email: email,
-      origin: origin,
-      destination: destination,
+      company: company,
+      telephone: telephone,
       product_type: productType,
-      weight: weight,
+      service: service,
       more_detail: moreDetail,
     };
 
@@ -133,24 +132,24 @@ function QuotationForm() {
         </div>
         <div className="form-row">
           <div className="form-col">
-            <label htmlFor="origin">Origin:</label>
+            <label htmlFor="company">Company:</label>
             <input
               type="text"
-              id="origin"
-              name="origin"
-              placeholder="Place of origin"
-              value={formValues.origin}
+              id="company"
+              name="company"
+              placeholder="Company name"
+              value={formValues.company}
               onChange={handleChange}
             />
           </div>
           <div className="form-col">
-            <label htmlFor="destination">Destination:</label>
+            <label htmlFor="telephone">Tel : </label>
             <input
               type="text"
-              id="destination"
-              name="destination"
-              placeholder="Place of destination"
-              value={formValues.destination}
+              id="telephone"
+              name="telephone"
+              placeholder="Enter your contact number"
+              value={formValues.telephone}
               onChange={handleChange}
             />
           </div>
@@ -169,15 +168,21 @@ function QuotationForm() {
           </div>
 
           <div className="form-col">
-            <label htmlFor="weight">Weight:</label>
-            <input
+            <label htmlFor="service">Service:</label>
+            {/* <input
               type="text"
-              id="weight"
-              name="weight"
+              id="service"
+              name="service"
               placeholder="Carton weight"
               value={formValues.weight}
               onChange={handleChange}
-              />
+              /> */}
+              <select value={formValues.service} onChange={(e) => setFormValues(e.target.value)}>
+          <option value="">--Please choose an service--</option>
+          <option value="option1">Freight forwarding</option>
+          <option value="option2">Shipping</option>
+          <option value="option3">Transportation</option>
+        </select>
         </div>
               </div>
         <div className="form-row">
