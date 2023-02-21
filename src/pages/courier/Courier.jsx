@@ -48,7 +48,7 @@ const Courier = () => {
       <div className="courier">
         <Container  className="courierHeader">
           <h1>Express service</h1>
-          <p>สั่งของจากต่างประเทศ ติดขัดปัญหาการนำเข้าสินค้า</p>
+          <p>สั่งของจากต่างประเทศ ติดขัดปัญหาการนำเข้าสินค้า, พัสดุ</p>
           <p>ไปรษณีย์,ท่าเรือ, DHL, FEDEX, UPS, TNT</p>
           {/* <Button
             href="tel:0867780808"
@@ -72,27 +72,26 @@ const Courier = () => {
           <div className="table-box">
             <div className="boxBg"><img src={one} alt="" /></div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>Express service คือบริการช่วยเหลือผู้นำเข้าสินค้าพร้อมให้คำปรึกษาปัญหาสำหรับการนำเข้าสินค้าพร้อมช่วยเหลือและแก้ใขด้วยประสบการณ์โดยตรงมากกว่า 25 ปี</p>
+              <p>Express service คือบริการช่วยเหลือผู้นำเข้าสินค้าพร้อมให้คำปรึกษาสำหรับการนำเข้าสินค้าเร่งด่วน (Courier express) พร้อมช่วยเหลือและแก้ใขด้วยประสบการณ์โดยตรงมากกว่า 25 ปี</p>
             </div>
           </div>
           <div className="table-box">
           <div className="boxBg"><img src={two} alt="" /></div>
-            <div className="boxDetail" data-aos="flip-up">
+            <div className="boxDetail" data-aos="flip-down">
               <p>สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็วดูแลผ่านทีมงานมืออาชีพ ดำเนินการให้ครบทุกขั้นตอน</p>
             </div>
           </div>
           <div className="table-box">
           <div className="boxBg"><img src={three} alt="" /></div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>ปัญหาสินค้าคลังสินค้า, ไปรษณีย์,
+              <p>ปัญหาสินค้าลงคลัง ไปรษณีย์,
               ท่าเรือ, สนามบินสุวรรณภูมิ, DHL, FEDEX, UPS, TNT ต่างๆ</p>
             </div>
           </div>
           <div className="table-box">
           <div className="boxBg"><img src={four} alt="" /></div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>ด้านใบอนุญาตินำเข้า พิกัดศุลกากรการใช้ฟอร์มนำเข้าต่างๆหรือ
-              เอกสารผิดพลาด</p>
+              <p>ติดปัญหาด้านใบอนุญาตินำเข้า พิกัดศุลกากรการใช้ฟอร์มนำเข้าหรือ เอกสารผิดพลาดต่างๆ</p>
             </div>
           </div>
           <div className="table-box">
@@ -142,7 +141,7 @@ const Courier = () => {
         <div className="courier2Left">
           <h3>คำถามที่พบบ่อย</h3>
 
-          <div className="courierFaq" data-aos="slide-up">
+          <div className="courierFaq">
             <Accordion
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}

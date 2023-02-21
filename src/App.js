@@ -14,6 +14,7 @@ import Quotation from './pages/quotation/Quotation';
 
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import ScrollTopButton from './components/scrollTopButton/ScrollTopButton';
 
 
 import ReactGA from "react-ga4";
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/courier" element={<Courier/>}></Route>
         <Route path="/quotation" element={<Quotation/>}></Route>
       </Routes>
+      <ScrollTopButton/>
       <Footer/>
     </Router>
   )

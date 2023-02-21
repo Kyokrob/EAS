@@ -45,7 +45,7 @@ const NavDrawer = () => {
           <ListItemButton onClick={() => setOpenDrawer(false)}>
             <ListItemText style={{ textAlign: "center" }}>
               <ListItemIcon>
-                <Link to="/about">Contact us</Link>
+                <Link to="/contactform">Contact us</Link>
               </ListItemIcon>
             </ListItemText>
           </ListItemButton>

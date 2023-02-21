@@ -362,8 +362,6 @@ a#scroll-btn:after {
     align-items: center;
     width: 550px;
     height: 450px;
-
-
 }
 
 .left img {
@@ -535,11 +533,12 @@ a#scroll-btn:after {
     }
 
     .left11 img {
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
 
     .left11 {
-        width: 100%;
+        width: 80%;
     }
     
     .section2Header h1 {
@@ -557,6 +556,12 @@ a#scroll-btn:after {
 
     }
 
+    .rightAboutHome {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
     .rightAboutHome h3 {
         font-size: 32px;
         text-align: center;
@@ -568,6 +573,7 @@ a#scroll-btn:after {
 
 
 @media only screen and (max-width: 480px) {
+    
 
     a#scroll-btn {
         height: 3em;

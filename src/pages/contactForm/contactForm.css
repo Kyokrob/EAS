@@ -79,16 +79,27 @@
 .contactForm2Top {
     text-align: left;
     width: 100%;
-    height: 50%;
+    height: 100%;
     padding: 12px;
+    color: #042B3B;
 }
 
-.contactForm2Top {
-  color: #042B3B;
+.contactForm2Detail {
+  display: flex;
+  align-items: center;
+  padding: 12px;
 }
 
-.contactForm2Top p{
-  padding: 8px 0;
+.contactForm2Detail p{
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.contactForm2Detail a {
+      color: #042B3B;
+  text-decoration: underline;
 }
 
 

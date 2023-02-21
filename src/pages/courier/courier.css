@@ -73,8 +73,8 @@
     left: 50%;
     transform: translate(-50%, -10%);
     z-index: 1;
-    width: 900px;
-    height: 600px;
+    width: 1050px;
+    height: 700px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
     background: #fafafa;
 
@@ -86,8 +86,8 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     overflow: hidden;
     text-overflow: ellipsis;
     border-top: .1px dotted #333333;
@@ -116,12 +116,13 @@
 .boxDetail {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: justify;
     font-size: 18px;
     line-height: 1.4;
     font-weight: 600;
-    padding: 8px 0;
+    padding: 12px;
+    margin-top: 2rem;
     height: 100%;
     width: 100%;
     gap: 12px;
@@ -249,8 +250,8 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.459);
-    background: #ffffff7e;
+    box-shadow: 0 2px 15px rgba(100, 100, 100, 0.572);
+    background: #fefefea7;
     height: 150px;
   }
 
@@ -277,8 +278,8 @@
     .courierTable {
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(3, 1fr); 
-        width: 600px;
-        height: 900px;
+        width: 700px;
+        height: 1050px;
         transform: translate(-50%, -5%); 
     }
 
@@ -303,8 +304,8 @@
     .courierTable {
         grid-template-columns: repeat(1, 1fr); 
         grid-template-rows: repeat(1, 1fr); 
-        width: 300px;
-        height: 1800px;
+        width: 350px;
+        height: 2100px;
         transform: translate(-50%, -5%);
     }
 
@@ -374,7 +375,7 @@
     }
 
     .form-col-faq textarea {
-        height: 80px;
+        height: 100px;
       }
     
 }
