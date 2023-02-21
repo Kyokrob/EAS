@@ -78,7 +78,7 @@ const Courier = () => {
           <div className="table-box">
           <div className="boxBg"><img src={two} alt="" /></div>
             <div className="boxDetail" data-aos="flip-down">
-              <p>สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็วดูแลผ่านทีมงานมืออาชีพ ดำเนินการให้ครบทุกขั้นตอน</p>
+              <p>สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็วดูแลผ่านทีมงานมืออาชีพ ดำเนินการให้ครบจบทุกขั้นตอน</p>
             </div>
           </div>
           <div className="table-box">
@@ -97,7 +97,7 @@ const Courier = () => {
           <div className="table-box">
           <div className="boxBg"><img src={five} alt="" /></div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>ให้คำปรึกษาแนะนำและวางแผน พร้อมคำนวนค่าภาษีสำหรับผู้นำเข้า</p>
+              <p>ให้คำปรึกษาแนะนำคำนวนค่าภาษีให้กับคุณ เพื่อลดต้นทุนค่าใช้จ่ายและลดความผิดพลาดจากการขนส่งกับราคาที่เหมาะสมและเป็นธรรมสำหรับผู้นำเข้า</p>
             </div>
           </div>
           <div className="table-box">
@@ -115,10 +115,10 @@ const Courier = () => {
                   marginTop: "12px",
                 }}
               >
-                โทรติดต่อ
+                ติดต่อเรา
               </Button>
               <Button
-                to="/contactform"
+                to="/quotation"
                 component={Link}
                 sx={{
                   padding: "8px 12px",
