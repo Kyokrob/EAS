@@ -21,11 +21,14 @@
     font-size: 24px;
     padding: 12px 0;
     color: #042B3B;
+    font-weight: bold;
 }
 
 .formTitle p {
-    width: 60%;
-    font-size: 12px;
+    width: 70%;
+    font-size: 16px;
+    color: #042B3B;
+    font-weight: 400;
 }
 
 .submitform {
@@ -58,15 +61,36 @@
 .form-control {
     background-color: transparent;
     width: 80%;
-    border: 2PX solid #074862;
+    border: 2PX solid #042B3B;
     padding: 12px;
     margin-top: 4px;
     border-radius: 5px;
 }
 
+.form-control::placeholder {
+    color: #8a7045;
+    letter-spacing: 1px;
+    transition: color 0.2s ease-in-out;
+    text-align: center;
+    
+  }
+
 .formField input {
-    color: #074862;
-    padding: 12px;
+    color: #042B3B;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #fcdca4;
+}
+
+.formField textarea {
+    color: #042B3B;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #fcdca4;
 }
 
 

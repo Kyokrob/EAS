@@ -68,8 +68,10 @@ const Courier = () => {
       </div>
 
       <Container className="courier1">
+
         <div className="courierTable">
           <div className="table-box">
+            
             <div className="boxBg"><img src={one} alt="" /></div>
             <div className="boxDetail" data-aos="flip-up">
               <p>Express service คือบริการช่วยเหลือผู้นำเข้าสินค้าพร้อมให้คำปรึกษาสำหรับการนำเข้าสินค้าเร่งด่วน (Courier express) พร้อมช่วยเหลือและแก้ใขด้วยประสบการณ์โดยตรงมากกว่า 25 ปี</p>

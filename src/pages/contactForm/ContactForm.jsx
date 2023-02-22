@@ -28,17 +28,12 @@ const ContactForm = () => {
         <div className="contactForm1">
           <div className="contactForm1Left">
             <h1>
-              Efficient, Effective, and Reliable service for your logistic Needs
+            ขนส่งสินค้าอย่างมีประสิทธิภาพ น่าเชื่อถือ เพิ่มความมั่นใจ
             </h1>
             <p>
-              To receive a quotation for your upcoming shipment, please fill out
-              the form provided. Once completed, our team will contact you back
-              with a competitive and accurate pricing for your logistic needs.
+            สำหรับผู้นำเข้าส่งออกหากต้องการรับใบเสนอราคากรุณากรอกแบบฟอร์มที่เตรียมไว้ให้เรียบร้อย ทางทีมงานของเราจะติดต่อกลับมาโดยเร็วพร้อมนำเสนอราคา ตรงตามความต้องการของคุณ
             </p>
-            <p>Not ready for a quote yet, but still have questions?</p>
-            <a href="tel:0867780808" className="contactFormContact">
-              Contact us now.
-            </a>
+            <p>หากต้องการสนทนาเพิ่มเติม สามารถติดต่อเราได้ผ่านช่องทางต่าง ๆ เช่น โทรศัพท์ อีเมล หรือ Line</p>
           </div>
           <div className="contactForm1Right">
             <Form />
@@ -47,35 +42,59 @@ const ContactForm = () => {
         <div className="contactForm2">
           <div className="contactForm2Top">
             <h1>Get in touch</h1>
-           <div className="contactForm2Detail">
-           <PlaceIcon /> 
-            <p>
-              Office : 141/32 อาคารสกุลไทย-สุรวงศ์ทาวเวอร์ ชั้น 23
-              ถนนสุรวงศ์ แขวงสุริยวงศ์ เขตบางรัก กรุงเทพมหานคร 10500
-            </p>
-           </div>
-           <div className="contactForm2Detail">
-           <PhoneIcon />
-            <p>
-               Call us : <a href="tel:022359100">02 235 9100</a> or{" "}
-              <a href="tel:0867780808">086 778 0808</a>
-            </p>
-           </div>
-          <div className="contactForm2Detail">
-          <EmailIcon />
-            <p>
-               Drop us email :          <a href="mailto:hello@easthai.com">
- hello@easthai.com
-            </a>
-            </p>
-          </div>
-        <div className="contactForm2Detail">
-        <ChatIcon /> 
-            <p>
-              Chat with us via LINE : @easthai or{" "}
-              <a href="https://page.line.me/999piqzj">Click here !</a>
-            </p>
-        </div>
+
+            <div className="contactForm2Table">
+
+              <div className="contactTable">
+                <div className="contactBg">
+                  <PlaceIcon className="customContactIcon" />
+                </div>
+                <div className="contactForm2Detail">
+                  <p>
+                    Office : 141/32 อาคารสกุลไทย-สุรวงศ์ทาวเวอร์ ชั้น 23
+                    ถนนสุรวงศ์ แขวงสุริยวงศ์ เขตบางรัก กรุงเทพมหานคร 10500
+                  </p>
+                </div>
+              </div>
+
+              <div className="contactTable">
+                <div className="contactBg">
+                <PhoneIcon className="customContactIcon" />
+                </div>
+              <div className="contactForm2Detail">
+                <p>
+                  Call us : <a href="tel:022359100">02-235-9100</a> or{" "}
+                  <a href="tel:0867780808">086-778-0808</a>
+                </p>
+              </div>
+
+              </div>
+
+
+              <div className="contactTable">
+                <div className="contactBg">
+                <EmailIcon className="customContactIcon" />
+                </div>
+              <div className="contactForm2Detail">
+                <p>
+                  Drop an email :{" "}
+                  <a href="mailto:hello@easthai.com">hello@easthai.com</a>
+                </p>
+              </div>
+              </div>
+
+            <div className="contactTable">
+              <div className="contactBg">
+              <ChatIcon className="customContactIcon" />
+              </div>
+            <div className="contactForm2Detail">
+              <p>
+                Chat with us via LINE : @easthai or{" "}
+                <a href="https://page.line.me/999piqzj">Clickhere!</a>
+              </p>
+            </div>
+            </div>
+
           </div>
 
           <div className="contactForm2Btm">
@@ -93,6 +112,8 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
+        </div>
+
       </Container>
       <Contact />
     </>

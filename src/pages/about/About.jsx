@@ -27,6 +27,7 @@ const About = () => {
       </Helmet>
       <div className="aboutHeader">
         <video
+          loading="lazy"
           autoPlay
           playsInline
           loop

@@ -56,8 +56,8 @@ const Form = () => {
   return (
     <div className="form">
       <div className="formTitle">
-        <h1>ติดต่อเรา</h1>
-        <p>ต้องการนำเข้าส่งออกสินค้าเพียงกรอกข้อมูล</p>
+        <h1>ติดต่อเพื่อสอบถาม</h1>
+        <p>กรอบข้อมูลสำหรับเจ้าหน้าที่เพื่อทำการติดต่อกลับ</p>
       </div>
 
       <form ref={form} onSubmit={sendEmail}>
@@ -66,7 +66,7 @@ const Form = () => {
             <input
               type="text"
               className="form-control"
-              placeholder="ชื่อนาม - สกุล (กรุณาระบุ)"
+              placeholder="ชื่อสำหรับติดต่อกลับ (กรุณาระบุ)"
               name="name"
               required
             />
@@ -82,29 +82,31 @@ const Form = () => {
           </div>
           <div className="formField">
             <input
-              type="number"
+              type="tel"
               className="form-control"
-              placeholder="เบอร์โทร (กรุณาระบุ)"
-              name="number"
+              placeholder="เบอร์สำหรับติดต่อกลับ"
+              name="phone"
             />
           </div>
           <div className="formField">
             <input
               type="text"
               className="form-control"
-              placeholder="Line Id"
+              placeholder="ไลน์ไอดี"
               name="line"
             />
           </div>
 
+          <div className="formField">
           <textarea
             className="form-control"
             id=""
             cols="30"
             rows="4"
-            placeholder="คำถามที่ต้องการปรึกษาเรา "
+            placeholder="คำถามที่ต้องการปรึกษา "
             name="message"
           ></textarea>
+          </div>
 
           <div className="formInputBtn">
             <button

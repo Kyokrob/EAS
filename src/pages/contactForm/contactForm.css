@@ -29,8 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
     width: 50%;
     height: 100%;
     margin-top: 3rem;
@@ -38,15 +37,19 @@
 }
 
 .contactForm1Left h1 {
+  text-align: start;
     color: #042B3B;
-    width: 60%;
+    width: 70%;
     padding: 12px 0;
     font-size: 32px;
 }
 
 .contactForm1Left p {
-    width: 60%;
-    line-height: 32px;
+  text-align: start;
+    width: 70%;
+    line-height: 1.8;
+    color: #333333;
+    font-size: 18px;
 }
 
 .contactFormContact {
@@ -67,7 +70,7 @@
 }
 
 .contactForm2 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,31 +80,98 @@
 }
 
 .contactForm2Top {
-    text-align: left;
     width: 100%;
     height: 100%;
     padding: 12px;
-    color: #042B3B;
 }
+
+.contactForm2Top h1 {
+  text-align: center;
+  color: #042B3B;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.contactForm2Table {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fafafa;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  gap: 12px;
+
+
+}
+
+.contactTable {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+.contactTable:hover {
+  background: #eeeeee;
+}
+
+.customContactIcon {
+  display: flex;
+  position: absolute;
+  color: #2b61a442;
+  font-size: 152px !important;
+  z-index: -2;
+}
+
+.contactBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .contactForm2Detail {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 12px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 600;
+    padding: 12px;
+    height: 100%;
+    width: 75%;
+    gap: 12px;
 }
-
 .contactForm2Detail p{
   text-transform: uppercase;
+  text-align: start;
   font-weight: 600;
   margin: 0;
   padding-left: 10px;
-}
+  color: #042B3B;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  z-index: 3;
 
+}
 .contactForm2Detail a {
       color: #042B3B;
   text-decoration: underline;
 }
-
 
 .contactForm2Btm {
     width: 100%;
@@ -130,13 +200,14 @@
 
 
 @media only screen and (max-width: 786px) {
+  .contactForm2Table {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .contactForm1Left h1 {
     font-size: 24px;
   }
 
-  .contactForm1Left p {
-    font-size: 12px;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -155,6 +226,7 @@
   }
 
   .contactForm1Left p {
+    font-size: 16px;
     width: 100%;
   }
 
@@ -164,6 +236,13 @@
 
   .contactForm2 {
     height: 100%;
+  }
+
+  .contactTable {
+    height: 200px;
+  }
+  .contactForm2Detail {
+    font-size: 14px;
   }
 }
 

@@ -7,7 +7,7 @@ import Alert from "@mui/material/Alert";
 
 function QuotationForm() {
   const form = useRef();
-  const [alert, setAlert] = useState({severity:'',message:''});
+  const [alert, setAlert] = useState({ severity: "", message: "" });
 
   const [formValues, setFormValues] = useState({
     name: "",
@@ -49,15 +49,19 @@ function QuotationForm() {
       more_detail: moreDetail,
     };
 
-
-    if(!form.current.name.value || !form.current.email.value)
-    {
-      setAlert({severity:'error', message:'Please enter the following information: Full Name, Email'});
-        setOpen(true);
-        return;
+    if (!form.current.name.value || !form.current.email.value) {
+      setAlert({
+        severity: "error",
+        message: "Please enter the following information: Full Name, Email",
+      });
+      setOpen(true);
+      return;
     }
 
-    setAlert({severity:'success', message:'The Email has been sent ! We will contact you back shortly.'});
+    setAlert({
+      severity: "success",
+      message: "The Email has been sent ! We will contact you back shortly.",
+    });
     setOpen(true);
 
     emailjs
@@ -106,12 +110,12 @@ function QuotationForm() {
       <form className="quotation-form" ref={form} onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-col">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">ชื่อผู้ติดต่อ:</label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Enter your name"
+              placeholder=""
               value={formValues.name}
               onChange={handleChange}
               required
@@ -123,7 +127,7 @@ function QuotationForm() {
               type="email"
               id="email"
               name="email"
-              placeholder="Enter your email"
+              placeholder=""
               value={formValues.email}
               onChange={handleChange}
               required
@@ -132,23 +136,23 @@ function QuotationForm() {
         </div>
         <div className="form-row">
           <div className="form-col">
-            <label htmlFor="company">Company:</label>
+            <label htmlFor="company">ชื่อบริษัท:</label>
             <input
               type="text"
               id="company"
               name="company"
-              placeholder="Company name"
+              placeholder="Optional"
               value={formValues.company}
               onChange={handleChange}
             />
           </div>
           <div className="form-col">
-            <label htmlFor="telephone">Tel : </label>
+            <label htmlFor="telephone">เบอร์ติดต่อ : </label>
             <input
               type="text"
               id="telephone"
               name="telephone"
-              placeholder="Enter your contact number"
+              placeholder=""
               value={formValues.telephone}
               onChange={handleChange}
             />
@@ -156,19 +160,19 @@ function QuotationForm() {
         </div>
         <div className="form-row">
           <div className="form-col">
-            <label htmlFor="productType">Type of Product:</label>
+            <label htmlFor="productType">ประเภทสินค้า:</label>
             <input
               type="text"
               id="productType"
               name="productType"
-              placeholder="What are your product"
+              placeholder="กรอกชื่อหรือประเภทสินค้า"
               value={formValues.productType}
               onChange={handleChange}
             />
           </div>
 
           <div className="form-col">
-            <label htmlFor="service">Service:</label>
+            <label htmlFor="service">บริการที่สนใจ:</label>
             {/* <input
               type="text"
               id="service"
@@ -177,38 +181,39 @@ function QuotationForm() {
               value={formValues.weight}
               onChange={handleChange}
               /> */}
-              <select value={formValues.service} onChange={(e) => setFormValues(e.target.value)}>
-          <option value="">--Please choose an service--</option>
-          <option value="option1">Freight forwarding</option>
-          <option value="option2">Shipping</option>
-          <option value="option3">Transportation</option>
-        </select>
+            <select
+              value={formValues.service}
+              onChange={(e) => {
+                setFormValues({...formValues, service: e.target.value});
+              }}
+            >
+              <option value="">--เลือกประเภทบริการ--</option>
+              <option value="freightforwarding">Freight forwarding (นำเข้าส่งออก)</option>
+              <option value="shipping">Shipping (พิธีการศุลกากร)</option>
+              <option value="transportation">Transportation</option>
+            </select>
+          </div>
         </div>
-              </div>
         <div className="form-row">
           <div className="form-col1">
-            <label htmlFor="moreDetail">More Detail:</label>
+            <label htmlFor="moreDetail">ข้อมูลเพิ่มเติม:</label>
             <textarea
               id="moreDetail"
               name="moreDetail"
-              placeholder="How can we help"
+              placeholder="ระบุข้อมูลเพิ่มเติม เช่น น้ำหนัก ประเทศนำเข้า เอกสารสำคัญ ขอพิกัดศุลกากรและการคำนวนภาษี หรือ ฟอร์มต่างๆ"
               value={formValues.moreDetail}
               onChange={handleChange}
             />
           </div>
         </div>
-        <button type="submit" value="send"
-              onClick={handleClick}>Get Quotation</button>
+        <button type="submit" value="send" onClick={handleClick}>
+         ขอใบเสนอราคา
+        </button>
         <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-
-             <Alert      
-                severity={alert.severity}
-                sx={{ width: "100%" }}
-              >
-                {alert.message}
-              </Alert>
-
-            </Snackbar>
+          <Alert severity={alert.severity} sx={{ width: "100%" }}>
+            {alert.message}
+          </Alert>
+        </Snackbar>
       </form>
     </>
   );
