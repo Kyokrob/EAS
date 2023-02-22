@@ -54,15 +54,27 @@
 
 }
 
-.form-col option,
+
 .form-col input,
-.form-col textarea,
+.form-col textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #e6e6e6;
+}
+
 .form-col select {
   padding: 10px;
   border-radius: 5px;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background: #e6e6e6;
+    color: #575757;
+}
+
+.form-col option {
+    color: #575757;
 }
 
 .form-col1 {
