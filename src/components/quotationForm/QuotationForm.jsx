@@ -187,7 +187,7 @@ function QuotationForm() {
                 setFormValues({...formValues, service: e.target.value});
               }}
             >
-              <option value="">--เลือกประเภทบริการ--</option>
+              <option value="">เลือกประเภทบริการ</option>
               <option value="freightforwarding">Freight forwarding (นำเข้าส่งออก)</option>
               <option value="shipping">Shipping (พิธีการศุลกากร)</option>
               <option value="transportation">Transportation</option>
