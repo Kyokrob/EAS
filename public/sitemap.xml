@@ -9,7 +9,7 @@
 
 <url>
   <loc>https://www.easthai.co/</loc>
-  <lastmod>2023-02-07T08:29:35+00:00</lastmod>
+  <lastmod>2023-02-22T08:29:35+00:00</lastmod>
   <changefreq>daily</changefreq>
     <priority>1.0</priority>
 </url>
@@ -17,7 +17,7 @@
 
 <url>
   <loc>https://www.easthai.co/courier</loc>
-  <lastmod>2023-02-07T08:29:35+00:00</lastmod>
+  <lastmod>2023-02-22T08:29:35+00:00</lastmod>
   <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 </url>
@@ -25,6 +25,27 @@
 
 <url>
   <loc>https://www.easthai.co/import-export</loc>
+  <lastmod>2023-02-07T08:29:35+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.easthai.co/airfreight</loc>
+  <lastmod>2023-02-07T08:29:35+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.easthai.co/seafreight</loc>
+  <lastmod>2023-02-07T08:29:35+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.easthai.co/customclearance</loc>
   <lastmod>2023-02-07T08:29:35+00:00</lastmod>
   <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -39,7 +60,14 @@
 
 <url>
   <loc>https://www.easthai.co/contactform</loc>
-  <lastmod>2023-02-07T08:29:35+00:00</lastmod>
+  <lastmod>2023-02-22T08:29:35+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.easthai.co/quotation</loc>
+  <lastmod>2023-02-22T14:22:35+00:00</lastmod>
   <changefreq>monthly</changefreq>
     <priority>0.6</priority>
 </url>

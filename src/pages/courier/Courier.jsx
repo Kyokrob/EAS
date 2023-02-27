@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./courier.css";
 import { Link } from "react-router-dom";
+import QuestionForm from "../../components/questionForm/QuestionForm";
 import Contact from "../../components/contact/Contact";
 import Container from "@mui/material/Container";
 import Slider from "../../components/slider/Slider";
 import Button from "@mui/material/Button";
-import faqcover from "../../images/faqcover.png"
 
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -13,13 +13,16 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+import cover from "../../images/easexpresscover_resize.png"
+import cover3 from '../../images/cover_03.png'
 
-import one from '../../images/1.png'
-import two from '../../images/2.png'
-import three from '../../images/3.png'
-import four from '../../images/4.png'
-import five from '../../images/5.png'
-import six from '../../images/6.png'
+import one from "../../images/1.png";
+import two from "../../images/2.png";
+import three from "../../images/3.png";
+import four from "../../images/4.png";
+import five from "../../images/5.png";
+import six from "../../images/6.png";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -46,11 +49,12 @@ const Courier = () => {
         <title>EASTHAI - บริการเคลียร์สินค้านำเข้า</title>
       </Helmet>
       <div className="courier">
-        <Container  className="courierHeader">
-          <h1>Express service</h1>
+        <div className="courierHeader">
+          <Container className="courierHeaderContent">
+          <h1>Express support</h1>
           <p>สั่งของจากต่างประเทศ ติดขัดปัญหาการนำเข้าสินค้า, พัสดุ</p>
           <p>ไปรษณีย์,ท่าเรือ, DHL, FEDEX, UPS, TNT</p>
-          {/* <Button
+          <Button
             href="tel:0867780808"
             className="courierHeaderbtn"
             sx={{
@@ -63,47 +67,77 @@ const Courier = () => {
             }}
           >
             ติดต่อทีมงาน
-          </Button> */}
-        </Container>
+          </Button>
+          </Container>
+          <div className="courierHeaderImg">
+            <img src={cover} alt="" />
+          </div>
+        </div>
       </div>
 
       <Container className="courier1">
-
         <div className="courierTable">
           <div className="table-box">
-            
-            <div className="boxBg"><img src={one} alt="" /></div>
+            <div className="boxBg">
+              <img src={one} alt="eas01" />
+            </div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>Express service คือบริการช่วยเหลือผู้นำเข้าสินค้าพร้อมให้คำปรึกษาสำหรับการนำเข้าสินค้าเร่งด่วน (Courier express) พร้อมช่วยเหลือและแก้ใขด้วยประสบการณ์โดยตรงมากกว่า 25 ปี</p>
+              <p>
+                Express support
+                คือบริการช่วยเหลือผู้นำเข้าสินค้าพร้อมให้คำปรึกษาสำหรับการนำเข้าสินค้าเร่งด่วน
+                (Courier express)
+                พร้อมช่วยเหลือและแก้ใขด้วยประสบการณ์โดยตรงมากกว่า 25 ปี
+              </p>
             </div>
           </div>
           <div className="table-box">
-          <div className="boxBg"><img src={two} alt="" /></div>
+            <div className="boxBg">
+              <img src={two} alt="eas02" />
+            </div>
             <div className="boxDetail" data-aos="flip-down">
-              <p>สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็วดูแลผ่านทีมงานมืออาชีพ ดำเนินการให้ครบจบทุกขั้นตอน</p>
+              <p>
+                สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็วดูแลผ่านทีมงานมืออาชีพ
+                ดำเนินการให้ครบจบทุกขั้นตอน
+              </p>
             </div>
           </div>
           <div className="table-box">
-          <div className="boxBg"><img src={three} alt="" /></div>
+            <div className="boxBg">
+              <img src={three} alt="eas03" />
+            </div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>ปัญหาสินค้าลงคลัง ไปรษณีย์,
-              ท่าเรือ, สนามบินสุวรรณภูมิ, DHL, FEDEX, UPS, TNT ต่างๆ</p>
+              <p>
+                ปัญหาสินค้าลงคลัง ไปรษณีย์, ท่าเรือ, สนามบินสุวรรณภูมิ, DHL,
+                FEDEX, UPS, TNT ต่างๆ
+              </p>
             </div>
           </div>
           <div className="table-box">
-          <div className="boxBg"><img src={four} alt="" /></div>
+            <div className="boxBg">
+              <img src={four} alt="eas04" />
+            </div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>ติดปัญหาด้านใบอนุญาตินำเข้า พิกัดศุลกากรการใช้ฟอร์มนำเข้าหรือ เอกสารผิดพลาดต่างๆ</p>
+              <p>
+                ติดปัญหาด้านใบอนุญาตินำเข้า พิกัดศุลกากรการใช้ฟอร์มนำเข้าหรือ
+                เอกสารผิดพลาดต่างๆ
+              </p>
             </div>
           </div>
           <div className="table-box">
-          <div className="boxBg"><img src={five} alt="" /></div>
+            <div className="boxBg">
+              <img src={five} alt="eas05" />
+            </div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>ให้คำปรึกษาแนะนำคำนวนค่าภาษีให้กับคุณ เพื่อลดต้นทุนค่าใช้จ่ายและลดความผิดพลาดจากการขนส่งกับราคาที่เหมาะสมและเป็นธรรมสำหรับผู้นำเข้า</p>
+              <p>
+                ให้คำปรึกษาแนะนำคำนวนค่าภาษีให้กับคุณ
+                เพื่อลดต้นทุนค่าใช้จ่ายและลดความผิดพลาดจากการขนส่งกับราคาที่เหมาะสมและเป็นธรรมสำหรับผู้นำเข้า
+              </p>
             </div>
           </div>
           <div className="table-box">
-          <div className="boxBg"><img src={six} alt="" /></div>
+            <div className="boxBg">
+              <img src={six} alt="eas contact us" />
+            </div>
             <div className="boxDetail">
               <br />
               <Button
@@ -114,7 +148,7 @@ const Courier = () => {
                   background: "#E6AF4B",
                   borderRadius: "10px",
                   color: "#ffffff",
-                  marginTop: "12px",
+                  marginTop: "3rem",
                 }}
               >
                 ติดต่อเรา
@@ -127,13 +161,11 @@ const Courier = () => {
                   background: "#E6AF4B",
                   borderRadius: "10px",
                   color: "#ffffff",
-                  marginTop: "12px",
-
+                  marginTop: "3rem",
                 }}
               >
                 ขอใบเสนอราคา
               </Button>
-             
             </div>
           </div>
         </div>
@@ -142,7 +174,6 @@ const Courier = () => {
       <Container className="courier2">
         <div className="courier2Left">
           <h3>คำถามที่พบบ่อย</h3>
-
           <div className="courierFaq">
             <Accordion
               expanded={expanded === "panel1"}
@@ -237,43 +268,18 @@ const Courier = () => {
             </Accordion>
           </div>
         </div>
-        <div className="courier2Right">
-          <img src={faqcover} alt="ชิปปิ้ง นำเข้า เคลียร์สินค้า shipping freight company" />
-          <div className="courier2RightText">
-            <h1>Dear shipper,</h1>
-            <p>Let us know your if you have any questions, don't hesitate to let us know. Our support team is always ready to assist you and will get back to you as soon as possible.  </p>
-            <div className="form-row-faq">
-          <div className="form-col-faq">
-            <textarea
-              id="moreDetail"
-              name="moreDetail"
-              placeholder="Let us know your question, dont forget to provide us contact infomation you our team can reach you back !"
-            />
-            <Button
-                          sx={{
-                            marginRight: "auto",
-                            marginTop: "12px",
-                            padding: "6px 24px",
-                            background: "#E6AF4B",
-                            borderRadius: "5px",
-                            color: "#000000",
-                            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                            
-                          }}>
-              Submit
-            </Button>
-          </div>
+        <div className="courier2img">
+        <img src={cover3} alt="" />
         </div>
-          </div>
-          </div>
       </Container>
+
 
       <div className="courierSlider">
         <h1>ผลงานของเรา</h1>
         <Slider />
       </div>
-
       <Contact />
+      <QuestionForm/>
     </>
   );
 };

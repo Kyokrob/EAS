@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react'
-import './saefreight.css'
-import Service from '../../components/service/Service'
-import Contact from '../../components/contact/Contact'
-import Container from '@mui/material/Container'
-import Divider from '@mui/material/Divider';
+import React, { useEffect } from "react";
+import "./saefreight.css";
+import Service from "../../components/service/Service";
+import Contact from "../../components/contact/Contact";
+import QuestionForm from "../../components/questionForm/QuestionForm";
 
-import { Helmet } from 'react-helmet'
+import Container from "@mui/material/Container";
 
-
-
+import { Helmet } from "react-helmet";
 
 const Seafreight = () => {
   useEffect(() => {
@@ -16,149 +14,85 @@ const Seafreight = () => {
   }, []);
   return (
     <>
-          <Helmet>
+      <Helmet>
         <title>EASTHAI - ขนส่งทางเรือ</title>
-        </Helmet>  
-    <div className='importexport'>
-         <img src="https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" />
+      </Helmet>
+      <div className="importexport">
+        <img
+          src="https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+          alt=""
+        />
 
-    <div className="importexportHeaderText">
-      <h1>Sea Freight</h1>
-    </div>
-    </div>
+        <div className="importexportHeaderText">
+          <h1>Sea Freight</h1>
+        </div>
+      </div>
 
-    <Container className="customclearanceContent">
-           <div className="customclearanceContentTitle">
-            <h1>นำเข้าและส่งของไปต่างประเทศโดยการขนส่งทางทะเล</h1>
-           </div>
+      <Container className="customclearanceContent">
+        <div className="customclearanceContentTitle">
+          <h1>นำเข้าส่งของโดยการขนส่งทางเรือ</h1>
+        </div>
 
-           <div className="importTitle">
-           
-           <p>การขนส่งทางทะเล โดยใช้เรือบรรทุกสินค้าขนาดใหญ่ เหมาะกับการขนส่งสินค้าที่มีปริมาณมาก ๆ หรือสินค้าที่มีขนาดใหญ่  ยังเป็นหนึ่งในทางเลือกหลักสำหรับผู้นำเข้าส่งออกสินค้าระหว่างประเทศที่ไม่ต้องคำนึงถึงระยะเวลาในการขนส่งมากนัก หากต้องการทำการขนส่งสินค้าประเภทนี้ สินค้าที่นำมาจัดส่งต้องไม่เป็นสินค้าประเภทเร่งด่วน เหมาะกับสินค้าที่มีปริมาณมาก และมีขนาดใหญ่  
+        <div className="importTitle">
+          <p>
+            การขนส่งทางเรือ
+            เป็นหนึ่งในทางเลือกหลักและได้รับความนิยมมากในปัจจุบัน
+            เหมาะกับการขนส่งสินค้าที่มีปริมาณมากหรือสินค้าที่มีขนาดใหญ่สำหรับผู้นำเข้าส่งออกสินค้าระหว่างประเทศที่ไม่ต้องคำนึงถึงระยะเวลาในการขนส่งหากต้องการทำการขนส่งสินค้าทางเรือสินค้าไม่ควรเป็นสินค้าประเภทเร่งด่วน
           </p>
 
+          <p>
+            การขนส่งทางเรือจะใช้ระบบตู้คอนเทนเนอร์ในการส่งสินค้าโดยค่าขนส่งนั้นจะถูกที่สุดเมื่อเทียบกับการขนส่งรูปแบบอื่นๆ
+            สำหรับตัวอย่างสินค้าที่เหมาะสมแก่การขนส่งทางเรือ เช่น
+            ชิ้นส่วนรถยนต์หรืออะไหล่รถยนต์ เฟอร์นิเจอร์ หรือ เครื่องจักร
+          </p>
 
-           <p>  โดยที่การขนส่งทางทะเลมีต้นทุนถูกที่สุดเมื่อเทียบกับการขนส่งรูปแบบอื่นๆ
-           ตัวอย่างสินค้าที่เหมาะสมสำหรับการขนส่งทางเรือ เช่น ชิ้นส่วนรถยนต์หรืออะไหล่รถยนต์ เฟอร์นิเจอร์ เครื่องจักร</p>
+          {/* create calculator feature for calculating container rate and price */}
+          <h3>การขนส่งทางทะเลนั้นมี 2 รูปแบบคือ</h3>
+          <ul>
+            LCL = Less than container load
+            <li> ราคาจะถูกคำนวนเป็น Qubic meter</li>
+            <li> สินค้าปริมานน้อย</li>
+            <li> สินค้าในตู้จะรวมมากับลูกค้าท่านอื่น</li>
+            <li> สำหรับปริมาณขนส่งไม่มากพอทสำหรับเช่าตู้คอนเทนเนอร์ทั้งตู้</li>
+          </ul>
+          <ul>
+            FCL = Full container load
+            <li> ราคาจะคิดตามขนาดตู้</li>
+            <li> สินค้าขนาดใหญ่</li>
+            <li> ปริมานมาก</li>
+            <li>ไม่มีการร่วมใช้ตู้คอนเทนเนอร์กับลูกค้ารายอื่น</li>
+            <li>ขนาดตู้คอนเทนเนอร์มีให้เลือกหลายไซส์</li>
+          </ul>
 
-           <h3>การขนส่งทางทะเลนั้นมี 2 รูปแบบคือ</h3>
-           <ul>
-            <li> LCL (Less than container load) = การขนส่งแบบไม่เต็มตู้ เหมาะสำหรับสินค้าที่มีปริมาณน้อย</li>
-            <li>FCL (Full container load) = การขนส่งแบบเต็มตู้คอนเทนเนอร์ ซึ้งขนาดตู้คอนเทนเนอร์นั้นมีให้เลือก
-หลายชนิด แต่ทั้งนี้จะขึ้นอยู่กับ ประเภทของสินค้า ขนาด และ ปริมาณด้วย</li>
-           </ul>
+          <h3>เอกสารสำคัญที่ใช้ในการนำเข้าส่งออกทางเรือ</h3>
+          <ul>
+            <li>ใบขนส่งสินค้า</li>
+            <li>ใบตราส่งสินค้าทางเรือ (Bill of lading)</li>
+            <li>บัญชีราคาสินค้า (Comercial Invoice)</li>
+            <li>บัญชีบรรจุหีบห่อ (Packing List)</li>
+          </ul>
 
-           </div>
+          <p>
+            การขนส่งทางเรือเป็นวิธีขนส่งสินค้าที่มีข้อดีมากมาย สามารถส่งสินค้าไปยังทุกประเทศทั่วโลกได้โดยมีต้นทุนการขนส่งที่ต่ำกว่าวิธีการขนส่งอื่นๆ
+            เช่น การขนส่งทางอากาศ และการขนส่งทางถนน อีกทั้งยังมีอัตราค่าขนส่งที่ถูกกว่าเมื่อเปรียบเทียบกับวิธีการขนส่งอื่นๆ
+            การนำเข้าส่งออกทางเรือยังสามารถขนส่งสินค้าขนาดใหญ่ได้โดยสะดวกสบาย
+            และสามารถขนส่งสินค้าได้ครั้งละปริมาณมากโดยมีตู้หลากหลายแบบและหลายขนาดให้เลือกตามความเหมาะสมของสินค้า
+            นอกจากนี้ การขนส่งทางเรือยังมีความปลอดภัยค่อนข้างสูง
+            เนื่องจากใช้ความเร็วในการขับเคลื่อนช้าเมื่อเทียบกับการขนส่งทางอื่นๆ
+            ดังนั้นการเลือกใช้วิธีการขนส่งทางเรือนั้นเป็นเรื่องที่ควรพิจารณาให้ดีก่อนตัดสินใจ
+          </p>
+          <p>
+          ถึงแม้การขนส่งทางเรือไม่ใช่วิธีที่เร็วที่สุด แต่มักเป็นวิธีที่มีราคาประหยัดและเป็นธรรมชาติที่มั่นคงที่สุด
+          หากคุณกำลังมองหาวิธีการขนส่งสินค้าระหว่างประเทศที่ EASTHAI เราเชี่ยวชาญในการให้บริการขนส่ง สามารถติดต่อเราเพื่อขอใบเสนอราคาและคำปรึกษาเพิ่มเติมในการขนส่งสินค้า
+          </p>          
+        </div>
+      </Container>
 
-
-           <div className="importCc">
-           <h3>ข้อดีของการขนส่งทางเรือ</h3>
-           <ul>
-            <li>
-            สามารถส่งสินค้าได้ทุกประเทศทั่วโลก
-            </li>
-            <li>
-            มีต้นทุนการขนส่งที่ต่ำ เนื่องจากระยะเวลาและความเหมาะสมของสินค้า
-            </li>
-            <li>อัตราค่าขนส่งถูกกว่าเมื่อเปรียบเทียบกับการขนส่งทางอื่นๆ</li>
-            <li>สามารถขนส่งสินค้าขนาดใหญ่ได้</li>
-            <li>สามารถขนส่งสินค้าได้ครั้งละปริมาณมาก โดยมีตู้หลากหลายแบบและหลายขนาดให้เลือกตามความเหมาะสมของสินค้า</li>
-            <li>มีความปลอดภัยค่อนข้างสูง เนื่องจากใช้ความเร็วในการขับเคลื่อนช้า เมื่อเทียบกับการขนส่งทางอื่นๆ</li>
-           </ul>
-           </div>
-
-           <div className="exportCc">
-            <h3>ข้อเสียของการขนส่งทางเรือ</h3>
-
-           <ul>
-            <li>ต้องมีการขนถ่ายสินค้าลงเรือเพื่อเปลี่ยนยานพาหนะ เพราะการขนส่งทางเรืออย่างเดียวไม่สามารถส่งสินค้าไปถึงปลายทางได้</li>
-            <li>ต้องขนส่งสินค้าในปริมาณมากเต็มตู้คอนเทนเนอร์ เพราะถ้าขนส่งสินค้าในปริมาณที่น้อยจะมีต้นทุนในการขนส่งที่สูง</li>
-            <li> ระยะเวลาในการขนส่งค่อนข้างช้า เหมาะกับสินค้าที่ไม่เร่งรีบ</li>
-            <li>ไม่สามารถกำหนดระยะเวลาได้อย่างแน่นอน เนื่องจากปัจจัยต่างๆ สภาพอากาศของแต่ละประเทศ</li>
-           </ul>
-           </div>
-
-
-
-            <div className="compareSection">
-              <h1>ตารางเปรียบเทียบ Sea และ Air freight</h1>
-            <div className="seaAirTitle">
-            <div className="seaAirTitleLeft">
-              <h3>ประเภทขนส่ง</h3>
-            </div>
-            <div className="seaAirTitleRight">
-              <div className="table">
-              <h3>เวลาในการขนส่ง</h3>
-              </div>
-              <div className="table">
-              <h3>การบริการ</h3>
-              </div>
-              <div className="table">
-              <h3>ปริมาณสินค้า</h3>
-              </div>
-              <div className="table">
-              <h3>ค่าใช้จ่าย</h3>
-              </div>
-            </div>
-           </div>
-           <Divider/>
-
-           <div className="sea">
-           <div className="seaLeft">
-              <p>การขนส่งทางเรือ (SEA FREIGHT)</p>
-            </div>
-            <div className="seaRight">
-            <div className="table">
-            <p>ช้า</p>
-            </div>
-            <div className="table">
-            <p>เกือบ ทุกประเทศ</p>
-            </div>
-              <div className="table">
-              <p>ปริมาณมาก</p>
-              </div>
-              <div className="table">
-              <p>ถูก</p>
-              </div>
-              </div>
-           </div>
-           <Divider/>
-
-
-           <div className="air">
-            <div className="airLeft">
-            <p>การขนส่งทางเครื่องบิน  (AIR FREIGHT)</p>
-            </div>
-            <div className="airRight">
-              <div className="table">
-              <p>เร็วมาก</p>
-              </div>
-              <div className="table">               
-              <p>ทั้วโลก</p>
-              </div>
-              <div className="table">               
-              <p>ปริมาณน้อย</p>
-              </div>
-              <div className="table">
-              <p>แพงกว่า</p>
-              </div>
-            </div>
-           </div>
-
-            </div>
-
-
-           <div className="easCc">
-           <p> ต้องการส่งหรือนำเข้าสินค้า ต่างประเทศ ปรึกษา EASTHAI service เราพร้อมช่วยคุณ ไม่ว่า ทางเรื่อ หรือ ทางเครื่องบิน เตรียมเอกสารสำหรับส่งออก เดินพิธีการขาเข้าและขาออก สนใจ ติดต่อ โทร 02 235 9100(5),  086 778 0808 Line @easthai ยินดีให้บริการ จากเราผู้มีประสบการณ์โดยตรงมากว่า 25 ปี </p>
-           <p><a href="tel:0867780808">คลิกเลย </a>เพื่อติดต่อเจ้าหน้าที่</p>
-           </div>
-
-    </Container>
-    
-    <Service/>
-    <Contact/>
+      <Service />
+      <Contact />
+      <QuestionForm/>
     </>
-  )
-}
+  );
+};
 
-export default Seafreight
+export default Seafreight;

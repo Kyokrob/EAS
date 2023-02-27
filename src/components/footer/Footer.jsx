@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='footer'>
         <div className="footerBody">
             <div className="footerTitle">
-                <span>Solutions</span>
+                <span>Our service</span>
                 <div className="footerSubtitle">
                 <Link to='/courier'>
                         Express service
@@ -39,8 +39,8 @@ const Footer = () => {
                     <Link to='/contactform'>
                       Contact
                     </Link>
-                    <Link to='/'>
-                        Work with us
+                    <Link to='/quotation'>
+                        Get quotation
                     </Link>
                 </div>
             </div>

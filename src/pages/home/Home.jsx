@@ -23,10 +23,6 @@ import eas05 from '../../images/eas-05-resize.webp'
 import eas01 from '../../images/express1.webp'
 import homeimg from '../../images/home_img1.png'
 
-
-// import video11 from '../../images/eas-video11.mp4'
-// import thumbnail from '../../images/easlogo-resize.jpg'
-
 import { Helmet } from "react-helmet";
 
 
@@ -52,7 +48,7 @@ const Home = () => {
             <div className="headerText">
             <h1>EASTHAI</h1>
               <h3>EST. 1996</h3>
-            <p>One stop service for import and exporters</p>
+            <h2>One stop service for import and exporters</h2>
             <div className="headerBtn">
             <Button
             to='/courier' component={Link}
@@ -109,10 +105,9 @@ const Home = () => {
             <img src={eas04} alt="Shipping freight ภาษีนำเข้า" />
               <div className="about1CardText">
                 <h1>
-                EASTHAI Express service
+                Express support
                  </h1>
-                <p>เมื่อนำเข้าสินค้าจากต่างประเทศ ติดขัดปัญหาการนำเข้าต่างๆ เช่น เอกสารผิด ภาษี ไปรษณีย์, ท่าเรือ, DHL, FEDEX, UPS, TNT เรายินดีให้บริการช่วยเหลือ
-                </p>
+                <p>บริการช่วยเหลือสำหรับผู้นำเข้าสินค้าเร่งด่วน (Courier express) Fedex, DHL, Tnt พร้อมแก้ใขปัญหาการนำเข้าสินค้าจากต่างประเทศ </p>
                 <Button 
             sx={{
               padding: "4px",
@@ -133,8 +128,8 @@ const Home = () => {
             <div className="about1Card" data-aos='slide-up'>
               <img src={eas03} alt="Freight forwarder" />
               <div className="about1CardText">
-                <h1>บริการงาน Freight Forwarder</h1>
-                <p>การนำเข้าส่งออกนั้นมีขั้นตอนและงานเอกสารมากมาย หากคุณมีทีมงานมืออาชีพช่วยประสานงาน คุณจะสามารถลดได้ทั้งต้นทุนและเวลาได้อย่างมากมาย
+                <h1>Freight Forwarder</h1>
+                <p>บริการดำเนินการนำเข้าส่งออกและงานเอกสาร หากคุณมีทีมงานมืออาชีพช่วยประสานงาน คุณจะสามารถลดได้ทั้งต้นทุนและเวลาได้อย่างมาก
                 </p>
                 <Button 
             sx={{
@@ -157,9 +152,8 @@ const Home = () => {
             <div className="about1Card" data-aos='slide-up'>
             <img src={eas05} alt="Shipping custom clearance" />
               <div className="about1CardText">
-                <h1>บริการงาน Shipping</h1>
-                <p>Custom clearance 
-                คือการเตรียมงานเอกสาร เพื่อสำแดงภาษีให้กับกรมศุลกากร เราเป็นตัวแทนในการเดินพิธีการศุลกากรและเคลียร์สินค้าทั้งขาออกและขาเข้าประเทศไทย
+                <h1>Customs clearance</h1>
+                <p>หรือชิปปิ้ง คือการเตรียมงานเอกสารเพื่อสำแดงภาษีให้กับกรมศุลกากร เราเป็นตัวแทนในการเดินพิธีการศุลกากรและเคลียร์สินค้าทั้งขาออกขาเข้าประเทศ
                 </p>
                 <Button 
             sx={{
@@ -186,27 +180,11 @@ const Home = () => {
 
         <div className="section1">
           <div className="left">
-            {/* <video
-      autoPlay
-      playsInline
-      loop
-      muted
-      style={{
-        position: "relative",
-        width: "768px",
-        height: "450px",
-        objectFit: "cover",
-        zIndex: "2"
-      }}
-      >
-        <source src={video11} type="video/mp4" poster={thumbnail}/>
-        Your browser does not support the video tag.
-      </video> */}
       <img src={eas01} alt="ชิปปิ้ง นำเข้า เคลียร์สินค้า shipping freight company" />
           </div>
           <div className="rightAboutHome">
             <h3 data-aos='slide-up'>
-            สั่งของต่างประเทศติดขัดปัญหาการนำเข้าสินค้า เราช่วยคุณได้ไม่มีขั้นต่ำ
+            สั่งของต่างประเทศติดขัดปัญหาการนำเข้าสินค้า เราช่วยคุณได้
             </h3>
 
             <Button 
@@ -219,7 +197,7 @@ const Home = () => {
             component={Link}
             data-aos='slide-up'
             >
-              Express service
+              Express support
             </Button>
           </div>
         </div>
@@ -271,7 +249,7 @@ const Home = () => {
         <div className='cardHome' data-aos='slide-up'>
           <div className="cardTop">
           <div className="cardTopIcon">
-          <RecommendIcon fontSize="48px"/>
+          <RecommendIcon fontSize="54px"/>
           </div>
           </div>
           <div className='cardContent'>

@@ -2,7 +2,6 @@ import React from "react";
 import "./about.css";
 
 import Container from "@mui/material/Container";
-// import Button from '@mui/material/Button'
 import { useEffect } from "react";
 
 import Contact from "../../components/contact/Contact";
@@ -11,7 +10,7 @@ import Service from "../../components/service/Service";
 import video1 from "../../images/eas-video1.mp4";
 import about3 from "../../images/about_3.png";
 import about2 from "../../images/about_2.png";
-import thumbnail from "../../images/easlogo-resize.jpg";
+import thumbnail from "../../images/thumbnail.png";
 
 import { Helmet } from "react-helmet";
 

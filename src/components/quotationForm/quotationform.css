@@ -65,7 +65,7 @@
 }
 
 .form-col select {
-  padding: 10px !important;
+  padding: 8px;
   border-radius: 5px;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -74,10 +74,6 @@
 }
 
 .form-col option {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background: #e6e6e6;
   color: #575757c9;
 }
@@ -143,6 +139,10 @@ button:hover {
 
     .form-col {
         width: 100%;
+    }
+
+    .form-col select {
+      padding: 10px;
     }
 
 

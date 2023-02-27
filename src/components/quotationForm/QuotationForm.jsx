@@ -160,7 +160,7 @@ function QuotationForm() {
         </div>
         <div className="form-row">
           <div className="form-col">
-            <label htmlFor="productType">ประเภทสินค้า:</label>
+            <label htmlFor="productType">ประเภทสินค้า :</label>
             <input
               type="text"
               id="productType"
@@ -172,7 +172,7 @@ function QuotationForm() {
           </div>
 
           <div className="form-col">
-            <label htmlFor="service">บริการที่สนใจ:</label>
+            <label htmlFor="service">บริการที่สนใจ :</label>
             {/* <input
               type="text"
               id="service"
@@ -181,17 +181,22 @@ function QuotationForm() {
               value={formValues.weight}
               onChange={handleChange}
               /> */}
+
             <select
+              type="text"
+              id="service"
+              name="service"
               value={formValues.service}
               onChange={(e) => {
                 setFormValues({...formValues, service: e.target.value});
               }}
             >
-              <option value="">เลือกประเภทบริการ</option>
+              <option value="" disabled>เลือกประเภทบริการ</option>
               <option value="freightforwarding">Freight forwarding (นำเข้าส่งออก)</option>
               <option value="shipping">Shipping (พิธีการศุลกากร)</option>
               <option value="transportation">Transportation</option>
             </select>
+
           </div>
         </div>
         <div className="form-row">

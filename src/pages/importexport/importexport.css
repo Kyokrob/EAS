@@ -1,17 +1,16 @@
 .importexport {
-    border: 1px solid black;
     height: 550px;
     max-width: 100%;
     display: flex;
     position: relative;
-    background: #000000;
+    background: #00000073;
 }
 
 .importexport img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .importexportHeaderText {
@@ -30,9 +29,56 @@
 
 .importTitle h1 {
     font-size: 24px;
-    font-weight: 400;
-    border: 1px solid black;
+    font-weight: 600;
+    color: #042B3B;
 }
+
+.importTitle h4 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #042B3B;
+    line-height: 1.5;
+    padding: 12px;
+}
+
+.importTitle p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+    color: #042B3B;
+    
+
+}
+
+.importTitle ul {
+    font-size: 20px;
+    font-weight: 600;
+    color: #042B3B;
+    margin-bottom: 12px;
+    width: 70%;
+
+}
+
+.importTitle li {
+    font-size: 18px;
+    font-weight: 400;
+    color: #042B3B;
+    width: 70%;
+}
+
+.importTitle .contentBorder {
+    margin-top: 2rem;
+}
+
+.contentBorder {
+    border-left: 6px solid #042b3b87;
+    border-radius: 2px;
+}
+
+
+
 
 .importExportSection {
     display: flex;
@@ -74,9 +120,13 @@
 }
 
 .importExportBody p{
-    font-size: 18px;
-    padding: 12px;
-    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 12px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #042B3B;
+
 
 }
 
@@ -112,6 +162,9 @@
 
 
 @media screen and (max-width: 480px) {
+    .importexport {
+        height: 350px;
+    }
     .importexportHeaderText {
         width: 100%;
         font-size: 20px;
