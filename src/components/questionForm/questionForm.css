@@ -93,6 +93,7 @@
         height: 100%;
     }
     .courierFormRight {
+        margin-left: 0;
         width: 100%;
     }
 
