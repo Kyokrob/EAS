@@ -4,9 +4,9 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 650px;
-    border-bottom: 4px solid #042B3B;
-    margin-bottom: 2rem;
+    height: 730px;
+    border-bottom: 4px solid #042B3B !important;
+    margin-bottom: 2rem !important;
 }
 
 .courierFormRight {
@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 650px;
+    height: 550px;
     width: 100%;
 }
 
@@ -33,13 +33,13 @@
 }
 
 .courier2RightText {
-    width: 100%;
     height: 100%;
     display: flex;
     position: absolute;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 12px;
 }
 
 .courier2RightText h1 {

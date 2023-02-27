@@ -2,7 +2,6 @@ import React from 'react'
 import '../questionForm/questionForm.css'
 import faqcover from "../../images/faqcover_3.png";
 import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
 
 
 
@@ -10,7 +9,7 @@ import Container from "@mui/material/Container";
 const QuestionForm = () => {
   return (
     <>
-          <Container className="courierForm">
+          <div className="courierForm">
       
       <div className="courierFormRight">
     <div className="courier2Right">
@@ -52,7 +51,7 @@ const QuestionForm = () => {
 
         </div>
         </div>
-      </Container>
+      </div>
         </>
   )
 }
