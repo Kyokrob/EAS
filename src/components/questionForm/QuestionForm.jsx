@@ -9,8 +9,7 @@ import Button from "@mui/material/Button";
 const QuestionForm = () => {
   return (
     <>
-          <div className="courierForm">
-      
+          <div className="courierForm">     
       <div className="courierFormRight">
     <div className="courier2Right">
           <img
@@ -18,18 +17,16 @@ const QuestionForm = () => {
             alt="ชิปปิ้ง นำเข้า เคลียร์สินค้า shipping freight company"
           />
           <div className="courier2RightText">
-            <h1>Dear shipper,</h1>
+            <h1>Dear Shipper,</h1>
             <p>
-              ความคิดเห็นของคุณมีค่ามากสำหรับเรา
-              หากคุณมีข้อสงสัยเกี่ยวกับการนำเข้าและส่งออก
-              ไม่ต้องกังวลที่จะส่งคำถามมาหาเรา
+              หากคุณมีข้อสงสัยและคำถามเกี่ยวกับการนำเข้าและส่งออกส่งคำถามมาเรายินดีให้คำปรึกษาพร้อมช่วยเหลือ
             </p>
             <div className="form-row-faq">
               <div className="form-col-faq">
                 <textarea
                   id="moreDetail"
                   name="moreDetail"
-                  placeholder="โปรดให้ข้อมูลการติดต่อกลับ เช่น Email, เบอร์โทร พร้อมคำถามเพื่อให้ทีมงานของเราสามารถติดต่อกลับไปได้"
+                  placeholder="กรอกข้อมูลเบื้อต้นสำหรับผู้ติดต่อกลับ เช่น Email หรือ เบอร์โทร พร้อมคำถามเพื่อให้ทีมงานสามารถติดต่อกลับ"
                 />
                 <Button
                   sx={{
