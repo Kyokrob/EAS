@@ -6,24 +6,20 @@ import Contact from "../../components/contact/Contact";
 import Container from "@mui/material/Container";
 import Slider from "../../components/slider/Slider";
 import Button from "@mui/material/Button";
-
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
 import cover from "../../images/easexpresscover_resize.png"
-import cover3 from '../../images/cover_03.png'
-
+import cover2 from "../../images/easexpresscover_giff.gif"
+// import cover3 from '../../images/cover_03.png'
 import one from "../../images/1.png";
 import two from "../../images/2.png";
 import three from "../../images/3.png";
 import four from "../../images/4.png";
 import five from "../../images/5.png";
 import six from "../../images/6.png";
-
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
@@ -81,7 +77,8 @@ const Courier = () => {
             <div className="boxBg">
               <img src={one} alt="eas01" />
             </div>
-            <div className="boxDetail" data-aos="flip-up">
+            <div className="boxDetail" 
+            data-aos="flip-up">
               <p>
                 Express support
                 คือบริการช่วยเหลือผู้นำเข้าสินค้าพร้อมให้คำปรึกษาสำหรับการนำเข้าสินค้าเร่งด่วน
@@ -94,7 +91,8 @@ const Courier = () => {
             <div className="boxBg">
               <img src={two} alt="eas02" />
             </div>
-            <div className="boxDetail" data-aos="flip-down">
+            <div className="boxDetail" 
+            data-aos="flip-up">
               <p>
                 สินค้าของท่านจะผ่านพิธีการศุลกากรอย่างรวดเร็วดูแลผ่านทีมงานมืออาชีพ
                 ดำเนินการให้ครบจบทุกขั้นตอน
@@ -105,7 +103,8 @@ const Courier = () => {
             <div className="boxBg">
               <img src={three} alt="eas03" />
             </div>
-            <div className="boxDetail" data-aos="flip-up">
+            <div className="boxDetail" 
+            data-aos="flip-up">
               <p>
                 ปัญหาสินค้าลงคลัง ไปรษณีย์, ท่าเรือ, สนามบินสุวรรณภูมิ, DHL,
                 FEDEX, UPS, TNT ต่างๆ
@@ -116,7 +115,8 @@ const Courier = () => {
             <div className="boxBg">
               <img src={four} alt="eas04" />
             </div>
-            <div className="boxDetail" data-aos="flip-up">
+            <div className="boxDetail"
+            data-aos="flip-up">
               <p>
                 ติดปัญหาด้านใบอนุญาตินำเข้า พิกัดศุลกากรการใช้ฟอร์มนำเข้าหรือ
                 เอกสารผิดพลาดต่างๆ
@@ -134,7 +134,7 @@ const Courier = () => {
               </p>
             </div>
           </div>
-          <div className="table-box">
+          <div className="contact-box">
             <div className="boxBg">
               <img src={six} alt="eas contact us" />
             </div>
@@ -173,18 +173,31 @@ const Courier = () => {
 
       <Container className="courier2">
         <div className="courier2Left">
-          <h3>คำถามที่พบบ่อย</h3>
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quas ad aliquam repudiandae ratione temporibus eius reiciendis adipisci amet magnam?</p>
+        </div>
+        <div className="courier2img">
+        <img src={cover2} alt="" />
+        </div>
+      </Container>
+
+      <Container className="faq-1">
           <div className="courierFaq">
+      <h1>คำถามที่พบบ่อย</h1>
             <Accordion
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}
+              className="faqSum"
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
-              >
-                <Typography sx={{ color: "text.secondary" }}>
+              > 
+              <Typography sx={{ width: '33%', flexShrink: 0 }}>
+              General settings
+            </Typography>
+                <Typography sx={{width: '66%', color: "text.secondary" }}>
                   ไม่เคยนำเข้า-ส่งออกเลย แต่อยากนำเข้าสินค้าในนามบริษัท
                   (สินค้าเป็นสมุดโน้ต) ขอคำปรึกษาเบื้องต้น ว่าควรทำอย่างไร
                   ติดต่อหน่วยงานไหน สามารถนำเข้าได้เลยไหม หรือต้องทำอะไรก่อน
@@ -204,14 +217,21 @@ const Courier = () => {
             <Accordion
               expanded={expanded === "panel2"}
               onChange={handleChange("panel2")}
+              className="faqSum"
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2bh-content"
                 id="panel2bh-header"
               >
-                <Typography sx={{ color: "text.secondary" }}>
-                  การรวมรายการสินค้าในเอกสาร FORM ทำได้หรือไม่
+                 <Typography sx={{ width: '33%', flexShrink: 0 }}
+                 className="faqLeft">
+            <p>การใช้ Form ต่างๆ</p>
+          </Typography>
+                <Typography sx={{ width: '66%', color: "text.secondary" }}
+                className="faqRight"
+                >
+                  <p>การรวมรายการสินค้าในเอกสาร FORM ทำได้หรือไม่</p>
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -224,14 +244,18 @@ const Courier = () => {
             <Accordion
               expanded={expanded === "panel3"}
               onChange={handleChange("panel3")}
+              className="faqSum"
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
+                 <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            General settings
+          </Typography>
                 <Typography sx={{ color: "text.secondary" }}>
-                  ในกรณีที่ต้องการนำสินค้าตัวอย่างที่เป็นเครื่องสำอางเข้ามาสามารถนำเข้ามาได้จำนวนกี่ชิ้น
+                  ในกรณีที่ต้องการนำสินค้าตัวอย่างที่เป็นเครื่องสำอางเข้ามาสามารถนำเข้ามาได้จำนวนกี่ชิ้น 
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -247,13 +271,17 @@ const Courier = () => {
             <Accordion
               expanded={expanded === "panel4"}
               onChange={handleChange("panel4")}
+              className="faqSum"
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel4bh-content"
                 id="panel4bh-header"
               >
-                <Typography sx={{ color: "text.secondary" }}>
+                 <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            General settings
+          </Typography>
+                <Typography sx={{ width: '66%', color: "text.secondary"}}>
                   การยื่นเอกสารใบอนุญาตต่างๆเช่นสมอ ประมง อย
                   ยื่นหลังวันนำเข้าได้หรือไม่
                 </Typography>
@@ -267,17 +295,13 @@ const Courier = () => {
               </AccordionDetails>
             </Accordion>
           </div>
-        </div>
-        <div className="courier2img">
-        <img src={cover3} alt="" />
-        </div>
       </Container>
-
 
       <div className="courierSlider">
         <h1>ผลงานของเรา</h1>
         <Slider />
-      </div>
+      </div>  
+
       <Contact />
       <QuestionForm/>
     </>
