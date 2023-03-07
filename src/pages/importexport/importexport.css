@@ -3,15 +3,21 @@
     max-width: 100%;
     display: flex;
     position: relative;
-    background: #00000073;
+    background: #2F4D5D;
 }
 
-.importexport img {
-    object-fit: cover;
+.importexportCover {
     width: 100%;
     height: 100%;
     opacity: 0.8;
 }
+
+.importexportCover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .importexportHeaderText {
     width: 100%;
@@ -21,20 +27,36 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    font-size: 52px;
+    font-size: 36px;
     color: #ffffff;
     text-shadow: 2px 2px #00000073
 }
 
-
-.importTitle h1 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #042B3B;
+.importTitle{
+    height: 100%;
+    position: relative;
+    text-align: left;
 }
 
+.importTitle h1 {
+    font-weight: 600;
+    padding: 12px;
+    color: #042B3B;
+    font-size: 24px;
+
+}
+
+.importTitle h3{
+    font-weight: 500;
+    padding: 12px;
+    color: #042B3B;
+    font-size: 22px;
+}
+
+
+
 .importTitle h4 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     font-style: italic;
     color: #042B3B;
@@ -43,29 +65,33 @@
 }
 
 .importTitle p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
     color: #042B3B;
-    
-
+    padding: 12px;
 }
 
 .importTitle ul {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: #042B3B;
     margin-bottom: 12px;
-    width: 70%;
 
 }
 
 .importTitle li {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #042B3B;
-    width: 70%;
+    width: 80%;
+}
+
+.importTitle a {
+    color: #E6AF4B;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .importTitle .contentBorder {

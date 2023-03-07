@@ -28,7 +28,9 @@ const Importexport = () => {
         <title>EASTHAI - ชิปปิ้งนำเข้าส่งออก</title>
         </Helmet>  
     <div className='importexport'>
+      <div className="importexportCover">
       <img src={importexportcover} alt="" />
+      </div>
 
       <div className="importexportHeaderText">
     </div>

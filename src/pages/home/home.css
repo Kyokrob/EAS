@@ -156,7 +156,7 @@ a#scroll-btn:after {
 .about1Text h1 {
     font-size: 36px;
     color: #E6AF4B;
-    font-weight: 200;
+    font-weight: 500;
 
 }
 
@@ -251,32 +251,54 @@ a#scroll-btn:after {
 
 /* Section 3 start */
 .section3 {
-    height: 450px;
+    height: 100%;
     width: 100%;
     z-index: 1;
+    background-color: rgb(244, 246, 248);
 }
 
 .section3Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
     text-align: center;
-    font-size: 72px;
-    color: #E6AF4B;
-    font-weight: 200;
 }
 
-.section3 h1 {
-    text-align: center;
-    font-weight: 400;
-    color: #E6AF4B;
+.section3Title h1 {
+    color: #042B3B;
+    font-size: 52px;
+    padding: 8px;
+    width: 70%;
+    font-weight: 600;
 }
+.section3Title h3 {
+    width: 70%;
+    color: #042B3B;
+    font-weight: 400;
+    padding: 12px 0;
+}
+
 
 .cardHome {
-    max-width: 300px;
-    height: 60%;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: 0 0 2px 2px #0000002b;
+    margin-top: 12px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cardHome:hover {
+    background-color: #d9d9d9;
 }
 
 .cardTop {
@@ -292,6 +314,9 @@ a#scroll-btn:after {
 
 .cardTop h1 {
     font-size: 84px;
+    text-align: center;
+    font-weight: 400;
+    color: #E6AF4B;
 }
 
 .cardContent {  
@@ -301,36 +326,40 @@ a#scroll-btn:after {
 
 .cardContent h3 {
     font-size: 18px;
-    color: #ffffff;
+    color: #042B3B;
 }
 
 .cardContent p {
     font-size: 16px;
     padding: 12px;
-    color: #ffffff;
+    color: #042B3B;
 }
+
+
 
 
 
 
 .section1 {
-    margin: 8rem 0;
-    display: flex;
+    margin: 2rem 0;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     height: 100%;
     width: 100%;
+    gap: 2rem;
+
 }
 
 .section11 {
-    margin: 4rem 0;
-    display: flex;
+    display: flex !important;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
     width: 100%;
+    gap: 2rem;
 
 
 }
@@ -345,7 +374,7 @@ a#scroll-btn:after {
 
 .left11 img {
     object-fit: cover;
-    width: 80%;
+    width: 100%;
 }
 
 /* .left11 video {
@@ -360,14 +389,14 @@ a#scroll-btn:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 550px;
-    height: 450px;
+    width: 50%;
+    height: 100%;
 }
 
 .left img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+
 }
 
 /* .left video {
@@ -384,17 +413,44 @@ a#scroll-btn:after {
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    
 
 }
 .rightAboutHome h3{
-    font-size: 48px;
+    font-size: 36px;
+    line-height: 1.4;
+    color: #E6AF4B;
+    width: 80%;
+    letter-spacing: -.03125rem;
+}
+
+.rightAboutHome p {
+    font-size: 18px;
     line-height: 1.4;
     color: #ffffff;
     width: 80%;
     letter-spacing: -.03125rem;
+    padding: 12px 0;
+}
+
+.rightAboutHome button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 12px;
+    color: #E6AF4B;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #E6AF4B;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rightAboutHome button:hover {
+    background: none;
 }
 
 
@@ -561,12 +617,19 @@ a#scroll-btn:after {
         width: 100%;
         padding: 20px 0;
         text-align: center;
+        align-items: center;
     }
 
     .rightAboutHome h3 {
         font-size: 28px;
         text-align: center;
         line-height: 2;
+    }
+    .rightAboutHome p {
+        width: 100%;
+    }
+    .rightAboutHome button {
+        text-align: center;
     }
 
     .section2 {
@@ -633,7 +696,7 @@ a#scroll-btn:after {
     }
 
     .about1Text h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
 
@@ -644,23 +707,6 @@ a#scroll-btn:after {
 
     .about1 {
         border-radius: 0px;
-    }
-
-    .boxCardHome {
-        flex-direction: column !important;
-        gap: 3rem;
-        padding: 0 16px !important;
-        margin-top: 3rem;
-
-
-    }
-
-
-    .cardHome {
-        width: 100%;
-        max-width: 100%;
-        height: 250px;
-        border-bottom: 1px solid #000;
     }
 
 
@@ -704,5 +750,38 @@ a#scroll-btn:after {
     .section3 {
         height: 100%;
     }
+
+    .section3Title h1 {
+        width: 100%;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .section3Title h3 {
+        width: 80%;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .boxCardHome {
+        flex-direction: column !important;
+    }
+    .cardHome {
+        width: 80%;
+        height: 200px;
+    }
+
+    .cardTop {
+        font-size: 36px;
+    }
+    .cardTop h1 {
+        font-size: 36px;
+    }
+
+    .cardContent p {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
 }
 
