@@ -10,8 +10,9 @@ import Customclearance from './pages/costomclearance/Costomclearance'
 import Importexport from './pages/importexport/Importexport'
 import Courier from './pages/courier/Courier'
 import Quotation from './pages/quotation/Quotation';
-
-
+import Blog from './pages/blog/Blog';
+import Blog1 from './components/blog1/Blog1';
+import Blog2 from './components/blog2/Blog2';
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import ScrollTopButton from './components/scrollTopButton/ScrollTopButton';
@@ -25,13 +26,15 @@ ReactGA.initialize("G-Q0L13E0QBK");
 
 
 const App = () => {
-
   return (
     <Router>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/about" element={<About/>}></Route>
+        <Route path="/blog" element={<Blog/>}></Route>
+        <Route path="/blog/shipping-freight" element={<Blog1/>}></Route>
+        <Route path="/blog/ภาษีศุลกากรและภาษีนำเข้า" element={<Blog2/>}></Route>
         <Route path="/airfreight" element={<Airfreight/>}></Route>
         <Route path="/seafreight" element={<Seafreight/>}></Route>
         <Route path="/contactform" element={<ContactForm/>}></Route>

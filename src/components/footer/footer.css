@@ -29,23 +29,49 @@
 .footerContact {
     color: #042B3B;
     font-weight: 600;
+    font-size: 18px;
     width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .footerContactSubtitle {
     font-size: 14px;
     font-weight: 400;
+    margin-top: 4px;
+}
+
+.contact-1 {
+    color: #042B3B;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-1 a:hover {
+    color: #E6AF4B;
+}
+
+.contact-1 a {
+  margin-left: 10px;
 }
 
 .footerContactSocial {
     margin-top: 1rem;
 }
 .footerContactSocialSubtitle {
-    color: #666666;
+    color: #042B3B;
     padding: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.footerContactSocialSubtitle a:hover {
+    color: #E6AF4B;
 }
 
 
@@ -64,5 +90,11 @@
     .footerTitle {
         border-bottom: 1px dotted #666666;
         width: 100%;
+        margin-top: 12px;
+    }
+
+    .footerContact {
+        width: 100%;
+        margin-top: 12px;
     }
 }

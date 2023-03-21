@@ -190,13 +190,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    text-align: justify;
+    text-align: left;
     font-size: 18px;
     line-height: 1.4;
     font-weight: 600;
     padding: 12px;
     height: 100%;
-    width: 100%;
+    width: 90%;
     gap: 12px;
     color: #042B3B;
 }
@@ -220,31 +220,42 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     height: 100%;
     width: 50%;
-
-    
 }
 
 .courier2Left h1 {
     color: #042B3B;    
     width: 80%;
     font-weight: 600;
-    padding: 12px 0;
     font-size: 36px;
-    line-height: 1.2;
 
 }
 
 .courier2Left p {
     color: #042B3B;    
     font-size: 18px;
-    width: 80%;
+    width: 70%;
     padding: 12px 0;
     line-height: 1.5;
 }
+
+.courier2Left ul {
+    width: 90%;
+}
+
+.courier2Left li {
+    color: #042B3B;    
+    font-size: 18px;
+    width: 80%;
+    padding: 12px 0;
+    list-style-type: decimal;
+
+}
+
+
 
 
 
@@ -287,8 +298,12 @@
     height: 100%;
 }
 
+
 .faqSum {
     width: 100%;
+}
+.faqSum:hover {
+    background-color: #f4f6f8;
 }
 
 
@@ -299,6 +314,7 @@
 .courierFaq p {
     font-size: 18px;
     padding: 6px;
+    flex-shrink: 1;
 }
 
 
@@ -419,6 +435,10 @@
     .courierFaq {
         width: 100%;
         margin-right: 0;
+    }
+
+    .courierFaq p {
+        font-size: 16px;
     }
 
 

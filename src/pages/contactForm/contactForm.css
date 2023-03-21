@@ -204,6 +204,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+
   .contactForm1Left h1 {
     font-size: 24px;
   }
@@ -219,6 +220,7 @@
   }   
   .contactForm1Left {
     width: 100%;
+    margin-top: 0;
   }
 
   .contactForm1Left h1 {

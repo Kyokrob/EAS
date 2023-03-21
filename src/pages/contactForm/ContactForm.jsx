@@ -24,6 +24,7 @@ const ContactForm = () => {
         <h1>Contact Us</h1>
         <h3>ยินดีให้บริการทุกช่องทาง</h3>
       </div>
+
       <Container className="contactForm">
         <div className="contactForm1">
           <div className="contactForm1Left">
@@ -113,7 +114,6 @@ const ContactForm = () => {
           </div>
         </div>
         </div>
-
       </Container>
       <Contact />
     </>

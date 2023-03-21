@@ -14,6 +14,7 @@ import GppGoodIcon from "@mui/icons-material/GppGood";
 import Box from "@mui/material/Box";
 import Form from "../../components/form/Form";
 
+
 import { useEffect } from "react";
 import eas03 from "../../images/eas-03-resize.webp";
 import eas04 from "../../images/eas-04-resize.webp";
@@ -191,11 +192,9 @@ const Home = () => {
               ช่วยให้คุณมั่นใจได้ว่าสินค้าของคุณจะถึงปลายทางได้ตรงเวลา
             </p>
 
-              <Link to="/airfreight">
-            <button>
-              อ่านเพิ่มเติม
-            </button>
-              </Link>
+            <Link to="/airfreight">
+              <button>อ่านเพิ่มเติม</button>
+            </Link>
           </div>
         </Container>
 
@@ -213,90 +212,88 @@ const Home = () => {
               การขนส่งทางเรือจะใช้ระบบตู้คอนเทนเนอร์ในการส่งสินค้าโดยค่าขนส่งนั้นจะถูกที่สุดเมื่อเทียบกับการขนส่งรูปแบบอื่นๆ
             </p>
             <Link to="/seafreight">
-            <button>
-              อ่านเพิ่มเติม
-            </button>
+              <button>อ่านเพิ่มเติม</button>
             </Link>
           </div>
-        </Container>        
+        </Container>
       </div>
 
-       {/* Section3 */}
-       <div className="section3">
-          <div className="section3Title">
-            <h1>
-              Trust our team to deliver your goods with secure and efficient
-              logistics.
-            </h1>
+      {/* Section3 */}
+      <div className="section3">
+        <div className="section3Title">
+          <h1>
+            Trust our team to deliver your goods with secure and efficient
+            logistics.
+          </h1>
+        </div>
+        <Box
+          className="boxCardHome"
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          <div className="cardHome">
+            <div className="cardTop">
+              <h1>25+</h1>
+            </div>
+            <div className="cardContent">
+              <h3>Years experience</h3>
+              <p>ขนส่งชัดเจนมีมาตรฐาน ให้คำแนะนำผ่านทีมงานมืออาชีพ</p>
+            </div>
           </div>
-          <Box
-            className="boxCardHome"
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-evenly",
-              alignItems: "center",
-              height: "100%",
-            }}
-          >
-            <div className="cardHome">
-              <div className="cardTop">
-                <h1>25+</h1>
-              </div>
-              <div className="cardContent">
-                <h3>Years experience</h3>
-                <p>ขนส่งชัดเจนมีมาตรฐาน ให้คำแนะนำผ่านทีมงานมืออาชีพ</p>
-              </div>
-            </div>
 
-            <div className="cardHome">
-              <div className="cardTop">
-                <div className="cardTopIcon">
-                  <RecommendIcon fontSize="54px" />
-                </div>
-              </div>
-              <div className="cardContent">
-                <h3>Efficiency</h3>
-                <p>จัดส่งสินค้าอย่างมีประสิทธิภาพรวดเร็วและปลอยภัย</p>
+          <div className="cardHome">
+            <div className="cardTop">
+              <div className="cardTopIcon">
+                <RecommendIcon fontSize="54px" />
               </div>
             </div>
+            <div className="cardContent">
+              <h3>Efficiency</h3>
+              <p>จัดส่งสินค้าอย่างมีประสิทธิภาพรวดเร็วและปลอยภัย</p>
+            </div>
+          </div>
 
-            <div className="cardHome">
-              <div className="cardTop">
-                <GppGoodIcon fontSize="48px" />
-              </div>
-              <div className="cardContent">
-                <h3>Reliable</h3>
-                <p>
-                  มีความชำนาญเป็นพิเศษในกลุ่มสินค้า Beauty, Food, Electronic,
-                  Medicine
-                </p>
-              </div>
+          <div className="cardHome">
+            <div className="cardTop">
+              <GppGoodIcon fontSize="48px" />
             </div>
-          </Box>
-          <Container className="sec4">
-            <div className="sec4Left">
+            <div className="cardContent">
+              <h3>Reliable</h3>
+              <p>
+                มีความชำนาญเป็นพิเศษในกลุ่มสินค้า Beauty, Food, Electronic,
+                Medicine
+              </p>
+            </div>
+          </div>
+        </Box>
+
+
+       
+
+        <Container className="sec4">
+          <div className="sec4Left">
             <img src={cover4} alt="" />
-            </div>
-            <div className="sec4Right">
-              <h1>EAST ASIA SHIPPING (THAILAND)</h1>
-              <p>Provides seamless logistics solutions, including freight
+          </div>
+          <div className="sec4Right">
+            <h1>EAST ASIA SHIPPING (THAILAND)</h1>
+            <p>
+              Provides seamless logistics solutions, including freight
               forwarding and customs clearance services. We specialize in
               streamlining the shipping process, providing personalized support,
               and ensuring goods reach their destination quickly and
-              efficiently.</p>
-              <Link to='/quotation'
-              className="sec4Btn"
-              >
-              <button>
-                Get Quotation
-              </button>   
-              </Link>
-            </div>
-          </Container>
-        </div>
-
-
+              efficiently.
+            </p>
+            <Link to="/quotation" className="sec4Btn">
+              <button>Get Quotation</button>
+            </Link>
+          </div>
+        </Container>
+      </div>
       <Service />
 
       <div className="homeForm">
