@@ -194,7 +194,7 @@ function QuotationForm() {
               <option value="" disabled>เลือกประเภทบริการ</option>
               <option value="freightforwarding">Freight forwarding (นำเข้าส่งออก)</option>
               <option value="shipping">Shipping (พิธีการศุลกากร)</option>
-              <option value="transportation">Transportation</option>
+              <option value="transportation">Inland transportation</option>
             </select>
 
           </div>

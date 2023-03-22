@@ -2,6 +2,9 @@
   display: flex !important;
   flex-direction: row;
   gap: 50px;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .sidebarComponent {
