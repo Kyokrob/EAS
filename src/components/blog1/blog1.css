@@ -1,5 +1,5 @@
-.blogHero {
-  display: flex !important;
+.blogMain {
+  display: flex;
   flex-direction: row;
   gap: 50px;
   max-width: 960px;
@@ -93,7 +93,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    .blogHero {
+    .blogMain {
       flex-direction: column;
       gap: 0;
     }

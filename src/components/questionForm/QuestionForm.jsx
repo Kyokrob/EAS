@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 const QuestionForm = () => {
   return (
     <>
-          <div className="courierForm">     
+          <div className="courierFormNew">     
       <div className="courierFormRight">
     <div className="courier2Right">
           <img

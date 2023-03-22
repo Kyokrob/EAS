@@ -13,7 +13,7 @@ const Blog1 = () => {
       }, []);
   return (
     <>
-    <div className="blogHero">
+    <div className="blogMain">
     <div className='article'>
       <header>
         <div>March 16, 2023</div>
