@@ -2,6 +2,10 @@ import React, { useEffect} from 'react'
 import Contact2 from '../../components/contact2/Contact2'
 import BlogShare from '../blogShare/BlogShare'
 import blog2cover from '../../images/blog2cover.png'
+import Sidebar from '../sidebar/Sidebar'
+import Container from '@mui/material/Container'
+
+
 
 const Blog2 = () => {
   const url = 'https://www.easthai.co/blog/ภาษีศุลกากรและภาษีนำเข้า';
@@ -11,6 +15,7 @@ const Blog2 = () => {
       }, []);
   return (
     <>
+    <Container className="blogHero">
     <div className='article'>
       <header>
         <div>March 16, 2023</div>
@@ -74,8 +79,12 @@ const Blog2 = () => {
 
           <BlogShare url={url}/>
         </section>
-      </main>
+      </main> 
     </div> 
+    <div className="sidebarComponent">
+      <Sidebar/>
+    </div>
+    </Container>
       <Contact2/>
     </>
   )

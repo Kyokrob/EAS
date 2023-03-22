@@ -1,8 +1,10 @@
 import React, { useEffect} from 'react'
 import './blog1.css'
 import Contact2 from '../../components/contact2/Contact2'
+import Sidebar from '../sidebar/Sidebar'
 import BlogShare from '../blogShare/BlogShare'
 import blog1cover from '../../images/blog1cover.png'
+import Container from '@mui/material/Container'
 
 const Blog1 = () => {
   const url = 'https://www.easthai.co/blog/shipping-freight';
@@ -12,6 +14,7 @@ const Blog1 = () => {
       }, []);
   return (
     <>
+    <Container className="blogHero">
     <div className='article'>
       <header>
         <div>March 16, 2023</div>
@@ -77,6 +80,10 @@ const Blog1 = () => {
         </section>
       </main>
     </div> 
+    <div className="sidebarComponent">
+      <Sidebar/>
+    </div>
+    </Container>
       <Contact2/>
     </>
   )

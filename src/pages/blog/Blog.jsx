@@ -48,12 +48,13 @@ const Blog = () => {
             <h2>รู้จะขั้นตอนการนำเข้าสินค้า และวิธีการคำนวนค่าภาษีศุลกากร</h2>
           </div>
         </Link>
-        <Link to='/blog/freight-shipping' className="blogRight-card">
-        <div className="blogRight-img">
-          <img src="https://via.placeholder.com/250x250" alt="Blog post" />
-          </div>          <div className="blogRight-info">
+        <Link to="/blog/ภาษีศุลกากรและภาษีนำเข้า" className="blogRight-card">
+          <div className="blogRight-img">
+          <img src={blog2card} alt="Blog post" />
+          </div>
+          <div className="blogRight-info">
           <p>March 16, 2023</p>
-            <h2>นำเข้าสินค้าจากต่างประเทศคำนวนภาษีอย่างไร วิธีการเช็คพิกัดศุลกากร</h2>
+            <h2>รู้จะขั้นตอนการนำเข้าสินค้า และวิธีการคำนวนค่าภาษีศุลกากร</h2>
           </div>
         </Link>
        </div>
@@ -61,7 +62,7 @@ const Blog = () => {
       </Container>
 
 
-      <Container className="blogContents">
+      {/* <Container className="blogContents">
         <h1>Previous post </h1>
         <div className="blogContent2">
         <Link to='/blog/freight-shipping' className="blog2-card">
@@ -106,7 +107,7 @@ const Blog = () => {
         </Link>
         
         </div>
-      </Container>
+      </Container> */}
       <Contact2/>
       <QuestionForm/>
 
