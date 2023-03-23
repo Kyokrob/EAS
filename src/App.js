@@ -12,7 +12,8 @@ import Courier from './pages/courier/Courier'
 import Quotation from './pages/quotation/Quotation';
 import Blog from './pages/blog/Blog';
 // import Blog1 from './components/blog1/Blog1';
-import Blog01 from './components/blog01/Blog01';
+// import Blog01 from './components/blog01/Blog01';
+import Blog001 from './components/blog001/Blog001';
 import Blog2 from './components/blog2/Blog2';
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
@@ -35,7 +36,8 @@ const App = () => {
         <Route path="/about" element={<About/>}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
         {/* <Route path="/blog/shipping-freight" element={<Blog1/>}></Route> */}
-        <Route path="/blog/shipping-freight" element={<Blog01/>}></Route>
+        {/* <Route path="/blog/shipping-freight" element={<Blog01/>}></Route> */}
+        <Route path="/blog/shipping-freight" element={<Blog001/>}></Route>
         <Route path="/blog/ภาษีศุลกากรและภาษีนำเข้า" element={<Blog2/>}></Route>
         <Route path="/airfreight" element={<Airfreight/>}></Route>
         <Route path="/seafreight" element={<Seafreight/>}></Route>

@@ -1,19 +1,19 @@
-import React, { useEffect} from 'react'
-import './blog1.css'
-import Contact2 from '../../components/contact2/Contact2'
+import React, { useEffect } from 'react'
+import './blog001.css'
+import Contact2 from '../contact2/Contact2'
 import Sidebar from '../sidebar/Sidebar'
 import BlogShare from '../blogShare/BlogShare'
 import blog1cover from '../../images/blog1cover.png'
 
-const Blog1 = () => {
-  const url = 'https://www.easthai.co/blog/shipping-freight';
+const Blog001 = () => {
+    const url = 'https://www.easthai.co/blog/shipping-freight';
 
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
   return (
     <>
-    <div className="blog01">
+    <div className="blogSection">
     <div className='article'>
       <header>
         <div>March 16, 2023</div>
@@ -84,9 +84,13 @@ const Blog1 = () => {
     </div>
     </div>
 
-      <Contact2/>
+    <Contact2/>
+
+    
+    
+    
     </>
   )
 }
 
-export default Blog1  
+export default Blog001
