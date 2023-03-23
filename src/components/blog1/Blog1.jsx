@@ -13,7 +13,7 @@ const Blog1 = () => {
       }, []);
   return (
     <>
-    <div className="blogMainNew">
+    <div className="blogSection">
     <div className='article'>
       <header>
         <div>March 16, 2023</div>
@@ -88,4 +88,4 @@ const Blog1 = () => {
   )
 }
 
-export default Blog1
+export default Blog1  
