@@ -13,7 +13,7 @@ const Blog1 = () => {
       }, []);
   return (
     <>
-    <div className="blogSection">
+    <div className="blog01">
     <div className='article'>
       <header>
         <div>March 16, 2023</div>
@@ -83,6 +83,7 @@ const Blog1 = () => {
       <Sidebar/>
     </div>
     </div>
+
       <Contact2/>
     </>
   )

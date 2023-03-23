@@ -1,4 +1,4 @@
-.blogSection {
+.blog01 {
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -93,7 +93,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    .blogMainNew {
+    .blog01 {
       flex-direction: column;
       gap: 0;
     }
