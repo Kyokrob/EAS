@@ -1,3 +1,26 @@
+  .blogSection {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .article {
+    flex: 5;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .sidebarComponent {
+    flex: 2;
+    padding: 16px;
+  }
+  
+  
+  
+  
   .article header {
     height: 250px;
     width: 100%;

@@ -13,19 +13,8 @@ const Blog001 = () => {
       }, []);
   return (
     <>
-    <div className="blogSection" style={{
-  display: 'flex',
-  flexDirection: 'row',
-  gap: '50px',
-  maxWidth: '960px',
-  margin: '0 auto',
-  boxSizing: 'border-box'
-}}>
-    <div className='article' style={{
-        flex: '5',
-        margin: '0 auto',
-        padding: '20px'
-    }}>
+    <div className="blogSection">
+    <div className='article'>
       <header>
         <div>March 16, 2023</div>
         <h1>Freight forwarder ต่างกัน shipping อย่างไร ?</h1>
@@ -90,7 +79,7 @@ const Blog001 = () => {
         </section>
       </main>
     </div> 
-    <div className="sidebarComponent" style= {{flex:"2", padding:"16px"}}>
+    <div className="sidebarComponent">
       <Sidebar/>
     </div>
     </div>
