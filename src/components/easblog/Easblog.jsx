@@ -1,30 +1,30 @@
-import React, { useEffect} from 'react'
-import './blog01.css'
-import Contact2 from '../../components/contact2/Contact2'
+import React, { useEffect } from 'react'
+import Contact2 from '../contact2/Contact2'
 import Sidebar from '../sidebar/Sidebar'
 import BlogShare from '../blogShare/BlogShare'
 import blog1cover from '../../images/blog1cover.png'
+import './easblog.css'
 
-const Blog01 = () => {
-  const url = 'https://www.easthai.co/blog/shipping-freight';
+const Easblog = () => {
+    const url = 'https://www.easthai.co/blog/shipping-freight';
 
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
   return (
     <>
-    <div className="blog01">
-    <div className='article'>
-      <header>
-        <div>March 16, 2023</div>
+    <div className="easblog">
+        <div className="blogArticle">
+           <div className="blog1234">
+           <div className="blogArticleHeader">
+            <div>March 16, 2023</div>
         <h1>Freight forwarder ต่างกัน shipping อย่างไร ?</h1>
         <h2>สำหรับสองบทบาทนี้มักถูกสับสนกันบ่อยครั้ง ตัวแทนขนส่งสินค้า (Freight Forwarders) และ ตัวแทนออกใบขนสินค้า (Shipping / Customs Clearance Agents) หน้าที่ของพวกเขาคืออะไร</h2>
         <div>Written by EASTHAI Team</div>
-      </header>
-      <main>
+            </div>
         <img src={blog1cover} alt="Blog post" />
         <section>
-          <h3>1.Introduction</h3>
+        <h3>1.Introduction</h3>
           <p>
           คุณรู้ไหมว่าตัวแทนขนส่งสินค้าและตัวแทนออกใบขนสินค้าคืออะไรและความแตกต่างกันอย่างไร? ในวันนี้เราจะมาพูดคุยถึงการเข้าใจบทบาทของ  ตัวแทนขนส่งสินค้า (Freight Forwarders) และ ตัวแทนออกใบขนสินค้า (Shipping / Customs Clearance Agents) ในบางครั้งสองบทบาทนี้มักถูกสับสนกันบ่อยครั้ง แต่จริงแล้วพวกเขามีหน้าที่แตกต่างกัน บทความนี้จะช่วยให้คุณเข้าใจถึงบทบาทของพวกเขาและการทำงานของแต่ละกระบวนการขนส่งสินค้า
           </p>
@@ -77,16 +77,17 @@ const Blog01 = () => {
 
           <BlogShare url={url}/>
         </section>
-      </main>
-    </div> 
+           </div>
+    </div>
     <div className="sidebarComponent">
       <Sidebar/>
     </div>
-    </div>
 
-      <Contact2/>
+    </div>
+    <Contact2/>
+
     </>
   )
 }
 
-export default Blog01  
+export default Easblog
