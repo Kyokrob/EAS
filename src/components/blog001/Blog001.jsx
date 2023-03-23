@@ -21,7 +21,11 @@ const Blog001 = () => {
   margin: '0 auto',
   boxSizing: 'border-box'
 }}>
-    <div className='article'>
+    <div className='article' style={{
+        flex: '5',
+        margin: '0 auto',
+        padding: '20px'
+    }}>
       <header>
         <div>March 16, 2023</div>
         <h1>Freight forwarder ต่างกัน shipping อย่างไร ?</h1>
