@@ -13,16 +13,18 @@
     padding: 20px;
   }
 
+  .articleHeader {
+    text-align: center;
+  }
+
   .sidebarComponent {
     flex: 2;
     padding: 16px;
   }
+
   
-  
-  
-  
-  .article header {
-    height: 250px;
+  .article {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,20 +110,18 @@
     .article {
       padding: 20px 0 !important;
     }
-    .article header {
-        height: 100%;
-    }
+
 
     .article section {
       margin-bottom: 0;
     }
     .article h1 {
-      width: 90%;
+      width: 100%;
       font-size: 32px;
     }
 
     .article h2 {
-      width: 90%;
+      width: 100%;
     }
   }
   

@@ -15,12 +15,12 @@ const Blog001 = () => {
     <>
     <div className="blogSection">
     <div className='article'>
-      <header>
+      <div className='articleHeader'>
         <div>March 16, 2023</div>
         <h1>Freight forwarder ต่างกัน shipping อย่างไร ?</h1>
         <h2>สำหรับสองบทบาทนี้มักถูกสับสนกันบ่อยครั้ง ตัวแทนขนส่งสินค้า (Freight Forwarders) และ ตัวแทนออกใบขนสินค้า (Shipping / Customs Clearance Agents) หน้าที่ของพวกเขาคืออะไร</h2>
         <div>Written by EASTHAI Team</div>
-      </header>
+      </div>
       <main>
         <img src={blog1cover} alt="Blog post" />
         <section>
