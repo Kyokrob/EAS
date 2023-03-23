@@ -86,7 +86,7 @@ const Blog001 = () => {
         </section>
       </main>
     </div> 
-    <div className="sidebarComponent">
+    <div className="sidebarComponent" style= {{flex:"2", padding:"16px"}}>
       <Sidebar/>
     </div>
     </div>
