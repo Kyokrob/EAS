@@ -13,7 +13,14 @@ const Blog001 = () => {
       }, []);
   return (
     <>
-    <div className="blogSection">
+    <div className="blogSection" style={{
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '50px',
+  maxWidth: '960px',
+  margin: '0 auto',
+  boxSizing: 'border-box'
+}}>
     <div className='article'>
       <header>
         <div>March 16, 2023</div>
@@ -83,12 +90,7 @@ const Blog001 = () => {
       <Sidebar/>
     </div>
     </div>
-
     <Contact2/>
-
-    
-    
-    
     </>
   )
 }
