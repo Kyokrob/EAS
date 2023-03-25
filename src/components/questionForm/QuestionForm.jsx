@@ -4,8 +4,6 @@ import faqcover from "../../images/faqcover_3.png";
 import Button from "@mui/material/Button";
 
 
-
-
 const QuestionForm = () => {
   return (
     <>

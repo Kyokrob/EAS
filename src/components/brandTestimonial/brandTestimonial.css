@@ -1,0 +1,41 @@
+.brand-testimonial {
+  max-width: 1024px; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  }
+
+  .brand-testimonial h2 {
+    font-size: 36px;
+    color: #042B3B;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .client {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  
+  .client img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+
+
+  @media screen and (max-width: 480px) {
+    .brand-testimonial h2 {
+        font-size: 24px;
+    }
+    .client {
+        height: 100px;
+    }
+  }
+  

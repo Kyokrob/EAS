@@ -1,8 +1,7 @@
 .sidebarHeader {
-    display: flex;
-    position: sticky;
-    margin-top: 3rem;
-
+    display: flex !important;
+    position: sticky !important;
+    margin-top: 3rem !important;
 }
 
 .sidebarHeader h1 {

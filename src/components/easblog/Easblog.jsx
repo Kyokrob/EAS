@@ -15,7 +15,7 @@ const Easblog = () => {
     <>
     <div className="easblog">
         <div className="blogArticle">
-           <div className="blog1234">
+           <div className="blogContainer">
            <div className="blogArticleHeader">
             <div>March 16, 2023</div>
         <h1>Freight forwarder ต่างกัน shipping อย่างไร ?</h1>

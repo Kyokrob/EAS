@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 .blogArticle {
     flex: 5;
     margin: 0 auto;
@@ -24,7 +25,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
-    margin-bottom: 30px;
 }
 
 .blogArticle h1 {
@@ -105,5 +105,17 @@
   }
 
   @media screen and (max-width: 480px) {
-    
+    .blogArticle {
+        padding: 20px 0 !important;
+      }
+      .blogArticle section {
+        margin-bottom: 0;
+      }
+      .blogArticle h1 {
+        width: 100%;
+        font-size: 32px;
+      }
+      .blogArticle h2 {
+        width: 100%;
+      }
   }

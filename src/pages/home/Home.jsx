@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Service from "../../components/service/Service";
+// import Service from "../../components/service/Service";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,6 +13,7 @@ import GppGoodIcon from "@mui/icons-material/GppGood";
 
 import Box from "@mui/material/Box";
 import Form from "../../components/form/Form";
+import BrandTestimonial from "../../components/brandTestimonial/BrandTestimonial";
 
 
 import { useEffect } from "react";
@@ -272,8 +273,8 @@ const Home = () => {
           </div>
         </Box>
 
+        <BrandTestimonial/>
 
-       
 
         <Container className="sec4">
           <div className="sec4Left">
@@ -294,7 +295,8 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      <Service />
+      {/* <Service /> */}
+
 
       <div className="homeForm">
         <div className="homeFormRight">
