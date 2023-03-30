@@ -1,6 +1,5 @@
 import React from "react";
 import "./home.css";
-import Service from "../../components/service/Service";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
