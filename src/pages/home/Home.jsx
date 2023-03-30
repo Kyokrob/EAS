@@ -1,9 +1,11 @@
 import React from "react";
 import "./home.css";
-// import Service from "../../components/service/Service";
+import Service from "../../components/service/Service";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
@@ -12,9 +14,10 @@ import RecommendIcon from "@mui/icons-material/Recommend";
 import GppGoodIcon from "@mui/icons-material/GppGood";
 
 import Box from "@mui/material/Box";
-import Form from "../../components/form/Form";
-import BrandTestimonial from "../../components/brandTestimonial/BrandTestimonial";
 
+import Form from "../../components/form/Form";
+import SliderBrandTestimonial from "../../components/sliderBrandTestimonial/SliderBrandTestimonial";
+import Slider from "../../components/slider/Slider";
 
 import { useEffect } from "react";
 import eas03 from "../../images/eas-03-resize.webp";
@@ -38,61 +41,65 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>
-          EASTHAI - บริการ ขนส่ง สินค้า นำเข้า ส่งออก สินค้าต่างประเทศ{" "}
-        </title>
+        <title>EASTHAI - บริการ ขนส่ง สินค้าระหว่างประเทศ </title>
       </Helmet>
       <div className="header">
-        <img
-          src="https://cdn.pixabay.com/photo/2021/03/28/16/22/port-6131793_1280.jpg"
-          alt="ชิปปิ้ง"
-        />
-        <div className="headerText">
-          <h1>EASTHAI</h1>
-          <h3>EST. 1996</h3>
-          <h2>One stop service for import and exporters</h2>
-          <div className="headerBtn">
-            <Button
-              to="/courier"
-              component={Link}
-              sx={{
-                padding: "12px 24px",
-                background: "#e6af4b",
-                borderRadius: "10px",
-                color: "white",
-                marginTop: "2rem",
-              }}
-            >
-              EAS EXPRESS
-            </Button>
-            <Button
-              to="/quotation"
-              component={Link}
-              sx={{
-                padding: "12px 24px",
-                background: "transparent",
-                border: "1px solid #e6af4b",
-                borderRadius: "10px",
-                color: "#e6af4b",
-                marginTop: "2rem",
-              }}
-            >
-              Get Quotation
-            </Button>
+        <div className="headerLeft">
+          <div className="headerText">
+            <h1>EASTHAI</h1>
+            <h3>บริการ ขนส่ง สินค้าระหว่างประเทศ</h3>
+            <h2>One stop service for import and exporters</h2>
+            <ul>
+              <li>
+              <FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>
+                Express support
+              </li>
+              <li><FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>Freight Forwarder</li>
+              <li><FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>Customs Clearance</li>
+              <li><FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>Inland Transportation</li>
+            </ul>
+            <div className="headerBtn">
+              <Button
+                to="/courier"
+                component={Link}
+                sx={{
+                  padding: "12px 24px",
+                  background: "#e6af4b",
+                  borderRadius: "10px",
+                  color: "white",
+                  marginTop: "2rem",
+                }}
+              >
+                EAS EXPRESS
+              </Button>
+              <Button
+                to="/quotation"
+                component={Link}
+                sx={{
+                  padding: "12px 24px",
+                  background: "transparent",
+                  border: "1px solid #e6af4b",
+                  borderRadius: "10px",
+                  color: "#e6af4b",
+                  marginTop: "2rem",
+                }}
+              >
+                Get Quotation
+              </Button>
+            </div>
           </div>
+        </div>
 
-          <a aria-label="scrolldown" id="scroll-btn" href="#section-2">
-            .
-          </a>
+        <div className="headerRight">
+          {/* <img
+            src={homeheader}
+            alt="ชิปปิ้ง"
+          /> */}
         </div>
       </div>
 
-      <div className="contactSection" id="section-2">
-        <h1>
-          ติดขัดปัญหาการนำเข้าสินค้า, พัสดุไปรษณีย์, ท่าเรือ, DHL, FEDEX, UPS,
-          TNT
-        </h1>
-        <Button href="tel:0867780808">ติดต่อเจ้าหน้าที่</Button>
+      <div className="partnerLogo">
+        <SliderBrandTestimonial />
       </div>
 
       <div className="about1">
@@ -100,7 +107,7 @@ const Home = () => {
           <h1>ตัวแทนของผู้ส่งออกและผู้นำเข้าในการจัดส่งสินค้าระหว่างประเทศ</h1>
         </div>
 
-        <div className="about1Cards">
+        <div className="about1Cards" id="section-2">
           <div className="about1Card" data-aos="slide-up">
             <img src={eas04} alt="Shipping freight ภาษีนำเข้า" />
             <div className="about1CardText">
@@ -273,8 +280,9 @@ const Home = () => {
           </div>
         </Box>
 
-        <BrandTestimonial/>
+        <Slider/>
 
+        {/* <BrandTestimonial/> */}
 
         <Container className="sec4">
           <div className="sec4Left">
@@ -296,7 +304,6 @@ const Home = () => {
         </Container>
       </div>
       {/* <Service /> */}
-
 
       <div className="homeForm">
         <div className="homeFormRight">

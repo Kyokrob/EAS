@@ -35,7 +35,7 @@ const BrandTestimonial = () => {
       dots: true,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1500,
       speed: 2000,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -64,7 +64,7 @@ const BrandTestimonial = () => {
   
     return (
       <div className="brand-testimonial">
-        <h2>Trusted us</h2>
+        <h2>Trust by</h2>
         <Slider {...settings}>
           {clients.map((client) => (
             <div key={client.id} className="client">
