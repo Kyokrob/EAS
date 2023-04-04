@@ -98,6 +98,6 @@
 
   @media screen and (max-width: 480px) {
     .formFields {
-        width: 350px;
+        width: 300px;
     }
   }
