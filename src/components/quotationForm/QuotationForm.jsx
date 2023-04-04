@@ -19,6 +19,7 @@ function QuotationForm() {
     moreDetail: "",
   });
 
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormValues((prevState) => ({
@@ -168,6 +169,7 @@ function QuotationForm() {
               placeholder="กรอกชื่อหรือประเภทสินค้า"
               value={formValues.productType}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -196,9 +198,9 @@ function QuotationForm() {
               <option value="shipping">Shipping (พิธีการศุลกากร)</option>
               <option value="transportation">Inland transportation</option>
             </select>
-
           </div>
         </div>
+        
         <div className="form-row">
           <div className="form-col1">
             <label htmlFor="moreDetail">ข้อมูลเพิ่มเติม:</label>

@@ -3,8 +3,6 @@ import "./home.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
@@ -26,6 +24,7 @@ import seahome from "../../images/home_sea.png";
 import airhome from "../../images/home_air.png";
 import cover4 from "../../images/cover4.gif";
 
+
 import { Helmet } from "react-helmet";
 
 const Home = () => {
@@ -46,54 +45,17 @@ const Home = () => {
         <div className="headerLeft">
           <div className="headerText">
             <h1>EASTHAI</h1>
-            <h3>บริการ ขนส่ง สินค้าระหว่างประเทศ</h3>
-            <h2>One stop service for import and exporters</h2>
-            <ul>
-              <li>
-              <FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>
-                Express support
-              </li>
-              <li><FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>Freight Forwarder</li>
-              <li><FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>Customs Clearance</li>
-              <li><FontAwesomeIcon icon={faCheck} style={{paddingRight: "18px"}}/>Inland Transportation</li>
-            </ul>
-            <div className="headerBtn">
-              <Button
-                to="/courier"
-                component={Link}
-                sx={{
-                  padding: "12px 24px",
-                  background: "#e6af4b",
-                  borderRadius: "10px",
-                  color: "white",
-                  marginTop: "2rem",
-                }}
-              >
-                EAS EXPRESS
-              </Button>
-              <Button
-                to="/quotation"
-                component={Link}
-                sx={{
-                  padding: "12px 24px",
-                  background: "transparent",
-                  border: "1px solid #e6af4b",
-                  borderRadius: "10px",
-                  color: "#e6af4b",
-                  marginTop: "2rem",
-                }}
-              >
-                Get Quotation
-              </Button>
+            <h2>บริการ ขนส่ง สินค้าระหว่างประเทศ </h2>
+            <h3>สำหรับขอใบเสนอราคา กรอบข้อมูลสำหรับเจ้าหน้าที่เพื่อทำการติดต่อกลับ</h3>
+            <div className="headerForm">
+            <Form />
             </div>
+
           </div>
         </div>
 
         <div className="headerRight">
-          {/* <img
-            src={homeheader}
-            alt="ชิปปิ้ง"
-          /> */}
+          <img src="https://cdn.pixabay.com/photo/2021/03/28/16/22/port-6131793_1280.jpg" alt="ชิปปิ้ง"/>
         </div>
       </div>
 
@@ -281,8 +243,6 @@ const Home = () => {
 
         <Slider/>
 
-        {/* <BrandTestimonial/> */}
-
         <Container className="sec4">
           <div className="sec4Left">
             <img src={cover4} alt="" />
@@ -303,12 +263,6 @@ const Home = () => {
         </Container>
       </div>
       {/* <Service /> */}
-
-      <div className="homeForm">
-        <div className="homeFormRight">
-          <Form />
-        </div>
-      </div>
     </>
   );
 };

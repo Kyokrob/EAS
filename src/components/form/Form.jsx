@@ -3,30 +3,56 @@ import emailjs from "@emailjs/browser";
 import "./form.css";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
+import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 
 const Form = () => {
   const form = useRef();
-  const [alert, setAlert] = useState({severity:'',message:''});
+  const [alert, setAlert] = useState({ severity: "", message: "" });
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    telephone: "",
+    service: "",
+  });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const { name, email, telephone, service } = formValues;
 
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      telephone: telephone,
+      service: service,
+    };
 
-    if(!form.current.name.value || !form.current.email.value)
-    {
-      setAlert({severity:'error', message:'Please enter the following information: Full Name, Email'});
-        setOpen(true);
-        return;
+    if (!form.current.name.value || !form.current.email.value) {
+      setAlert({
+        severity: "error",
+        message: "Please enter the following inform  ation: Full Name, Email",
+      });
+      setOpen(true);
+      return;
     }
 
-    setAlert({severity:'success', message:'The Email has been sent ! We will contact you back shortly.'});
+    setAlert({
+      severity: "success",
+      message: "The Email has been sent ! We will contact you back shortly.",
+    });
     setOpen(true);
 
     emailjs
       .sendForm(
         "service_50n0r1n",
         "template_wh2cn0t",
-        form.current,
+        templateParams,
         "QbyAUOGwHjpj80LAc"
       )
       .then(
@@ -55,81 +81,77 @@ const Form = () => {
 
   return (
     <div className="form">
-      <div className="formTitle">
-        <h1>ติดต่อเพื่อสอบถาม</h1>
-        <p>กรอบข้อมูลสำหรับเจ้าหน้าที่เพื่อทำการติดต่อกลับ</p>
-      </div>
-
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={handleSubmit}>
         <div className="formFields">
-          <div className="formField">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="ชื่อสำหรับติดต่อกลับ (กรุณาระบุ)"
-              name="name"
-              required
-            />
-          </div>
-          <div className="formField">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="อีเมลล์ (กรุณาระบุ)"
-              name="email"
-              required
-            />
-          </div>
-          <div className="formField">
-            <input
-              type="tel"
-              className="form-control"
-              placeholder="เบอร์สำหรับติดต่อกลับ"
-              name="phone"
-            />
-          </div>
-          <div className="formField">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="ไลน์ไอดี"
-              name="line"
-            />
-          </div>
-
-          <div className="formField">
-          <textarea
-            className="form-control"
-            id=""
-            cols="30"
-            rows="4"
-            placeholder="คำถามที่ต้องการปรึกษา "
-            name="message"
-          ></textarea>
-          </div>
-
+            <div className="formField">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="ชื่อผู้ติดต่อ"
+                name="name"
+                value={formValues.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="formField">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Email"
+                name="email"
+                value={formValues.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="formField">
+              <input
+                type="tel"
+                className="form-control"
+                placeholder="เบอร์โทรศัพท์"
+                id="telephone"
+                name="telephone"
+                value={formValues.telephone}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="formField">
+              <select
+                className="form-control"
+                type="text"
+                id="service"
+                name="service"
+                value={formValues.service}
+                onChange={(e) => {
+                  setFormValues({ ...formValues, service: e.target.value });
+                }}
+              >
+                <option value="" disabled>
+                  เลือกประเภทบริการ
+                </option>
+                <option value="easexpress">
+                  Express support
+                </option>
+                <option value="freightforwarding">
+                  Freight forwarding (นำเข้าส่งออก)
+                </option>
+                <option value="shipping">Shipping (พิธีการศุลกากร)</option>
+                <option value="transportation">Inland transportation</option>
+              </select>
+            </div>
           <div className="formInputBtn">
-            <button
-              type="submit"
-              value="send"
-              onClick={handleClick}
-            >
-              Submit
+            <button type="submit" value="send" onClick={handleClick}>
+              ขอใบเสนอราคา <SendOutlinedIcon/>
             </button>
 
-
-
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-
-             <Alert      
-                severity={alert.severity}
-                sx={{ width: "100%" }}
-              >
+              <Alert severity={alert.severity} sx={{ width: "100%" }}>
                 {alert.message}
               </Alert>
-
             </Snackbar>
           </div>
+
         </div>
       </form>
     </div>
