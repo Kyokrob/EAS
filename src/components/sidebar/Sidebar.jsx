@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <>
     <div className="sidebarHeader">
-    <h1>Other posts you may like</h1>
+    <h1>You may also like</h1>
     </div>
     <div className='sidebar'>
         <div className="sidebarPost">

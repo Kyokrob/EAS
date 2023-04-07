@@ -3,9 +3,12 @@ import emailjs from "@emailjs/browser";
 import "./form.css";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBoxOpen, faUser, faEnvelope, faPhone, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Form = () => {
+
   const form = useRef();
   const [alert, setAlert] = useState({ severity: "", message: "" });
 
@@ -81,8 +84,10 @@ const Form = () => {
 
   return (
     <div className="form">
+       
       <form ref={form} onSubmit={handleSubmit}>
         <div className="formFields">
+        <FontAwesomeIcon icon={faUser} size="xl" style={{color: "#042b3b",}} />
             <div className="formField">
               <input
                 type="text"
@@ -94,6 +99,7 @@ const Form = () => {
                 required
               />
             </div>
+            <FontAwesomeIcon icon={faEnvelope} size="xl" style={{color: "#042b3b",}} />
             <div className="formField">
               <input
                 type="text"
@@ -105,6 +111,7 @@ const Form = () => {
                 required
               />
             </div>
+            <FontAwesomeIcon icon={faPhone} size="xl" style={{color: "#042b3b",}} />
             <div className="formField">
               <input
                 type="tel"
@@ -116,6 +123,7 @@ const Form = () => {
                 onChange={handleChange}
               />
             </div>
+            <FontAwesomeIcon icon={faBoxOpen} size="xl" style={{ color: '#042b3b' }}/>
             <div className="formField">
               <select
                 className="form-control"
@@ -142,7 +150,7 @@ const Form = () => {
             </div>
           <div className="formInputBtn">
             <button type="submit" value="send" onClick={handleClick}>
-              ขอใบเสนอราคา <SendOutlinedIcon/>
+              <p>ขอใบเสนอราคา </p><FontAwesomeIcon icon={faPaperPlane} bounce size="lg" style={{color: "#ffffff",}} />
             </button>
 
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
