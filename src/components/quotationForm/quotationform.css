@@ -79,6 +79,9 @@
 .form-col option {
   background: #e6e6e6;
   color: #575757c9;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .form-col1 {
