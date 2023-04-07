@@ -1,5 +1,4 @@
 import React from 'react'
-import './contact2.css'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'

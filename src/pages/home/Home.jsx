@@ -15,6 +15,7 @@ import Box from "@mui/material/Box";
 import Form from "../../components/form/Form";
 import SliderBrandTestimonial from "../../components/sliderBrandTestimonial/SliderBrandTestimonial";
 import Slider from "../../components/slider/Slider";
+import Contact from "../../components/contact/Contact";
 
 import { useEffect } from "react";
 import eas03 from "../../images/eas-03-resize.webp";
@@ -262,7 +263,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      {/* <Service /> */}
+      <Contact/>
     </>
   );
 };

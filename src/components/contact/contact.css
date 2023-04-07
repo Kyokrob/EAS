@@ -20,10 +20,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .contactText h1 {
-    width: 80%;
+    width: 55%;
     margin-top: 12px;
     color: #E6AF4B;
     font-size: 36px !important;

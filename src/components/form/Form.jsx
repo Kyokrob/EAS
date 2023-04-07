@@ -87,7 +87,7 @@ const Form = () => {
        
       <form ref={form} onSubmit={handleSubmit}>
         <div className="formFields">
-        <FontAwesomeIcon icon={faUser} size="xl" style={{color: "#042b3b",}} />
+        <FontAwesomeIcon icon={faUser} size="lg" style={{color: "#042b3b",}} />
             <div className="formField">
               <input
                 type="text"
@@ -99,7 +99,7 @@ const Form = () => {
                 required
               />
             </div>
-            <FontAwesomeIcon icon={faEnvelope} size="xl" style={{color: "#042b3b",}} />
+            <FontAwesomeIcon icon={faEnvelope} size="lg" style={{color: "#042b3b",}} />
             <div className="formField">
               <input
                 type="text"
@@ -111,7 +111,7 @@ const Form = () => {
                 required
               />
             </div>
-            <FontAwesomeIcon icon={faPhone} size="xl" style={{color: "#042b3b",}} />
+            <FontAwesomeIcon icon={faPhone} size="lg" style={{color: "#042b3b",}} />
             <div className="formField">
               <input
                 type="tel"
@@ -123,7 +123,7 @@ const Form = () => {
                 onChange={handleChange}
               />
             </div>
-            <FontAwesomeIcon icon={faBoxOpen} size="xl" style={{ color: '#042b3b' }}/>
+            <FontAwesomeIcon icon={faBoxOpen} size="lg" style={{ color: '#042b3b' }}/>
             <div className="formField">
               <select
                 className="form-control"
