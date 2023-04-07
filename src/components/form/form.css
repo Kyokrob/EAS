@@ -91,6 +91,7 @@
     font-size: 16px;
     width: 95%;
     transition: all 0.3s ease;
+    margin-bottom: 0 !important;
   }
   
   .formInputBtn button:hover {
@@ -106,7 +107,7 @@
   @media screen and (max-width: 480px) {
     .form {
         width: 300px;
-        height: 350px;
+        height: 280px;
     }
     .formField {
       width: 85%;

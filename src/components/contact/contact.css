@@ -57,7 +57,7 @@
 @media only screen and (max-width: 480px) {
     .contactText h1 {
         font-size: 24px !important;
-        width: 80%;
+        width: 90%;
     }
 
     .contactBtn {
