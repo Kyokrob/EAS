@@ -1,0 +1,130 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+.ourService {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .ourServiceBox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; 
+    height: 250px;
+    padding: 12px;
+    color: #042B3B;
+  }
+
+  .ourServiceBox1 h3 {
+    color: #E6AF4B;
+  }
+
+  .ourServiceBox1 h1 {
+    font-size: 36px;
+}
+
+.ourServiceBox1 p {
+  font-size: 24px;
+}
+
+  .ourServiceBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; 
+    height: 250px;
+    padding: 12px;
+    color: #042B3B;
+    transition: all 0.1s ease;
+  }
+
+  .ourServiceBox:hover {
+    transform: scale(1);
+    border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.147);
+  }
+
+  .ourServiceBox h3 {
+    color: #E6AF4B;
+  }
+
+  .ourServiceBox a {
+    color: #E6AF4B;
+    font-weight: 600;
+    text-decoration: none;
+    position:relative;
+    margin-top: 12px;
+    
+  }
+  
+  .ourServiceBox a:hover {
+    color: #042B3B;
+  }
+  
+  .ourServiceBox a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #E6AF4B;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+  }
+  
+  .ourServiceBox a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .ourServiceBox a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #E6AF4B;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+  }
+  
+  .ourServiceBox a:hover:after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For tablet devices */
+    .ourService {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      height: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* For mobile devices */
+    .ourService {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+
+    .ourServiceBox1 {
+      height: 100px;
+    }
+  }

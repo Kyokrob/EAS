@@ -21,20 +21,25 @@ const ContactForm = () => {
         <title>EASTHAI - ติดต่อเรา</title>
       </Helmet>
       <div className="contactFormHeader">
+        <div className="contactFormHeaderContent">
         <h1>Contact Us</h1>
         <h3>ยินดีให้บริการทุกช่องทาง</h3>
+        </div>
       </div>
 
       <Container className="contactForm">
         <div className="contactForm1">
           <div className="contactForm1Left">
-            <h1>
-            ขนส่งสินค้าอย่างมีประสิทธิภาพ น่าเชื่อถือ เพิ่มความมั่นใจ
-            </h1>
+            <h1>ขนส่งสินค้าอย่างมีประสิทธิภาพ น่าเชื่อถือ เพิ่มความมั่นใจ</h1>
             <p>
-            สำหรับผู้นำเข้าส่งออกหากต้องการรับใบเสนอราคากรุณากรอกแบบฟอร์มที่เตรียมไว้ให้เรียบร้อย ทางทีมงานของเราจะติดต่อกลับมาโดยเร็วพร้อมนำเสนอราคา ตรงตามความต้องการของคุณ
+              สำหรับผู้นำเข้าส่งออกหากต้องการรับใบเสนอราคากรุณากรอกแบบฟอร์มที่เตรียมไว้ให้เรียบร้อย
+              ทางทีมงานของเราจะติดต่อกลับมาโดยเร็วพร้อมนำเสนอราคา
+              ตรงตามความต้องการของคุณ
             </p>
-            <p>หากต้องการสนทนาเพิ่มเติม สามารถติดต่อเราได้ผ่านช่องทางต่าง ๆ เช่น โทรศัพท์ อีเมล หรือ Line</p>
+            <p>
+              หากต้องการสนทนาเพิ่มเติม สามารถติดต่อเราได้ผ่านช่องทางต่าง ๆ เช่น
+              โทรศัพท์ อีเมล หรือ Line
+            </p>
           </div>
           <div className="contactForm1Right">
             <Form />
@@ -45,74 +50,100 @@ const ContactForm = () => {
             <h1>Get in touch</h1>
 
             <div className="contactForm2Table">
-
+            <div className="contactTable">
+                <div className="contactBg">
+                  <PhoneIcon className="customContactIcon" />
+                </div>
+                <div className="contactForm2Detail">
+                    <div className="contactForm2DetailHeader">
+                      <h3>Contact</h3>
+                    </div>
+                    <div className="contactForm2Detail-2">
+                    <p>
+                      Operator
+                      <p><a href="tel:022359100">02-235-9100 </a>ต่อ (0)</p>
+                    </p>
+                    <p>
+                      Sales
+                      <p><a href="tel:0867780808">086-778-0808</a></p>
+                      <p><a href="tel:022359100">02-235-9100 </a>ต่อ (36)</p>
+                    </p>
+                    </div>
+                </div>
+              </div>
               <div className="contactTable">
                 <div className="contactBg">
                   <PlaceIcon className="customContactIcon" />
                 </div>
                 <div className="contactForm2Detail">
+                  <div className="contactForm2DetailHeader">
+                    <h3>
+                    Address
+                    </h3>
+                  </div>
+                   <div className="contactForm2Detail-2">
+                   <p>
+                      141/32 อาคารสกุลไทย-สุรวงศ์ทาวเวอร์ ชั้น 23
+                      ถนนสุรวงศ์ แขวงสุริยวงศ์ เขตบางรัก กรุงเทพมหานคร 10500
+                    </p>
+                   </div>
+                </div>
+              </div>
+              
+
+              <div className="contactTable">
+                <div className="contactBg">
+                  <EmailIcon className="customContactIcon" />
+                </div>
+                <div className="contactForm2Detail">
+                    <div className="contactForm2DetailHeader">
+                      <h3>
+                      Drop an email
+                      </h3>
+                    </div>
+                  <div className="contactForm2Detail-2">
                   <p>
-                    Office : 141/32 อาคารสกุลไทย-สุรวงศ์ทาวเวอร์ ชั้น 23
-                    ถนนสุรวงศ์ แขวงสุริยวงศ์ เขตบางรัก กรุงเทพมหานคร 10500
+                    <a href="mailto:hello@easthai.com">hello@easthai.com</a>
                   </p>
+                  </div>
                 </div>
               </div>
 
               <div className="contactTable">
                 <div className="contactBg">
-                <PhoneIcon className="customContactIcon" />
+                  <ChatIcon className="customContactIcon" />
                 </div>
-              <div className="contactForm2Detail">
-                <p>
-                  Call us : <a href="tel:022359100">02-235-9100</a> or{" "}
-                  <a href="tel:0867780808">086-778-0808</a>
-                </p>
-              </div>
-
-              </div>
-
-
-              <div className="contactTable">
-                <div className="contactBg">
-                <EmailIcon className="customContactIcon" />
+                <div className="contactForm2Detail">
+                    <div className="contactForm2DetailHeader">
+                      <h3>
+                      Chat with LINE
+                      </h3>
+                    </div>
+                  <div className="contactForm2Detail-2">
+                  <p>
+                    <a href="https://page.line.me/999piqzj"> Clickhere </a>
+                    OR @easthai
+                  </p>
+                  </div>
                 </div>
-              <div className="contactForm2Detail">
-                <p>
-                  Drop an email :{" "}
-                  <a href="mailto:hello@easthai.com">hello@easthai.com</a>
-                </p>
               </div>
-              </div>
-
-            <div className="contactTable">
-              <div className="contactBg">
-              <ChatIcon className="customContactIcon" />
-              </div>
-            <div className="contactForm2Detail">
-              <p>
-                Chat with us via LINE : @easthai or{" "}
-                <a href="https://page.line.me/999piqzj">Clickhere!</a>
-              </p>
-            </div>
             </div>
 
-          </div>
-
-          <div className="contactForm2Btm">
-            <div className="map-responsive">
-              <iframe
-                title="Unique title"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.817447021707!2d100.5288556151327!3d13.729499601508133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2bbc161f97%3A0xe5e951bf33dc1521!2sEast%20Asia%20Shipping%20(Thailand)%20LTD.!5e0!3m2!1sen!2sth!4v1666009792377!5m2!1sen!2sth"
-                width="550"
-                height="550"
-                style={{ border: 0 }}
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div className="contactForm2Btm">
+              <div className="map-responsive">
+                <iframe
+                  title="Unique title"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.817447021707!2d100.5288556151327!3d13.729499601508133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2bbc161f97%3A0xe5e951bf33dc1521!2sEast%20Asia%20Shipping%20(Thailand)%20LTD.!5e0!3m2!1sen!2sth!4v1666009792377!5m2!1sen!2sth"
+                  width="550"
+                  height="550"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </Container>
       <Contact />

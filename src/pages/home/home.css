@@ -27,6 +27,7 @@
     height: 100%;
     text-shadow: 2px 2px #00000073;
     z-index: 10;
+    margin-top: 40px;
 }
 
 .headerForm {
@@ -41,7 +42,7 @@
 .headerText h1 {
     color: #E6AF4B;
     font-size: 52px;
-    padding: 6px 0;
+    margin: 0;
 }
 
 .headerText h2 {
@@ -81,166 +82,82 @@
 .partnerLogo {
     height: 100%;
     width: 100%;
-}
 
+}
 
 /* About Start */
-.about1 {
-    height: 100%;
+
+.aboutHome {
     display: flex;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(244, 246, 248);
+
+}
+
+.aboutHomeText {
+    display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    background: #042B3B;
-    padding: 24px;
-}
-
-
-.about1Text {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    padding: 12px 0;
-}
-
-.about1Text h1 {
-    font-size: 36px;
-    color: #E6AF4B;
-    font-weight: 500;
-
-}
-
-.about1Text p {
-    font-size: 24px;
-    color: #ffffff;
-    font-weight: 400;
-
-}
-
-
-
-.about1Cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    position: relative;
+    align-items: flex-end;
     height: 100%;
-    width: 100%;
-    padding: 12px 0;
-
+    width: 50%;
 }
 
-.about1Card {  
-    position: relative;  
-    width: 450px;
-    height: 450px;
-    border-radius: 10px;
-    background: #3c3c3c;
-    z-index: 2;
-}
-
-.about1Card:hover {
-    background: #000000;
-    transition: .3s ease-in;   
-}
-
-.about1Card img {
+.aboutHomeText::before {
+    content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    opacity: 0.4;
-    z-index: -1;
-
-}
-  
-  .about1CardText {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: 12px;
-    z-index: 3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* set a lower z-index */
+    clip-path: circle(50% at -10% -10%);
+            background-color: #e6af4b;
   }
-  
 
-  .about1CardText h1 {
-    font-size: 24px;
-    color: #E6AF4B;
-    font-weight: 400;
+
+
+.aboutHomeText h1 {
+    color: #042B3B;
     width: 70%;
-    text-decoration: solid;
-    text-shadow: 2px 2px 2px #5e5e5e;
+    font-weight: 600;
+    font-size: 36px;
+    z-index: 10;
+}
+
+.aboutHomeText h5 {
+    color: #e6af4b;
+    width: 70%;
+    font-weight: bold;
+    font-size: 22px;
+    z-index: 10;
+
+
+}
+.aboutHomeText p {
+    color: #042B3B;
+    width: 70%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    z-index: 10;
+}
+
+.aboutHomeImg {
+    position: relative; /* set position to relative */
+    height: 100%;
+    width: 50%;
   }
   
-  
-  .about1CardText p {
-      color: #ffffff;
-      font-size: 16px;
-      padding: 12px;
-      font-weight: 400;
-      width: 60%;
+  .aboutHomeImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
-
-
-  .section1 {
-    margin: 2rem 0;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    gap: 2rem;
-}
-
-.section11 {
-    margin: 2rem 0;
-    display: flex !important;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    gap: 2rem;
-
-
-}
-
-.left11 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-}
-
-.left11 img {
-    object-fit: cover;
-    width: 100%;
-}
-
-
-.left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-}
-
-.left img {
-    object-fit: cover;
-    width: 100%;
-
-}
+  
 
   /* About End */
 
@@ -258,9 +175,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 150px;
+    height: 100%;
     width: 100%;
     text-align: center;
+
+
 }
 
 .section3Title h1 {
@@ -269,17 +188,8 @@
     padding: 8px;
     width: 80%;
     font-weight: 600;
-}
-.section3Title h3 {
-    width: 70%;
-    color: #042B3B;
-    font-weight: 400;
-    padding: 12px 0;
-}
+    margin-top: 2rem;
 
-.boxCardHome {
-    justify-content: center !important;
-    gap: 1rem;
 }
 
 
@@ -291,26 +201,27 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 0 2px 2px #0000002b;
     margin-top: 12px;
     margin-bottom: 2rem;
     border-radius: 10px;
     position: relative;
 }
 
-.cardHome:hover {
-    background-color: #d9d9d9;
-}
-
 .cardTop {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 50%;
     color: #E6AF4B;
     font-size: 72px;
     
+}
+
+.cardTop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cardTop h1 {
@@ -323,137 +234,56 @@
 .cardContent {  
     width: 100%;
     height: 50%;
+    text-align: left;
 }
 
 .cardContent h3 {
-    font-size: 18px;
+    width: 80%;
+    height: 50%;
+    font-size: 24px;
     color: #042B3B;
 }
 
 .cardContent p {
-    font-size: 16px;
-    padding: 12px;
+    height: 50%;
+    width: 80%;
+    font-size: 18px;
+    padding: 12px 0;
     color: #042B3B;
 }
 
-
-
-
-
-
-
-.rightAboutHome {
-    width: 50%;
-    height: 100%;
+/* .homeFaq {
+    height: 500px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: left;
-    
+    position: relative;
+    align-items: center;   
+    background-image: linear-gradient(to bottom, #ccc, #fff);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+} */
 
-}
-.rightAboutHome h3{
-    font-size: 36px;
-    line-height: 1.4;
-    color: #E6AF4B;
-    width: 80%;
-    letter-spacing: -.03125rem;
-}
-
-.rightAboutHome p {
-    font-size: 18px;
-    line-height: 1.4;
-    color: #ffffff;
-    width: 80%;
-    letter-spacing: -.03125rem;
-    padding: 12px 0;
-}
-
-.rightAboutHome button {
+.homeFaqContainer {
+    position: relative;
+  }
+  
+  .homeFaqBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #E6AF4B 20%, #E6AF4B 80%);
+    clip-path: ellipse(35% 35% at 90% 45%);
+    /* clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%); */
+        z-index: 1;
+  }
+  
+  .homeFaq {
+    height: 500px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 12px;
-    color: #E6AF4B;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #E6AF4B;
-    text-align: center;
-    cursor: pointer;
-}
-
-.rightAboutHome button:hover {
-    background: none;
-}
-
-.sec4 {
-    width: 100%;
-    height: 550px;
-    display: flex !important;
-    flex-direction: row-reverse;
-}
-.sec4Left {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.sec4Left img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.sec4Right {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+    position: relative;
     align-items: center;
-    justify-content: center;
-    padding: 12px;
-}
-
-.sec4Right h1 {
-    width: 80%;
-    font-size: 24px;
-    color: #E6AF4B;
-    font-weight: 600;
-    text-shadow: 1px 1px #00000079;
-
-}
-
-.sec4Right p {
-    color: #042B3B;    
-    font-size: 18px;
-    width: 80%;
-    padding: 12px 0;
-    line-height: 1.5;
-}
-
-.sec4Btn {
-    width: 80%;
-}
-
-.sec4Btn button {
-    padding: 6px 12px;
-    background-color: #E6AF4B;
-    box-shadow: 0px 0px 5px #e6b04b95;
-    color: #333333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.sec4Btn button:hover {
-    transform: scale(1.05);
-    background-image: linear-gradient(to bottom, #E6AF4B, #F9D49C);    transition: 0.5s ease;
-    box-shadow: 0px 0px 5px #F9D49C;
-}
-
-
+  }
+  
 
 
 
@@ -497,27 +327,8 @@
   }
 
 
-@media only screen and (max-width: 1024px){ 
-    .section1 {
-        flex-direction: column;
-        height: 100%;
-    }
 
-    .section11 {
-        flex-direction: column;
-        height: 100%;
-    }
-
-}
-
-@media only screen and (max-width: 768px){ 
-
-
-
-    
-    .section2Header h1 {
-        font-size: 36px;
-    }
+@media only screen and (max-width: 768px){  
 
     .about1CardText {
         margin: 0;
@@ -529,46 +340,14 @@
         overflow: hidden;
 
     }
-
-    .rightAboutHome {
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .rightAboutHome h3 {
-        font-size: 32px;
-        text-align: center;
-        line-height: 2;
-        width: 100%;
-    }
 }
 
 
 
 @media only screen and (max-width: 480px) {
-
-    .section1 {
-        margin: 8rem 0 0 0;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .section11 {
-        margin: 8rem 0;
-        flex-direction: column;
-        height: 100%;
-    }
-    .left11 {
-        width: 100%;
-        height: 100%;
-        align-items: flex-end;
-    }
-
-
     .header {
         flex-direction: column-reverse;
-        height: 77vh;
+        height: 75vh;
     }
 
     .headerForm {
@@ -577,10 +356,8 @@
     .headerText {
         width: 100%;
         justify-content: flex-start;
-        margin-top: 40px;
     }
     .headerText h1 {
-        font-size: 36px;
         width: 80%;
         padding: 0;
     }
@@ -602,54 +379,33 @@
         display: flex;
     }
 
+    .aboutHome {
+        height: 100%;
+        flex-direction: column;
+    }
+    .aboutHomeText {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .aboutHomeText h1 {
+        width: 90%;
+    }
+    .aboutHomeText h5 {
+        width: 90%;
+    }
+    .aboutHomeText p {
+        width: 90%;
+    }
 
+    .aboutHomeImg {
+        width: 100%;
+    }
 
     .left {
         width: 100%;
         height: 100%;
         align-items: flex-end;
-    }
-
-
-    .rightAboutHome {
-        width: 90%;
-        padding: 20px 0;
-        text-align: left;
-        align-items: flex-start;
-    }
-
-    .rightAboutHome h3 {
-        font-size: 28px;
-        text-align: left;
-        line-height: 2;
-    }
-    .rightAboutHome p {
-        width: 90%;
-    }
-    .rightAboutHome button {
-        text-align: center;
-    }
-
-    .section2 {
-        flex-direction: row;
-        height: 100%;
-        margin: 4rem 0;
-    }
-
-    .section2Header h1 {
-        font-size: 32px;
-    }
-
-    .section2BoxContainer {
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-
-    .section2Box {
-        flex-direction: row;
-
-        width: 100%;
-        height: 200px;
     }
 
     .top2 {
@@ -733,6 +489,11 @@
         height: 100%;
     }
 
+    .homeFaq {
+        height: 100%;
+        margin-bottom: 6rem;
+    }
+
     .section3Title h1 {
         font-size: 24px;
         padding: 0;
@@ -766,27 +527,6 @@
         margin-bottom: 24px;
     }
 
-    .sec4 {
-        flex-direction: column-reverse;
-        height: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .sec4Right h1{
-        font-size: 24px;
-    }
-
-    .sec4Right {
-        align-items: flex-end;
-        text-align: right;
-        padding: 0;
-
-    }
-
-    .sec4Right p {
-        font-size: 16px;
-        width: 90%;
-    }
-
+  
 }
 

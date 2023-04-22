@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+
 import emailjs from "@emailjs/browser";
 import "./form.css";
 import Snackbar from "@mui/material/Snackbar";
@@ -56,7 +57,7 @@ const Form = () => {
         "service_50n0r1n",
         "template_wh2cn0t",
         templateParams,
-        "QbyAUOGwHjpj80LAc"
+        process.env.REACT_APP_EMAILJS_USERID
       )
       .then(
         (result) => {
@@ -92,7 +93,7 @@ const Form = () => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="ชื่อผู้ติดต่อ"
+                placeholder="ชื่อผู้ติดต่อ*"
                 name="name"
                 value={formValues.name}
                 onChange={handleChange}
@@ -104,7 +105,7 @@ const Form = () => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Email"
+                placeholder="อีเมลล์ของคุณ*"
                 name="email"
                 value={formValues.email}
                 onChange={handleChange}
@@ -138,19 +139,16 @@ const Form = () => {
                 <option value="" disabled>
                   เลือกประเภทบริการ
                 </option>
-                <option value="easexpress">
-                  Express support
-                </option>
-                <option value="freightforwarding">
-                  Freight forwarding (นำเข้าส่งออก)
-                </option>
-                <option value="shipping">Shipping (พิธีการศุลกากร)</option>
-                <option value="transportation">Inland transportation</option>
+                <option value="express">Express support</option>
+              <option value="airfreight">Air Freight</option>
+              <option value="seafreight">Sea Freight</option>
+              <option value="shipping">Customs clearance (พิธีการศุลกากร)</option>
+              <option value="transportation">Inland transportation (ขนส่งภายในปรเทศ)</option>
               </select>
             </div>
           <div className="formInputBtn">
             <button type="submit" value="send" onClick={handleClick}>
-              <p>ขอใบเสนอราคา </p><FontAwesomeIcon icon={faPaperPlane} bounce size="lg" style={{color: "#ffffff",}} />
+              <p>ติดต่อเรา </p><FontAwesomeIcon icon={faPaperPlane} bounce size="lg" style={{color: "#ffffff",}} />
             </button>
 
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>

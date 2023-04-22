@@ -1,6 +1,10 @@
+.faq {
+    z-index: 1;
+}
+
 .faq h1{
-font-weight: 200;
-font-size: 32px;
+font-weight: 600;
+font-size: 36px;
 color: #042B3B;
 text-align: left;
 padding: 12px;

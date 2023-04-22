@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./quotationform.css";
-
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 
@@ -9,7 +8,7 @@ function QuotationForm() {
   const form = useRef();
   const [alert, setAlert] = useState({ severity: "", message: "" });
 
-  const [formValues, setFormValues] = useState({
+  const [quotationFormData , setQuotationFormData ] = useState({
     name: "",
     email: "",
     company: "",
@@ -22,7 +21,7 @@ function QuotationForm() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setFormValues((prevState) => ({
+    setQuotationFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
@@ -38,7 +37,7 @@ function QuotationForm() {
       productType,
       service,
       moreDetail,
-    } = formValues;
+    } = quotationFormData;
 
     const templateParams = {
       from_name: name,
@@ -70,7 +69,7 @@ function QuotationForm() {
         "service_50n0r1n",
         "template_l7zb1k9",
         templateParams,
-        "QbyAUOGwHjpj80LAc"
+        process.env.REACT_APP_EMAILJS_USERID
       )
       .then(
         function (response) {
@@ -96,11 +95,11 @@ function QuotationForm() {
     setOpen(false);
   };
 
+
   return (
     <>
       <div className="quotationTitle">
         <h1>กรอกข้อมูลสำหรับใบเสนอราคา</h1>
-        {/* <h3>กรุณากรอกข้อมูลเพื่อขอใบเสนอราคา</h3> */}
         <p>
           หรือสอบถามพูดคุยทางไลน์{" "}
           <a className="quotationClick" href="https://page.line.me/999piqzj">
@@ -111,25 +110,25 @@ function QuotationForm() {
       <form className="quotation-form" ref={form} onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-col">
-            <label htmlFor="name">ชื่อผู้ติดต่อ:</label>
+            <label htmlFor="name">ชื่อผู้ติดต่อ*</label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder=""
-              value={formValues.name}
+              value={quotationFormData.name}
               onChange={handleChange}
               required
             />
           </div>
           <div className="form-col">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">อีเมลล์ของคุณ*</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder=""
-              value={formValues.email}
+              value={quotationFormData.email}
               onChange={handleChange}
               required
             />
@@ -142,8 +141,8 @@ function QuotationForm() {
               type="text"
               id="company"
               name="company"
-              placeholder="Optional"
-              value={formValues.company}
+              placeholder=""
+              value={quotationFormData.company}
               onChange={handleChange}
             />
           </div>
@@ -154,11 +153,12 @@ function QuotationForm() {
               id="telephone"
               name="telephone"
               placeholder=""
-              value={formValues.telephone}
+              value={quotationFormData.telephone}
               onChange={handleChange}
             />
           </div>
-        </div>
+          </div>
+          
         <div className="form-row">
           <div className="form-col">
             <label htmlFor="productType">ประเภทสินค้า :</label>
@@ -167,7 +167,7 @@ function QuotationForm() {
               id="productType"
               name="productType"
               placeholder="กรอกชื่อหรือประเภทสินค้า"
-              value={formValues.productType}
+              value={quotationFormData.productType}
               onChange={handleChange}
               required
             />
@@ -175,28 +175,21 @@ function QuotationForm() {
 
           <div className="form-col">
             <label htmlFor="service">บริการที่สนใจ :</label>
-            {/* <input
-              type="text"
-              id="service"
-              name="service"
-              placeholder="Carton weight"
-              value={formValues.weight}
-              onChange={handleChange}
-              /> */}
-
             <select
               type="text"
               id="service"
               name="service"
-              value={formValues.service}
+              value={quotationFormData.service}
               onChange={(e) => {
-                setFormValues({...formValues, service: e.target.value});
+                setQuotationFormData({...quotationFormData, service: e.target.value});
               }}
             >
               <option value="" disabled>เลือกประเภทบริการ</option>
-              <option value="freightforwarding">Freight forwarding (นำเข้าส่งออก)</option>
-              <option value="shipping">Shipping (พิธีการศุลกากร)</option>
-              <option value="transportation">Inland transportation</option>
+              <option value="express">Express support</option>
+              <option value="airfreight">Air Freight</option>
+              <option value="seafreight">Sea Freight</option>
+              <option value="shipping">Customs clearance (พิธีการศุลกากร)</option>
+              <option value="transportation">Inland transportation (ขนส่งภายในปรเทศ)</option>
             </select>
           </div>
         </div>
@@ -208,7 +201,7 @@ function QuotationForm() {
               id="moreDetail"
               name="moreDetail"
               placeholder="ระบุข้อมูลเพิ่มเติม เช่น น้ำหนัก ประเทศนำเข้า เอกสารสำคัญ ขอพิกัดศุลกากรและการคำนวนภาษี หรือ ฟอร์มต่างๆ"
-              value={formValues.moreDetail}
+              value={quotationFormData.moreDetail}
               onChange={handleChange}
             />
           </div>

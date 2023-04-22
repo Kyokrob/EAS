@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 import Contact from "../../components/contact/Contact";
 import Service from "../../components/service/Service";
-
+import GetQuotation from "../../components/getQuotation/GetQuotation";
 import video1 from "../../images/eas-video1.mp4";
 import about3 from "../../images/about_3.png";
 import about2 from "../../images/about_2.png";
@@ -24,6 +24,7 @@ const About = () => {
       <Helmet>
         <title>EASTHAI - About</title>
       </Helmet>
+      <div className="about">
       <div className="aboutHeader">
         <video
           loading="lazy"
@@ -54,8 +55,9 @@ const About = () => {
         </div>
       </div>
 
-      <Container className="aboutSection">
-        <h1>Trusted Name in Freight Forwarding for over 25 Years</h1>
+      <div className="aboutSection">
+        <h1>ABOUT US</h1>
+        <h3>Trusted Name in Freight Forwarding for over 25 Years</h3>
         <p>
           East asia shipping (thailand) ltd a Thailand-based freight forwarding
           company that has been serving the industry for over 25 years.
@@ -67,7 +69,7 @@ const About = () => {
           transportation services, we also offer customs clearance assistance to
           ensure a smooth and seamless import and export process.
         </p>
-      </Container>
+      </div>
 
       <Container className="aboutSection2">
         <div className="aboutLeft">
@@ -112,9 +114,10 @@ const About = () => {
           </p>
         </div>
       </Container>
-
+      <GetQuotation/>
       <Service />
       <Contact />
+      </div>
     </>
   );
 };
