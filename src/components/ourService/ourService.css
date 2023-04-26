@@ -123,6 +123,9 @@
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
     }
+    .ourServiceBox {
+      height: 100%;
+    }
 
     .ourServiceBox1 {
       height: 100px;

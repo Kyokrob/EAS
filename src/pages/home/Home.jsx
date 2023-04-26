@@ -163,11 +163,11 @@ const Home = () => {
         <Slider />
         <OurService />
         <div class="homeFaqContainer">
-  <div class="homeFaqBackground"></div>
-  <div class="homeFaq">
-    <Faq/>
-  </div>
-</div>
+          <div class="homeFaqBackground"></div>
+          <div class="homeFaq">
+            <Faq />
+          </div>
+        </div>
 
         <GetQuotation />
       </div>
