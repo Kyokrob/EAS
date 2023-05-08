@@ -56,7 +56,7 @@ const ContactForm = () => {
                 </div>
                 <div className="contactForm2Detail">
                     <div className="contactForm2DetailHeader">
-                      <h3>Contact</h3>
+                      <h3>Contact us</h3>
                     </div>
                     <div className="contactForm2Detail-2">
                     <p>
@@ -65,8 +65,10 @@ const ContactForm = () => {
                     </p>
                     <p>
                       Sales
-                      <p><a href="tel:0867780808">086-778-0808</a></p>
                       <p><a href="tel:022359100">02-235-9100 </a>ต่อ (36)</p>
+                      <p><a href="tel:0867780808">062-949-8987</a></p>
+                      <p><a href="tel:0867780808">081-549-2292</a></p>
+                      <p><a href="tel:0867780808">095-909-8712</a></p>
                     </p>
                     </div>
                 </div>
@@ -78,7 +80,7 @@ const ContactForm = () => {
                 <div className="contactForm2Detail">
                   <div className="contactForm2DetailHeader">
                     <h3>
-                    Address
+                    Our location
                     </h3>
                   </div>
                    <div className="contactForm2Detail-2">
@@ -116,7 +118,7 @@ const ContactForm = () => {
                 <div className="contactForm2Detail">
                     <div className="contactForm2DetailHeader">
                       <h3>
-                      Chat with LINE
+                      Chat with LINE@
                       </h3>
                     </div>
                   <div className="contactForm2Detail-2">

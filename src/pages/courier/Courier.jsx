@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import "./courier.css";
 import { Link } from "react-router-dom";
-import QuestionForm from "../../components/questionForm/QuestionForm";
 import Contact from "../../components/contact/Contact";
+import OurService2 from "../../components/ourService2/OurService2";
+import GetQuotation2 from "../../components/getQuotation2/GetQuotation2";
 import Container from "@mui/material/Container";
 import Slider from "../../components/slider/Slider";
 import Button from "@mui/material/Button";
@@ -13,7 +14,6 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import cover from "../../images/easexpresscover_resize.png";
 import cover2 from "../../images/easexpresscover_giff.gif";
-// import cover3 from '../../images/cover_03.png'
 import one from "../../images/1.png";
 import two from "../../images/2.png";
 import three from "../../images/3.png";
@@ -345,9 +345,9 @@ const Courier = () => {
         <h1>ผลงานของเรา</h1>
         <Slider />
       </div>
-
+      <GetQuotation2/>
+      <OurService2 />
       <Contact />
-      <QuestionForm />
     </>
   );
 };

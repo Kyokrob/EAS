@@ -1,17 +1,17 @@
 import React from 'react'
 import Container from "@mui/material/Container";
 import { Link } from "react-router-dom";
-import cover4 from "../../images/cover4.gif";
-import './getQuotation.css'
+import getquotaion2 from "../../images/getquotation2.gif";
+import './getQuotation2.css'
 
 const GetQuotation = () => {
   return (
     <Container>
-     <div className="sec4">
-          <div className="sec4Left">
-            <img src={cover4} alt="" />
+     <div className="sec5">
+          <div className="sec5Left">
+            <img src={getquotaion2} alt="" />
           </div>
-          <div className="sec4Right">
+          <div className="sec5Right">
             <h1>EAST ASIA SHIPPING (THAILAND)</h1>
             <p>
               Provides seamless logistics solutions, including freight
@@ -20,7 +20,7 @@ const GetQuotation = () => {
               and ensuring goods reach their destination quickly and
               efficiently.
             </p>
-            <Link to="/quotation" className="sec4Btn">
+            <Link to="/quotation" className="sec5Btn">
               <button>Get Quotation</button>
             </Link>
           </div>

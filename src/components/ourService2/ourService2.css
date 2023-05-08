@@ -1,11 +1,6 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-
-.ourService {
+.ourService2 {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
@@ -14,57 +9,59 @@
     height: 600px;
     align-items: center;
     justify-items: center;
+    z-index: 10;
   }
 
-  .ourServiceBox1 {
-    display: flex;
+  .ourServiceBox2-1 {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     width: 100%; 
-    height: 250px;
+    height: 100%;
     padding: 12px;
     color: #042B3B;
   }
 
-  .ourServiceBox1 h3 {
-    color: #E6AF4B;
-  }
-
-  .ourServiceBox1 h1 {
+  .ourServiceBox2-1 h1 {
     font-size: 36px;
 }
 
-.ourServiceBox1 p {
-  font-size: 24px;
+.ourServiceBox2-1 p {
+  font-size: 18px;
 }
 
-  .ourServiceBox {
+  .ourServiceBox2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow:auto;
     width: 100%; 
-    height: 250px;
+    height: 100%;
     padding: 12px;
     color: #042B3B;
     transition: all 0.1s ease;
     line-height: 1.4;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.147);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.147);
+
   }
-  .ourServiceBox:hover {
+
+  .ourServiceBox2:hover {
     transform: scale(1);
     transition: 0.3s;
     border-radius: 5px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.312);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.312);
   }
 
-  .ourServiceBox h1 {
-    font-size: 32px;
-    color: #042B3B;
-;
+  .ourServiceBox2 h1 {
+    font-size: 24px;
+    font-weight: 600;
   }
 
-  .ourServiceBox a {
+  .ourServiceBox2 p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .ourServiceBox2 a {
     color: #E6AF4B;
     font-weight: 600;
     text-decoration: none;
@@ -73,11 +70,11 @@
     
   }
   
-  .ourServiceBox a:hover {
+  .ourServiceBox2 a:hover {
     color: #042B3B;
   }
   
-  .ourServiceBox a:before {
+  .ourServiceBox2 a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -90,12 +87,12 @@
     transition: all 0.2s ease-in-out 0s;
   }
   
-  .ourServiceBox a:hover:before {
+  .ourServiceBox2 a:hover:before {
     visibility: visible;
     transform: scaleX(1);
   }
 
-  .ourServiceBox a:after {
+  .ourServiceBox2 a:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -108,40 +105,80 @@
     transition: all 0.2s ease-in-out 0s;
   }
   
-  .ourServiceBox a:hover:after {
+  .ourServiceBox2 a:hover:after {
     visibility: visible;
     transform: scaleX(1);
   }
 
   @media only screen and (max-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
     /* For tablet devices */
-    .ourService {
+    .ourService2 {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       height: 100%;
     }
     
-    .ourServiceBox {
+    .ourServiceBox2 {
       height: 100%;
     }
   }
   
   @media only screen and (max-width: 480px) {
-
-    /* For mobile devices  */
-    .ourService {
+    /* For mobile devices 
+    .ourService2 {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
     }
-    .ourServiceBox {
+    .ourServiceBox2 {
       height: 100%;
     }
 
-    .ourServiceBox1 {
-      height: 100px;
+    .ourServiceBox2-1 {
+      height: 100px; 
+    } */
+
+    .ourService2 {
+      max-height: 400px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      margin: 1rem 0;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      white-space: wrap;
+      scrollbar-width: none;
+    }
+
+    .ourServiceBox2-1 {
+      min-width: 150px;
+      height: 250px;
+      padding: 0;
+    }
+
+    .ourServiceBox2-1 h1 {
+      font-size: 24px;
+    }
+
+    .ourServiceBox2-1 p {
+      font-size: 16px;
+    }
+
+    .ourServiceBox2 {
+      min-width: 250px;
+      height: 200px;
+      justify-content: center;
+    }
+
+    .ourServiceBox2 h1 {
+      font-size: 18px;
+    }
+
+    .ourServiceBox2 p {
+      font-size: 14px;
     }
 
   }

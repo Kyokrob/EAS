@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
 import "./customclearance.css";
-import Service from "../../components/service/Service";
+import OurService2 from "../../components/ourService2/OurService2";
 import Contact from "../../components/contact/Contact";
-import QuestionForm from "../../components/questionForm/QuestionForm";
+import GetQuotation2 from "../../components/getQuotation2/GetQuotation2";
+import CustomsCarousel from "../../components/customsCarousel/CustomsCarousel";
 
-import Container from "@mui/material/Container";
+
+
+
 import customcover from "../../images/custom_cover2.png";
+import customscover from '../../images/cccover.png'
+import cc1 from '../../images/cc_1.png'
+import cc2 from '../../images/cc_2.png'
 
 import { Helmet } from "react-helmet";
 
@@ -13,18 +19,108 @@ const Costomclearance = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+
+
   return (
     <>
-          <Helmet>
+      <Helmet>
         <title>EASTHAI - พิธีการศุลกากร </title>
-        </Helmet>  
+      </Helmet>
       <div className="importexport">
         <div className="importexportCover">
-          <img src={customcover} alt="" />
+          <img src={customscover} alt="" />
         </div>
       </div>
 
-      <Container className="customclearanceContent">
+      <div className="bg-bg">
+      <div className="content1">
+       <div className="container content-1">
+      <div className="contentTitle">
+        <h1>What is Customs clearance how can this help you</h1>
+        <p>Customs clearance คือกระบวนการตรวจสอบและอนุมัติการนำเข้าสินค้าเข้าสู่ประเทศผ่านกรมศุลกากร เป็นกระบวนการที่จำเป็นเพื่อให้การนำเข้าสินค้าเป็นไปตามกฎหมาย โดยภายในกระบวนการ ดำเนินพิธีการศุลกากร จะมีการตรวจสอบเอกสารต่างๆ เช่น ใบขนสินค้า ใบแจ้งหนี้ และเอกสารทางศุลกากรอื่นๆ ซึ่งต้องเป็นไปตามกฎหมายและมีความถูกต้องตามเกณฑ์ที่กำหนดไว้ และตรวจสอบสินค้าที่นำเข้าเพื่อตรวจสอบว่าเป็นสินค้าที่ได้รับอนุญาตให้นำเข้าหรือไม่</p>
+      </div>
+       </div>
+       </div>
+
+      <div className="content2">
+      <div className=" container content-2">
+        <div className="content-2Left">
+          <h1>พิธีการศุลกากร คืออะไร</h1>
+          <p>Customs clearance หรือ การดำเนินพิธีการศุลกากร คือกระบวนการตรวจสอบและอนุมัติการนำเข้าสินค้าเข้าสู่ประเทศผ่านกรมศุลกากร เป็นกระบวนการที่จำเป็นเพื่อให้การนำเข้าสินค้าเป็นไปตามกฎหมาย โดยภายในกระบวนการ ดำเนินพิธีการศุลกากร จะมีการตรวจสอบเอกสารต่างๆ เช่น ใบขนสินค้า ใบแจ้งหนี้ และเอกสารทางศุลกากรอื่นๆ ซึ่งต้องเป็นไปตามกฎหมายและมีความถูกต้องตามเกณฑ์ที่กำหนดไว้ และตรวจสอบสินค้าที่นำเข้าเพื่อตรวจสอบว่าเป็นสินค้าที่ได้รับอนุญาตให้นำเข้าหรือไม่</p>
+        </div>
+        <div className="content-2Right">
+        <img src={cc1} alt="" />
+        </div>
+      </div>
+      </div>
+
+      <div className="cc-content3">
+      <div className="cc-content-3">
+        <div className="cc-content-3Left">
+        <CustomsCarousel/>
+        </div>
+        <div className="cc-content-3Right">
+          <h1>How Customs agents can help you</h1>
+          <ul>บริการดำเนินพิธีการศุลกากรพร้อมให้คำปรึกษาและแก้ใข
+            <li>ช่วยในการจัดทำและตรวจสอบความถูกต้องของเอกสารขนสินค้า เช่น ใบขนสินค้า</li>
+            <li>ช่วยเตรียมเอกสารขออนุญาตและการยื่นขอใบอนุญาตการนำเข้าสินค้าให้กับหน่วยงานราชการที่เกี่ยวข้อง เช่น อย. สมอ. ประมง</li>
+            <li>ประสานงานกับหน่วยงานที่เกี่ยวข้อง เช่น สำนักงานศุลกากร และบริษัทขนส่งสินค้า</li>
+            <li>ช่วยในการแก้ไขปัญหาที่เกิดขึ้นในกระบวนการนำเข้า-ส่งออกสินค้า เช่น ข้อมูลเอกสารผิดพลาด ทำให้สินค้าล่าช้า</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div className="content4">
+      <div className="container content-4">
+        <div className="content-4Left">
+          <img src={cc2} alt="" />
+          
+        </div>
+        <div className="content-4Right">
+          <h1>Why use EASTHAI Customs</h1>
+          <ul>
+            <li>E-Paperless Customs Management software that is completely integrated with Thai Customs department</li>
+            <li>We can handle your temporary imports and exports from free trade zones, and manage bonded shipments of almost any type of cargo.</li>
+            <li>At EASTHAI our custom clearance software enables electronic submission of invoices for efficient and expedited clearance of your goods.</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div className="content2">
+      <div className="container content-4">
+        <div className="content-4Left">
+          <img src={customcover} alt="" />
+        </div>
+        <div className="content-4Right">
+          <h1>User Guide</h1>
+          <p>แหล่งข้อมูลกรมศุลกากรที่จำเป็นสำหรับ ผู้นำเข้าส่งออก</p>
+          <ul>
+            <li>HS code calculator</li>
+            <li>ติดต่อกรมศุลกากร</li>
+            <li>เปิดบัญชีผู้นำเข้าส่งออกออนไลน์</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <Container className="customclearanceContent">
         <div className="customclearanceContentTitle">
         <h1>Customs Clearance - ดำเนินพิธีการศุลกากร</h1>
         </div>
@@ -84,11 +180,11 @@ const Costomclearance = () => {
           </div>
 
 
-      </Container>
-      <Service />
-      <Contact />
-      <QuestionForm/>
+      </Container> */}
 
+      <GetQuotation2 />
+      <OurService2 />
+      <Contact />
     </>
   );
 };

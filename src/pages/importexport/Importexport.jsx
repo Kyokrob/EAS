@@ -1,19 +1,20 @@
 import React from 'react'
 import './importexport.css'
-import Service from '../../components/service/Service'
+import OurService2 from '../../components/ourService2/OurService2';
 import Contact from '../../components/contact/Contact'
-import QuestionForm from "../../components/questionForm/QuestionForm";
-
+import GetQuotation2 from "../../components/getQuotation2/GetQuotation2";
 import { useEffect } from 'react'
-import Container from '@mui/material/Container'
-import importexportcover from '../../images/importexportcover.png'
-
-import Button from '@mui/material/Button'
 import { Link } from "react-router-dom"
-
 import Divider from '@mui/material/Divider'
-
 import { Helmet } from 'react-helmet'
+
+
+import importexportcover from '../../images/importexportcover2.png'
+import home_air from '../../images/home_air.png'
+import home_sea from '../../images/home_sea.png'
+import importexportexample from '../../images/importexport_example.png'
+
+
 
 
 
@@ -31,13 +32,143 @@ const Importexport = () => {
       <div className="importexportCover">
       <img src={importexportcover} alt="" />
       </div>
+    </div>
 
-      <div className="importexportHeaderText">
-    </div>
-    </div>
-    <Container className="customclearanceContent">
+    <div className="content1">
+       <div className="container content-1">
+      <div className="contentTitle">
+        <h1>What is Freight service how can this help you</h1>
+        <p>การเข้าใจวิธีการนำเข้าส่งออกเป็นสิ่งสำคัญสำหรับผู้ที่ทำธุรกิจการค้าระหว่างประเทศ โดยการขนส่งสินค้าระหว่างประเทศมีวิธีที่สำคัญอยู่สองวิธีคือ การขนส่งทางอากาศ(Air Freight) และการขนส่งทางทะเล(Sea Freight)ก่อนจะตัดสินใจเลือกวิธีการขนส่งนั่นผู้ประกอบการควรประเมินสินค้าของตนก่อนเพื่อหาวิธีการขนส่งที่เหมาะสมกับความต้องการของตน</p>
+      </div>
+       </div>
+       </div>
+
+      <div className="content2">
+      <div className=" container content-2">
+        <div className="content-2Left">
+          <h1>การขนส่งทางอากาศ</h1>
+          <p>เป็นวิธีการขนส่งสินค้าที่มีความเร็วและสะดวกสบายผ่านการขนส่งโดยใช้เครื่องบิน การใช้บริการขนส่งทางอากาศมีความเหมาะสมสำหรับธุรกิจที่ต้องการส่งสินค้าที่ต้องการส่งในเวลาที่รวดเร็วเพื่อตอบสนองความต้องการของลูกค้า นอกจากนี้การใช้บริการขนส่งทางอากาศยังช่วยลดเวลาในการขนส่งสินค้าและเพิ่มความเป็นไปได้ในการขายสินค้าในตลาดต่างประเทศ ดังนั้น การใช้บริการขนส่งทางอากาศเป็นทางเลือกที่ดีสำหรับธุรกิจที่ต้องการส่งสินค้าที่มีความคุ้มค่าสูงและต้องการลดเวลาในการขนส่งสินค้า</p>
+          <Link to="/airfreight" className="sec4Btn">
+              <button>อ่านเพิ่มเติม</button>
+            </Link>
+        </div>
+        <div className="content-2Right">
+        <img src={home_air} alt="บริการขนส่งทางเครื่องบิน" />
+        </div>
+      </div>
+      </div>
+
+      <div className="content3">
+      <div className="container content-3">
+        <div className="content-3Left">
+          <img src={home_sea} alt="บริการขนส่งทางเรือ" />
+        </div>
+        <div className="content-3Right">
+        <h1>การขนส่งทางเรือ</h1>
+          <p>เป็นวิธีการขนส่งสินค้าที่มีความเร็วและสะดวกสบายผ่านการขนส่งโดยใช้เครื่องบิน การใช้บริการขนส่งทางอากาศมีความเหมาะสมสำหรับธุรกิจที่ต้องการส่งสินค้าที่ต้องการส่งในเวลาที่รวดเร็วเพื่อตอบสนองความต้องการของลูกค้า นอกจากนี้การใช้บริการขนส่งทางอากาศยังช่วยลดเวลาในการขนส่งสินค้าและเพิ่มความเป็นไปได้ในการขายสินค้าในตลาดต่างประเทศ ดังนั้น การใช้บริการขนส่งทางอากาศเป็นทางเลือกที่ดีสำหรับธุรกิจที่ต้องการส่งสินค้าที่มีความคุ้มค่าสูงและต้องการลดเวลาในการขนส่งสินค้า</p>
+          <Link to="/seafreight" className="c3r-button">
+              <button>อ่านเพิ่มเตืม</button>
+            </Link>
+
+        </div>
+      </div>
+      </div>
+
+      <div className="content4">
+      <div className="container content-4">
+        <div className="content-4Left">
+          <img src={importexportexample} alt="" />
+        </div>
+        <div className="content-4Right">
+          <h1>Things to prepare before start import/export</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis illum vel libero suscipit rerum at nostrum sapiente ex distinctio?</p>
+          <ul>
+            <li>ใบขนส่งสินค้า</li>
+            <li>ใบตราส่งสินค้าทางอากาศ (Air Waybill)</li>
+            <li>ใบตราส่งสินค้าทาเรือ (Bill of lading)</li>
+            <li>บัญชีราคาสินค้า (Comercial Invoice)</li>
+            <li>บัญชีบรรจุหีบห่อ (Packing List)</li>
+          </ul>
+          <Link to="/quotation" className="c4r-button">
+              <button>ขอใบเสนอราคา</button>
+            </Link>
+
+        </div>
+      </div>
+      </div>
+
+      <div className="container compareSection">
+              <h1>ตารางเปรียบเทียบ Sea และ Air freight</h1>
+            <div className="seaAirTitle">
+            <div className="seaAirTitleLeft">
+              <h3>ประเภทขนส่ง</h3>
+            </div>
+            <div className="seaAirTitleRight">
+              <div className="table">
+              <h3>เวลาในการขนส่ง</h3>
+              </div>
+              <div className="table">
+              <h3>การบริการ</h3>
+              </div>
+              <div className="table">
+              <h3>ปริมาณสินค้า</h3>
+              </div>
+              <div className="table">
+              <h3>ค่าใช้จ่าย</h3>
+              </div>
+            </div>
+           </div>
+           <Divider/>
+
+           <div className="sea">
+           <div className="seaLeft">
+              <p>การขนส่งทางเรือ (SEA FREIGHT)</p>
+            </div>
+            <div className="seaRight">
+            <div className="table">
+            <p>ช้า</p>
+            </div>
+            <div className="table">
+            <p>เกือบ ทุกประเทศ</p>
+            </div>
+              <div className="table">
+              <p>ปริมาณมาก</p>
+              </div>
+              <div className="table">
+              <p>ถูก</p>
+              </div>
+              </div>
+           </div>
+           <Divider/>
+
+
+           <div className="air">
+            <div className="airLeft">
+            <p>การขนส่งทางเครื่องบิน  (AIR FREIGHT)</p>
+            </div>
+            <div className="airRight">
+              <div className="table">
+              <p>เร็วมาก</p>
+              </div>
+              <div className="table">               
+              <p>ทั้วโลก</p>
+              </div>
+              <div className="table">               
+              <p>ปริมาณน้อย</p>
+              </div>
+              <div className="table">
+              <p>แพงกว่า</p>
+              </div>
+            </div>
+           </div>
+           </div>
+
+    
+
+
+    {/* <Container className="customclearanceContent">
            <div className="customclearanceContentTitle">
-            <h1>นำเข้า และ ส่งออกสินค้า (Freight Forwarding)</h1>
+            <h1>นำเข้า-ส่งออกสินค้า บริการ Freight Forwarding</h1>
            </div>
 
            <div className="importTitle">
@@ -181,10 +312,10 @@ const Importexport = () => {
             </div>
 
 
-    </Container>
-    <Service/>
+    </Container> */}
+    <GetQuotation2/>
+    <OurService2/>
     <Contact/>
-    <QuestionForm/>
     </>
   )
 }

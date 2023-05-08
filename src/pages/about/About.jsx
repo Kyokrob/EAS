@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import { useEffect } from "react";
 
 import Contact from "../../components/contact/Contact";
-import Service from "../../components/service/Service";
+import OurService from "../../components/ourService/OurService";
 import GetQuotation from "../../components/getQuotation/GetQuotation";
 import video1 from "../../images/eas-video1.mp4";
 import about3 from "../../images/about_3.png";
@@ -114,8 +114,8 @@ const About = () => {
           </p>
         </div>
       </Container>
+      <OurService />
       <GetQuotation/>
-      <Service />
       <Contact />
       </div>
     </>

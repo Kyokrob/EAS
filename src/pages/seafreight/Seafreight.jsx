@@ -1,10 +1,14 @@
 import React, { useEffect } from "react";
 import "./saefreight.css";
-import Service from "../../components/service/Service";
-import Contact from "../../components/contact/Contact";
-import QuestionForm from "../../components/questionForm/QuestionForm";
 
-import Container from "@mui/material/Container";
+import sea_home from '../../images/sea_home.png'
+import sea_container from '../../images/sea_container.png'
+import sea_2 from '../../images/sea_2.png'
+
+import OurService2 from "../../components/ourService2/OurService2";
+import Contact from "../../components/contact/Contact";
+import GetQuotation2 from '../../components/getQuotation2/GetQuotation2'
+
 
 import { Helmet } from "react-helmet";
 
@@ -14,6 +18,9 @@ const Seafreight = () => {
   }, []);
   return (
     <>
+
+
+
       <Helmet>
         <title>EASTHAI - ขนส่งทางเรือ</title>
       </Helmet>
@@ -29,8 +36,72 @@ const Seafreight = () => {
           <h1>Sea Freight</h1>
         </div>
       </div>
+      {/* Header end */}
 
-      <Container className="customclearanceContent">
+
+
+       <div className="content1">
+       <div className="container content-1">
+      <div className="contentTitle">
+        <h1>What is Sea freight how can this help you</h1>
+        <p>การขนส่งทางเรือเป็นวิธีหนึ่งในการนำสินค้าเข้า-ส่งออกในปริมาณมาก โดยมีความสามารถในการขนส่งสินค้าทุกประเภทที่มีขนาดใหญ่ ของที่ทนต่อแรงกระแทก รวมไปถึงสิ่งของที่มีน้ำหนักมาก เช่น เครื่องจักร เฟอร์นิเจอร์ การใช้บริการขนส่งทางเรือช่วยให้ธุรกิจของคุณสามารถนำเข้าส่งออกสินค้าไปยังทุกมุมโลกได้อย่างต่อเนื่อง โดยมีความปลอดภัยและราคาที่เหมาะสม นอกจากนี้ การใช้บริการขนส่งทางเรือยังช่วยลดต้นทุนในการขนส่งของธุรกิจของคุณด้วยการลดค่าใช้จ่ายในการขนส่ง จึงเป็นทางเลือกที่ดีสำหรับธุรกิจที่ต้องการส่งสินค้าในปริมาณมากและต้องการลดต้นทุนในการขนส่งสินค้าของพวกเขา.</p>
+      </div>
+       </div>
+       </div>
+
+      <div className="content2">
+      <div className=" container content-2">
+        <div className="content-2Left">
+          <h1>การขนส่งทางเรือ</h1>
+          <p>เป็นทางเลือกหนึ่งที่ได้รับความนิยมสำหรับการขนส่งสินค้าระหว่างประเทศในปัจจุบัน เนื่องจากราคาค่าขนส่งถูกกว่าวิธีการขนส่งอื่น ๆ โดยการขนส่งทางเรือนั้นใช้ตู้คอนเทนเนอร์เป็นสื่อกลางในการขนส่งสินค้าจากประเทศต้นทางไปยังประเทศปลายทาง เหมาะสำหรับการขนส่งสินค้าที่มีปริมาณมากหรือขนาดใหญ่ ใบขนสินค้าขาเข้าจะถูกออกโดยผู้นำเข้าเพื่อขออนุญาตให้นำเข้าสินค้าที่ได้รับการสั่งซื้อจากต่างประเทศ</p>
+        </div>
+        <div className="content-2Right">
+        <img src={sea_home} alt="" />
+        </div>
+      </div>
+      </div>
+
+      <div className="content3">
+      <div className="container content-3">
+        <div className="content-3Left">
+          <img src={sea_container} alt="" />
+        </div>
+        <div className="content-3Right">
+          <h1>FCL and LCL</h1>
+          <ul>FCL (Full Container Load)
+            <li>A type of sea freight service where a shipper rents an entire container to transport their goods.</li>
+            <li>The container is sealed and only opened at the destination.</li>
+            <li>FCL is suitable for shippers who need to transport large quantities of goods.</li>
+          </ul>
+          <ul>LCL (Less than Container Load)
+            <li>A type of sea freight service where a shipper shares a container with other shippers.</li>
+            <li>LCL is suitable for shippers who need to transport small quantities of goods.</li>
+            <li>It offers greater flexibility as the shipper does not need to rent an entire container.</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div className="content4">
+      <div className="container content-4">
+        <div className="content-4Left">
+          <img src={sea_2} alt="" />
+        </div>
+        <div className="content-4Right">
+          <h1>Things to prepare before get Sea freight quotation</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis illum vel libero suscipit rerum at nostrum sapiente ex distinctio?</p>
+          <ul>
+            <li>ใบขนส่งสินค้า</li>
+            <li>ใบตราส่งสินค้าทางเรือ (Bill of lading)</li>
+            <li>บัญชีราคาสินค้า (Comercial Invoice)</li>
+            <li>บัญชีบรรจุหีบห่อ (Packing List)</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+
+      {/* <Container className="customclearanceContent">
         <div className="customclearanceContentTitle">
           <h1>นำเข้าส่งของโดยการขนส่งทางเรือ</h1>
         </div>
@@ -48,7 +119,6 @@ const Seafreight = () => {
             ชิ้นส่วนรถยนต์หรืออะไหล่รถยนต์ เฟอร์นิเจอร์ หรือ เครื่องจักร
           </p>
 
-          {/* create calculator feature for calculating container rate and price */}
           <h3>การขนส่งทางทะเลนั้นมี 2 รูปแบบคือ</h3>
           <ul>
             LCL = Less than container load
@@ -88,11 +158,12 @@ const Seafreight = () => {
           หากคุณกำลังมองหาวิธีการขนส่งสินค้าระหว่างประเทศที่ EASTHAI เราเชี่ยวชาญในการให้บริการขนส่ง สามารถติดต่อเราเพื่อขอใบเสนอราคาและคำปรึกษาเพิ่มเติมในการขนส่งสินค้า
           </p>          
         </div>
-      </Container>
+      </Container> */}
 
-      <Service />
-      <Contact />
-      <QuestionForm/>
+      {/* <Service /> */}
+      <GetQuotation2/>
+      <OurService2/>
+      <Contact/>
     </>
   );
 };

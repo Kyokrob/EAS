@@ -106,8 +106,9 @@ const Home = () => {
               <img src={step1} alt="" />
             </div>
             <div className="cardContent">
-              <h3>กรอกข้อมูลเพื่อใบการขอใบเสนอราคา</h3>
-              <p>กรอกข้อมูลให้ครบถ้วนสำหรับในเสนอราคาที่ครอบคลุม</p>
+              <h3>Get Quotation</h3>
+              <p>ให้ข้อมูลเกี่ยวกับสินค้าของคุณ เช่น ประเภทสินค้า สถานที่รับและส่งสินค้า น้ำหนัก ขนาด และความต้องการพิเศษอื่นๆ เช่น พิธีการศุลกากร ประกันภัย หรือการขนส่งภายในประเทศ</p>
+             
             </div>
           </div>
           <div className="cardHome">
@@ -120,8 +121,9 @@ const Home = () => {
               <img src={step2} alt="" />
             </div>
             <div className="cardContent">
-              <h3>Revise quotation booking confirm</h3>
-              <p>ขนส่งชัดเจนมีมาตรฐาน ให้คำแนะนำผ่านทีมงานมืออาชีพ</p>
+              <h3>Review and submit </h3>
+              <p>ตรวจสอบใบเสนอราคา และ ส่งเอกสารที่จำเป็น เช่น commercial invoice, packing list, และ certificate of origin</p>
+             
             </div>
           </div>
 
@@ -137,8 +139,8 @@ const Home = () => {
               </div>
             </div>
             <div className="cardContent">
-              <h3>Prepare for shipping</h3>
-              <p>จัดส่งสินค้าอย่างมีประสิทธิภาพรวดเร็วและปลอยภัย</p>
+              <h3>Payment</h3>
+              <p>ยืนยันจำนวนเงินที่ต้องชำระและค่าธรรมเนียมเพิ่มเติม (ถ้ามี)</p>
             </div>
           </div>
 
@@ -152,10 +154,9 @@ const Home = () => {
               <img src={step4} alt="" />
             </div>
             <div className="cardContent">
-              <h3>Shipment confirmed</h3>
+              <h3>Complete</h3>
               <p>
-                มีความชำนาญเป็นพิเศษในกลุ่มสินค้า Beauty, Food, Electronic,
-                Medicine
+              ยืนยันว่าบริษัทขนส่งได้รับสินค้าของคุณแล้ว
               </p>
             </div>
           </div>

@@ -1,3 +1,179 @@
+.bg-bg {
+    background-color: #E6AF4B;
+    z-index: 10;
+}
+
+.cc-content3 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    position: relative;
+    background-color: #f4f6f8; /* change background color to white */
+    z-index: 0;
+}
+
+.cc-content3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* set a lower z-index */
+    clip-path: circle(20.0% at 0 0);
+    background-color: #e6af4b;
+  }
+
+.cc-content-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+}
+
+.cc-content-3Left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    max-height: 500px;
+    
+}
+
+
+.cc-content-3Left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+  
+
+
+.cc-content-3Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    color: #042B3B;
+
+}
+
+.cc-content-3Right h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: 22px;
+    }
+    
+    .cc-content-3Right ul {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    }
+    
+    .cc-content-3Right li {
+        width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: -10px;
+    font-weight: 300;
+    }
+
+    .cc-content-3Right p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-left: 22px;
+        line-height: 1.5;
+    }
+
+    .cc-c3r-button button {
+        padding: 6px 12px;
+        background-color: #E6AF4B;
+        box-shadow: 0px 0px 5px #e6b04b95;
+        color: #333333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 22px;
+    }
+    
+    .cc-c3r-button button:hover {
+        transform: scale(1.05);
+        background-image: linear-gradient(to bottom, #E6AF4B, #F9D49C);    transition: 0.5s ease;
+        box-shadow: 0px 0px 5px #F9D49C;
+    }
+
+
+
+@media only screen and (max-width: 480px) {
+    .cc-content3 {
+        height: 100%;
+        clip-path: none;
+    }
+    .cc-content-3 {
+        flex-direction: column;
+    }
+    .cc-content-3Left {
+        width: 100%;
+        height: 100%;
+    }
+    .cc-content-3Left img {
+        overflow: hidden;
+
+    }
+    .cc-content-3Right {
+        width: 90%;
+    }
+
+    .cc-content-3Right h1 {
+        font-size: 32px;
+    }
+    .cc-content-3Right ul {
+        font-size: 18px;
+    }
+    .cc-content-3Right li {
+        font-size: 16px;
+        text-indent: 0px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .customclearanceContent {
     height: 100%;
     display: flex;
