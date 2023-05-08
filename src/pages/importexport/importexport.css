@@ -331,14 +331,19 @@
 
     .seaAirTitleLeft {
         height: 100px;
+        padding: 12px;
     }
 
     .sea {
         height: 100px;
+        padding: 12px;
+
     }
 
     .air {
         height: 100px;
+        padding: 12px;
+
     }
 
 

@@ -80,6 +80,11 @@ const Home = () => {
 
       {/* About end */}
 
+      <div className="ourService-home">
+      <OurService />
+      </div>
+
+
       {/* Section3 */}
       <div className="section3">
         <div className="section3Title">
@@ -162,7 +167,6 @@ const Home = () => {
           </div>
         </Box>
         <Slider />
-        <OurService />
         <div class="homeFaqContainer">
           <div class="homeFaqBackground"></div>
           <div class="homeFaq">

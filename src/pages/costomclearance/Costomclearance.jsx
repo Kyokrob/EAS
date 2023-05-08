@@ -72,13 +72,13 @@ const Costomclearance = () => {
       </div>
       </div>
 
-      <div className="content4">
-      <div className="container content-4">
-        <div className="content-4Left">
+      <div className="cc-content4">
+      <div className="container cc-content-4">
+        <div className="cc-content-4Left">
           <img src={cc2} alt="" />
           
         </div>
-        <div className="content-4Right">
+        <div className="cc-content-4Right">
           <h1>Why use EASTHAI Customs</h1>
           <ul>
             <li>E-Paperless Customs Management software that is completely integrated with Thai Customs department</li>
@@ -89,12 +89,12 @@ const Costomclearance = () => {
       </div>
       </div>
 
-      <div className="content2">
-      <div className="container content-4">
-        <div className="content-4Left">
+      <div className="cc-content5">
+      <div className="container cc-content-5">
+        <div className="cc-content-5Left">
           <img src={customcover} alt="" />
         </div>
-        <div className="content-4Right">
+        <div className="cc-content-5Right">
           <h1>User Guide</h1>
           <p>แหล่งข้อมูลกรมศุลกากรที่จำเป็นสำหรับ ผู้นำเข้าส่งออก</p>
           <ul>

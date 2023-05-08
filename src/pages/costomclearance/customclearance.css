@@ -20,7 +20,7 @@
     bottom: 0;
     right: 0;
     z-index: 1; /* set a lower z-index */
-    clip-path: circle(20.0% at 0 0);
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 85%);
     background-color: #e6af4b;
   }
 
@@ -115,12 +115,206 @@
     }
 
 
+    .cc-content4 {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        position: relative;
+        background-color: #f4f6f8;
+        z-index: 0;
+    }
+    
+    .cc-content4::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1; /* set a lower z-index */
+        clip-path: circle(28.0% at 33% 50%);
+        background-color: #e6af4b;
+      }
+    
+    .cc-content-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .cc-content-4Left {
+        display: flex;
+        width: 500px;
+        height: 500px;
+    }
+    
+    
+    .cc-content-4Left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .cc-content-4Right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        color: #042B3B;
+    
+    }
+    
+    .cc-content-4Right h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        margin-left: 22px;
+        }
+    
+        .cc-content-4Right p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
+        
+        .cc-content-4Right ul {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        }
+        
+        .cc-content-4Right li {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        text-indent: -10px;
+        font-weight: 300;
+        }
+    
+        
+        .cc-c4r-button button {
+            padding: 6px 12px;
+            background-color: #E6AF4B;
+            box-shadow: 0px 0px 5px #e6b04b95;
+            color: #333333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 22px;
+        }
+        
+        .cc-c4r-button button:hover {
+            transform: scale(1.05);
+            background-image: linear-gradient(to bottom, #E6AF4B, #F9D49C);    transition: 0.5s ease;
+            box-shadow: 0px 0px 5px #F9D49C;
+        }
+
+
+        .cc-content5 {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            position: relative;
+            background-color: #f4f6f8; /* change background color to white */
+            z-index: 1;
+        }
+        
+        .cc-content5::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1; /* set a lower z-index */        
+          }
+
+          .cc-content-5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cc-content-5Left {
+            display: flex;
+            width: 500px;
+            height: 500px;
+        }
+        
+        
+        .cc-content-5Left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .cc-content-5Right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            color: #042B3B;
+        
+        }
+        
+        .cc-content-5Right h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            margin-left: 22px;
+            }
+        
+            .cc-content-5Right p {
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 10px;
+                padding-left: 20px;
+                line-height: 1.5;
+            }
+            
+            .cc-content-5Right ul {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 400;
+            }
+            
+            .cc-content-5Right li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            text-indent: -10px;
+            font-weight: 300;
+            }
+    
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 480px) {
     .cc-content3 {
         height: 100%;
         clip-path: none;
     }
+
+    .cc-content3::before {
+        clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 100%);
+      }
     .cc-content-3 {
         flex-direction: column;
     }
@@ -147,6 +341,80 @@
         text-indent: 0px;
 
     }
+
+    .cc-content4 {
+        height: 100%;
+        clip-path: none;
+    }
+
+    .cc-content-4 {
+        flex-direction: column;
+    }
+
+    .cc-content4::before {
+        clip-path: circle(45% at 50% 50%);
+    }
+
+    .cc-content-4Left {
+        width: 100%;
+    }
+
+    .cc-content-4Left img {
+        overflow: hidden;
+    }
+
+    .cc-content-4Right {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .cc-content-4Right h1 {
+        font-size: 32px;
+    }
+    .cc-content-4Right ul {
+        font-size: 18px;
+    }
+    .cc-content-4Right li {
+        font-size: 16px;
+    }
+
+    .content5 {
+        height: 100%;
+        clip-path: none;      
+    }
+
+    .cc-content-5 {
+        flex-direction: column;
+    }
+
+    .cc-content5::before {
+        clip-path: circle(45% at 50% 50%);
+    }
+
+    .cc-content-5Left {
+        width: 100%;
+    }
+
+    .cc-content-5Left img {
+        overflow: hidden;
+    }
+
+    .cc-content-5Right {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .cc-content-5Right h1 {
+        font-size: 32px;
+    }
+    .cc-content-5Right ul {
+        font-size: 18px;
+    }
+    .cc-content-5Right li {
+        font-size: 16px;
+    }
+
+
 }
 
 
