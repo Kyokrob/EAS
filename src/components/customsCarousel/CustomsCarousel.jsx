@@ -27,6 +27,7 @@ const CustomsCarousel = () => {
 
   const settings = {
     dots: true,
+    dotsClass: "slick-dots",
     infinite: true,
     speed: 100,
     slidesToShow: 1,

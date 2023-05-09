@@ -69,7 +69,6 @@
     right: 0;
     z-index: 1; /* set a lower z-index */
     clip-path: circle(25.0% at 0 10%);
-
     background-color: #e6af4b;
   }
 .content-2 {
@@ -363,6 +362,11 @@
     }
     .content-2Right {
         width: 100%;
+        height: auto;
+    }
+
+    .content-2Right img {
+        overflow: hidden;
     }
 
 
@@ -407,6 +411,7 @@
 
     .content-4Left {
         width: 100%;
+        height: auto;
     }
 
     .content-4Left img {

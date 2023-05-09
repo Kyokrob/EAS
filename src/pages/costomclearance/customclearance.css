@@ -51,12 +51,6 @@
     border-radius: 20px;
 }
 
-
-
-
-  
-
-
 .cc-content-3Right {
     display: flex;
     flex-direction: column;
@@ -147,7 +141,7 @@
     
     .cc-content-4Left {
         display: flex;
-        width: 500px;
+        width: 50%;
         height: 500px;
     }
     
@@ -347,16 +341,18 @@
         clip-path: none;
     }
 
-    .cc-content-4 {
-        flex-direction: column;
-    }
 
     .cc-content4::before {
         clip-path: circle(45% at 50% 50%);
     }
 
+    .cc-content-4 {
+        flex-direction: column;
+    }
+
     .cc-content-4Left {
         width: 100%;
+        height: 100%;
     }
 
     .cc-content-4Left img {
