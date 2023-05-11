@@ -4,6 +4,7 @@ import "./saefreight.css";
 import sea_home from '../../images/sea_home.png'
 import sea_container from '../../images/sea_container.png'
 import sea_2 from '../../images/sea_2.png'
+import check from '../../images/check_icon.png'
 
 import OurService2 from "../../components/ourService2/OurService2";
 import Contact from "../../components/contact/Contact";
@@ -43,8 +44,12 @@ const Seafreight = () => {
        <div className="content1">
        <div className="container content-1">
       <div className="contentTitle">
-        <h1>What is Sea freight how can this help you</h1>
-        <p>การขนส่งทางเรือเป็นวิธีหนึ่งในการนำสินค้าเข้า-ส่งออกในปริมาณมาก โดยมีความสามารถในการขนส่งสินค้าทุกประเภทที่มีขนาดใหญ่ ของที่ทนต่อแรงกระแทก รวมไปถึงสิ่งของที่มีน้ำหนักมาก เช่น เครื่องจักร เฟอร์นิเจอร์ การใช้บริการขนส่งทางเรือช่วยให้ธุรกิจของคุณสามารถนำเข้าส่งออกสินค้าไปยังทุกมุมโลกได้อย่างต่อเนื่อง โดยมีความปลอดภัยและราคาที่เหมาะสม นอกจากนี้ การใช้บริการขนส่งทางเรือยังช่วยลดต้นทุนในการขนส่งของธุรกิจของคุณด้วยการลดค่าใช้จ่ายในการขนส่ง จึงเป็นทางเลือกที่ดีสำหรับธุรกิจที่ต้องการส่งสินค้าในปริมาณมากและต้องการลดต้นทุนในการขนส่งสินค้าของพวกเขา.</p>
+        <h1>What is Sea freight</h1>
+        <p>
+        การขนส่งทางเรือ
+            เป็นหนึ่งในทางเลือกหลักและได้รับความนิยมมากในปัจจุบัน
+            เหมาะกับการขนส่งสินค้าที่มีปริมาณมากหรือสินค้าที่มีขนาดใหญ่ สำหรับสินค้าที่ไม่ต้องคำนึงถึงระยะเวลาในการขนส่งไม่ควรเป็นสินค้าประเภทเร่งด่วน
+        </p>
       </div>
        </div>
        </div>
@@ -68,19 +73,38 @@ const Seafreight = () => {
         </div>
         <div className="content-3Right">
           <h1>FCL and LCL</h1>
-          <ul>FCL (Full Container Load)
-            <li>A type of sea freight service where a shipper rents an entire container to transport their goods.</li>
-            <li>The container is sealed and only opened at the destination.</li>
-            <li>FCL is suitable for shippers who need to transport large quantities of goods.</li>
-          </ul>
-          <ul>LCL (Less than Container Load)
-            <li>A type of sea freight service where a shipper shares a container with other shippers.</li>
-            <li>LCL is suitable for shippers who need to transport small quantities of goods.</li>
-            <li>It offers greater flexibility as the shipper does not need to rent an entire container.</li>
-          </ul>
+
+          <h5>FCL (Full Container Load)</h5>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>เป็นการบรรจุสินค้าแบบเต็มตู้คอนเทรนเนอร์</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ราคาจะคิดตามขนาดของตู้</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>สำหรับสินค้า ปริมาณมาก และ ขนาดใหญ่</span>
+          </div>
+
+          <h5>LCL (Less than Container Load)</h5>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>การบรรจุสินค้าแบบไม่เต็มตู้คอนเทรนเนอร์</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>เหมาะสำหรับสินค้าจำนวนน้อย</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ราคาจะคิดตามตามลูกบาศก์เมตร (CMB) หรือน้ำปริมาตร (Weight Ton) </span>
+          </div>
         </div>
       </div>
       </div>
+
 
       <div className="content4">
       <div className="container content-4">
@@ -88,14 +112,23 @@ const Seafreight = () => {
           <img src={sea_2} alt="" />
         </div>
         <div className="content-4Right">
-          <h1>Things to prepare before get Sea freight quotation</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis illum vel libero suscipit rerum at nostrum sapiente ex distinctio?</p>
-          <ul>
-            <li>ใบขนส่งสินค้า</li>
-            <li>ใบตราส่งสินค้าทางเรือ (Bill of lading)</li>
-            <li>บัญชีราคาสินค้า (Comercial Invoice)</li>
-            <li>บัญชีบรรจุหีบห่อ (Packing List)</li>
-          </ul>
+          <h1>เอกสารสำคัญที่ใช้ในการนำเข้าส่งออกทางเรือ</h1>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ใบขนสินค้า</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ใบตราส่งสินค้าทางเรือ (Bill of lading)</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>บัญชีราคาสินค้า (Comercial Invoice)</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>บัญชีบรรจุหีบห่อ (Packing List)</span>
+          </div>
         </div>
       </div>
       </div>
@@ -112,6 +145,9 @@ const Seafreight = () => {
             เป็นหนึ่งในทางเลือกหลักและได้รับความนิยมมากในปัจจุบัน
             เหมาะกับการขนส่งสินค้าที่มีปริมาณมากหรือสินค้าที่มีขนาดใหญ่สำหรับผู้นำเข้าส่งออกสินค้าระหว่างประเทศที่ไม่ต้องคำนึงถึงระยะเวลาในการขนส่งหากต้องการทำการขนส่งสินค้าทางเรือสินค้าไม่ควรเป็นสินค้าประเภทเร่งด่วน
           </p>
+        <p>การขนส่งทางเรือเป็นวิธีหนึ่งในการนำสินค้าเข้า-ส่งออกในปริมาณมาก โดยมีความสามารถในการขนส่งสินค้าทุกประเภทที่มีขนาดใหญ่ ของที่ทนต่อแรงกระแทก รวมไปถึงสิ่งของที่มีน้ำหนักมาก เช่น เครื่องจักร เฟอร์นิเจอร์ การใช้บริการขนส่งทางเรือช่วยให้ธุรกิจของคุณสามารถนำเข้าส่งออกสินค้าไปยังทุกมุมโลกได้อย่างต่อเนื่อง โดยมีความปลอดภัยและราคาที่เหมาะสม นอกจากนี้ การใช้บริการขนส่งทางเรือยังช่วยลดต้นทุนในการขนส่งของธุรกิจของคุณด้วยการลดค่าใช้จ่ายในการขนส่ง จึงเป็นทางเลือกที่ดีสำหรับธุรกิจที่ต้องการส่งสินค้าในปริมาณมากและต้องการลดต้นทุนในการขนส่งสินค้าของพวกเขา.
+        ตู้คอนเทนเนอร์ขนาด 20’ 40’ 40’HC, Open Tops, Flat Racks, Reefers เป็นต้น
+        </p>
 
           <p>
             การขนส่งทางเรือจะใช้ระบบตู้คอนเทนเนอร์ในการส่งสินค้าโดยค่าขนส่งนั้นจะถูกที่สุดเมื่อเทียบกับการขนส่งรูปแบบอื่นๆ

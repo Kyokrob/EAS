@@ -57,7 +57,7 @@ const Form = () => {
         "service_50n0r1n",
         "template_wh2cn0t",
         templateParams,
-        process.env.REACT_APP_EMAILJS_USERID
+        "QbyAUOGwHjpj80LAc"
       )
       .then(
         (result) => {

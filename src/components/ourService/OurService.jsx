@@ -12,13 +12,11 @@ import imex_icon from '../../images/imex_icon.svg'
 const OurService = () => {
   return (
     <div className="container">
-    <div className="ourService">
-         <div className="ourServiceBox1">
-            <h3>EASTHAI</h3>
-            <h1>บริการของเรา</h1>
-            <p>บริษัทมีความชำนาญในการขำเข้าสินค้า FEED เป็นพิเศษ</p>
+    <div className="ourService2">
+         <div className="ourServiceBox2-1">
+          <h1>One stop service for your logistic needs</h1>
         </div>
-        <div className="ourServiceBox">
+        <div className="ourServiceBox2">
             <img src={air_icon} alt="" />
             <h1>Air Freight</h1>
             <p>การขนส่งทางอากาศเหมาะสำหรับพัสดุ
@@ -28,7 +26,7 @@ const OurService = () => {
               <p>อ่านเพิ่มเติม</p>
             </Link>
         </div>
-        <div className="ourServiceBox">
+        <div className="ourServiceBox2">
             <img src={sea_icon} alt="" />
             <h1>Sea Freight</h1>
             <p> การขนส่งสินค้าที่มีปริมาณมากหรือสินค้าที่มีขนาดใหญ่โดยการขนส่งทางเรือสามารถแบ่งออกเป็นสองประเภทคือ FCL และ LCL
@@ -37,7 +35,7 @@ const OurService = () => {
               <p>อ่านเพิ่มเติม</p>
             </Link>
         </div>
-        <div className="ourServiceBox">
+        <div className="ourServiceBox2">
             <img src={express_icon} alt="" />
             <h1>Express Support</h1>
             <p>บริการช่วยเหลือสำหรับผู้นำเข้าสินค้าเร่งด่วน (Courier express)
@@ -46,7 +44,7 @@ const OurService = () => {
               <p>อ่านเพิ่มเติม</p>
             </Link>
         </div>
-        <div className="ourServiceBox">
+        <div className="ourServiceBox2">
             <img src={customs_icon} alt="" />
             <h1>Customs clearance</h1>
             <p>บริการดำเนินพิธีการศุลกากร เตรียมงานเอกสารและสำแดงภาษีให้กับกรมศุลกากร
@@ -55,7 +53,7 @@ const OurService = () => {
               <p>อ่านเพิ่มเติม</p>
             </Link>
         </div>
-        <div className="ourServiceBox">
+        <div className="ourServiceBox2">
             <img src={imex_icon} alt="" />
             <h1>Import - Export</h1>
             {/* <p>Freight forwarder ช่วยบริษัทไม่ต้องจัดการเอกสารและระบบขนส่งสินค้าด้วนตนเองเรามีความเชี่ยวชาญในการจัดการเอกสารและประสานงานกับต้นทางและปลายทางเพื่อให้การขนส่งเป็นไปได้ด้วยความรวดเร็วและมีประสิทธิภาพพร้อมให้คำปรึกษาเกี่ยวกับเรื่องการขนส่งและการแก้ไขปัญหาที่อาจเกิดขึ้นในกระบวนการขนส่ง</p> */}

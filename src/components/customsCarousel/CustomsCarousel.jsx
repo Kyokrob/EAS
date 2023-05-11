@@ -1,8 +1,9 @@
 import React from "react";
 import "./customsCarousel.css";
-import cc1 from "../../images/cc_1.png";
 import customs1 from "../../images/customs_1.png";
 import customs2 from "../../images/customs_2.png";
+import customs3 from "../../images/customs_3.png";
+import customs4 from "../../images/customs_4.png";
 
 import {
   faChevronLeft,
@@ -66,9 +67,9 @@ const CustomsCarousel = () => {
     <div className="carousel-wrapper">
       <Carousel {...settings}>
         <img src={customs1} alt="นำเข้าสินค้า" />
-        <img src={cc1} alt="เคลียร์สินค้า" />
         <img src={customs2} alt="เคลียร์สินค้า" />
-        <img src={customs1} alt="เคลียร์สินค้า" />
+        <img src={customs3} alt="เคลียร์สินค้า" />
+        <img src={customs4} alt="เคลียร์สินค้า" />
       </Carousel>
     </div>
 

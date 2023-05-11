@@ -69,7 +69,7 @@ function QuotationForm() {
         "service_50n0r1n",
         "template_l7zb1k9",
         templateParams,
-        process.env.REACT_APP_EMAILJS_USERID
+        "QbyAUOGwHjpj80LAc",
       )
       .then(
         function (response) {

@@ -4,6 +4,7 @@ import GetQuotation2 from "../../components/getQuotation2/GetQuotation2";
 import OurService2 from "../../components/ourService2/OurService2";
 import Contact from "../../components/contact/Contact";
 
+import check from '../../images/check_icon.png'
 import aircover from '../../images/air_cover.png'
 import air3 from '../../images/air_3.png'
 import air4 from '../../images/air_4.gif'
@@ -24,10 +25,6 @@ const Airfreight = () => {
       </Helmet>
       <div className="importexport">
         <div className="importexportCover">
-        {/* <img
-          src="https://images.unsplash.com/photo-1571086291540-b137111fa1c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-          alt=""
-        /> */}
         <img src={aircover} alt="" />
         </div>
 
@@ -40,8 +37,10 @@ const Airfreight = () => {
       <div className="content1">
        <div className="container content-1">
       <div className="contentTitle">
-        <h1>What is Air freight how can this help you</h1>
-        <p>การขนส่งทางอากาศเป็นวิธีหนึ่งในการนำสินค้าเข้า-ส่งออกในปริมาณมาก โดยมีความเร็วและความสะดวกสบายในการขนส่งที่สูง สามารถส่งสินค้าไปถึงทุกมุมโลกในเวลาอันสั้นโดยไม่มีข้อจำกัดต่อระยะทาง นอกจากนี้ การใช้บริการขนส่งทางอากาศยังช่วยลดเวลาในการส่งสินค้าและเพิ่มความเป็นไปได้ในการขายสินค้าในตลาดต่างประเทศ การใช้บริการขนส่งทางอากาศเหมาะสำหรับธุรกิจที่ต้ต้องการส่งในเวลาที่รวดเร็วเพื่อตอบสนองความต้องการของลูกค้า ดังนั้นการใช้บริการขนส่งทางอากาศเป็นทางเลือกที่ดีสำหรับธุรกิจที่ต้องการส่งสินค้าในปริมาณมากและต้องการลดเวลาในการขนส่งสินค้าของพวกเขา</p>
+        <h1>What is Air freight </h1>
+        <p>การขนส่งทางอากาศเป็นวิธีที่เร็วที่สุดในการขนส่งสินค้าระหว่างประเทศ และมีความยืดหยุ่นในเรื่องของสถานที่ขนส่งสินค้า
+          การเลือกใช้การขนส่งทางอากาศจะช่วยให้คุณมั่นใจได้ว่าสินค้าของคุณจะถึงปลายทางได้ตรงเวลา
+        </p>
       </div>
        </div>
        </div>
@@ -65,16 +64,32 @@ const Airfreight = () => {
         </div>
         <div className="content-3Right">
           <h1>Air Courier and Air Cargo</h1>
-          <ul>Air Courier
-            <li>A type of sea freight service where a shipper rents an entire container to transport their goods.</li>
-            <li>The container is sealed and only opened at the destination.</li>
-            <li>FCL is suitable for shippers who need to transport large quantities of goods.</li>
-          </ul>
-          <ul>Air Cargo
-            <li>A type of sea freight service where a shipper shares a container with other shippers.</li>
-            <li>LCL is suitable for shippers who need to transport small quantities of goods.</li>
-            <li>It offers greater flexibility as the shipper does not need to rent an entire container.</li>
-          </ul>
+          <h5>Air Courier</h5>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>กว้าง x ยาว x สูง (ซ.ม.) / 5,000</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>สินค้ามีปริมาณน้อย</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ต้องการความสะดวก รวดเร็วสามารถส่งถึงมือผู้รับปลายทางได้เลย</span>
+          </div>
+          <h5>Air Cargo</h5>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>กว้าง x ยาว x สูง (ซ.ม.) / 6,000</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>สินค้ามีปริมาณมาก</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>เหมาะกับสินค้าขนาดใหญ่ ที่ต้องการการจัดส่งที่มีความรวดเร็ว</span>
+          </div>
         </div>
       </div>
       </div>
@@ -85,14 +100,23 @@ const Airfreight = () => {
           <img src={air4} alt="" />
         </div>
         <div className="content-4Right">
-          <h1>Things to prepare before get Air freight quotation</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis illum vel libero suscipit rerum at nostrum sapiente ex distinctio?</p>
-          <ul>
-            <li>ใบขนส่งสินค้า</li>
-            <li>ใบตราส่งสินค้าทางอากาศ (Air Waybill)</li>
-            <li>บัญชีราคาสินค้า (Comercial Invoice)</li>
-            <li>บัญชีบรรจุหีบห่อ (Packing List)</li>
-          </ul>
+          <h1>เอกสารสำคัญที่ใช้ในการนำเข้าส่งออกทางอากาศ</h1>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ใบขนสินค้า</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+            <span>ใบตราส่งสินค้าทางอากาศ (Air Waybiil)</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+            <span>บัญชีราคาสินค้า (Comercial Invoice)</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+            <span>บัญชีบรรจุหีบห่อ (Packing List)</span>
+          </div>
         </div>
       </div>
       </div>

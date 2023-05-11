@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     position: relative;
-    background-color: #f4f6f8; /* change background color to white */
+    background-color: #f4f6f8;
    z-index: 0;
 }
 .content-1 {
@@ -13,6 +13,9 @@
     flex-direction: row;
     position: relative;
     z-index: 1;
+    width: 100%;
+    height: 50%;
+    margin: 2rem 0;
 }
 
 
@@ -29,6 +32,7 @@
 
 
 .contentTitle h1 {
+    text-align: center;
     width: 100%;
     color: #042B3B; 
     font-size: 36px;
@@ -36,13 +40,12 @@
 }
 
 .contentTitle p {
-    width: 100%;
+    width: 80%;
     color: #042B3B; 
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;  
     border-left: #E6AF4B 5px solid;
     padding: 0 12px;
-    border-radius: 4px;
 }
 
 
@@ -68,7 +71,7 @@
     bottom: 0;
     right: 0;
     z-index: 1; /* set a lower z-index */
-    clip-path: circle(25.0% at 0 10%);
+    clip-path: circle(20.0% at 0 10%);
     background-color: #e6af4b;
   }
 .content-2 {
@@ -145,7 +148,7 @@
     bottom: 0;
     right: 0;
     z-index: 1; /* set a lower z-index */
-    clip-path: circle(35% at 100% 90%);
+    clip-path: circle(20% at 100% 90%);
     background-color: #e6af4b;
   }
 
@@ -187,6 +190,13 @@
     margin-bottom: 20px;
     font-weight: bold;
     margin-left: 22px;
+    }
+
+    .content-3Right h5 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        text-decoration: underline;
     }
     
     .content-3Right ul {
@@ -282,6 +292,7 @@
 }
 
 .content-4Right h1 {
+    width: 80%;
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -332,6 +343,10 @@
 
 
 @media only screen and (max-width: 480px) {
+    .content-1 {
+        margin: 0;
+        width: 100%;
+    }
 
     .contentTitle {
         padding: 0;
@@ -339,6 +354,12 @@
     }
     .contentTitle h1 {
         font-size: 24px;
+    }
+
+    .contentTitle p {
+        border-bottom: #E6AF4B 5px solid;
+        padding: 12px;
+        width: 100%;
     }
 
     .content2 {

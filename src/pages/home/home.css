@@ -163,8 +163,17 @@
 
   .ourService-home {
     background-color: #f4f6f8;
+    height: 100%;
   }
 
+  .ourService-home h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #042B3B;
+    margin: 0;
+    padding-top: 12px;
+  }
 
 /* Section 3 start */
 .section3 {
@@ -388,22 +397,18 @@
     }
     .aboutHomeText {
         align-items: center;
-        text-align: center;
+        text-align: start;
         width: 100%;
     }
     .aboutHomeText h1 {
         font-size: 28px;
-        width: 80%;
-    }
-    .aboutHomeText h5 {
-        width: 80%;
         margin-top: 4rem;
-        font-size: 24px;
-        color: #042B3B;
+        width: 80%;
     }
+
     .aboutHomeText p {
         font-size: 18px;
-        width: 90%;
+        width: 80%;
     }
 
     .aboutHomeImg {

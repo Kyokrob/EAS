@@ -194,105 +194,7 @@
 
 /* Compare section start */
 
-.compareSection {
-    width: 100%;
-    height: 100%;
-    padding: 24px 0;
-}
 
-.compareSection h1 {
-    font-weight: 500;
-    font-size: 32px;
-    padding: 24px 0;
-    color: #042B3B;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-
-.seaAirTitle {
-    display:flex;
-    flex-direction: row;
-    color: #042B3B;
-
-}
-
-.seaAirTitleLeft {
-    width: 30%;
-    height: 50px;
-}
-
-.seaAirTitleLeft h3 {
-    margin-left: 2rem;
-    font-weight: 600;
-    color: #042B3B;
-}
-
-.seaAirTitleRight {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    font-weight: bold;
-
-}
-
-
-.sea {
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.seaLeft {
-    width: 30%;
-}
-
-.seaLeft p {
-    margin-left: 2rem;
-}
-
-.seaRight {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    padding: 8px 0;
-}
-
-.table {
-    width: 100%;
-    text-align: center;
-}
-
-.table h3 {
-    font-weight: 600;
-    color: #042B3B;
-}
-
-.air {
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.airLeft {
-    width: 30%;
-}
-
-.airLeft p {
-    margin-left: 2rem;
-}
-
-.airRight {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-
-}
 
 
 
@@ -300,7 +202,7 @@
 
 @media screen and (max-width: 480px) {
     .importexport {
-        height: 350px;
+        height: 300px;
     }
     .importexportHeaderText {
         width: 100%;

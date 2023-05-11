@@ -66,11 +66,9 @@ const Home = () => {
 
       <div className="aboutHome">
         <div className="aboutHomeText">
-          <h5>Who we are</h5>
           <h1>ตัวแทนของผู้ส่งออกและผู้นำเข้าในการจัดส่งสินค้าระหว่างประเทศ</h1>
           <p>
-            บริการขนส่งสินค้าระหว่างประเทศ Shipping ดำเนินพิธีการศุลกากร เช็ค
-            ภาษีนำเข้า พิกัด ศุลกากร
+            บริการ Air - Sea Freight ขนส่งสินค้าระหว่างประเทศ Shipping ดำเนินพิธีการศุลกากร ช่วยประเมินค่าภาษีนำเข้า เช็คพิกัดศุลกากร
           </p>
         </div>
         <div className="aboutHomeImg">
@@ -81,14 +79,14 @@ const Home = () => {
       {/* About end */}
 
       <div className="ourService-home">
-      <OurService />
+              <OurService />
       </div>
 
 
       {/* Section3 */}
       <div className="section3">
         <div className="section3Title">
-          <h1>ขั้นตอนการใช้บริการ</h1>
+          <h1>ขนส่งกับ EASTHAI</h1>
         </div>
         <Box
           className="boxCardHome"
@@ -111,9 +109,9 @@ const Home = () => {
               <img src={step1} alt="" />
             </div>
             <div className="cardContent">
-              <h3>Get Quotation</h3>
-              <p>ให้ข้อมูลเกี่ยวกับสินค้าของคุณ เช่น ประเภทสินค้า สถานที่รับและส่งสินค้า น้ำหนัก ขนาด และความต้องการพิเศษอื่นๆ เช่น พิธีการศุลกากร ประกันภัย หรือการขนส่งภายในประเทศ</p>
-             
+              <h3>ขอใบเสนอราคา</h3>
+              <p>แจ้งข้อมูลกรอกรายละเอียดการจัดส่ง</p>
+              {/* <p>ให้ข้อมูลเกี่ยวกับสินค้า เช่น ประเภทสินค้า สถานที่รับและส่ง น้ำหนัก ขนาด และความต้องการพิเศษอื่นๆ เช่น พิธีการศุลกากร ประกันภัย หรือการขนส่งภายในประเทศ</p> */}
             </div>
           </div>
           <div className="cardHome">
@@ -127,7 +125,7 @@ const Home = () => {
             </div>
             <div className="cardContent">
               <h3>Review and submit </h3>
-              <p>ตรวจสอบใบเสนอราคา และ ส่งเอกสารที่จำเป็น เช่น commercial invoice, packing list, และ certificate of origin</p>
+              <p>ตรวจสอบใบเสนอราคา และ ส่งเอกสารที่จำเป็น</p>
              
             </div>
           </div>
@@ -144,7 +142,7 @@ const Home = () => {
               </div>
             </div>
             <div className="cardContent">
-              <h3>Payment</h3>
+              <h3>Booking confirm</h3>
               <p>ยืนยันจำนวนเงินที่ต้องชำระและค่าธรรมเนียมเพิ่มเติม (ถ้ามี)</p>
             </div>
           </div>
@@ -159,7 +157,7 @@ const Home = () => {
               <img src={step4} alt="" />
             </div>
             <div className="cardContent">
-              <h3>Complete</h3>
+              <h3>Delivery</h3>
               <p>
               ยืนยันว่าบริษัทขนส่งได้รับสินค้าของคุณแล้ว
               </p>

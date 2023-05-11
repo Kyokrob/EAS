@@ -8,12 +8,14 @@ import CustomsCarousel from "../../components/customsCarousel/CustomsCarousel";
 
 
 
-import customcover from "../../images/custom_cover2.png";
 import customscover from '../../images/cccover.png'
 import cc1 from '../../images/cc_1.png'
 import cc2 from '../../images/cc_2.png'
+import cc3 from '../../images/cc_3.png'
+import check from '../../images/check_icon.png'
 
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Costomclearance = () => {
   useEffect(() => {
@@ -37,8 +39,8 @@ const Costomclearance = () => {
       <div className="content1">
        <div className="container content-1">
       <div className="contentTitle">
-        <h1>What is Customs clearance how can this help you</h1>
-        <p>Customs clearance คือกระบวนการตรวจสอบและอนุมัติการนำเข้าสินค้าเข้าสู่ประเทศผ่านกรมศุลกากร เป็นกระบวนการที่จำเป็นเพื่อให้การนำเข้าสินค้าเป็นไปตามกฎหมาย โดยภายในกระบวนการ ดำเนินพิธีการศุลกากร จะมีการตรวจสอบเอกสารต่างๆ เช่น ใบขนสินค้า ใบแจ้งหนี้ และเอกสารทางศุลกากรอื่นๆ ซึ่งต้องเป็นไปตามกฎหมายและมีความถูกต้องตามเกณฑ์ที่กำหนดไว้ และตรวจสอบสินค้าที่นำเข้าเพื่อตรวจสอบว่าเป็นสินค้าที่ได้รับอนุญาตให้นำเข้าหรือไม่</p>
+        <h1>Customs Clearace</h1>        
+<p>เมื่อนำเข้าหรือส่งออกสินค้าข้ามประเทศ การปฏิบัติตามกฎหมายและเกณฑ์ข้อบังคับต่าง ๆ มีความสำคัญอย่างมากกับการประกอบธุรกิจที่เกี่ยวกับการค้าระหว่างประเทศทุกขั้นตอนจะต้องปฏิบัติตามกฎและข้อบังคับของกรมศุลกากรอย่างเคร่งครัด </p>
       </div>
        </div>
        </div>
@@ -62,12 +64,24 @@ const Costomclearance = () => {
         </div>
         <div className="cc-content-3Right">
           <h1>How Customs agents can help you</h1>
-          <ul>บริการดำเนินพิธีการศุลกากรพร้อมให้คำปรึกษาและแก้ใข
-            <li>ช่วยในการจัดทำและตรวจสอบความถูกต้องของเอกสารขนสินค้า เช่น ใบขนสินค้า</li>
-            <li>ช่วยเตรียมเอกสารขออนุญาตและการยื่นขอใบอนุญาตการนำเข้าสินค้าให้กับหน่วยงานราชการที่เกี่ยวข้อง เช่น อย. สมอ. ประมง</li>
-            <li>ประสานงานกับหน่วยงานที่เกี่ยวข้อง เช่น สำนักงานศุลกากร และบริษัทขนส่งสินค้า</li>
-            <li>ช่วยในการแก้ไขปัญหาที่เกิดขึ้นในกระบวนการนำเข้า-ส่งออกสินค้า เช่น ข้อมูลเอกสารผิดพลาด ทำให้สินค้าล่าช้า</li>
-          </ul>
+          <h5>ตัวกลางระหว่างผู้นำเข้าและเจ้าหน้าที่ศุลกากรมีความชำนาญเกี่ยวกับกระบวนการภาษีศุลกากรอย่างละเอียดรวมถึงความรู้สำหรับเอกสารที่ต้องใช้ ภาษีและอากรที่ต้องชำระ สามารถคำนวนภาษี ให้คำแนะนำและสนับสนุนผู้นำเข้าและผู้ส่งออกได้อย่างเป็นประโยชน์</h5>
+          
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>จัดทำเอกสารที่เกี่ยวข้องกับการขนส่งสินค้า เช่น ใบขนสินค้า ใบนำเข้า ใบกำกับภาษี ใบแจ้งหนี้การค้า (commercial invoice) รายการบรรจุภัณฑ์ (packing lists) และใบรับรองต้นกำเนิดสินค้า (certificate of origin)เป็นต้น</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ประสานงานกับหน่วยงานที่เกี่ยวข้อง เช่น สำนักงานศุลกากร และบริษัทขนส่งสินค้า</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ช่วยเตรียมเอกสารขออนุญาตและการยื่นขอใบอนุญาตการนำเข้าสินค้าให้กับหน่วยงานราชการที่เกี่ยวข้อง เช่น อย. สมอ. ประมง</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>ช่วยในการแก้ไขปัญหาที่เกิดขึ้นในกระบวนการนำเข้า-ส่งออกสินค้า เช่น ข้อมูลเอกสารผิดพลาด ทำให้สินค้าล่าช้า</span>
+          </div>
         </div>
       </div>
       </div>
@@ -79,12 +93,28 @@ const Costomclearance = () => {
           
         </div>
         <div className="cc-content-4Right">
-          <h1>Why use EASTHAI Customs</h1>
-          <ul>
-            <li>E-Paperless Customs Management software that is completely integrated with Thai Customs department</li>
-            <li>We can handle your temporary imports and exports from free trade zones, and manage bonded shipments of almost any type of cargo.</li>
-            <li>At EASTHAI our custom clearance software enables electronic submission of invoices for efficient and expedited clearance of your goods.</li>
-          </ul>
+          <h1>What we provide</h1>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>มีผู้เชี่ยวชาญด้านพิธีการศุลกากรที่ได้รับใบอนุญาต และ ทีมงาน จัดเตรียมเอกสารนำเข้า-ส่งออกด้วยระบบ E-paperless</span>
+          </div>
+          <div className="content-list">
+          <img src={check} alt="" />
+          <span>เข้าใจขั้นตอนการทำศุลกากรอย่างละเอียดอ่อนทุกขั้นตอนของการดำเนินพิธีการศุลกากร</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>At EASTHAI our custom clearance software enables electronic submission of invoices for efficient and expedited clearance of your goods.</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="" />
+          <span>We can handle your temporary imports and exports from free trade zones, and manage bonded shipments of almost any type of cargo.</span>
+          </div>
+         
+          <Link to="/contactform" className="c4r-button-button">
+              <button>Contact customs expert</button>
+            </Link>
+          
         </div>
       </div>
       </div>
@@ -92,15 +122,16 @@ const Costomclearance = () => {
       <div className="cc-content5">
       <div className="container cc-content-5">
         <div className="cc-content-5Left">
-          <img src={customcover} alt="" />
+          <img src={cc3} alt="" />
         </div>
         <div className="cc-content-5Right">
-          <h1>User Guide</h1>
-          <p>แหล่งข้อมูลกรมศุลกากรที่จำเป็นสำหรับ ผู้นำเข้าส่งออก</p>
+          <h1>Industry Solutions</h1>
+          <h5>หน่วยงานที่มีความเชี่ยวชาญเป็นพิเศษ</h5>
           <ul>
-            <li>HS code calculator</li>
-            <li>ติดต่อกรมศุลกากร</li>
-            <li>เปิดบัญชีผู้นำเข้าส่งออกออนไลน์</li>
+            <li>FEED</li>
+            <li>STEREO</li>
+            <li>COSMETICS/BEAUTY</li>
+            <li>MACHINERY PART</li>
           </ul>
         </div>
       </div>

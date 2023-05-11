@@ -13,6 +13,7 @@
   }
 
   .ourServiceBox2-1 {
+    display: flex;
     position: relative;
     flex-direction: column;
     align-items: flex-start;
@@ -20,14 +21,31 @@
     height: 100%;
     padding: 12px;
     color: #042B3B;
+    z-index: 1;
+
+    
+  }
+
+  .ourServiceBox2-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
   }
 
   .ourServiceBox2-1 h1 {
-    font-size: 36px;
+    font-size: 52px;
+    z-index: 10;
+    text-align: left;
 }
 
 .ourServiceBox2-1 p {
   font-size: 18px;
+  z-index: 10;
 }
 
   .ourServiceBox2 {
@@ -40,7 +58,7 @@
     color: #042B3B;
     transition: all 0.1s ease;
     line-height: 1.4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.147);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
 
   }
 
@@ -124,18 +142,6 @@
   }
   
   @media only screen and (max-width: 480px) {
-    /* For mobile devices 
-    .ourService2 {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-    }
-    .ourServiceBox2 {
-      height: 100%;
-    }
-
-    .ourServiceBox2-1 {
-      height: 100px; 
-    } */
 
     .ourService2 {
       max-height: 400px;
@@ -146,6 +152,7 @@
       align-items: center;
       position: relative;
       margin: 1rem 0;
+      padding: 6px;
       flex-wrap: nowrap;
       overflow-x: scroll;
       scroll-behavior: smooth;
@@ -160,7 +167,7 @@
     }
 
     .ourServiceBox2-1 h1 {
-      font-size: 24px;
+      font-size: 36px;
     }
 
     .ourServiceBox2-1 p {
@@ -169,7 +176,7 @@
 
     .ourServiceBox2 {
       min-width: 250px;
-      height: 200px;
+      height: 250px;
       justify-content: center;
     }
 

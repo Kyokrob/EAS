@@ -3,7 +3,8 @@ import './sliderBrandTestimonial.css'
 
 import partnerlogo1 from '../../images/partnerlogo1.svg'
 import partnerlogo2 from '../../images/partnerlogo2.svg'
-import easgrey from '../../images/easgrey.svg'
+import partnerlogo3 from '../../images/partnerlogo3.svg'
+import partnerlogo4 from '../../images/partnerlogo4.svg'
 import thumbnailgrey from '../../images/thumbnailgrey.svg'
 
 const SliderBrandTestimonial = () => {
@@ -23,10 +24,10 @@ const SliderBrandTestimonial = () => {
                 <img src={partnerlogo2} alt="shipping freight by east asia shipping" />
             </div>
             <div className="slideBrand">
-                <img src={easgrey} alt="shipping freight by east asia shipping" />
+                <img src={partnerlogo3} alt="shipping freight by east asia shipping" />
             </div>
             <div className="slideBrand">
-                <img src={easgrey} alt="shipping freight by east asia shipping" />
+                <img src={partnerlogo4} alt="shipping freight by east asia shipping" />
             </div>
             <div className="slideBrand">
                 <img src={thumbnailgrey} alt="shipping freight by east asia shipping" />
@@ -38,10 +39,10 @@ const SliderBrandTestimonial = () => {
                 <img src={partnerlogo2} alt="" />
             </div>
             <div className="slideBrand">
-                <img src={easgrey} alt="" />
+                <img src={partnerlogo3} alt="" />
             </div>
             <div className="slideBrand">
-                <img src={easgrey} alt="" />
+                <img src={partnerlogo4} alt="" />
             </div>
             <div className="slideBrand">
                 <img src={thumbnailgrey} alt="" />
