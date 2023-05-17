@@ -12,6 +12,7 @@ import Courier from './pages/courier/Courier'
 import Quotation from './pages/quotation/Quotation';
 import Blog from './pages/blog/Blog';
 import Easblog from './components/easblog/Easblog';
+import Easblog2 from './components/easblog2/Easblog2'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import ScrollTopButton from './components/scrollTopButton/ScrollTopButton';
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/about" element={<About/>}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/blog/shipping-freight" element={<Easblog/>}></Route>
+        <Route path="/blog/animal-feed-customs-clearance" element={<Easblog2/>}></Route>
         <Route path="/airfreight" element={<Airfreight/>}></Route>
         <Route path="/seafreight" element={<Seafreight/>}></Route>
         <Route path="/contactform" element={<ContactForm/>}></Route>

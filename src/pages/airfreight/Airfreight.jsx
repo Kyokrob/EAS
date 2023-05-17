@@ -111,7 +111,7 @@ const Airfreight = () => {
           </div>
           <div className="content-list">
             <img src={check} alt="" />
-            <span>บัญชีราคาสินค้า (Comercial Invoice)</span>
+            <span>บัญชีราคาสินค้า (Commercial Invoice)</span>
           </div>
           <div className="content-list">
             <img src={check} alt="" />

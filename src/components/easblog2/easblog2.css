@@ -1,0 +1,121 @@
+.easblog {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+.blogArticle {
+    flex: 5;
+    margin: 0 auto;
+}
+
+.blogArticleHeader {
+    text-align: center;
+}
+
+.blogArticle {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.blogArticle h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #042B3B;
+    font-weight: 500;
+    width: 100%;
+  }
+  
+  .blogArticle h2 {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    color: #042B3B;
+    font-weight: 500;
+    width: 95%;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+  
+  .blogArticle img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  .blogArticle section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .blogArticle h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 12px;
+    color: #042B3B;
+    font-size: 22px;
+  }
+
+  .blogArticle p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: #042B3B;
+    padding: 12px;
+  }
+  
+  .blogArticle ul {
+    margin: 10px 0px 20px 20px;
+    font-size: 18px;
+    color: #042B3B;
+  }
+  
+  .blogArticle li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+
+  }
+
+.sidebarComponent {
+    flex: 2;
+    padding: 16px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .easblog {
+        flex-direction: column;
+        gap: 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .blogArticle {
+        padding: 20px 0 !important;
+      }
+      .blogArticle section {
+        margin-bottom: 0;
+      }
+      .blogArticle h1 {
+        width: 100%;
+        font-size: 32px;
+      }
+      .blogArticle h2 {
+        width: 100%;
+      }
+  }

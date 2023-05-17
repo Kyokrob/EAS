@@ -77,7 +77,7 @@ const Seafreight = () => {
           <h5>FCL (Full Container Load)</h5>
           <div className="content-list">
             <img src={check} alt="" />
-          <span>เป็นการบรรจุสินค้าแบบเต็มตู้คอนเทรนเนอร์</span>
+          <span>เป็นการบรรจุสินค้าแบบเต็มตู้คอนเทนเนอร์</span>
           </div>
           <div className="content-list">
             <img src={check} alt="" />
@@ -91,7 +91,7 @@ const Seafreight = () => {
           <h5>LCL (Less than Container Load)</h5>
           <div className="content-list">
             <img src={check} alt="" />
-          <span>การบรรจุสินค้าแบบไม่เต็มตู้คอนเทรนเนอร์</span>
+          <span>การบรรจุสินค้าแบบไม่เต็มตู้คอนเทนเนอร์</span>
           </div>
           <div className="content-list">
             <img src={check} alt="" />
@@ -99,7 +99,7 @@ const Seafreight = () => {
           </div>
           <div className="content-list">
             <img src={check} alt="" />
-          <span>ราคาจะคิดตามตามลูกบาศก์เมตร (CMB) หรือน้ำปริมาตร (Weight Ton) </span>
+          <span>ราคาจะคิดตามตามลูกบาศก์เมตร (CBM.) หรือน้ำปริมาตร (Weight Ton) </span>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@ const Seafreight = () => {
           </div>
           <div className="content-list">
             <img src={check} alt="" />
-          <span>บัญชีราคาสินค้า (Comercial Invoice)</span>
+          <span>บัญชีราคาสินค้า (Commercial Invoice)</span>
           </div>
           <div className="content-list">
             <img src={check} alt="" />
