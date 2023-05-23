@@ -20,6 +20,16 @@ import step2 from "../../images/step2.png";
 import step3 from "../../images/step3.png";
 import step4 from "../../images/step4.png";
 
+import img1 from '../../images/img1.png'
+import img2 from '../../images/img2.png'
+import img3 from '../../images/img3.png'
+import img4 from '../../images/img4.png'
+import img5 from '../../images/img5.png'
+import img6 from '../../images/img6.png'
+import img7 from '../../images/img7.png'
+import img8 from '../../images/img8.png'
+
+
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,7 +78,7 @@ const Home = () => {
         <div className="aboutHomeText">
           <h1>ตัวแทนของผู้ส่งออกและผู้นำเข้าในการจัดส่งสินค้าระหว่างประเทศ</h1>
           <p>
-            บริการ Air - Sea Freight ขนส่งสินค้าระหว่างประเทศ Shipping ดำเนินพิธีการศุลกากร ช่วยประเมินค่าภาษีนำเข้า เช็คพิกัดศุลกากร
+            บริการขนส่งสินค้าระหว่างประเทศ Shipping ดำเนินพิธีการศุลกากร ประเมินค่าภาษีนำเข้า และ เช็คพิกัดสินค้า
           </p>
         </div>
         <div className="aboutHomeImg">
@@ -165,6 +175,49 @@ const Home = () => {
           </div>
         </Box>
         <Slider />
+        <div className="b2b-container">
+          <div className="b2b-box">
+           <div className="b2b-left">
+            <div className="b2bim1">
+            <img src={img1} alt="" />
+            </div>
+            <div className="b2bim2">
+            <img src={img2} alt="" />
+            </div>
+            <div className="b2bim3">
+            <img src={img3} alt="" />
+            </div>
+            <div className="b2bim4">
+            <img src={img8} alt="" />
+            </div>
+            <div className="b2bim5">
+            <img src={img5} alt="" />
+            </div>
+           </div>
+           <div className="b2b-middle">
+            <p>Tailor made solution for your business</p>
+           <h1>Industrial business solutions</h1>
+            <button>Read more</button>
+           </div>
+           <div className="b2b-right">
+           <div className="b2bim1">
+            <img src={img6} alt="" />
+            </div>
+            <div className="b2bim2">
+            <img src={img7} alt="" />
+            </div>
+            <div className="b2bim3">
+            <img src={img4} alt="" />
+            </div>
+            <div className="b2bim4">
+            <img src={img3} alt="" />
+            </div>
+            <div className="b2bim5">
+            <img src={img2} alt="" />
+            </div>
+           </div>
+          </div>
+        </div>
         <div class="homeFaqContainer">
           <div class="homeFaqBackground"></div>
           <div class="homeFaq">

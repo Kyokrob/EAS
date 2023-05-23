@@ -128,10 +128,10 @@ const Costomclearance = () => {
           <h1>Industry Solutions</h1>
           <h5>หน่วยงานที่มีความเชี่ยวชาญเป็นพิเศษ</h5>
           <ul>
-            <li>FEED</li>
-            <li>STEREO</li>
-            <li>COSMETICS/BEAUTY</li>
-            <li>MACHINERY PART</li>
+            <li>FEED : ผลิตภัณฑ์อาหารสัตว์</li>
+            <li>STEREO : ลำโพง และ เครื่องเสียง</li>
+            <li>COSMETICS/BEAUTY : ความสวยความงาม</li>
+            <li>MACHINERY PART : อุปกรณ์เครื่องจักร</li>
           </ul>
         </div>
       </div>
