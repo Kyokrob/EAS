@@ -267,8 +267,6 @@
 .b2b-container {
     max-width: 100%;
     height: 650px;
-    padding: 4rem;
-    margin-bottom: 2rem;
 }
 .b2b-box {
     max-width: 100%;
@@ -279,9 +277,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 0 2px 2px #b4b4b473;
-    background-color: #ececec;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(244,246,248,1) 10%, rgba(4,43,59,0.3926164215686274) 82%);
+    border: none;
+
 }
 
 .b2b-left {
@@ -292,15 +291,31 @@
     height: 100%;
 }
 
+@keyframes bumping {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.image-transition {
+  animation: bumping 3s infinite;
+}
+
 .b2bim1 {
     position: absolute;
-    left: 0;
+    left: 10%;
     top: 50px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14,14,41,.04), 0 8px 8px 0 rgba(14,14,41,.04), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
-    background-color: #042B3B;
+    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14, 14, 41, 0.37), 0 8px 8px 0 rgba(14, 14, 41, 0.329), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
+    background-color: transparent;
 }
 
 .b2bim2 {
@@ -310,8 +325,8 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14,14,41,.04), 0 8px 8px 0 rgba(14,14,41,.04), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
-    background-color: #E6AF4B;
+    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14, 14, 41, 0.37), 0 8px 8px 0 rgba(14, 14, 41, 0.329), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
+    background-color: transparent;
 
 }
 
@@ -322,19 +337,19 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14,14,41,.04), 0 8px 8px 0 rgba(14,14,41,.04), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
-    background-color: #f4f6f8;
+    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14, 14, 41, 0.37), 0 8px 8px 0 rgba(14, 14, 41, 0.329), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
+    background-color: transparent;
 }
 
 .b2bim5 {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     left: 12%;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14,14,41,.04), 0 8px 8px 0 rgba(14,14,41,.04), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
-    background-color: #363636;
+    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14, 14, 41, 0.37), 0 8px 8px 0 rgba(14, 14, 41, 0.329), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
+    background-color: transparent;
 }
 
 .b2bim4 {
@@ -344,8 +359,8 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14,14,41,.04), 0 8px 8px 0 rgba(14,14,41,.04), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
-    background-color: #F9D49C;
+    box-shadow: 0 96px 96px 0 rgba(14,14,41,.04), 0 48px 48px 0 rgba(14,14,41,.04), 0 32px 32px 0 rgba(14,14,41,.04), 0 24px 24px 0 rgba(14,14,41,.04), 0 16px 16px 0 rgba(14, 14, 41, 0.37), 0 8px 8px 0 rgba(14, 14, 41, 0.329), 0 4px 4px 0 rgba(14,14,41,.04), 0 0 1px 0 rgba(14,14,41,.0004);
+    background-color: transparent;
 }
 
 .b2b-left img {
@@ -367,12 +382,15 @@
 }
 
 .b2b-middle h1 {
-    font-weight: bold;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 42px;
+    color: #042B3B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.538);
 }
 
 .b2b-middle p {
-    font-size: 16px;
+    color: #042B3B;
+    font-size: 24px;
     font-weight: 300;
 }
 
@@ -384,15 +402,14 @@
     cursor: pointer;
     font-weight: 500;
     text-decoration: none;
-    color: #ffffff;
-    box-shadow: 0px 0px 5px #e6b04b95;
+    color: #333333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.538);
     background-color: #E6AF4B;
 }
 
 .b2b-middle button:hover {
     transform: scale(1.05);
     background-image: linear-gradient(to bottom, #E6AF4B, #F9D49C);    transition: 0.5s ease;
-    box-shadow: 0px 0px 5px #F9D49C;
 }
 
 .b2b-right {
@@ -419,6 +436,7 @@
 
 .homeFaqContainer {
     position: relative;
+    margin-bottom: 4rem;
   }
   
   .homeFaqBackground {
@@ -691,17 +709,19 @@
 
 
     .b2b-container {
+        height: 700px;
         padding: 0;
         border: none;
     }
 
 
     .b2b-box {
-        height: 650px;
+        height: 100%;
         flex-direction: column;
         margin-bottom: 2rem;
         box-shadow: none;
         background-color: transparent;
+        border-radius: 0;
     }
 
     .b2b-middle {
@@ -721,17 +741,22 @@
     }
 
     .b2bim2 {
-        top: 10%;
-        right: 10%;
+        top: 5%;
+        right: 5%;
     }
 
     .b2bim3 {
-        left: 40%;
-        bottom: 40%;
+        left: 23%;
+        bottom: 5%;
     }
 
     .b2bim4 {
-        left: 80% ;
+        bottom: 5%;
+        left: 53%;
+    }
+
+    .b2bim5 {
+        display: none;
     }
 
   
