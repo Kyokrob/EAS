@@ -360,6 +360,7 @@
         border-bottom: #E6AF4B 5px solid;
         padding: 12px;
         width: 100%;
+        font-size: 18px;
     }
 
     .content2 {
@@ -375,7 +376,7 @@
         width: 90%;
     }
     .content-2Left h1{
-        font-size: 32px;
+        font-size: 24px;
         width: 100%;
     }
     .content-2Left p{
@@ -411,7 +412,10 @@
     }
 
     .content-3Right h1 {
-        font-size: 32px;
+        font-size: 24px;
+    }
+    .content-3Right h5 {
+        font-size: 18px;
     }
     .content-3Right ul {
         font-size: 18px;
@@ -445,7 +449,11 @@
     }
 
     .content-4Right h1 {
-        font-size: 32px;
+        font-size: 24px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 3rem;
+        text-align: center;
     }
     .content-4Right ul {
         font-size: 18px;

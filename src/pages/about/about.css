@@ -1,6 +1,8 @@
 .about {
     background-color: rgb(244, 246, 248);
-
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutHeader {
@@ -93,16 +95,13 @@
 
 .aboutLeft {
     width: 50%;
-    height: 100%;
+    height: 450px;
 }
 
 .aboutLeft img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 550px;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .aboutRight {
@@ -160,26 +159,24 @@
     font-weight: 400;
 }
 
+
 .aboutSection4 {
     margin: 2rem;
     display: flex !important;
     flex-direction: row-reverse;
-    height: 100%;
+    max-height: 700px;
 }
 
 .aboutLeft4 {
     width: 50%;
-    height: 100%;
+    height: 600px;
 
 }
 
 .aboutLeft4 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 550px;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: contain;
 
 }
 
@@ -206,6 +203,8 @@
     line-height: 2rem;
     
 }
+
+
 
 
 
@@ -348,6 +347,10 @@
     .aboutSection3 p {
         font-size: 18px;
         width: 90%;
+    }
+
+    .aboutSection4 {
+        max-height: 100%;
     }
 
 }

@@ -14,15 +14,7 @@ const OurService2 = () => {
       <div className="ourService2">
         <div className="ourServiceBox2-1">
           <h1>บริการอื่นๆของเรา</h1>
-          <p>
-            ติดต่อฝ่ายขาย
-            <p>
-              <a href="tel:0867780808">095-909-8712</a>
-            </p>
-            <p>
-              <a href="tel:022359100">02-235-9100 </a>ต่อ (36)
-            </p>
-          </p>
+          
         </div>
         <div className="ourServiceBox2">
           <img src={air_icon1} alt="" />

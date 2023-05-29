@@ -12,17 +12,15 @@ import logo from "../../images/E_resize.webp";
 import { Tabs, Tab, useMediaQuery, useTheme } from "@mui/material";
 
 import NavDrawer from "../navDrawer/NavDrawer";
-
-// import FlightLandIcon from '@mui/icons-material/FlightLand';
-// import PendingActionsIcon from '@mui/icons-material/PendingActions';
-import FlightIcon from "@mui/icons-material/Flight";
-import DirectionsBoatFilledIcon from "@mui/icons-material/DirectionsBoatFilled";
-import DragHandleIcon from "@mui/icons-material/DragHandle";
-import PostAddIcon from "@mui/icons-material/PostAdd";
-
 import { styled, alpha } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
+import express_icon1 from '../../images/express_icon1.svg'
+import imex_icon1 from '../../images/imex_icon1.svg'
+import customs_icon1 from "../../images/customs_icon1.svg";
+import air_icon1 from "../../images/air_icon1.svg";
+import sea_icon1 from "../../images/sea_icon1.svg";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -143,7 +141,7 @@ const Navbar = () => {
                   onClose={handleClose}
                 >
                    <MenuItem onClick={handleClose} disableRipple>
-                    <DragHandleIcon />
+                   <img src={express_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
                     <Button
                       to="/courier"
                       component={Link}
@@ -152,8 +150,9 @@ const Navbar = () => {
                       Express Service
                     </Button>
                   </MenuItem>
+
                    <MenuItem onClick={handleClose} disableRipple>
-                    <DragHandleIcon />
+                    <img src={imex_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
                     <Button
                       to="/import-export"
                       component={Link}
@@ -162,9 +161,11 @@ const Navbar = () => {
                       Import / Export
                     </Button>
                   </MenuItem>
+
                   <Divider sx={{ my: 0.5 }} />
+
                   <MenuItem onClick={handleClose} disableRipple>
-                    <FlightIcon />
+                  <img src={air_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
                     <Button
                       to="/airfreight"
                       component={Link}
@@ -173,8 +174,9 @@ const Navbar = () => {
                       Air Freight
                     </Button>
                   </MenuItem>
+
                   <MenuItem onClick={handleClose} disableRipple>
-                    <DirectionsBoatFilledIcon />
+                  <img src={sea_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
                     <Button
                       to="/seafreight"
                       component={Link}
@@ -183,8 +185,9 @@ const Navbar = () => {
                       Sea Freight
                     </Button>
                   </MenuItem>
+
                   <MenuItem onClick={handleClose} disableRipple>
-                    <PostAddIcon />
+                  <img src={customs_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
                     <Button
                       to="/customclearance"
                       component={Link}
@@ -196,6 +199,8 @@ const Navbar = () => {
                  
                 </StyledMenu>
               </>
+
+              <Tab label="Blog" to="/blog" component={Link} />
 
               <Tab label="Contact us" to="/contactform" component={Link} />
             </Tabs>

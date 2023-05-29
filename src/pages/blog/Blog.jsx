@@ -35,7 +35,7 @@ const Blog = () => {
           <img src={blog2card} alt="Blog post" />
           </div>
           <div className="blogRight-info">
-          <p>March 16, 2023</p>
+          <p>May 23, 2023</p>
             <h2>นำเข้าอาหารสัตว์ ต้องเริ่มต้นจากอะไร สามารถนำอะได้เข้ามาได้บ้าง</h2>
           </div>
         </Link>
@@ -43,54 +43,6 @@ const Blog = () => {
        </div>
       </div>
       </Container>
-
-
-      {/* <Container className="blogContents">
-        <h1>Previous post </h1>
-        <div className="blogContent2">
-        <Link to='/blog/freight-shipping' className="blog2-card">
-        <div className="blog2-img">
-          <img src="https://via.placeholder.com/500x450" alt="Blog post" />
-          </div>          <div className="blog2-info">
-          <p>March 16, 2023</p>
-            <h2>นำเข้าสินค้าจากต่างประเทศคำนวนภาษีอย่างไร วิธีการเช็คพิกัดศุลกากร</h2>
-          </div>
-        </Link>
-        <Link to='/blog/freight-shipping' className="blog2-card">
-        <div className="blog2-img">
-          <img src="https://via.placeholder.com/500x450" alt="Blog post" />
-          </div>          <div className="blog2-info">
-          <p>March 16, 2023</p>
-            <h2>นำเข้าสินค้าจากต่างประเทศคำนวนภาษีอย่างไร วิธีการเช็คพิกัดศุลกากร</h2>
-          </div>
-        </Link>
-        <Link to='/blog/freight-shipping' className="blog2-card">
-        <div className="blog2-img">
-          <img src={blog1card} alt="Blog post" />
-          </div>          <div className="blog2-info">
-          <p>March 16, 2023</p>
-            <h2>นำเข้าสินค้าจากต่างประเทศคำนวนภาษีอย่างไร วิธีการเช็คพิกัดศุลกากร</h2>
-          </div>
-        </Link>
-        <Link to='/blog/freight-shipping' className="blog2-card">
-        <div className="blog2-img">
-          <img src="https://via.placeholder.com/500x450" alt="Blog post" />
-          </div>          <div className="blog2-info">
-          <p>March 16, 2023</p>
-            <h2>นำเข้าสินค้าจากต่างประเทศคำนวนภาษีอย่างไร วิธีการเช็คพิกัดศุลกากร</h2>
-          </div>
-        </Link>
-        <Link to='/blog/freight-shipping' className="blog2-card">
-        <div className="blog2-img">
-          <img src="https://via.placeholder.com/500x450" alt="Blog post" />
-          </div>          <div className="blog2-info">
-          <p>March 16, 2023</p>
-            <h2>นำเข้าสินค้าจากต่างประเทศคำนวนภาษีอย่างไร วิธีการเช็คพิกัดศุลกากร</h2>
-          </div>
-        </Link>
-        
-        </div>
-      </Container> */}
       <Contact/>
 
     </>

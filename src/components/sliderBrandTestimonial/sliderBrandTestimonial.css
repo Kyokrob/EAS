@@ -1,5 +1,7 @@
 .sliderBrandHeader {
   text-align: center;
+  background-color: #ffffff;
+
 
 
 }
@@ -21,6 +23,8 @@
     display: grid;
     place-items: center;
     overflow: hidden;
+    background-color: #ffffff;
+
   }
 
 

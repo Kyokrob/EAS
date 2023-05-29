@@ -2,7 +2,6 @@ import React from "react";
 import "./home.css";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Box from "@mui/material/Box";
@@ -13,23 +12,12 @@ import SliderBrandTestimonial from "../../components/sliderBrandTestimonial/Slid
 import Slider from "../../components/slider/Slider";
 import Contact from "../../components/contact/Contact";
 import Faq from "../../components/faq/Faq";
-
+import B2bSolutions from "../../components/b2bSolutions/B2bSolutions";
 import abouthome from "../../images/shipnow.svg";
 import step1 from "../../images/step1.png";
 import step2 from "../../images/step2.png";
 import step3 from "../../images/step3.png";
 import step4 from "../../images/step4.png";
-
-import img1 from '../../images/img1.png'
-import img2 from '../../images/img2.png'
-import img3 from '../../images/img3.png'
-import img4 from '../../images/img4.png'
-import img7 from '../../images/img7.png'
-import img8 from '../../images/img8.png'
-import img9 from '../../images/img9.png'
-import img11 from '../../images/img11.png'
-import img13 from '../../images/img13.png'
-import img14 from '../../images/img14.png'
 
 
 const Home = () => {
@@ -80,8 +68,10 @@ const Home = () => {
         <div className="aboutHomeText">
           <h1>ตัวแทนของผู้ส่งออกและผู้นำเข้าในการจัดส่งสินค้าระหว่างประเทศ</h1>
           <p>
-            บริการขนส่งสินค้าระหว่างประเทศ Shipping ดำเนินพิธีการศุลกากร ประเมินค่าภาษีนำเข้า และ เช็คพิกัดสินค้า
+            บริการขนส่งสินค้าระหว่างประเทศ Shipping ดำเนินพิธีการศุลกากร
+            ประเมินค่าภาษีนำเข้า และ เช็คพิกัดสินค้า
           </p>
+          <button><a href="tel:0867780808">ติดต่อเรา</a></button>
         </div>
         <div className="aboutHomeImg">
           <img src={abouthome} alt="" />
@@ -91,9 +81,14 @@ const Home = () => {
       {/* About end */}
 
       <div className="ourService-home">
-              <OurService />
+        <OurService />
       </div>
 
+      {/* Our Service end */}
+
+      <B2bSolutions/>
+
+      {/* B2b end */}
 
       {/* Section3 */}
       <div className="section3">
@@ -123,7 +118,6 @@ const Home = () => {
             <div className="cardContent">
               <h3>Get Quotation</h3>
               <p>แจ้งข้อมูลกรอกรายละเอียดการจัดส่ง</p>
-              {/* <p>ให้ข้อมูลเกี่ยวกับสินค้า เช่น ประเภทสินค้า สถานที่รับและส่ง น้ำหนัก ขนาด และความต้องการพิเศษอื่นๆ เช่น พิธีการศุลกากร ประกันภัย หรือการขนส่งภายในประเทศ</p> */}
             </div>
           </div>
           <div className="cardHome">
@@ -138,7 +132,6 @@ const Home = () => {
             <div className="cardContent">
               <h3>Review and submit </h3>
               <p>ตรวจสอบใบเสนอราคา และ ส่งเอกสารที่จำเป็น</p>
-             
             </div>
           </div>
 
@@ -170,9 +163,7 @@ const Home = () => {
             </div>
             <div className="cardContent">
               <h3>Delivery</h3>
-              <p>
-              ยืนยันว่าบริษัทขนส่งได้รับสินค้าของคุณแล้ว
-              </p>
+              <p>ยืนยันว่าบริษัทขนส่งได้รับสินค้าของคุณแล้ว</p>
             </div>
           </div>
         </Box>
@@ -182,51 +173,7 @@ const Home = () => {
           <div class="homeFaq">
             <Faq />
           </div>
-        </div> 
-        <div className="b2b-container">
-          <div className="b2b-box">
-           <div className="b2b-left">
-            <div className="b2bim1 image-transition">
-            <img src={img1} alt="" />
-            </div>
-            <div className="b2bim2 image-transition">
-            <img src={img2} alt="" />
-            </div>
-            <div className="b2bim3 image-transition">
-            <img src={img3} alt="" />
-            </div>
-            <div className="b2bim4 image-transition">
-            <img src={img8} alt="" />
-            </div>
-            <div className="b2bim5 image-transition">
-            <img src={img11} alt="" />
-            </div>
-           </div>
-           <div className="b2b-middle">
-           <h1>Industrial business solutions</h1>
-            <p>Tailor made solution for your business</p>
-            <button>Read more</button>
-           </div>
-           <div className="b2b-right">
-           <div className="b2bim1 image-transition">
-            <img src={img14} alt="" />
-            </div>
-            <div className="b2bim2 image-transition">
-            <img src={img7} alt="" />
-            </div>
-            <div className="b2bim3 image-transition">
-            <img src={img4} alt="" />
-            </div>
-            <div className="b2bim4 image-transition">
-            <img src={img9} alt="" />
-            </div>
-            <div className="b2bim5 image-transition">
-            <img src={img13} alt="" />
-            </div>
-           </div>
-          </div>
         </div>
-
 
         <GetQuotation />
       </div>

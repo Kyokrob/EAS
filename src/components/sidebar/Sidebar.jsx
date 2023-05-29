@@ -1,9 +1,10 @@
 import React from 'react'
 import './sidebar.css'
 import { Link } from "react-router-dom";
-import sideimg from '../../images/air_card_resize.webp'
-import sideimg2 from '../../images/slider9_resize.webp'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
+import blog1bar from '../../images/blog1bar.png'
+import blog2card from '../../images/blog2card.png'
 
 
 const Sidebar = () => {
@@ -14,62 +15,30 @@ const Sidebar = () => {
     </div>
     <div className='sidebar'>
         <div className="sidebarPost">
-            <img src={sideimg} alt="" />
+            <img src={blog1bar} alt="" />
             <h2>
-            คุณรู้ไหมว่าตัวแทนขนส่งสินค้าและตัวแทนออกใบขนสินค้าคืออะไร
+            Freight forwarder ต่างกัน shipping อย่างไร ? 
             </h2>
-            <Link to='/' className='sidebarPostBtn'>
+            <Link to='/blog/shipping-freight' className='sidebarPostBtn'>
             <button>
                 Read more
             </button>
             </Link>
         </div>
          <div className="sidebarPost">
-            <img src="https://via.placeholder.com/250x150" alt="" />
+            <img src={blog2card} alt="" />
             <h2>
-            คุณรู้ไหมว่าตัวแทนขนส่งสินค้าและตัวแทนออกใบขนสินค้าคืออะไร
+            นำเข้าสินค้าผลิตภัณฑ์อาหารและยาสัตว์
             </h2>
-            <Link to='/' className='sidebarPostBtn'>
+            <Link to='/blog/animal-feed-customs-clearance' className='sidebarPostBtn'>
             <button>
                 Read more
             </button>
             </Link>
 
         </div>
-        <div className="sidebarPost">
-            <img src={sideimg2} alt="" />
-            <h2>
-            คุณรู้ไหมว่าตัวแทนขนส่งสินค้าและตัวแทนออกใบขนสินค้าคืออะไร
-            </h2>
-            <Link to='/' className='sidebarPostBtn'>
-            <button>
-                Read more
-            </button>
-            </Link>
-        </div>
-        <div className="sidebarPost">
-            <img src="https://via.placeholder.com/250x150" alt="" />
-            <h2>
-            คุณรู้ไหมว่าตัวแทนขนส่งสินค้าและตัวแทนออกใบขนสินค้าคืออะไร
-            </h2>
-            <Link to='/' className='sidebarPostBtn'>
-            <button>
-                Read more
-            </button>
-            </Link>
-
-        </div>
-        <div className="sidebarPost">
-            <img src="https://via.placeholder.com/250x150" alt="" />
-            <h2>
-            คุณรู้ไหมว่าตัวแทนขนส่งสินค้าและตัวแทนออกใบขนสินค้าคืออะไร
-            </h2>
-            <Link to='/' className='sidebarPostBtn'>
-            <button>
-                Read more
-            </button>
-            </Link>
-        </div>
+        
+        
         <div className="sidebarPostAll">
             <h2>
             View all
