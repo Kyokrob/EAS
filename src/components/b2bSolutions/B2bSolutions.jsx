@@ -10,6 +10,7 @@ import img14 from "../../images/img14.png";
 import img15 from "../../images/img15.png";
 import img16 from "../../images/img16.png";
 import img17 from "../../images/img17.png";
+import { Link } from 'react-router-dom';
 
 const B2bSolutions = () => {
   return (
@@ -41,7 +42,9 @@ const B2bSolutions = () => {
               <span>Safety equipment</span>
               <span>Machinery part</span>
               <p> "Tailor-made solution designed to meet your unique business requirements"</p>
-              <button><a href="tel:0867780808">Read more</a></button>
+              <Link to='/business-solutions'>
+              <button>Read more</button>
+              </Link>
             </div>
             <div className="b2b-right">
               <div className="b2bim1 image-transition">

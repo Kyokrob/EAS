@@ -6,15 +6,12 @@ import { useEffect } from "react";
 
 import Contact from "../../components/contact/Contact";
 import OurService from "../../components/ourService/OurService";
-import GetQuotation from "../../components/getQuotation/GetQuotation";
 import video1 from "../../images/eas-video1.mp4";
 import about2 from "../../images/about_2.png";
 import about4 from '../../images/ourservice1.png'
 import thumbnail from "../../images/thumbnail.png";
 
 import { Helmet } from "react-helmet";
-import B2bSolutions from "../../components/b2bSolutions/B2bSolutions";
-import BrandSlider from '../../components/sliderBrandTestimonial/SliderBrandTestimonial';
 
 const About = () => {
   useEffect(() => {
@@ -56,7 +53,6 @@ const About = () => {
           <p>EXPERIENCE IS OUR EXPERTIES</p>
         </div>
       </div>
-      <BrandSlider/>
 
       <div className="aboutSection">
         <h1>ABOUT US</h1>
@@ -117,13 +113,9 @@ const About = () => {
           </p>
         </div>
       </Container>
-      <div className="b2bContainer">
-      <B2bSolutions/>
-      </div>
       <div className="ourserviceContainer">
       <OurService />
       </div>
-      <GetQuotation/>
       <Contact />
       </div>
     </>

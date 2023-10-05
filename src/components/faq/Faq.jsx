@@ -24,6 +24,7 @@ const Faq = () => {
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
+          className="faqSum"
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -45,6 +46,7 @@ const Faq = () => {
         <Accordion
           expanded={expanded === "panel2"}
           onChange={handleChange("panel2")}
+          className="faqSum"
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -66,6 +68,8 @@ const Faq = () => {
         <Accordion
           expanded={expanded === "panel3"}
           onChange={handleChange("panel3")}
+          className="faqSum"
+
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -89,6 +93,7 @@ const Faq = () => {
         <Accordion
           expanded={expanded === "panel4"}
           onChange={handleChange("panel4")}
+          className="faqSum"
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -109,6 +114,7 @@ const Faq = () => {
         <Accordion
           expanded={expanded === "panel5"}
           onChange={handleChange("panel5")}
+          className="faqSum"
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -129,6 +135,7 @@ const Faq = () => {
         <Accordion
           expanded={expanded === "panel6"}
           onChange={handleChange("panel6")}
+          className="faqSum"
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}

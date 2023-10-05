@@ -7,6 +7,8 @@ import partnerlogo4 from '../../images/partnerlogo4.svg'
 import partnerlogo5 from '../../images/partnerlogo5.svg'
 import partnerlogo6 from '../../images/partnerlogo6.svg'
 import partnerlogo7 from '../../images/partnerlogo7.svg'
+import partnerlogo8 from '../../images/partnerlogo8.svg'
+import partnerlogo9 from '../../images/partnerlogo9.svg'
 
 const SliderBrandTestimonial = () => {
 
@@ -37,6 +39,12 @@ const SliderBrandTestimonial = () => {
                 <img src={partnerlogo7} alt="" />
             </div>
             <div className="slideBrand">
+                <img src={partnerlogo8} alt="" />
+            </div>
+            <div className="slideBrand">
+                <img src={partnerlogo9} alt="" />
+            </div>
+            <div className="slideBrand">
                 <img src={partnerlogo1} alt="" />
             </div>
             <div className="slideBrand">
@@ -50,6 +58,15 @@ const SliderBrandTestimonial = () => {
             </div>
             <div className="slideBrand">
                 <img src={partnerlogo5} alt="" />
+            </div>
+            <div className="slideBrand">
+                <img src={partnerlogo7} alt="" />
+            </div>
+            <div className="slideBrand">
+                <img src={partnerlogo8} alt="" />
+            </div>
+            <div className="slideBrand">
+                <img src={partnerlogo9} alt="" />
             </div>
             </div>
         </div>

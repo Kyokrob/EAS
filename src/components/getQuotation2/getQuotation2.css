@@ -29,19 +29,21 @@
 
 .sec5Right h1 {
     width: 80%;
-    font-size: 24px;
+    font-size: 32px;
     color: #042B3B;
-    font-weight: 600;
+    font-weight: bold;
     text-shadow: 1px 1px #042b3bc6;
 
 }
 
 .sec5Right p {
     color: #042B3B;    
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     width: 80%;
     padding: 12px 0;
     line-height: 1.5;
+    margin-bottom: 12px;
 }
 
 .sec5Btn {

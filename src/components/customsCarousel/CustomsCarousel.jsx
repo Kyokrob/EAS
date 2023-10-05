@@ -73,17 +73,6 @@ const CustomsCarousel = () => {
       </Carousel>
     </div>
 
-    // <Slider {...settings}>
-    //   <div className="slick-list">
-    //     <img src={customscover} alt="image1" />
-    //   </div>
-    //   <div>
-    //     <img src={customscover} alt="image2" />
-    //   </div>
-    //   <div>
-    //     <img src={customscover} alt="image3" />
-    //   </div>
-    // </Slider>
   );
 };
 

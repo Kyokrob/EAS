@@ -19,7 +19,6 @@ import step2 from "../../images/step2.png";
 import step3 from "../../images/step3.png";
 import step4 from "../../images/step4.png";
 
-
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,12 +65,14 @@ const Home = () => {
 
       <div className="aboutHome">
         <div className="aboutHomeText">
-          <h1>ตัวแทนของผู้ส่งออกและผู้นำเข้าในการจัดส่งสินค้าระหว่างประเทศ</h1>
+          <h5>About us</h5>
+          <h1>ตัวแทนของผู้นำเข้าส่งออกขนส่งสินค้าระหว่างประเทศ</h1>
           <p>
-            บริการขนส่งสินค้าระหว่างประเทศ Shipping ดำเนินพิธีการศุลกากร
-            ประเมินค่าภาษีนำเข้า และ เช็คพิกัดสินค้า
+            บริการ Freight Forwarder ขนส่งทางเรือ - เครื่องบิน และ
+            บริการเดินพิธีการศุลกากร
+            ช่วยผู้ขนส่งประเมินค่าภาษีและเช็คพิกัดสินค้า
+            พร้อมจัดเตรียมและยื่นเอกสารการขนส่ง
           </p>
-          <button><a href="tel:0867780808">ติดต่อเรา</a></button>
         </div>
         <div className="aboutHomeImg">
           <img src={abouthome} alt="" />
@@ -80,15 +81,80 @@ const Home = () => {
 
       {/* About end */}
 
+
       <div className="ourService-home">
+      {/* <Box
+          className="boxCardHome"
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            gap: "1rem",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          <div className="cardHome">
+            <div
+              className="cardTop"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <img src={step1} alt="" />
+            </div>
+            <div className="cardContent">
+              <h3>เชื่อถือได้ - มากประสบการณ์</h3>
+            </div>
+          </div>
+          <div className="cardHome">
+            <div
+              className="cardTop"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <img src={step2} alt="" />
+            </div>
+            <div className="cardContent">
+              <h3>เช็คพิกัดสินค้า คำนวนถาษีนำเข้า ฟรี</h3>
+            </div>
+          </div>
+
+          <div className="cardHome">
+            <div
+              className="cardTop"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <div className="cardTopIcon">
+                <img src={step3} alt="" />
+              </div>
+            </div>
+            <div className="cardContent">
+              <h3>พนักงานได้รับใบรับรอบจากกรมศุลกากร</h3>
+            </div>
+          </div>
+
+          <div className="cardHome">
+            <div
+              className="cardTop"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <img src={step4} alt="" />
+            </div>
+            <div className="cardContent">
+              <h3>ผ่านการรับรองจากสมาคมชิปปิ้งแห่งประเทศไทย</h3>
+            </div>
+          </div>
+        </Box> */}
         <OurService />
       </div>
 
       {/* Our Service end */}
-
-      <B2bSolutions/>
-
-      {/* B2b end */}
 
       {/* Section3 */}
       <div className="section3">
@@ -116,8 +182,11 @@ const Home = () => {
               <img src={step1} alt="" />
             </div>
             <div className="cardContent">
-              <h3>Get Quotation</h3>
-              <p>แจ้งข้อมูลกรอกรายละเอียดการจัดส่ง</p>
+              <h3>ติดต่อรับใบเสนอราคา</h3>
+              <p>
+                กรอกรายละเอียดการจัดส่งสินค้า เช่น ประเภทสินค้า น้ำหนัก ขนาด และ
+                ประเทศต้นทางปลายทาง
+              </p>
             </div>
           </div>
           <div className="cardHome">
@@ -130,8 +199,11 @@ const Home = () => {
               <img src={step2} alt="" />
             </div>
             <div className="cardContent">
-              <h3>Review and submit </h3>
-              <p>ตรวจสอบใบเสนอราคา และ ส่งเอกสารที่จำเป็น</p>
+              <h3>ตรวจสอบและยืนยัน</h3>
+              <p>
+                เมื่อได้รับใบเสนอราคา
+                คุณสามารถตรวจสอบและแจ้งหน้าที่เพื่อยืนยันการจัดส่งได้
+              </p>
             </div>
           </div>
 
@@ -147,8 +219,8 @@ const Home = () => {
               </div>
             </div>
             <div className="cardContent">
-              <h3>Booking confirm</h3>
-              <p>ยืนยันจำนวนเงินที่ต้องชำระและค่าธรรมเนียมเพิ่มเติม (ถ้ามี)</p>
+              <h3>เตรียมการขนส่ง</h3>
+              <p>จัดเตรียมเอกสารสำคัญเพื่อทำการจัดส่งสินค้าและ</p>
             </div>
           </div>
 
@@ -162,19 +234,24 @@ const Home = () => {
               <img src={step4} alt="" />
             </div>
             <div className="cardContent">
-              <h3>Delivery</h3>
-              <p>ยืนยันว่าบริษัทขนส่งได้รับสินค้าของคุณแล้ว</p>
+              <h3>ยืนยันและติดตาม</h3>
+              <p>
+                ยืนยันการขนส่ง
+                พร้อมช่วยคุณติดตามและอัพเดตข้อมูลสถานะส่งสินค้าของคุณ
+              </p>
             </div>
           </div>
         </Box>
         <Slider />
+        <B2bSolutions />
+
+        {/* B2b end */}
         <div class="homeFaqContainer">
           <div class="homeFaqBackground"></div>
           <div class="homeFaq">
             <Faq />
           </div>
         </div>
-
         <GetQuotation />
       </div>
 

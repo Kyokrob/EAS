@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from "@mui/material/Container";
 import { Link } from "react-router-dom";
-import cover4 from "../../images/cover4.gif";
+import cover5 from "../../images/cover5.gif";
 import './getQuotation.css'
 
 const GetQuotation = () => {
@@ -9,19 +9,15 @@ const GetQuotation = () => {
     <Container>
      <div className="sec4">
           <div className="sec4Left">
-            <img src={cover4} alt="" />
+            <img src={cover5} alt="" />
           </div>
           <div className="sec4Right">
-            <h1>EAST ASIA SHIPPING (THAILAND)</h1>
+            <h1>ขนส่งอย่างไม่มีข้อจำกัด</h1>
             <p>
-              Provides seamless logistics solutions, including freight
-              forwarding and customs clearance services. We specialize in
-              streamlining the shipping process, providing personalized support,
-              and ensuring goods reach their destination quickly and
-              efficiently.
+            บริการขนส่งสินค้าจากผู้เชี่ยวชาญดูแลอย่างมืออาชีพรับรองว่าสินค้าจะถึงสถานที่ปลายทางได้อย่างรวดเร็วและมีประสิทธิภาพ 
             </p>
             <Link to="/quotation" className="sec4Btn">
-              <button>Get Quotation</button>
+              <button>ใบเสนอราคา (ฟรี)</button>
             </Link>
           </div>
         </div>

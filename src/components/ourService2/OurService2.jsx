@@ -13,7 +13,7 @@ const OurService2 = () => {
     <div className="container">
       <div className="ourService2">
         <div className="ourServiceBox2-1">
-          <h1>บริการอื่นๆของเรา</h1>
+          <h1>บริการอื่นๆของ EASTHAI</h1>
           
         </div>
         <div className="ourServiceBox2">

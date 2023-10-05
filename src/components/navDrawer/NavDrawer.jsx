@@ -47,6 +47,14 @@ const NavDrawer = () => {
           <ListItemButton onClick={() => setOpenDrawer(false)}>
             <ListItemText style={{ textAlign: "center" }}>
               <ListItemIcon>
+                <Link to="/Tools">Tools</Link>
+              </ListItemIcon>
+            </ListItemText>
+          </ListItemButton>
+
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <ListItemText style={{ textAlign: "center" }}>
+              <ListItemIcon>
                 <Link to="/blog">Blog</Link>
               </ListItemIcon>
             </ListItemText>

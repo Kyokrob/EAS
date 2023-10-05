@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
+import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 
@@ -16,8 +16,8 @@ import { styled, alpha } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import express_icon1 from '../../images/express_icon1.svg'
-import imex_icon1 from '../../images/imex_icon1.svg'
+import express_icon1 from "../../images/express_icon1.svg";
+import imex_icon1 from "../../images/imex_icon1.svg";
 import customs_icon1 from "../../images/customs_icon1.svg";
 import air_icon1 from "../../images/air_icon1.svg";
 import sea_icon1 from "../../images/sea_icon1.svg";
@@ -97,7 +97,12 @@ const Navbar = () => {
     <nav className={navbar ? "navBar active" : "navBar"}>
       <Toolbar className="navTool">
         <Link to="/" className="companylogo">
-          <img src={logo} alt="East asia shipping company logo" width="85px" height="85px" />
+          <img
+            src={logo}
+            alt="East asia shipping company logo"
+            width="85px"
+            height="85px"
+          />
         </Link>
 
         {isMatch ? (
@@ -140,8 +145,16 @@ const Navbar = () => {
                   open={open}
                   onClose={handleClose}
                 >
-                   <MenuItem onClick={handleClose} disableRipple>
-                   <img src={express_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
+                  <MenuItem onClick={handleClose} disableRipple>
+                    <img
+                      src={express_icon1}
+                      alt=""
+                      style={{
+                        width: "24px",
+                        height: "24px",
+                        marginRight: "12px",
+                      }}
+                    />
                     <Button
                       to="/courier"
                       component={Link}
@@ -151,8 +164,16 @@ const Navbar = () => {
                     </Button>
                   </MenuItem>
 
-                   <MenuItem onClick={handleClose} disableRipple>
-                    <img src={imex_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
+                  <MenuItem onClick={handleClose} disableRipple>
+                    <img
+                      src={imex_icon1}
+                      alt=""
+                      style={{
+                        width: "24px",
+                        height: "24px",
+                        marginRight: "12px",
+                      }}
+                    />
                     <Button
                       to="/import-export"
                       component={Link}
@@ -165,7 +186,15 @@ const Navbar = () => {
                   <Divider sx={{ my: 0.5 }} />
 
                   <MenuItem onClick={handleClose} disableRipple>
-                  <img src={air_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
+                    <img
+                      src={air_icon1}
+                      alt=""
+                      style={{
+                        width: "24px",
+                        height: "24px",
+                        marginRight: "12px",
+                      }}
+                    />
                     <Button
                       to="/airfreight"
                       component={Link}
@@ -176,7 +205,15 @@ const Navbar = () => {
                   </MenuItem>
 
                   <MenuItem onClick={handleClose} disableRipple>
-                  <img src={sea_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
+                    <img
+                      src={sea_icon1}
+                      alt=""
+                      style={{
+                        width: "24px",
+                        height: "24px",
+                        marginRight: "12px",
+                      }}
+                    />
                     <Button
                       to="/seafreight"
                       component={Link}
@@ -187,7 +224,15 @@ const Navbar = () => {
                   </MenuItem>
 
                   <MenuItem onClick={handleClose} disableRipple>
-                  <img src={customs_icon1} alt="" style={{ width: '24px', height: '24px', marginRight: '12px' }} />
+                    <img
+                      src={customs_icon1}
+                      alt=""
+                      style={{
+                        width: "24px",
+                        height: "24px",
+                        marginRight: "12px",
+                      }}
+                    />
                     <Button
                       to="/customclearance"
                       component={Link}
@@ -196,9 +241,11 @@ const Navbar = () => {
                       Custom clearance
                     </Button>
                   </MenuItem>
-                 
                 </StyledMenu>
               </>
+
+              <Tab label="Tools" to="/Tools" component={Link} />
+              <Tab label="Quotation" to="/Quotation" component={Link} />
 
               <Tab label="Blog" to="/blog" component={Link} />
 
@@ -214,7 +261,6 @@ const Navbar = () => {
                 borderRadius: "5px",
                 color: "#000000",
                 boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                
               }}
               className="navBtn"
             >

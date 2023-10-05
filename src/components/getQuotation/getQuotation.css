@@ -29,17 +29,19 @@
 
 .sec4Right h1 {
     width: 80%;
-    font-size: 24px;
-    color: #E6AF4B;
-    font-weight: 600;
+    font-size: 32px;
+    color: #042B3B;
+    font-weight: bold;
     text-shadow: 1px 1px #00000079;
 
 }
 
 .sec4Right p {
     color: #042B3B;    
-    font-size: 18px;
+    font-size: 20px;
     width: 80%;
+    font-weight: 500;
+    margin-bottom: 12px;
     padding: 12px 0;
     line-height: 1.5;
 }
@@ -49,7 +51,7 @@
 }
 
 .sec4Btn button {
-    padding: 6px 12px;
+    padding: 12px 24px;
     background-color: #E6AF4B;
     box-shadow: 0px 0px 5px #e6b04b95;
     color: #333333;

@@ -56,7 +56,7 @@
 
 .content2 {
     width: 100%;
-    height: 90vh;
+    height: 100%;
     display: flex;
     position: relative;
     background-color: #f4f6f8; /* change background color to white */
@@ -71,7 +71,7 @@
     bottom: 0;
     right: 0;
     z-index: 1; /* set a lower z-index */
-    clip-path: circle(20.0% at 0 10%);
+    clip-path: circle(30% at -10% -10%);
     background-color: #e6af4b;
   }
 .content-2 {
@@ -104,12 +104,56 @@
     font-weight: 600;  
 }
 
+.content-2Left h5{
+    width: 80%;
+    color: #E6AF4B; 
+    font-size: 20px;
+    font-weight: 600;  
+}
+
 .content-2Left p{
     width: 80%;
     color: #042B3B; 
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px; 
+    line-height: 2rem;
+}
+
+.content-2Left-More {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.content-2Left-More span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #E6AF4B;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.content-2Left-More span::before {
+    content: ''; /* Create a pseudo-element for the underline */
+    position: absolute;
+    margin-top: 14px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px; /* Set the height of the underline */
+    background-color: #E6AF4B; /* Define the underline color */
+    transform: scaleX(0); /* Initially set the scale to 0 to hide the underline */
+    transform-origin: right; /* Set the transform origin to the right */
+    transition: transform 0.3s ease; /* Add a transition for the transform */
+}
+
+.content-2Left-More span:hover::before {
+    transform: scaleX(1); /* Expand the underline to 100% on hover */
+    transform-origin: left; /* Change the transform origin to the left for the effect */
 }
 
 
@@ -133,7 +177,7 @@
 
 .content3 {
     width: 100%;
-    height: 90vh;
+    height: 100%;
     display: flex;
     position: relative;
     background-color: #f4f6f8; /* change background color to white */
@@ -148,7 +192,7 @@
     bottom: 0;
     right: 0;
     z-index: 1; /* set a lower z-index */
-    clip-path: circle(20% at 100% 90%);
+    clip-path: circle(20% at 100% 100%);
     background-color: #e6af4b;
   }
 
@@ -372,6 +416,10 @@
         flex-direction: column-reverse;
     }
 
+    .content2::before {
+        clip-path: circle(50% at -10% -10%);
+    }
+
     .content-2Left {
         width: 90%;
     }
@@ -379,7 +427,14 @@
         font-size: 24px;
         width: 100%;
     }
+
+    .content-2Left h5 {
+        width: 100%;
+    }
     .content-2Left p{
+        width: 100%;
+    }
+    .content-2Left-More {
         width: 100%;
     }
     .content-2Right {
@@ -398,6 +453,10 @@
     }
     .content-3 {
         flex-direction: column-reverse;
+    }
+
+    .content3::before {
+        clip-path: circle(45% at 100% 100%);
     }
     .content-3Left {
         width: 100%;

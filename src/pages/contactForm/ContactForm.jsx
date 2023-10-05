@@ -103,8 +103,11 @@ const ContactForm = () => {
                       </h3>
                     </div>
                   <div className="contactForm2Detail-2">
-                  <p>
-                    <a href="mailto:hello@easthai.com">hello@easthai.com</a>
+                  <p>Sale :
+                    <a href="mailto:siriwan@easthai.com"> siriwan@easthai.com</a>
+                  </p>
+                  <p>Other :
+                    <a href="mailto:sarit@easthai.com"> sarit@easthai.com</a>
                   </p>
                   </div>
                 </div>

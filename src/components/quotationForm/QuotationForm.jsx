@@ -147,14 +147,15 @@ function QuotationForm() {
             />
           </div>
           <div className="form-col">
-            <label htmlFor="telephone">เบอร์ติดต่อ : </label>
+            <label htmlFor="telephone">เบอร์ติดต่อ* : </label>
             <input
-              type="text"
+              type="tel"
               id="telephone"
               name="telephone"
               placeholder=""
               value={quotationFormData.telephone}
               onChange={handleChange}
+              required
             />
           </div>
           </div>
@@ -169,7 +170,7 @@ function QuotationForm() {
               placeholder="กรอกชื่อหรือประเภทสินค้า"
               value={quotationFormData.productType}
               onChange={handleChange}
-              required
+              
             />
           </div>
 

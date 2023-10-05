@@ -1,0 +1,69 @@
+.tools {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f6f8;
+
+    
+}
+.toolsBody {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f8;
+}
+
+.toolBg {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  width: 50%;
+  height: 100%;
+  margin-top: 2rem;
+
+}
+
+.toolText {
+    display: flex;
+    position: absolute;
+
+}
+
+.toolBg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.toolCal {
+    width: 50%;
+    height: 100%;
+    margin-top: 2rem;
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .toolsBody {
+        flex-direction: column-reverse;
+    }
+
+    .cbmTitle p {
+        padding: 12px;
+    }
+
+    .toolBg {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .toolCal {
+        width: 100%;
+        margin-top: 0;
+    }
+}

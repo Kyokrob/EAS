@@ -8,7 +8,7 @@ import Alert from "@mui/material/Alert";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBoxOpen, faUser, faEnvelope, faPhone, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-const Form = () => {
+function Form () {
 
   const form = useRef();
   const [alert, setAlert] = useState({ severity: "", message: "" });
@@ -40,7 +40,7 @@ const Form = () => {
     if (!form.current.name.value || !form.current.email.value) {
       setAlert({
         severity: "error",
-        message: "Please enter the following inform  ation: Full Name, Email",
+        message: "Please enter the following information: Full Name, Email",
       });
       setOpen(true);
       return;
@@ -53,18 +53,18 @@ const Form = () => {
     setOpen(true);
 
     emailjs
-      .sendForm(
+      .send(
         "service_50n0r1n",
         "template_wh2cn0t",
         templateParams,
         "QbyAUOGwHjpj80LAc"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
         },
-        (error) => {
-          console.log(error.text);
+        function (error) {
+          console.log("FAILED...", error);
         }
       );
   };
@@ -94,6 +94,7 @@ const Form = () => {
                 type="text"
                 className="form-control"
                 placeholder="ชื่อผู้ติดต่อ*"
+                id="name"
                 name="name"
                 value={formValues.name}
                 onChange={handleChange}
@@ -103,9 +104,10 @@ const Form = () => {
             <FontAwesomeIcon icon={faEnvelope} size="lg" style={{color: "#042b3b",}} />
             <div className="formField">
               <input
-                type="text"
+                type="email"
                 className="form-control"
                 placeholder="อีเมลล์ของคุณ*"
+                id="email"
                 name="email"
                 value={formValues.email}
                 onChange={handleChange}
@@ -117,11 +119,12 @@ const Form = () => {
               <input
                 type="tel"
                 className="form-control"
-                placeholder="เบอร์โทรศัพท์"
+                placeholder="เบอร์โทรศัพท์*"
                 id="telephone"
                 name="telephone"
                 value={formValues.telephone}
                 onChange={handleChange}
+                required
               />
             </div>
             <FontAwesomeIcon icon={faBoxOpen} size="lg" style={{ color: '#042b3b' }}/>

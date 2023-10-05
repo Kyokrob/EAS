@@ -12,16 +12,12 @@ const GetQuotation = () => {
             <img src={getquotaion2} alt="" />
           </div>
           <div className="sec5Right">
-            <h1>EAST ASIA SHIPPING (THAILAND)</h1>
+          <h1>ขนส่งอย่างไม่มีข้อจำกัด</h1>
             <p>
-              Provides seamless logistics solutions, including freight
-              forwarding and customs clearance services. We specialize in
-              streamlining the shipping process, providing personalized support,
-              and ensuring goods reach their destination quickly and
-              efficiently.
+            บริการขนส่งสินค้าจากผู้เชี่ยวชาญดูแลอย่างมืออาชีพรับรองว่าสินค้าจะถึงสถานที่ปลายทางได้อย่างรวดเร็วและมีประสิทธิภาพ 
             </p>
-            <Link to="/quotation" className="sec5Btn">
-              <button>Get Quotation</button>
+            <Link to="/quotation" className="sec4Btn">
+              <button>ใบเสนอราคา (ฟรี)</button>
             </Link>
           </div>
         </div>

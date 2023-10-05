@@ -35,7 +35,7 @@
     align-items: center;
     border: 1px solid #042B3B;
     border-top: 2rem solid #e6af4b;
-    border-radius: 20px 20px 0 0;
+    border-radius: 25px 25px 0 0;
     
 
   }
@@ -75,6 +75,28 @@
     height: 36px;
     object-fit: contain;
   }
+
+
+  .compareFreightBtn button {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 12px 24px;
+    background-color: #E6AF4B;
+    box-shadow: 0px 0px 5px #e6b04b95;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 22px;
+    gap: 12px;
+}
+
+.compareFreightBtn button:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(to bottom, #E6AF4B, #F9D49C);    transition: 0.5s ease;
+    box-shadow: 0px 0px 5px #F9D49C;
+}
   
   @media only screen and (max-width: 768px) {
     
@@ -95,12 +117,16 @@
 
   @media only screen and (max-width: 480px) {
 
+    .freight-container {
+      height: 500px;
+    }
+
     .freightItemTitle img {
       width: 60px;
       height: 60px;
     }
 
     .compareFreight h1 {
-      font-size: 18px;
+      font-size: 16px;
     }
   }

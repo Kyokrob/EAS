@@ -94,20 +94,19 @@
 .aboutHomeText h1 {
     color: #042B3B;
     width: 70%;
-    font-weight: 600;
-    font-size: 52px;
+    font-weight: bold;
+    font-size: 36px;
     z-index: 10;
 }
 
 .aboutHomeText h5 {
     color: #e6af4b;
     width: 70%;
-    font-weight: bold;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 24px;
     z-index: 10;
-
-
 }
+
 .aboutHomeText p {
     color: #042B3B;
     width: 70%;
@@ -288,7 +287,7 @@
 
 .homeFaqContainer {
     position: relative;
-    margin-bottom: 4rem;
+    height: 100%;
   }
   
   .homeFaqBackground {
@@ -303,7 +302,8 @@
   }
   
   .homeFaq {
-    height: 500px;
+    height: 100%;
+    margin: 2rem 0;
     display: flex;
     position: relative;
     align-items: center;
@@ -416,9 +416,19 @@
         text-align: start;
         width: 100%;
     }
+
+    .aboutHomeText::before {
+        clip-path: circle(50% at -20% -20%);
+                background-color: #e6af4b;
+      }
     .aboutHomeText h1 {
         font-size: 28px;
-        margin-top: 4rem;
+        width: 80%;
+    }
+
+    .aboutHomeText h5 {
+        font-size: 18px;
+        margin-top: 6rem;
         width: 80%;
     }
 
@@ -521,6 +531,10 @@
     .homeFaq {
         height: 100%;
         margin-bottom: 6rem;
+    }
+
+    .homeFaqBackground {
+        background-image: none;
     }
 
     .section3Title h1 {

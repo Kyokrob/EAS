@@ -1,6 +1,7 @@
 .faq {
     height: 100%;
     z-index: 1;
+    margin-top: 2rem;
 }
 
 .faq h1{

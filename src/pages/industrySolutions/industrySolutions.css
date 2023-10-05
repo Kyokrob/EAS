@@ -1,0 +1,154 @@
+.industrySolutions {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    background-color: #042B3B;
+    overflow: hidden;
+}
+
+.industrySolutionsContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .industrySolutionsContent h1 {
+    font-size: 74px;
+    color: #E6AF4B;
+  }
+  
+  .industrySolutionsContent h3 {
+    font-size: 24px;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .industrySolutionsContent span {
+    font-size: 52px;
+    color: #E6AF4B;
+  }
+
+
+
+
+  .industrySection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 52px;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  .image-container {    
+    position: relative;
+    width: 500px; /* Adjust the width as per your requirements */
+    height: 350px; /* Adjust the height as per your requirements */
+    overflow: hidden;
+    box-shadow: 0 12px 12px 2px #45454577;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-overlay {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    bottom: -75%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: #fff;
+    padding: 12px;
+    transition: bottom 0.3s;
+  }
+  
+  .image-overlay h1 {
+    display: block;
+    margin-left: 12px;
+    font-weight: 500;
+  }
+  
+  .image-container:hover .image-overlay {
+    bottom: 0%;
+  }
+  
+  .image-container:hover .image-overlay h1 {
+    display: block;
+  }
+  
+  .overlay-text {
+    display: none;
+  }
+
+  .overlay-text span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .overlay-text button {
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    z-index: 100;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  .overlay-text button:hover {
+    background: rgba(213, 213, 213, 0.507);
+    color: white;
+  }
+  
+  .image-container:hover .overlay-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 12px;
+  }
+
+
+  @media only screen and (max-width: 480px) {
+
+    .industrySolutionsContent h1 {
+        font-size: 36px;
+    }
+
+    .industrySolutionsContent h3 {
+        text-align: center;
+        width: 80%;
+        font-size: 18px;
+    }
+    .industrySolutionsContent span {
+        font-size: 18px;
+    }
+
+    .image-container {
+        width: 90%;
+        height: 300px;
+        margin-top: 12px; 
+    }
+
+
+      .overlay-text span {
+        font-size: 16px;
+      }
+  }
