@@ -19,7 +19,7 @@
   .parallax-bg-sea {
     background-image: url("../../images/homeheader.png");
     height: 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
