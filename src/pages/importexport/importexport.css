@@ -1,14 +1,68 @@
 .importexport {
-    height: 550px;
-    max-width: 100%;
-    display: flex;
+    height: 100vh;
     position: relative;
-    background-color: #f4f6f8;
-}
+    overflow: hidden; /* Hide overflowing content */
+    background-color: #042B3B;
+  }
 
-.importexportCover {
+  .importexport::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background: rgb(187, 187, 187);
+    opacity: 0.45;
+  }
+  
+  .parallax-bg-imex {
+    background-image: url("../../images/imexcover.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+.importexportText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+}
+
+ 
+.importexportText h1 {
+    color: #042B3B; 
+    font-size: 64px;
+    font-weight: 600;  
+    text-shadow: 4px 4px 4px rgba(184, 184, 184, 0.5);
+}
+
+.importexportText p {
+    width: 50%;
+    text-align: left;
+    color: #042B3B; 
+    font-size: 32px;
+    font-weight: bold;  
+    padding:24px;
+    background-color: #e6af4b;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+
+.importexportCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
 }
 
 .importexportCover img {
@@ -19,29 +73,18 @@
 
 
 
-.importexportHeaderText {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    color: #ffffff;
-    text-shadow: 2px 2px #00000073
-}
-
-
-
 
 @media screen and (max-width: 480px) {
-    .importexport {
-        height: 300px;
+
+
+    .importexportText h1 {
+        width: 80%;
+        font-size: 52px;
     }
-    .importexportHeaderText {
-        width: 100%;
-        font-size: 20px;
+
+    .importexportText p {
+        font-size: 18px;
+        width: 80%;
     }
 
   

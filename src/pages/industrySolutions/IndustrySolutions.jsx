@@ -32,7 +32,7 @@ const IndustrySolutions = () => {
 
         <div className="industrySection container">
           <div className="image-container">
-            <img src={feed1} alt="" />
+            <img src={feed1} alt="นำเข้าอาหารสัตว์" />
             <div className="image-overlay">
               <h1>Animal feed</h1>
               <div className="overlay-text">
@@ -49,7 +49,7 @@ const IndustrySolutions = () => {
           </div>
 
           <div className="image-container">
-            <img src={b2b2} alt="" />
+            <img src={b2b2} alt="นำเข้าอุปกรณ์นิรภัย" />
             <div className="image-overlay">
               <h1>Safety Equipment</h1>
               <div className="overlay-text">
@@ -59,7 +59,7 @@ const IndustrySolutions = () => {
           </div>
 
           <div className="image-container">
-            <img src={b2b3} alt="" />
+            <img src={b2b3} alt="นำเข้าเครื่องเสียง" />
             <div className="image-overlay">
               <h1>Audio System</h1>
               <div className="overlay-text">
@@ -69,7 +69,7 @@ const IndustrySolutions = () => {
           </div>
 
           <div className="image-container">
-            <img src={b2b4} alt="" />
+            <img src={b2b4} alt="นำเข้าเครื่องสำอาง" />
             <div className="image-overlay">
               <h1>Beauty Product</h1>
               <div className="overlay-text">
@@ -79,7 +79,7 @@ const IndustrySolutions = () => {
           </div>
 
           <div className="image-container">
-            <img src={b2b5} alt="" />
+            <img src={b2b5} alt="นำเข้าอุปกรณ์" />
             <div className="image-overlay">
               <h1>Machine Part</h1>
               <div className="overlay-text">

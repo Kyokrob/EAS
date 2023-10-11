@@ -50,7 +50,7 @@ const Home = () => {
         <div className="headerRight">
           <img
             src="https://cdn.pixabay.com/photo/2021/03/28/16/22/port-6131793_1280.jpg"
-            alt="ชิปปิ้ง"
+            alt="ชิปปิ้งนำเข้าส่งออก"
           />
         </div>
       </div>
@@ -70,12 +70,11 @@ const Home = () => {
           <p>
             บริการ Freight Forwarder ขนส่งทางเรือ - เครื่องบิน และ
             บริการเดินพิธีการศุลกากร
-            ช่วยผู้ขนส่งประเมินค่าภาษีและเช็คพิกัดสินค้า
-            พร้อมจัดเตรียมและยื่นเอกสารการขนส่ง
+            ช่วยผู้ขนส่งประเมินค่าภาษี เช็คพิกัดสินค้า จัดเตรียมและยื่นเอกสารการขนส่ง
           </p>
         </div>
         <div className="aboutHomeImg">
-          <img src={abouthome} alt="" />
+          <img src={abouthome} alt="East Asia Shipping (Thailand)" />
         </div>
       </div>
 
@@ -83,74 +82,6 @@ const Home = () => {
 
 
       <div className="ourService-home">
-      {/* <Box
-          className="boxCardHome"
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            gap: "1rem",
-            alignItems: "center",
-            height: "100%",
-          }}
-        >
-          <div className="cardHome">
-            <div
-              className="cardTop"
-              data-aos="flip-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
-              <img src={step1} alt="" />
-            </div>
-            <div className="cardContent">
-              <h3>เชื่อถือได้ - มากประสบการณ์</h3>
-            </div>
-          </div>
-          <div className="cardHome">
-            <div
-              className="cardTop"
-              data-aos="flip-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
-              <img src={step2} alt="" />
-            </div>
-            <div className="cardContent">
-              <h3>เช็คพิกัดสินค้า คำนวนถาษีนำเข้า ฟรี</h3>
-            </div>
-          </div>
-
-          <div className="cardHome">
-            <div
-              className="cardTop"
-              data-aos="flip-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
-              <div className="cardTopIcon">
-                <img src={step3} alt="" />
-              </div>
-            </div>
-            <div className="cardContent">
-              <h3>พนักงานได้รับใบรับรอบจากกรมศุลกากร</h3>
-            </div>
-          </div>
-
-          <div className="cardHome">
-            <div
-              className="cardTop"
-              data-aos="flip-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
-              <img src={step4} alt="" />
-            </div>
-            <div className="cardContent">
-              <h3>ผ่านการรับรองจากสมาคมชิปปิ้งแห่งประเทศไทย</h3>
-            </div>
-          </div>
-        </Box> */}
         <OurService />
       </div>
 
@@ -179,7 +110,7 @@ const Home = () => {
               data-aos-easing="ease-out-cubic"
               data-aos-duration="1000"
             >
-              <img src={step1} alt="" />
+              <img src={step1} alt="นำเข้าส่งออก" />
             </div>
             <div className="cardContent">
               <h3>ติดต่อรับใบเสนอราคา</h3>
@@ -196,13 +127,12 @@ const Home = () => {
               data-aos-easing="ease-out-cubic"
               data-aos-duration="1000"
             >
-              <img src={step2} alt="" />
+              <img src={step2} alt="นำเข้าส่งออก" />
             </div>
             <div className="cardContent">
               <h3>ตรวจสอบและยืนยัน</h3>
               <p>
-                เมื่อได้รับใบเสนอราคา
-                คุณสามารถตรวจสอบและแจ้งหน้าที่เพื่อยืนยันการจัดส่งได้
+                เมื่อได้รับใบเสนอราคา สามารถตรวจสอบและแจ้งหน้าที่เพื่อยืนยันการจัดส่งได้
               </p>
             </div>
           </div>
@@ -215,7 +145,7 @@ const Home = () => {
               data-aos-duration="1000"
             >
               <div className="cardTopIcon">
-                <img src={step3} alt="" />
+                <img src={step3} alt="นำเข้าส่งออก" />
               </div>
             </div>
             <div className="cardContent">
@@ -231,7 +161,7 @@ const Home = () => {
               data-aos-easing="ease-out-cubic"
               data-aos-duration="1000"
             >
-              <img src={step4} alt="" />
+              <img src={step4} alt="นำเข้าส่งออก" />
             </div>
             <div className="cardContent">
               <h3>ยืนยันและติดตาม</h3>

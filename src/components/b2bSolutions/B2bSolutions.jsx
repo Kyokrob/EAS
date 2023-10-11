@@ -18,19 +18,19 @@ const B2bSolutions = () => {
           <div className="b2b-box">
             <div className="b2b-left">
               <div className="b2bim1 image-transition">
-                <img src={img1} alt="" />
+                <img src={img1} alt="นำเข้าอาหารสัตว์" />
               </div>
               <div className="b2bim2 image-transition">
-                <img src={img2} alt="" />
+                <img src={img2} alt="นำเข้า beauty" />
               </div>
               <div className="b2bim3 image-transition">
-                <img src={img16} alt="" />
+                <img src={img16} alt="อุปกรณ์นิรภัย" />
               </div>
               <div className="b2bim4 image-transition">
-                <img src={img8} alt="" />
+                <img src={img8} alt="นำเข้าเครื่องเสียง" />
               </div>
               <div className="b2bim5 image-transition">
-                <img src={img15} alt="" />
+                <img src={img15} alt="นำเข้าหูฟัง" />
               </div>
             </div>
             <div className="b2b-middle">
@@ -48,19 +48,19 @@ const B2bSolutions = () => {
             </div>
             <div className="b2b-right">
               <div className="b2bim1 image-transition">
-                <img src={img14} alt="" />
+                <img src={img14} alt="นำเข้าอาหารสัตว์" />
               </div>
               <div className="b2bim2 image-transition">
-                <img src={img7} alt="" />
+                <img src={img7} alt="นำเข้ายาสัตว์" />
               </div>
               <div className="b2bim3 image-transition">
-                <img src={img4} alt="" />
+                <img src={img4} alt="นำเข้าอุปกรณ์" />
               </div>
               <div className="b2bim4 image-transition">
-                <img src={img17} alt="" />
+                <img src={img17} alt="นำเข้าลำโพง" />
               </div>
               <div className="b2bim5 image-transition">
-                <img src={img13} alt="" />
+                <img src={img13} alt="นำเข้าอาหารสัตว์" />
               </div>
             </div>
           </div>

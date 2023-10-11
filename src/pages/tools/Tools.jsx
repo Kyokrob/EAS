@@ -19,7 +19,7 @@ const Tools = () => {
     <div className='tools'>
     <div className='toolsBody'>
         <div className="toolBg">
-            <img src={cal1} alt="" />
+            <img src={cal1} alt="คำนวนCBM" />
            <div className="toolText">
            </div>
         </div>

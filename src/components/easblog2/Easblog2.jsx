@@ -28,7 +28,7 @@ const Easblog = () => {
               </h2>
               <div>Written by EASTHAI Team</div>
             </div>
-            <img src={blog2cover} alt="Blog post" />
+            <img src={blog2cover} alt="นำเข้าอาหารสัตว์" />
             <section>
               <h3>การตรวจปล่อยสินค้าอาหารสัตว์โดยกรมศุลกากร</h3>
               <p>

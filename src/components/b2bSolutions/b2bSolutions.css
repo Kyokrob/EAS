@@ -1,7 +1,9 @@
 .b2b-container {
+    border-radius: 0 0 20% 20%;
     max-width: 100%;
     height: 750px;
-    background: linear-gradient(180deg, rgba(244,246,248,1) 10%, rgba(4,43,59,0.3926164215686274) 82%);
+    background: linear-gradient(180deg, rgba(244,246,248,1) 10%, rgba(4,43,59,0.3926164215686274) 90%);
+    margin-bottom: 2rem;
 }
 .b2b-box {
     max-width: 100%;
@@ -13,7 +15,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-   
     border: none;
 
 }
@@ -67,8 +68,8 @@
 
 .b2bim3 {
     position: absolute;
-    bottom: 40%;
-    left: 35%;
+    bottom: 60%;
+    left: 40%;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -78,7 +79,7 @@
 
 .b2bim5 {
     position: absolute;
-    bottom: 5%;
+    bottom: 45%;
     left: 12%;
     width: 120px;
     height: 120px;
@@ -89,8 +90,8 @@
 
 .b2bim4 {
     position: absolute;
-    bottom: 14%;
-    left: 70%;
+    bottom: 25%;
+    left: 50%;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -181,6 +182,8 @@
         height: 700px;
         padding: 0;
         border: none;
+        border-radius: 0;
+
     }
 
 

@@ -17,9 +17,9 @@ const Sidebar = () => {
     </div>
     <div className='sidebar'>
         <div className="sidebarPost">
-            <img src={blog5card} alt="" />
+            <img src={blog5card} alt="FCL LCL คือ" />
             <h2>
-            Freight forwarder ต่างกัน shipping อย่างไร ? 
+            FCL และ LCL ต่างกันอย่างไร 
             </h2>
             <Link to='/blog/fcl-lcl' className='sidebarPostBtn'>
             <button>
@@ -28,18 +28,18 @@ const Sidebar = () => {
             </Link>
         </div>
         <div className="sidebarPost">
-            <img src={blog4card} alt="" />
+            <img src={blog4card} alt="หน้าที่ชิปปิ้ง" />
             <h2>
             Shipping (ตัวแทนออกของ) มีหน้าที่อะไร  
             </h2>
-            <Link to='/blog/ชิปปิ้ง-ตัวแทนออกของ' className='sidebarPostBtn'>
+            <Link to='/blog/shippingbroker' className='sidebarPostBtn'>
             <button>
                 Read more
             </button>
             </Link>
         </div>
          <div className="sidebarPost">
-            <img src={blog2card} alt="" />
+            <img src={blog2card} alt="นำเข้าอาหารสัตว์" />
             <h2>
             นำเข้าสินค้าผลิตภัณฑ์อาหารและยาสัตว์
             </h2>
@@ -51,11 +51,11 @@ const Sidebar = () => {
 
         </div>
         <div className="sidebarPost">
-            <img src={blog3card} alt="" />
+            <img src={blog3card} alt="form fta ลดภาษี" />
             <h2>
             ข้อควรรู้และข้อควรระวังในการใช้สิทธิประโยชน์ทางการค้า และ Form ต่างๆ
             </h2>
-            <Link to='/blog/สิทธิประโยชน์-form-fta' className='sidebarPostBtn'>
+            <Link to='/blog/form-fta' className='sidebarPostBtn'>
             <button>
                 Read more
             </button>

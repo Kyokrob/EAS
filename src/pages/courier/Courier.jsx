@@ -6,24 +6,24 @@ import OurService2 from "../../components/ourService2/OurService2";
 import GetQuotation2 from "../../components/getQuotation2/GetQuotation2";
 import Container from "@mui/material/Container";
 import Slider from "../../components/slider/Slider";
-import Button from "@mui/material/Button";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import cover from "../../images/easexpresscover_resize.png";
-import cover2 from "../../images/easexpresscover_giff.gif";
+import cover2 from "../../images/easexpresscover.svg";
 import one from "../../images/1.png";
 import two from "../../images/2.png";
 import three from "../../images/3.png";
 import four from "../../images/4.png";
 import five from "../../images/5.png";
 import six from "../../images/6.png";
-import check from '../../images/check_icon.png'
+import check from "../../images/check_icon.png";
+import rightcc1 from "../../images/rightcc1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
+import { Button } from "@mui/material";
 
 const Courier = () => {
   useEffect(() => {
@@ -40,41 +40,23 @@ const Courier = () => {
     setExpanded(isExpanded ? panel : false);
   };
 
+
+
   return (
     <>
       <Helmet>
         <title>EASTHAI - บริการเคลียร์สินค้านำเข้า</title>
       </Helmet>
-      <div className="courier">
-        <div className="courierHeader">
-          <Container className="courierHeaderContent">
+      <div className="courierHeader">
+        <div
+          className="parallax-bg-courier"
+        >
+          <div className="courierHeaderText">
             <h1>Express support</h1>
-            <h5>
-              นำเข้าสินค้าผ่าน Courier Express และพบปัญหาในการคำนวนภาษี
-              หรือติดใบอณุญาต?
-            </h5>
-            <h5>
-              เราพร้อมช่วยเหลือ ไม่ว่าจะเป็น DHL, FEDEX, UPS, TNT หรือ ไปรษณีย์
-            </h5>
-            <Button
-              href="https://page.line.me/999piqzj"
-              className="courierHeaderbtn"
-              sx={{
-                padding: "10px 40px 14px",
-                background: "#E6AF4B",
-                border: "none",
-                borderRadius: "0.25rem",
-                color: "#333333",
-                boxShadow: "0px 2px 3px #e6b04b95",
-                marginTop: "2rem",
-                fontWeight: "500",
-              }}
-            >
-              ติดต่อทีมงาน
-            </Button>
-          </Container>
-          <div className="courierHeaderImg">
-            <img src={cover} alt="" />
+            <p>
+              นำเข้าสินค้าผ่าน Courier Express
+              ต้องการคำแนะนำในการเคลียร์สินค้าอย่างรวดเร็วและปลอดภัย
+            </p>
           </div>
         </div>
       </div>
@@ -90,135 +72,171 @@ const Courier = () => {
             เราเข้าใจว่าปัญหาเช่นการโต้แย้งภาษีหรือการต้องการใบอณุญาตสามารถทำให้ยุ่งยากและล่าช้าได้
             ทีมงานของเราพร้อมที่จะให้คำปรึกษาและช่วยเหลือคุณในการแก้ไขปัญหานี้อย่างมืออาชีพและรวดเร็ว
           </p>
-          <p>
-            หรือหากมีข้อสงสัย
-            <a className="quotationClick" href="https://page.line.me/999piqzj">
-              ติดต่อเจ้าหน้าที่
-            </a>
-            สำหรับการขอใบเสนอราคา
-            <Link to="/quotation" className="quotationClick">
-              {" "}
-              กดตรงนี้
-            </Link>
-          </p>
         </div>
         <div className="courier2img">
-          <img src={cover2} alt="" />
+          <img src={cover2} alt="ชิปปิ้งเคลียร์ภาษี" />
         </div>
       </Container>
 
+      <Container className="customscc1">
+        <div className="leftcc1">
+          <h4>Why us</h4>
+          <h2>เราจะช่วยดูแลคุณตั้งแต่ต้นจนจบ</h2>
+          <p>
+            ประเมินภาษี ใบอนุญาต ลดปัญหาสินค้าติดด่าน ของมาถึงเเคลียร์ทันที
+            คอยให้คำปรึกษาและช่วยเหลือในการเคลียร์สินค้า
+          </p>
+          <div className="content-list">
+            <img src={check} alt="ชิปปิ้ง" />
+            <span>สินค้าติดใบอนุญาต อย. มอก. ฯลฯ</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="ชิปปิ้ง" />
+            <span>บริการด้านประกันภัย</span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="ชิปปิ้ง" />
+            <span>
+              บริการออกสินค้า เพื่อแสดงในงานโชว์สินค้า หรือแสดงนิทรรศการ
+            </span>
+          </div>
+          <div className="content-list">
+            <img src={check} alt="ชิปปิ้ง" />
+            <span>บริการด้านเอกสาร เช่น Form E, Form C/O</span>
+          </div>
+        </div>
+        <div className="rightcc1">
+          <img src={rightcc1} alt="ชิปปิ้งใบอณุญาตนำเข้า" />
+        </div>
+      </Container>
+
+      <div className="customsBanner">
+        <h1>
+          บริการเดินพิธีการกรมศุลกาการนำเข้า-ส่งออก
+          ให้คำปรึกษาด้านใบอนุญาตินำเข้าการใช้ฟอร์มต่างๆ เข้าใจภาษีศุลกากร
+        </h1>
+        <Button component={Link} to="/customclearance" className="cbBtn">
+          อ่านเพิ่มเติม Customs clearance
+        </Button>
+      </div>
+
       <Container className="courier1">
         <div className="courier1Title">
-          <h1>ขั้นตอนการให้บริการ</h1>
+          <h1>ขั้นตอนการทำงาน</h1>
         </div>
         <div className="courierTable">
           <div className="table-box">
             <div className="boxBg">
-              <img src={one} alt="eas01" />
+              <img src={one} alt="ชิปปิ้ง" />
             </div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>แจ้งปัญหาการขนส่งกับทีมงานเพื่อประเมิน</p>
+              <p>แจ้งปัญหาการขนส่งกับทีมงาน</p>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span>ปรึกษาเรื่องการคิดภาษ</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>ปัญหาด้านพิกัดและอัตราภาษีศุลกากร</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span>คำนวนค่าภาษี</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>สินค้าติดปัญหาใบอณุญาต</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span>ติดออกใบอณุญาต</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>สินค้าติดปัญหาหลังจากเปิดตรวจ</span>
               </div>
-              
             </div>
           </div>
           <div className="table-box">
             <div className="boxBg">
-              <img src={two} alt="eas02" />
+              <img src={two} alt="ชิปปิ้ง" />
             </div>
             <div className="boxDetail" data-aos="flip-up">
               <p>
-                เพิ่มบัญชีระบบ Paperless หรือ Customs trader portal
-                สำหรับกรณีบุคคลธรรมดา
+                ส่งรายละเอียดสินค้าที่นำเข้าเพื่อจัดเตรียมเอกสารสำหรับดำเนินการ
               </p>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span>ไม่เคยนำเข้าส่งออกมาก่อนสามารถยื่น Customs Trader Portal
-                  เพื่อยืนยันตัวตน</span>
-              </div>
-              <div className="content-list">
-                <img src={check} alt="" />
-                <span>นิติบุคคลที่มีการนำเข้าส่งออกอยู่แล้ว ต้องทำการผ่านระบบ
-                  Paperless</span>
-              </div>
-              
-            </div>
-          </div>
-          <div className="table-box">
-            <div className="boxBg">
-              <img src={three} alt="eas03" />
-            </div>
-            <div className="boxDetail" data-aos="flip-up">
-              <p>จัดเตรียมเอกสารเพื่อดำเนินการ</p>
-              <div className="content-list">
-                <img src={check} alt="" />
+                <img src={check} alt="ชิปปิ้ง" />
                 <span>Invoice</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
+                <img src={check} alt="ชิปปิ้ง" />
                 <span>Packing List</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
+                <img src={check} alt="ชิปปิ้ง" />
                 <span>Air Way Bill</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span>ใบอนุญาตนำเข้า</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>ใบอนุญาตนำเข้า (ถ้ามี)</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
+                <img src={check} alt="ชิปปิ้ง" />
                 <span>เอกสารอื่นๆที่เกี่ยวข้อง</span>
               </div>
             </div>
           </div>
           <div className="table-box">
             <div className="boxBg">
-              <img src={four} alt="eas04" />
+              <img src={three} alt="ชิปปิ้ง" />
             </div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>แจ้งบริษัทขนส่งเอกชนให้ทีมงาน EASTHAI เราเข้าแก้ไขปัญหา</p>
+              <p>กอรกแบบฟอร์มศุลกากรและคำนวนภาษีอากร</p>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span>แจ้งบริษัทขนส่งเพื่อปล่อย D/O</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>กรอกแบบฟอร์มใบขน</span>
+              </div>
+              <div className="content-list">
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>ระบุข้อมูลสินค้าให้ถูกต้อง</span>
+              </div>
+              <div className="content-list">
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>คำนวนอากรขำเข้า และตรวจสอบข้อตกลงการค้า</span>
+              </div>
+              <div className="content-list">
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>ดราฟท์ใบขนสินค้า</span>
               </div>
             </div>
           </div>
           <div className="table-box">
             <div className="boxBg">
-              <img src={five} alt="eas05" />
+              <img src={four} alt="ชิปปิ้ง" />
             </div>
             <div className="boxDetail" data-aos="flip-up">
-              <p>ทีมงานเข้าดำเนินการตรวจปล่อยสินค้ากับกรมศุลกากร</p>
+              <p>ส่งเอกสารให้กับกรมศุลกากรและทำการตรวจสินค้า</p>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span>ร่วมมือกับพนักงานศุลกากรในกระบวนการตรวจสอบของ</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>จัดเตรียมเอกสารเพื่อใช้แลก D/O และเอกสารอื่นๆ</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span> ชำระอากรนำเข้า ภาษี และค่าธรรมเนียมอื่น ๆ</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>
+                  เจ้าหน้าที่ EASTHAI
+                  ร่วมมือกับพนักงานศุลกากรในกระบวนการตรวจสอบของ{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="table-box">
+            <div className="boxBg">
+              <img src={five} alt="ชิปปิ้ง" />
+            </div>
+            <div className="boxDetail" data-aos="flip-up">
+              <p>ชำระภาษีเพื่อส่งมองสินค้า</p>
+              <div className="content-list">
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>ชำระอากรนำเข้า ภาษี และค่าธรรมเนียม</span>
               </div>
               <div className="content-list">
-                <img src={check} alt="" />
-                <span> เมื่อกรมศุลกากรยินยอมกับเอกสารจะออกใบอนุมัติการขนสินค้าออกจากสนามบิน
-</span>
+                <img src={check} alt="ชิปปิ้ง" />
+                <span>จัดการนำสินค้าออกเพื่อส่งให้ลูกค้า</span>
               </div>
             </div>
           </div>
           <div className="contact-box">
             <div className="boxBg">
-              <img src={six} alt="eas contact us" />
+              <img src={six} alt="ชิปปิ้ง" />
             </div>
             <div className="boxDetail">
               <p>
@@ -230,6 +248,11 @@ const Courier = () => {
         </div>
       </Container>
 
+      <div className="courierSlider">
+        <h1>ผลงานของเรา</h1>
+        <Slider />
+      </div>
+      <GetQuotation2 />
       <Container className="faq-1">
         <div className="courierFaq">
           <h1>คำถามที่พบบ่อย</h1>
@@ -244,18 +267,22 @@ const Courier = () => {
               id="panel1bh-header"
             >
               <Typography sx={{ color: "text.secondary" }}>
-                ไม่เคยนำเข้า-ส่งออกเลย แต่อยากนำเข้าสินค้าในนามบริษัท
-                (สินค้าเป็นสมุดโน้ต) ขอคำปรึกษาเบื้องต้น ว่าควรทำอย่างไร
-                ติดต่อหน่วยงานไหน สามารถนำเข้าได้เลยไหม หรือต้องทำอะไรก่อน
+                ไม่เคยนำเข้า-ส่งออกเลย
+                แต่อยากนำเข้าสินค้าในนามบริษัทควรทำอย่างไร ติดต่อหน่วยงานไหน
+                สามารถนำเข้าได้เลยไหม หรือต้องทำอะไรก่อน
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                เบื้องต้นให้คำปรึกษาด้านการลงทะเบียนกับกรมศุลกากร ยื่น PAPERLESS
-                ให้เรียบร้อย ถึงจะสามารถนำเข้า-ส่งออก กับกรมศุลกากรได้
-                (สินค้าเป็นสมุดโน็ต) ไม่ต้องขอใบอนุญาต
-                ไม่ต้องติดต่อหน่วยงานราชการอื่นเพิ่มแล้ว // ยื่นเรียบร้อยแล้ว
-                สามารถนำเข้า-ส่งออก ได้เลย ภายใน 1 ชม.
+                ในการนำเข้าส่งออกจำเป็นต้องลงทะเบียนกับกรมศุลกากร ยื่น
+                PAPERLESSให้เรียบร้อย ถึงจะสามารถนำเข้า-ส่งออกกับกรมศุลกากรได้
+                เรามีบริการยื่น Paperless ฟรี เรียบร้อยภายใน 1 ชม.{" "}
+                <a
+                  className="quotationClick"
+                  href="https://page.line.me/999piqzj"
+                >
+                  ติดต่อเรา
+                </a>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -388,12 +415,6 @@ const Courier = () => {
           </Accordion>
         </div>
       </Container>
-
-      <div className="courierSlider">
-        <h1>ผลงานของเรา</h1>
-        <Slider />
-      </div>
-      <GetQuotation2 />
       <OurService2 />
       <Contact />
     </>

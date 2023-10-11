@@ -6,7 +6,7 @@ import blog3cover from "../../images/blog3cover.png";
 import ProgressBar from "../progressbar/Progressbar";
 
 const Easblog = () => {
-  const url = "https://www.easthai.co/blog/สิทธิประโยชน์-form-fta";
+  const url = "https://www.easthai.co/blog/form-fta";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,7 +28,7 @@ const Easblog = () => {
               </h2>
               <div>Written by EASTHAI Team</div>
             </div>
-            <img src={blog3cover} alt="Blog post" />
+            <img src={blog3cover} alt="form fta ลดภาษี" />
             <section>
               <h3>Free trade agreement (FTA) คือ</h3>
               <p>
@@ -196,10 +196,7 @@ const Easblog = () => {
                   357,000
                   </div>
                 </div>
-                {/* <p className="contentBorder">
-                  Tips : ตัวอย่างการคำนวณภาษีอากร
-                  เมื่อนำเข้าสินค้าในหมวดอาหารสัตว์ (2309.10.10)
-                </p> */}
+
               </div>
 
               <p>

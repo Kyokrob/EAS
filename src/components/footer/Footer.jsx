@@ -79,7 +79,7 @@ const Footer = () => {
                     </a>
                     </Tooltip>
                    <Tooltip title="Send us Email">
-                   <a href="mailto:sales@easthai.com">
+                   <a href="mailto:sarit@easthai.com">
                 <EmailIcon/>
                     </a>
                    </Tooltip>

@@ -9,7 +9,7 @@ const GetQuotation = () => {
     <Container>
      <div className="sec4">
           <div className="sec4Left">
-            <img src={cover5} alt="" />
+            <img src={cover5} alt="Shipping" />
           </div>
           <div className="sec4Right">
             <h1>ขนส่งอย่างไม่มีข้อจำกัด</h1>

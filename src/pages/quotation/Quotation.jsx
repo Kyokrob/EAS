@@ -20,7 +20,7 @@ const Quotation = () => {
       <Container>
       <div className="quotation">
       <div className="quotationLeft">
-        <img src={quotaimg} alt="" />
+        <img src={quotaimg} alt="ใบเสนอราคาชิปปิ้ง" />
       </div>
       <div>
         <div className="quotationRight">

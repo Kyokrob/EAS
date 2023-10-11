@@ -46,8 +46,8 @@ const App = () => {
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/blog/shipping-freight" element={<Easblog/>}></Route>
         <Route path="/blog/animal-feed-customs-clearance" element={<Easblog2/>}></Route>
-        <Route path="/blog/สิทธิประโยชน์-form-fta" element={<Easblog3/>}></Route>
-        <Route path="/blog/ชิปปิ้ง-ตัวแทนออกของ" element={<Easblog4/>}></Route>
+        <Route path="/blog/form-fta" element={<Easblog3/>}></Route>
+        <Route path="/blog/shippingbroker" element={<Easblog4/>}></Route>
         <Route path="/blog/fcl-lcl" element={<Easblog5/>}></Route>
         <Route path="/airfreight" element={<Airfreight/>}></Route>
         <Route path="/seafreight" element={<Seafreight/>}></Route>

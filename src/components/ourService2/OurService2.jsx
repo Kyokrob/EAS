@@ -17,7 +17,7 @@ const OurService2 = () => {
           
         </div>
         <div className="ourServiceBox2">
-          <img src={air_icon1} alt="" />
+          <img src={air_icon1} alt="ขนส่งทางเครื่องบิน" />
           <h1>Air Freight</h1>
           <p>
             การขนส่งทางอากาศเหมาะสำหรับพัสดุ สินค้าขนาดเล็กที่ต้องการความรวดเร็ว
@@ -28,7 +28,7 @@ const OurService2 = () => {
           </Link>
         </div>
         <div className="ourServiceBox2">
-          <img src={sea_icon1} alt="" />
+          <img src={sea_icon1} alt="ขนส่งทางเรือ" />
           <h1>Sea Freight</h1>
           <p>
             {" "}
@@ -40,7 +40,7 @@ const OurService2 = () => {
           </Link>
         </div>
         <div className="ourServiceBox2">
-          <img src={express_icon1} alt="" />
+          <img src={express_icon1} alt="ภาษีนำเข้า" />
           <h1>Express Support</h1>
           <p>
             บริการช่วยเหลือสำหรับผู้นำเข้าสินค้าเร่งด่วน (Courier express)
@@ -51,7 +51,7 @@ const OurService2 = () => {
           </Link>
         </div>
         <div className="ourServiceBox2">
-          <img src={customs_icon1} alt="" />
+          <img src={customs_icon1} alt="พิธีการศุลกากร" />
           <h1>Customs clearance</h1>
           <p>
             ชิปปิ้ง คือการเตรียมงานเอกสารเพื่อสำแดงภาษีให้กับกรมศุลกากร
@@ -62,7 +62,7 @@ const OurService2 = () => {
           </Link>
         </div>
         <div className="ourServiceBox2">
-          <img src={imex_icon1} alt="" />
+          <img src={imex_icon1} alt="Freight Forwarder" />
           <h1>Import - Export</h1>
           <p>
           ตัวแทนผู้นำเข้า-ส่งออกสินค้าระหว่างประเทศ ช่วยประสานงานต้นทางและปลายทาง เพื่อให้การขนส่งเป็นไปได้ด้วยความรวดเร็วและมีประสิทธิภาพ

@@ -7,7 +7,7 @@ import blog4body from "../../images/blog4body.png"
 import ProgressBar from "../progressbar/Progressbar";
 
 const Easblog = () => {
-  const url = "https://www.easthai.co/blog/ชิปปิ้ง-ตัวแทนออกของ";
+  const url = "https://www.easthai.co/blog/shippingbroker";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,11 +24,11 @@ const Easblog = () => {
               </h1>
               <h2>
                 “รู้หรือไม่ ?
-                การใช้ชิปปิ้งสามารถลดช่วยลดความเสี่ยงและประหยับเวลาของคุณในการนำเข้าส่งออก”
+                การใช้ชิปปิ้งสามารถลดช่วยลดความเสี่ยงและประหยัดเวลาของคุณในการนำเข้าส่งออก”
               </h2>
               <div>Written by EASTHAI Team</div>
             </div>
-            <img src={blog4cover} alt="Blog post" />
+            <img src={blog4cover} alt="หน้าที่ชิปปิ้ง" />
             <section>
               <h3>Shipping (ตัวแทนออกของ) มีหน้าที่อะไร </h3>
               <p>
@@ -45,7 +45,7 @@ const Easblog = () => {
                 <li>การให้คำปรึกษาและความเชี่ยวชาญ : ตัวแทนออกของมีความรู้เฉพาะด้านที่เกี่ยวข้องกับศุลกากร พวกเขาช่วยในการให้คำปรึกษาแก่ผู้ประกอบการเกี่ยวกับข้อบังคับและกฎหมายที่เกี่ยวข้องกับการนำเข้าและส่งออกสินค้า เพื่อให้ผู้นำเข้าส่งออกปฏิบัติตามกฎหมายอย่างถูกต้อง</li>
                 <li>การตรวจสอบเอกสาร : ตัวแทนออกของตรวจสอบเอกสารที่เกี่ยวข้องกับการนำเข้าและส่งออกสินค้า เพื่อให้แน่ใจว่าข้อมูลและเอกสารทั้งหมดถูกต้องและครบถ้วน</li>
               </ul>
-              <img src={blog4body} alt="shipping-import" />
+              <img src={blog4body} alt="freight shipping journey" />
 
             </section>
             <section>
