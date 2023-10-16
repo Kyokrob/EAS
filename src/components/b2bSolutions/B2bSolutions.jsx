@@ -1,15 +1,15 @@
 import React from 'react'
 import './b2bSolutions.css'
-import img1 from "../../images/img1.png";
-import img2 from "../../images/img2.png";
-import img4 from "../../images/img4.png";
-import img7 from "../../images/img7.png";
-import img8 from "../../images/img8.png";
-import img13 from "../../images/img13.png";
-import img14 from "../../images/img14.png";
-import img15 from "../../images/img15.png";
-import img16 from "../../images/img16.png";
-import img17 from "../../images/img17.png";
+import img1 from "../../images/img1_resize.webp";
+import img2 from "../../images/img2_resize.webp";
+import img4 from "../../images/img4_resize.webp";
+import img7 from "../../images/img7_resize.webp";
+import img8 from "../../images/img8_resize.webp";
+import img13 from "../../images/img13_resize.webp";
+import img14 from "../../images/img14_resize.webp";
+import img15 from "../../images/img15_resize.webp";
+import img16 from "../../images/img16_resize.webp";
+import img17 from "../../images/img17_resize.webp";
 import { Link } from 'react-router-dom';
 
 const B2bSolutions = () => {

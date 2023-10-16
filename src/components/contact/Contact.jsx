@@ -4,7 +4,7 @@ import "./contact.css";
 import Box from "@mui/material/Box";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
-import contactBg from "../../images/contactBg.png";
+import contactBg from "../../images/contactBg-resize.webp";
 import HomeIcon from "@mui/icons-material/Home";
 import ChatIcon from "@mui/icons-material/Chat";
 import CallIcon from "@mui/icons-material/Call";

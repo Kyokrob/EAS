@@ -4,6 +4,7 @@ import Sidebar from "../sidebar/Sidebar";
 import BlogShare from "../blogShare/BlogShare";
 import blog3cover from "../../images/blog3cover.png";
 import ProgressBar from "../progressbar/Progressbar";
+import { Helmet } from "react-helmet";
 
 const Easblog = () => {
   const url = "https://www.easthai.co/blog/form-fta";
@@ -13,6 +14,9 @@ const Easblog = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>EASTHAI - สินธิประโยชน์ทางการค้าและฟอร์มต่างๆ</title>
+    </Helmet>
       <div className="easblog">
         <div className="blogArticle">
           <div className="blogContainer">

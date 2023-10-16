@@ -7,6 +7,7 @@ import blog3card from '../../images/blog3card.png'
 import blog4card from '../../images/blog4card.png'
 import blog5card from '../../images/blog5card.png'
 import Contact from "../../components/contact/Contact";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   useEffect(() => {
@@ -14,6 +15,9 @@ const Blog = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>EASTHAI - บทความและข่าวสาร</title>
+    </Helmet>
       <div className="blogHeader">
         <h1>EASTHAI BLOG</h1>
       </div>

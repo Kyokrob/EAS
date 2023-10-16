@@ -4,6 +4,7 @@ import Sidebar from "../sidebar/Sidebar";
 import BlogShare from "../blogShare/BlogShare";
 import blog2cover from "../../images/blog2cover.png";
 import ProgressBar from "../progressbar/Progressbar";
+import { Helmet } from "react-helmet";
 
 const Easblog = () => {
   const url = "https://www.easthai.co/blog/animal-feed-customs-clearance";
@@ -13,6 +14,9 @@ const Easblog = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>EASTHAI - ตรวจปล่อยสินค้าการนำเข้า-ส่งออกผลิตภัณฑ์อาหารสัตว์</title>
+    </Helmet>
       <div className="easblog">
         <div className="blogArticle">
           <div className="blogContainer">

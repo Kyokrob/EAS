@@ -4,6 +4,7 @@ import Sidebar from "../sidebar/Sidebar";
 import BlogShare from "../blogShare/BlogShare";
 import blog5cover from "../../images/blog5cover.png";
 import ProgressBar from "../progressbar/Progressbar";
+import { Helmet } from "react-helmet";
 
 const Easblog = () => {
   const url = "https://www.easthai.co/blog/fcl-lcl";
@@ -13,6 +14,9 @@ const Easblog = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>EASTHAI - ข้อแตกต่างระหว่าง FCL และ LCL</title>
+    </Helmet>
       <div className="easblog">
         <div className="blogArticle">
           <div className="blogContainer">

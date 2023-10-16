@@ -1,3 +1,6 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /private/
+
+
+Sitemap: https://www.easthai.co/sitemap.xml

@@ -5,6 +5,7 @@ import BlogShare from "../blogShare/BlogShare";
 import blog4cover from "../../images/blog4cover.png";
 import blog4body from "../../images/blog4body.png"
 import ProgressBar from "../progressbar/Progressbar";
+import { Helmet } from "react-helmet";
 
 const Easblog = () => {
   const url = "https://www.easthai.co/blog/shippingbroker";
@@ -14,6 +15,9 @@ const Easblog = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>EASTHAI - Shipping และ Customs Broker</title>
+    </Helmet>
       <div className="easblog">
         <div className="blogArticle">
           <div className="blogContainer">
